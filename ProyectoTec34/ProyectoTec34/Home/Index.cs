@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTec34
+namespace ProyectoTec34.Home
 {
-    public partial class Form1 : Form
+    public partial class Index : Form
     {
-        public Form1()
+        public Index()
         {
             InitializeComponent();
         }
