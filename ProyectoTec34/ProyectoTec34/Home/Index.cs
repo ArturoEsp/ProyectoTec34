@@ -16,5 +16,23 @@ namespace ProyectoTec34.Home
         {
             InitializeComponent();
         }
+
+        private void Index_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Login.Login);
+            if (frm != null)
+            {
+                frm.BringToFront();
+                return;
+            }
+            frm = new Login.Login();
+            frm.Show();
+        }
     }
 }

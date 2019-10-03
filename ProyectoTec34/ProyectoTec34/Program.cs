@@ -16,7 +16,7 @@ namespace ProyectoTec34
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home.Index());
+            Application.Run(new Login.Login());
         }
     }
 }
