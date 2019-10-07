@@ -34,5 +34,11 @@ namespace ProyectoTec34.Home
             frm = new Login.Login();
             frm.Show();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Alumno.BoletaPrimerAño frm = new Alumno.BoletaPrimerAño();
+            frm.Show();
+        }
     }
 }

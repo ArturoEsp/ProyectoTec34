@@ -80,5 +80,7 @@ namespace ProyectoTec34.Login
         {
             ControlPaint.DrawBorder(e.Graphics, this.pnlUser.ClientRectangle, Color.Gray, ButtonBorderStyle.Solid);
         }
+
+        
     }
 }
