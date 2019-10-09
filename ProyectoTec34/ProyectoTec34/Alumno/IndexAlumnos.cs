@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ProyectoTec34.Alumno
 {
-    public partial class BoletaPrimerAño : Form
+    public partial class IndexAlumnos : Form
     {
-        public BoletaPrimerAño()
+        public IndexAlumnos()
         {
             InitializeComponent();
-        }
-
-        private void BoletaPrimerAño_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

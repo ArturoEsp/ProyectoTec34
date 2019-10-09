@@ -17,6 +17,21 @@ namespace ProyectoTec34.Home
             InitializeComponent();
         }
 
+        public Boolean AbrirFormHijo(object formhijo)
+        {
+
+            if (this.pnlContenedor.Controls.Count > 0)
+                this.pnlContenedor.Controls.RemoveAt(0);
+            Form fh = formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.pnlContenedor.Controls.Add(fh);
+            this.pnlContenedor.Tag = fh;
+            fh.Show();
+            return true;
+
+        }
+
         private void Index_Load(object sender, EventArgs e)
         {
 
@@ -37,8 +52,13 @@ namespace ProyectoTec34.Home
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Alumno.BoletaPrimerAño frm = new Alumno.BoletaPrimerAño();
+            Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno();
             frm.Show();
+        }
+
+        private void btnAlumnos_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Alumno.BoletaPrimerAño());
         }
     }
 }

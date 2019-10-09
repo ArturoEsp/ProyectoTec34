@@ -32,7 +32,7 @@
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAlumnos = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pnlContenedor = new System.Windows.Forms.Panel();
@@ -44,7 +44,7 @@
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(153)))), ((int)(((byte)(84)))));
             this.pnlMenu.Controls.Add(this.button5);
             this.pnlMenu.Controls.Add(this.btnSalir);
-            this.pnlMenu.Controls.Add(this.button3);
+            this.pnlMenu.Controls.Add(this.btnAlumnos);
             this.pnlMenu.Controls.Add(this.btnBuscar);
             this.pnlMenu.Controls.Add(this.button1);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -92,24 +92,25 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button3
+            // btnAlumnos
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(140, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 70);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Alumnos";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAlumnos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlumnos.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAlumnos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnAlumnos.FlatAppearance.BorderSize = 0;
+            this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlumnos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlumnos.ForeColor = System.Drawing.Color.White;
+            this.btnAlumnos.Image = ((System.Drawing.Image)(resources.GetObject("btnAlumnos.Image")));
+            this.btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAlumnos.Location = new System.Drawing.Point(140, 0);
+            this.btnAlumnos.Name = "btnAlumnos";
+            this.btnAlumnos.Size = new System.Drawing.Size(78, 70);
+            this.btnAlumnos.TabIndex = 2;
+            this.btnAlumnos.Text = "Alumnos";
+            this.btnAlumnos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
             // 
             // btnBuscar
             // 
@@ -185,7 +186,7 @@
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button button5;
     }
