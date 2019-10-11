@@ -55,6 +55,18 @@
     <Compile Include="Alumno\BoletaPrimerAño.Designer.cs">
       <DependentUpon>BoletaPrimerAño.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\BoletaSegundoAño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\BoletaSegundoAño.Designer.cs">
+      <DependentUpon>BoletaSegundoAño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\BoletaTercerAño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\BoletaTercerAño.Designer.cs">
+      <DependentUpon>BoletaTercerAño.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\BuscarAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alumno\BoletaPrimerAño.resx">
       <DependentUpon>BoletaPrimerAño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\BoletaSegundoAño.resx">
+      <DependentUpon>BoletaSegundoAño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\BoletaTercerAño.resx">
+      <DependentUpon>BoletaTercerAño.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\BuscarAlumno.resx">
       <DependentUpon>BuscarAlumno.cs</DependentUpon>
