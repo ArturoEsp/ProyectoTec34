@@ -58,7 +58,7 @@ namespace ProyectoTec34.Home
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Alumno.BoletaPrimerAño());
+            AbrirFormHijo(new Alumno.FormularioAlumno());
         }
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="Alumno\BuscarAlumno.Designer.cs">
       <DependentUpon>BuscarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\FormularioAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FormularioAlumno.Designer.cs">
+      <DependentUpon>FormularioAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\IndexAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\BuscarAlumno.resx">
       <DependentUpon>BuscarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FormularioAlumno.resx">
+      <DependentUpon>FormularioAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\IndexAlumnos.resx">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
