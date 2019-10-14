@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcercaDe\Acercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe\Acercade.Designer.cs">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\BoletaPrimerAño.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDe\Acercade.resx">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alumno\BoletaPrimerAño.resx">
       <DependentUpon>BoletaPrimerAño.cs</DependentUpon>
     </EmbeddedResource>

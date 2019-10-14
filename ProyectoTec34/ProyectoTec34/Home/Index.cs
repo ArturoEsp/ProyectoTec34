@@ -15,8 +15,9 @@ namespace ProyectoTec34.Home
         public Index()
         {
             InitializeComponent();
+      
         }
-
+        TimeSpan _elapsed = new TimeSpan();
         public Boolean AbrirFormHijo(object formhijo)
         {
 
@@ -24,11 +25,11 @@ namespace ProyectoTec34.Home
                 this.pnlContenedor.Controls.RemoveAt(0);
             Form fh = formhijo as Form;
             fh.TopLevel = false;
-            
+
             fh.Dock = DockStyle.Fill;
             this.pnlContenedor.Controls.Add(fh);
             this.pnlContenedor.Tag = fh;
-            
+
             fh.Show();
             return true;
 
@@ -60,7 +61,25 @@ namespace ProyectoTec34.Home
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Alumno.BoletaPrimerAño());
+            Alumno.BoletaPrimerAño frm = new Alumno.BoletaPrimerAño();
+            frm.Show();
+        }
+
+
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+            AcercaDe.Acercade frm = new AcercaDe.Acercade();
+            frm.Show();
+
+        }
+
+        private void timerAct_Tick(object sender, EventArgs e)
+        {
+            _elapsed = _elapsed.Add(TimeSpan.FromSeconds(1));
+            lblTiempoAct.Text = _elapsed.ToString();
+
+
+           
         }
     }
 }
