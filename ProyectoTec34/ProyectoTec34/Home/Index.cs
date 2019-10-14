@@ -60,12 +60,7 @@ namespace ProyectoTec34.Home
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Alumno.IndexAlumnos());
-        }
-
-        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
-        {
-            
+            AbrirFormHijo(new Alumno.BoletaPrimerAño());
         }
     }
 }
