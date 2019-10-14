@@ -24,9 +24,11 @@ namespace ProyectoTec34.Home
                 this.pnlContenedor.Controls.RemoveAt(0);
             Form fh = formhijo as Form;
             fh.TopLevel = false;
+            
             fh.Dock = DockStyle.Fill;
             this.pnlContenedor.Controls.Add(fh);
             this.pnlContenedor.Tag = fh;
+            
             fh.Show();
             return true;
 
@@ -53,12 +55,17 @@ namespace ProyectoTec34.Home
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno();
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Alumno.BoletaPrimerAño());
+            AbrirFormHijo(new Alumno.IndexAlumnos());
+        }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
