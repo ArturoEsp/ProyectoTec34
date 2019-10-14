@@ -47,6 +47,8 @@
             this.timerAct = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,6 +57,8 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
+            this.pnlMenu.Controls.Add(this.lblHora);
+            this.pnlMenu.Controls.Add(this.lblFecha);
             this.pnlMenu.Controls.Add(this.pictureBox2);
             this.pnlMenu.Controls.Add(this.pictureBox1);
             this.pnlMenu.Controls.Add(this.lblTiempoAct);
@@ -261,9 +265,9 @@
             this.lblTiempoAct.ForeColor = System.Drawing.Color.White;
             this.lblTiempoAct.Location = new System.Drawing.Point(753, 35);
             this.lblTiempoAct.Name = "lblTiempoAct";
-            this.lblTiempoAct.Size = new System.Drawing.Size(80, 20);
+            this.lblTiempoAct.Size = new System.Drawing.Size(86, 20);
             this.lblTiempoAct.TabIndex = 10;
-            this.lblTiempoAct.Text = "Arturo007";
+            this.lblTiempoAct.Text = "Tiempo Act";
             // 
             // timerAct
             // 
@@ -273,6 +277,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(882, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
@@ -281,11 +286,34 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(882, 35);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 24);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(912, 8);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(95, 20);
+            this.lblFecha.TabIndex = 13;
+            this.lblFecha.Text = "Fecha Actual";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(912, 35);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(89, 20);
+            this.lblHora.TabIndex = 14;
+            this.lblHora.Text = "Hora Actual";
             // 
             // Index
             // 
@@ -302,6 +330,7 @@
             this.Text = "Escuela Secundaria Tecnica No. 34";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Index_Load);
+            this.SizeChanged += new System.EventHandler(this.Index_SizeChanged);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -329,5 +358,7 @@
         private System.Windows.Forms.Timer timerAct;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblHora;
     }
 }

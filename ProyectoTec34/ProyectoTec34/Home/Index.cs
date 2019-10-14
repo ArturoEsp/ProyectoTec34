@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -42,15 +44,17 @@ namespace ProyectoTec34.Home
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Login.Login);
-            if (frm != null)
-            {
-                frm.BringToFront();
-                return;
-            }
-            frm = new Login.Login();
-            frm.Show();
+            
+            Application.Restart();
+            //this.Close();
+            //Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Login.Login);
+            //if (frm != null)
+            //{
+            //    frm.BringToFront();
+            //    return;
+            //}
+            //frm = new Login.Login();
+            //frm.Show();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -61,8 +65,7 @@ namespace ProyectoTec34.Home
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            Alumno.BoletaPrimerAño frm = new Alumno.BoletaPrimerAño();
-            frm.Show();
+            AbrirFormHijo(new Alumno.IndexAlumnos());
         }
 
 
@@ -75,11 +78,19 @@ namespace ProyectoTec34.Home
 
         private void timerAct_Tick(object sender, EventArgs e)
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("es-ES");
             _elapsed = _elapsed.Add(TimeSpan.FromSeconds(1));
             lblTiempoAct.Text = _elapsed.ToString();
 
+ 
+            lblHora.Text = DateTime.Now.ToString("hh:mm tt", CultureInfo.InvariantCulture);
+            lblFecha.Text = DateTime.Now.ToLongDateString();
 
-           
+        }
+
+        private void Index_SizeChanged(object sender, EventArgs e)
+        {
+            this.pnlContenedor.Left = this.Width / 2;
         }
     }
 }

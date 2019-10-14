@@ -91,6 +91,12 @@
     <Compile Include="Alumno\IndexAlumnos.Designer.cs">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home\Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\IndexAlumnos.resx">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
