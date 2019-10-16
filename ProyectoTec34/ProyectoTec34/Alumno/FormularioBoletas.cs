@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTec34.Home
+namespace ProyectoTec34.Alumno
 {
-    public partial class Dashboard : Form
+    public partial class FormularioBoletas : Form
     {
-        public Dashboard()
+        public FormularioBoletas()
         {
             InitializeComponent();
-        }
-
-        private void Dashboard_SizeChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

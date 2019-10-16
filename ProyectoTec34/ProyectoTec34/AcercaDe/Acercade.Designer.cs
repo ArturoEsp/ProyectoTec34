@@ -87,17 +87,17 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(125, 192);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(372, 54);
+            this.label4.Size = new System.Drawing.Size(376, 54);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Espinoza Herrera Arturo     Andaya Tavarez Victor D.\r\nVillagran Trujillo Luis E. " +
-    "     Valladares Peralta Luis Angel\r\nEl Omi                                   La " +
+            this.label4.Text = "Espinoza Herrera Arturo     Andaya Tabarez Victor D.\r\nVillagran Trujillo Luis E. " +
+    "      Valladares Peralta Luis Angel\r\nEl Omi                                  La " +
     "V3r0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(258, 168);
+            this.label5.Location = new System.Drawing.Point(262, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 24);
             this.label5.TabIndex = 5;
@@ -106,7 +106,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(511, 281);
+            this.button1.Location = new System.Drawing.Point(511, 286);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 28);
             this.button1.TabIndex = 6;
@@ -128,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.ClientSize = new System.Drawing.Size(614, 321);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
