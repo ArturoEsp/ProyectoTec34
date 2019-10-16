@@ -84,6 +84,12 @@
     <Compile Include="Alumno\BuscarAlumno.Designer.cs">
       <DependentUpon>BuscarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\FormularioAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
