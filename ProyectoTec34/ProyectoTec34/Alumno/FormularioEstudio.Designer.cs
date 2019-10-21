@@ -1,6 +1,6 @@
-﻿namespace ProyectoTec34.Home
+﻿namespace ProyectoTec34.Alumno
 {
-    partial class Dashboard
+    partial class FormularioEstudio
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Dashboard
+            // FormularioEstudio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(153)))), ((int)(((byte)(84)))));
-            this.ClientSize = new System.Drawing.Size(1200, 435);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Dashboard";
-            this.Text = "Dashboard";
-            this.SizeChanged += new System.EventHandler(this.Dashboard_SizeChanged);
+            this.ClientSize = new System.Drawing.Size(1200, 505);
+            this.Name = "FormularioEstudio";
+            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }

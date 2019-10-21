@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTiempoAct = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnAcercaDe = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,23 +46,16 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblTiempoAct = new System.Windows.Forms.Label();
             this.timerAct = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
+            this.sqLiteCommandBuilder1 = new System.Data.SQLite.SQLiteCommandBuilder();
             this.pnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.pnlMenu.Controls.Add(this.lblHora);
-            this.pnlMenu.Controls.Add(this.lblFecha);
             this.pnlMenu.Controls.Add(this.pictureBox2);
             this.pnlMenu.Controls.Add(this.pictureBox1);
             this.pnlMenu.Controls.Add(this.lblTiempoAct);
@@ -77,6 +74,44 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(1200, 70);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(882, 35);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(882, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblTiempoAct
+            // 
+            this.lblTiempoAct.AutoSize = true;
+            this.lblTiempoAct.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiempoAct.ForeColor = System.Drawing.Color.White;
+            this.lblTiempoAct.Location = new System.Drawing.Point(753, 35);
+            this.lblTiempoAct.Name = "lblTiempoAct";
+            this.lblTiempoAct.Size = new System.Drawing.Size(80, 20);
+            this.lblTiempoAct.TabIndex = 10;
+            this.lblTiempoAct.Text = "Arturo007";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(599, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(157, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Tiempo de actividad:";
             // 
             // btnAcercaDe
             // 
@@ -101,7 +136,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(599, 9);
             this.label2.Name = "label2";
@@ -217,6 +252,7 @@
             this.button1.Text = "Inicio";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // shapeContainer1
             // 
@@ -247,73 +283,16 @@
             this.pnlContenedor.Size = new System.Drawing.Size(1200, 435);
             this.pnlContenedor.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(599, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Tiempo de actividad:";
-            // 
-            // lblTiempoAct
-            // 
-            this.lblTiempoAct.AutoSize = true;
-            this.lblTiempoAct.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempoAct.ForeColor = System.Drawing.Color.White;
-            this.lblTiempoAct.Location = new System.Drawing.Point(753, 35);
-            this.lblTiempoAct.Name = "lblTiempoAct";
-            this.lblTiempoAct.Size = new System.Drawing.Size(86, 20);
-            this.lblTiempoAct.TabIndex = 10;
-            this.lblTiempoAct.Text = "Tiempo Act";
-            // 
             // timerAct
             // 
             this.timerAct.Enabled = true;
             this.timerAct.Interval = 1000;
             this.timerAct.Tick += new System.EventHandler(this.timerAct_Tick);
             // 
-            // pictureBox1
+            // sqLiteCommandBuilder1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(882, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(882, 35);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(912, 8);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(95, 20);
-            this.lblFecha.TabIndex = 13;
-            this.lblFecha.Text = "Fecha Actual";
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(912, 35);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(89, 20);
-            this.lblHora.TabIndex = 14;
-            this.lblHora.Text = "Hora Actual";
+            this.sqLiteCommandBuilder1.DataAdapter = null;
+            this.sqLiteCommandBuilder1.QuoteSuffix = "]";
             // 
             // Index
             // 
@@ -330,11 +309,10 @@
             this.Text = "Escuela Secundaria Tecnica No. 34";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Index_Load);
-            this.SizeChanged += new System.EventHandler(this.Index_SizeChanged);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,7 +336,6 @@
         private System.Windows.Forms.Timer timerAct;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblHora;
+        private System.Data.SQLite.SQLiteCommandBuilder sqLiteCommandBuilder1;
     }
 }
