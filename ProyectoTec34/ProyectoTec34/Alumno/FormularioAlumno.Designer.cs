@@ -143,7 +143,7 @@
             // txtCP
             // 
             this.txtCP.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCP.Location = new System.Drawing.Point(726, 151);
+            this.txtCP.Location = new System.Drawing.Point(726, 148);
             this.txtCP.Name = "txtCP";
             this.txtCP.Size = new System.Drawing.Size(92, 25);
             this.txtCP.TabIndex = 21;
@@ -151,7 +151,7 @@
             // txtEntidad
             // 
             this.txtEntidad.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEntidad.Location = new System.Drawing.Point(447, 151);
+            this.txtEntidad.Location = new System.Drawing.Point(460, 148);
             this.txtEntidad.Name = "txtEntidad";
             this.txtEntidad.Size = new System.Drawing.Size(143, 25);
             this.txtEntidad.TabIndex = 19;
@@ -160,26 +160,26 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(596, 151);
+            this.label11.Location = new System.Drawing.Point(611, 149);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 20);
+            this.label11.Size = new System.Drawing.Size(109, 20);
             this.label11.TabIndex = 20;
-            this.label11.Text = "CODIGO POSTAL";
+            this.label11.Text = "Codigo Postal";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(278, 151);
+            this.label10.Location = new System.Drawing.Point(303, 149);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(168, 20);
+            this.label10.Size = new System.Drawing.Size(151, 20);
             this.label10.TabIndex = 18;
-            this.label10.Text = "ENTIDAD FEDERATIVA";
+            this.label10.Text = "Entidad Federativa";
             // 
             // txtColonia
             // 
             this.txtColonia.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColonia.Location = new System.Drawing.Point(452, 89);
+            this.txtColonia.Location = new System.Drawing.Point(444, 87);
             this.txtColonia.Name = "txtColonia";
             this.txtColonia.Size = new System.Drawing.Size(143, 25);
             this.txtColonia.TabIndex = 17;
@@ -188,16 +188,16 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(372, 89);
+            this.label9.Location = new System.Drawing.Point(372, 87);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 20);
+            this.label9.Size = new System.Drawing.Size(66, 20);
             this.label9.TabIndex = 16;
-            this.label9.Text = "COLONIA";
+            this.label9.Text = "Colonia";
             // 
             // txtTel
             // 
             this.txtTel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel.Location = new System.Drawing.Point(680, 90);
+            this.txtTel.Location = new System.Drawing.Point(683, 86);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(136, 25);
             this.txtTel.TabIndex = 15;
@@ -206,18 +206,18 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(596, 90);
+            this.label8.Location = new System.Drawing.Point(596, 87);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 20);
+            this.label8.Size = new System.Drawing.Size(75, 20);
             this.label8.TabIndex = 14;
-            this.label8.Text = "TELEFONO";
+            this.label8.Text = "Telefono";
             // 
             // txtMunicipio
             // 
             this.txtMunicipio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMunicipio.Location = new System.Drawing.Point(101, 151);
+            this.txtMunicipio.Location = new System.Drawing.Point(93, 148);
             this.txtMunicipio.Name = "txtMunicipio";
-            this.txtMunicipio.Size = new System.Drawing.Size(171, 25);
+            this.txtMunicipio.Size = new System.Drawing.Size(204, 25);
             this.txtMunicipio.TabIndex = 13;
             // 
             // label7
@@ -226,16 +226,16 @@
             this.label7.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 149);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 20);
+            this.label7.Size = new System.Drawing.Size(84, 20);
             this.label7.TabIndex = 12;
-            this.label7.Text = "MUNICIPIO";
+            this.label7.Text = "Municipio";
             // 
             // txtDomicilio
             // 
             this.txtDomicilio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.Location = new System.Drawing.Point(137, 89);
+            this.txtDomicilio.Location = new System.Drawing.Point(146, 86);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(235, 25);
+            this.txtDomicilio.Size = new System.Drawing.Size(220, 25);
             this.txtDomicilio.TabIndex = 11;
             // 
             // label6
@@ -244,14 +244,14 @@
             this.label6.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(1, 87);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 20);
+            this.label6.Size = new System.Drawing.Size(144, 20);
             this.label6.TabIndex = 10;
-            this.label6.Text = "CALLE Y NUMERO";
+            this.label6.Text = "Calle con Numero";
             // 
             // txtApeMat
             // 
             this.txtApeMat.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApeMat.Location = new System.Drawing.Point(461, 20);
+            this.txtApeMat.Location = new System.Drawing.Point(452, 19);
             this.txtApeMat.Name = "txtApeMat";
             this.txtApeMat.Size = new System.Drawing.Size(134, 25);
             this.txtApeMat.TabIndex = 6;
@@ -260,16 +260,16 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(299, 20);
+            this.label4.Location = new System.Drawing.Point(307, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 20);
+            this.label4.Size = new System.Drawing.Size(139, 20);
             this.label4.TabIndex = 5;
-            this.label4.Text = "APELLIDO MATERNO";
+            this.label4.Text = "Apellido Materno";
             // 
             // txtApePat
             // 
             this.txtApePat.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApePat.Location = new System.Drawing.Point(155, 20);
+            this.txtApePat.Location = new System.Drawing.Point(139, 19);
             this.txtApePat.Name = "txtApePat";
             this.txtApePat.Size = new System.Drawing.Size(143, 25);
             this.txtApePat.TabIndex = 4;
@@ -280,14 +280,14 @@
             this.label2.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 20);
+            this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "APELLIDO PATERNO";
+            this.label2.Text = "Apellido Paterno";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(675, 22);
+            this.txtNombre.Location = new System.Drawing.Point(675, 19);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(143, 25);
             this.txtNombre.TabIndex = 2;
@@ -296,11 +296,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(598, 20);
+            this.label1.Location = new System.Drawing.Point(602, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 20);
+            this.label1.Size = new System.Drawing.Size(70, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "NOMBRE";
+            this.label1.Text = "Nombre";
             // 
             // panel3
             // 
@@ -350,9 +350,9 @@
             this.label12.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(292, 35);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 20);
+            this.label12.Size = new System.Drawing.Size(34, 20);
             this.label12.TabIndex = 26;
-            this.label12.Text = "DIA";
+            this.label12.Text = "Dia";
             // 
             // textBox11
             // 
@@ -369,7 +369,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 20);
             this.label5.TabIndex = 24;
-            this.label5.Text = "MES";
+            this.label5.Text = "Mes";
             // 
             // textBox3
             // 
@@ -382,11 +382,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 35);
+            this.label3.Location = new System.Drawing.Point(49, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.Size = new System.Drawing.Size(38, 20);
             this.label3.TabIndex = 22;
-            this.label3.Text = "AÑO";
+            this.label3.Text = "Año";
             // 
             // panel5
             // 
@@ -435,11 +435,11 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(233, 93);
+            this.label16.Location = new System.Drawing.Point(247, 93);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(125, 20);
+            this.label16.Size = new System.Drawing.Size(108, 20);
             this.label16.TabIndex = 26;
-            this.label16.Text = "NACIONALIDAD";
+            this.label16.Text = "Nacionalidad";
             // 
             // txtTipoSangre
             // 
@@ -453,11 +453,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(32, 93);
+            this.label17.Location = new System.Drawing.Point(44, 93);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(130, 20);
+            this.label17.Size = new System.Drawing.Size(118, 20);
             this.label17.TabIndex = 24;
-            this.label17.Text = "TIPO DE SANGRE";
+            this.label17.Text = "Tipo de Sangre";
             // 
             // txtCurp
             // 
@@ -473,9 +473,9 @@
             this.label18.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(178, 35);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(49, 20);
+            this.label18.Size = new System.Drawing.Size(45, 20);
             this.label18.TabIndex = 22;
-            this.label18.Text = "CURP";
+            this.label18.Text = "Curp";
             // 
             // panel7
             // 
@@ -524,9 +524,9 @@
             this.label20.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(3, 10);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 20);
+            this.label20.Size = new System.Drawing.Size(70, 20);
             this.label20.TabIndex = 26;
-            this.label20.Text = "NOMBRE";
+            this.label20.Text = "Nombre";
             // 
             // textBox17
             // 
@@ -541,9 +541,9 @@
             this.label21.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(3, 38);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(62, 20);
+            this.label21.Size = new System.Drawing.Size(55, 20);
             this.label21.TabIndex = 24;
-            this.label21.Text = "GRUPO";
+            this.label21.Text = "Grupo";
             // 
             // btnGuardar
             // 
@@ -581,21 +581,21 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(305, 24);
+            this.label22.Location = new System.Drawing.Point(307, 26);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(67, 20);
+            this.label22.Size = new System.Drawing.Size(58, 20);
             this.label22.TabIndex = 22;
-            this.label22.Text = "GRADO:";
+            this.label22.Text = "Grado:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(438, 24);
+            this.label23.Location = new System.Drawing.Point(447, 26);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(66, 20);
+            this.label23.Size = new System.Drawing.Size(59, 20);
             this.label23.TabIndex = 29;
-            this.label23.Text = "GRUPO:";
+            this.label23.Text = "Grupo:";
             // 
             // dataGridView1
             // 

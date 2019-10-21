@@ -84,7 +84,7 @@ namespace ProyectoTec34.Home
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Alumno.FormularioAlumno frm = new Alumno.FormularioAlumno();
+            Alumno.FormularioEstudio frm = new Alumno.FormularioEstudio();
             frm.Show();
         }
     }

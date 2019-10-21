@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoTec34.Alumno
 {
-    public partial class Form1 : Form
+    public partial class FormularioEstudio : Form
     {
-        public Form1()
+        public FormularioEstudio()
         {
             InitializeComponent();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

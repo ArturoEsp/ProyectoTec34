@@ -47,6 +47,7 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.timerAct = new System.Windows.Forms.Timer(this.components);
+            this.sqLiteCommandBuilder1 = new System.Data.SQLite.SQLiteCommandBuilder();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -288,6 +289,11 @@
             this.timerAct.Interval = 1000;
             this.timerAct.Tick += new System.EventHandler(this.timerAct_Tick);
             // 
+            // sqLiteCommandBuilder1
+            // 
+            this.sqLiteCommandBuilder1.DataAdapter = null;
+            this.sqLiteCommandBuilder1.QuoteSuffix = "]";
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,5 +336,6 @@
         private System.Windows.Forms.Timer timerAct;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Data.SQLite.SQLiteCommandBuilder sqLiteCommandBuilder1;
     }
 }
