@@ -87,5 +87,11 @@ namespace ProyectoTec34.Home
             Alumno.FormularioEstudio frm = new Alumno.FormularioEstudio();
             frm.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Configuraciones.Materias frm2 = new Configuraciones.Materias();
+            frm2.Show();
+        }
     }
 }
