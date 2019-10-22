@@ -42,27 +42,25 @@ namespace ProyectoTec34.Home
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Login.Login);
-            if (frm != null)
+            if (MessageBox.Show("¿Desea salir del programa?","Advertencia",MessageBoxButtons.YesNo,
+                MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                frm.BringToFront();
-                return;
+                Application.Exit();
             }
-            frm = new Login.Login();
-            frm.Show();
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno();
             frm.ShowDialog();
+            
         }
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            Alumno.FormularioAlumno frm = new Alumno.FormularioAlumno();
-            frm.Show();
+            AbrirFormHijo(new Alumno.IndexAlumnos());
+            btnAlumnos.BackColor = Color.FromArgb(183, 190, 188);
         }
 
 
@@ -77,6 +75,8 @@ namespace ProyectoTec34.Home
         {
             _elapsed = _elapsed.Add(TimeSpan.FromSeconds(1));
             lblTiempoAct.Text = _elapsed.ToString();
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm tt");
 
 
            
@@ -84,8 +84,7 @@ namespace ProyectoTec34.Home
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Alumno.FormularioEstudio frm = new Alumno.FormularioEstudio();
-            frm.Show();
+            
         }
     }
 }

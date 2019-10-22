@@ -31,8 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.pbHora = new System.Windows.Forms.PictureBox();
+            this.pbFecha = new System.Windows.Forms.PictureBox();
             this.lblTiempoAct = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAcercaDe = new System.Windows.Forms.Button();
@@ -42,22 +44,24 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.timerAct = new System.Windows.Forms.Timer(this.components);
             this.sqLiteCommandBuilder1 = new System.Data.SQLite.SQLiteCommandBuilder();
             this.pnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFecha)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.pnlMenu.Controls.Add(this.pictureBox2);
-            this.pnlMenu.Controls.Add(this.pictureBox1);
+            this.pnlMenu.Controls.Add(this.lblHora);
+            this.pnlMenu.Controls.Add(this.lblFecha);
+            this.pnlMenu.Controls.Add(this.pbHora);
+            this.pnlMenu.Controls.Add(this.pbFecha);
             this.pnlMenu.Controls.Add(this.lblTiempoAct);
             this.pnlMenu.Controls.Add(this.label3);
             this.pnlMenu.Controls.Add(this.btnAcercaDe);
@@ -67,7 +71,7 @@
             this.pnlMenu.Controls.Add(this.btnSalir);
             this.pnlMenu.Controls.Add(this.btnAlumnos);
             this.pnlMenu.Controls.Add(this.btnBuscar);
-            this.pnlMenu.Controls.Add(this.button1);
+            this.pnlMenu.Controls.Add(this.btnInicio);
             this.pnlMenu.Controls.Add(this.shapeContainer1);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
@@ -75,21 +79,45 @@
             this.pnlMenu.Size = new System.Drawing.Size(1200, 70);
             this.pnlMenu.TabIndex = 0;
             // 
-            // pictureBox2
+            // lblHora
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(882, 35);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(912, 35);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(43, 20);
+            this.lblHora.TabIndex = 13;
+            this.lblHora.Text = "Hora";
             // 
-            // pictureBox1
+            // lblFecha
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(882, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(912, 8);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(49, 20);
+            this.lblFecha.TabIndex = 6;
+            this.lblFecha.Text = "Fecha";
+            // 
+            // pbHora
+            // 
+            this.pbHora.Image = ((System.Drawing.Image)(resources.GetObject("pbHora.Image")));
+            this.pbHora.Location = new System.Drawing.Point(882, 35);
+            this.pbHora.Name = "pbHora";
+            this.pbHora.Size = new System.Drawing.Size(24, 24);
+            this.pbHora.TabIndex = 12;
+            this.pbHora.TabStop = false;
+            // 
+            // pbFecha
+            // 
+            this.pbFecha.Image = ((System.Drawing.Image)(resources.GetObject("pbFecha.Image")));
+            this.pbFecha.Location = new System.Drawing.Point(882, 5);
+            this.pbFecha.Name = "pbFecha";
+            this.pbFecha.Size = new System.Drawing.Size(24, 24);
+            this.pbFecha.TabIndex = 11;
+            this.pbFecha.TabStop = false;
             // 
             // lblTiempoAct
             // 
@@ -105,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(599, 35);
             this.label3.Name = "label3";
@@ -136,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(599, 9);
             this.label2.Name = "label2";
@@ -234,25 +262,24 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button1
+            // btnInicio
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 70);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Inicio";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnInicio.Location = new System.Drawing.Point(0, 0);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(70, 70);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnInicio.UseVisualStyleBackColor = true;
             // 
             // shapeContainer1
             // 
@@ -311,8 +338,8 @@
             this.Load += new System.EventHandler(this.Index_Load);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFecha)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,7 +348,7 @@
 
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlContenedor;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.Button btnSalir;
@@ -334,8 +361,10 @@
         private System.Windows.Forms.Label lblTiempoAct;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timerAct;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbHora;
+        private System.Windows.Forms.PictureBox pbFecha;
         private System.Data.SQLite.SQLiteCommandBuilder sqLiteCommandBuilder1;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblHora;
     }
 }

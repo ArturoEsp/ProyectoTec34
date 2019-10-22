@@ -875,7 +875,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 101);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(562, 127);
+            this.dataGridView1.Size = new System.Drawing.Size(562, 140);
             this.dataGridView1.TabIndex = 10;
             // 
             // panel2
@@ -922,7 +922,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(310, 597);
+            this.button2.Location = new System.Drawing.Point(372, 597);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 34);
             this.button2.TabIndex = 13;

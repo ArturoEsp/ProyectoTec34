@@ -17,14 +17,10 @@ namespace ProyectoTec34.Alumno
             InitializeComponent();
         }
 
-        private void btnRegistrar_MouseLeave(object sender, EventArgs e)
+        private void btnInsertarDatos_Click(object sender, EventArgs e)
         {
-            btnRegistrar.ForeColor = Color.DarkGray;
-        }
-
-        private void btnRegistrar_MouseHover(object sender, EventArgs e)
-        {
-            btnRegistrar.ForeColor = Color.DimGray;
+            CargarDatosAlumno frm = new CargarDatosAlumno();
+            frm.Show();
         }
     }
 }
