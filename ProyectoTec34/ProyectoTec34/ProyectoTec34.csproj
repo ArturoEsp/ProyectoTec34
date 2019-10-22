@@ -114,6 +114,12 @@
     <Compile Include="Alumno\IndexAlumnos.Designer.cs">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuraciones\Materias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Materias.Designer.cs">
+      <DependentUpon>Materias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home\Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     <EmbeddedResource Include="Alumno\IndexAlumnos.resx">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones\Materias.resx">
+      <DependentUpon>Materias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,7 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Conexiones\" />
-    <Folder Include="Configuraciones\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\xmag.ico" />
