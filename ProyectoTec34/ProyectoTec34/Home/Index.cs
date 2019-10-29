@@ -86,5 +86,11 @@ namespace ProyectoTec34.Home
         {
             
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Configuraciones.Materias frm = new Configuraciones.Materias();
+            frm.ShowDialog();
+        }
     }
 }

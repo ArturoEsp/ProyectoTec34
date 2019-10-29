@@ -16,5 +16,11 @@ namespace ProyectoTec34.Configuraciones
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Maestros frm = new Maestros();
+            frm.ShowDialog();
+        }
     }
 }
