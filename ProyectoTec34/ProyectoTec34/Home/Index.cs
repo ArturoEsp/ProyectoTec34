@@ -53,6 +53,7 @@ namespace ProyectoTec34.Home
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno();
+            btnBuscar.BackColor = Color.FromArgb(183, 190, 188);
             frm.ShowDialog();
             
         }
@@ -89,8 +90,14 @@ namespace ProyectoTec34.Home
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Configuraciones.Materias frm = new Configuraciones.Materias();
-            frm.ShowDialog();
+            
+            
+        }
+
+        private void btnConf_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Configuraciones.IndexConfiguracion());
+            btnConf.BackColor = Color.FromArgb(183, 190, 188);
         }
     }
 }

@@ -8,24 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTec34.Alumno
+namespace ProyectoTec34.Configuraciones
 {
-    public partial class IndexAlumnos : Form
+    public partial class IndexConfiguracion : Form
     {
-        public IndexAlumnos()
+        public IndexConfiguracion()
         {
             InitializeComponent();
         }
 
-        private void btnInsertarDatos_Click(object sender, EventArgs e)
+        private void btnInsertarMateria_Click(object sender, EventArgs e)
         {
-            CargarDatosAlumno frm = new CargarDatosAlumno();
+            Materias frm = new Materias();
             frm.Show();
         }
 
-        private void btnIngresarCalif_Click(object sender, EventArgs e)
+        private void btnIngresarMaestro_Click(object sender, EventArgs e)
         {
-            FormularioBoletas frm = new FormularioBoletas();
+            Maestros frm = new Maestros();
             frm.Show();
         }
     }

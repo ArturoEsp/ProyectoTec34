@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioBoletas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlCalificaciones = new System.Windows.Forms.TableLayoutPanel();
@@ -92,10 +93,19 @@
             this.label25 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.tbBuscar = new System.Windows.Forms.TextBox();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlCalificaciones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -745,7 +755,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(94, 34);
             this.label24.TabIndex = 9;
-            this.label24.Text = "6.0";
+            this.label24.Text = "0.0";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
@@ -757,7 +767,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(94, 28);
             this.label23.TabIndex = 8;
-            this.label23.Text = "6.0";
+            this.label23.Text = "0.0";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label22
@@ -769,7 +779,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(94, 28);
             this.label22.TabIndex = 7;
-            this.label22.Text = "6.0";
+            this.label22.Text = "0.0";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
@@ -781,7 +791,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(94, 28);
             this.label21.TabIndex = 6;
-            this.label21.Text = "6.0";
+            this.label21.Text = "0.0";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
@@ -793,7 +803,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(94, 28);
             this.label20.TabIndex = 5;
-            this.label20.Text = "6.0";
+            this.label20.Text = "0.0";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
@@ -805,7 +815,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(94, 28);
             this.label19.TabIndex = 4;
-            this.label19.Text = "6.0";
+            this.label19.Text = "0.0";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -817,7 +827,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 28);
             this.label5.TabIndex = 3;
-            this.label5.Text = "6.0";
+            this.label5.Text = "0.0";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -829,7 +839,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 28);
             this.label2.TabIndex = 2;
-            this.label2.Text = "6.0";
+            this.label2.Text = "0.0";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CalifLMProm
@@ -841,7 +851,7 @@
             this.CalifLMProm.Name = "CalifLMProm";
             this.CalifLMProm.Size = new System.Drawing.Size(94, 28);
             this.CalifLMProm.TabIndex = 1;
-            this.CalifLMProm.Text = "6.0";
+            this.CalifLMProm.Text = "0.0";
             this.CalifLMProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
@@ -867,35 +877,38 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(96, 24);
             this.label25.TabIndex = 2;
-            this.label25.Text = "6.0";
+            this.label25.Text = "0.0";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11});
             this.dataGridView1.Location = new System.Drawing.Point(12, 101);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(562, 140);
             this.dataGridView1.TabIndex = 10;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnSiguiente);
             this.panel2.Controls.Add(this.tbBuscar);
             this.panel2.Location = new System.Drawing.Point(12, 51);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(562, 44);
             this.panel2.TabIndex = 11;
-            // 
-            // button3
-            // 
-            this.button3.Image = global::ProyectoTec34.Properties.Resources.xmag1;
-            this.button3.Location = new System.Drawing.Point(473, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 44);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // tbBuscar
             // 
@@ -909,32 +922,94 @@
             this.tbBuscar.TabIndex = 1;
             this.tbBuscar.Text = "Buscar...";
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Español";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Matematicas";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Inglés";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Biología";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Historia";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Geografía";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Cívica y Ética";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Edu Fisíca";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Artes";
+            this.Column11.Name = "Column11";
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSiguiente.FlatAppearance.BorderSize = 0;
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
+            this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSiguiente.Location = new System.Drawing.Point(470, 2);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(90, 39);
+            this.btnSiguiente.TabIndex = 36;
+            this.btnSiguiente.Text = "Buscar";
+            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(476, 597);
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(482, 591);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 34);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Salir";
+            this.button1.Size = new System.Drawing.Size(92, 39);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Insetar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(372, 597);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 34);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Insertar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormularioBoletas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 637);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
@@ -942,6 +1017,7 @@
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "FormularioBoletas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormularioBoletas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1035,8 +1111,17 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox tbBuscar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }

@@ -42,7 +42,7 @@ namespace ProyectoTec34.Alumno
 
         private void SetConnection()
         {
-            sqlconn = new SQLiteConnection(@"Data Source = C:\Users\bmth_\source\repos\ArturoEsp\ProyectoTec34\ProyectoTec34\ProyectoTec34\bin\Debug\TecnicaDB.db");
+            sqlconn = new SQLiteConnection(@"Data Source = C:\Users\daniel\source\repos\ArturoEsp\ProyectoTec34\ProyectoTec34\ProyectoTec34\bin\Debug\DatabaseEscTec.db");
         }
 
         private void ExecuteQuery(string StudentID)
@@ -61,7 +61,7 @@ namespace ProyectoTec34.Alumno
             SetConnection();
             sqlconn.Open();
             sqlcmd = sqlconn.CreateCommand();
-            string CommandText = "Select * From Estudiante";
+            string CommandText = "Select * From Alumno";
             DB = new SQLiteDataAdapter(CommandText, sqlconn);
             DS.Reset();
             DB.Fill(DS);

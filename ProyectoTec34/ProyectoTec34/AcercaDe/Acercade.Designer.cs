@@ -87,11 +87,11 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(125, 192);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(376, 54);
+            this.label4.Size = new System.Drawing.Size(376, 72);
             this.label4.TabIndex = 4;
             this.label4.Text = "Espinoza Herrera Arturo     Andaya Tabarez Victor D.\r\nVillagran Trujillo Luis E. " +
-    "      Valladares Peralta Luis Angel\r\nEl Omi                                  La " +
-    "V3r0";
+    "      Valladares Peralta Luis Angel\r\nReyes Silva Axel Omar       Díaz Eguiluz In" +
+    "grid Verónica\r\n         ";
             // 
             // label5
             // 
