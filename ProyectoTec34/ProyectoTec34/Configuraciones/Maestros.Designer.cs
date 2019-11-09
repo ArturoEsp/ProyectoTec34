@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maestros));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnSiguiente = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbObs = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.tbIDMaestro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvMaestros = new System.Windows.Forms.DataGridView();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaestros)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +54,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(471, 45);
+            this.panel1.Size = new System.Drawing.Size(453, 45);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -61,25 +62,26 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(183, 9);
+            this.label1.Location = new System.Drawing.Point(166, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "MAESTROS";
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(126, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 26);
-            this.textBox1.TabIndex = 6;
+            this.tbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombre.Location = new System.Drawing.Point(117, 92);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(325, 26);
+            this.tbNombre.TabIndex = 6;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 103);
+            this.label2.Location = new System.Drawing.Point(50, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 18);
             this.label2.TabIndex = 5;
@@ -89,97 +91,110 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 142);
+            this.label3.Location = new System.Drawing.Point(12, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 18);
             this.label3.TabIndex = 7;
             this.label3.Text = "Observaciones:";
             // 
-            // textBox2
+            // tbObs
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(126, 142);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(325, 65);
-            this.textBox2.TabIndex = 8;
+            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbObs.Location = new System.Drawing.Point(117, 136);
+            this.tbObs.Multiline = true;
+            this.tbObs.Name = "tbObs";
+            this.tbObs.Size = new System.Drawing.Size(325, 65);
+            this.tbObs.TabIndex = 8;
             // 
-            // btnSiguiente
+            // btnGuardar
             // 
-            this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSiguiente.FlatAppearance.BorderSize = 0;
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.Location = new System.Drawing.Point(343, 326);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(108, 39);
-            this.btnSiguiente.TabIndex = 36;
-            this.btnSiguiente.Text = "Guardar";
-            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(334, 322);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(108, 39);
+            this.btnGuardar.TabIndex = 36;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // textBox3
+            // tbIDMaestro
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(126, 57);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(325, 26);
-            this.textBox3.TabIndex = 38;
+            this.tbIDMaestro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIDMaestro.Location = new System.Drawing.Point(117, 51);
+            this.tbIDMaestro.Name = "tbIDMaestro";
+            this.tbIDMaestro.ReadOnly = true;
+            this.tbIDMaestro.Size = new System.Drawing.Size(325, 26);
+            this.tbIDMaestro.TabIndex = 38;
+            this.toolTip.SetToolTip(this.tbIDMaestro, "El ID se asigna automaticamente.");
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 62);
+            this.label4.Location = new System.Drawing.Point(34, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 18);
             this.label4.TabIndex = 37;
             this.label4.Text = "ID Maestro:";
+            this.toolTip.SetToolTip(this.label4, "El ID se asigna automaticamente.");
             // 
-            // dataGridView1
+            // dgvMaestros
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 213);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(427, 107);
-            this.dataGridView1.TabIndex = 39;
+            this.dgvMaestros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMaestros.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvMaestros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvMaestros.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(179)))), ((int)(((byte)(157)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMaestros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMaestros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMaestros.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMaestros.EnableHeadersVisualStyles = false;
+            this.dgvMaestros.GridColor = System.Drawing.Color.DimGray;
+            this.dgvMaestros.Location = new System.Drawing.Point(15, 207);
+            this.dgvMaestros.Name = "dgvMaestros";
+            this.dgvMaestros.ReadOnly = true;
+            this.dgvMaestros.RowHeadersVisible = false;
+            this.dgvMaestros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMaestros.Size = new System.Drawing.Size(427, 107);
+            this.dgvMaestros.TabIndex = 39;
             // 
-            // Column1
+            // toolTip
             // 
-            this.Column1.HeaderText = "ID Maestro";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Observaciones";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 120;
+            this.toolTip.IsBalloon = true;
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip.ToolTipTitle = "Ayuda";
             // 
             // Maestros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 371);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(453, 373);
+            this.Controls.Add(this.dgvMaestros);
+            this.Controls.Add(this.tbIDMaestro);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnSiguiente);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.tbObs);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -189,7 +204,7 @@
             this.Text = "Maestros";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaestros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,16 +214,14 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnSiguiente;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbObs;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox tbIDMaestro;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridView dgvMaestros;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

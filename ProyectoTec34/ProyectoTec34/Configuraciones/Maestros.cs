@@ -15,6 +15,28 @@ namespace ProyectoTec34.Configuraciones
         public Maestros()
         {
             InitializeComponent();
+            dgvMaestros.DataSource = ScriptSQL.MostrarMaestros();
+        }
+
+        private void tbNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tbNombre.Text) && tbNombre.Text.Length > 3)
+            {
+                tbIDMaestro.Text = GenerateID.MaestroID(tbNombre.Text);
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbNombre.Text))
+                MessageBox.Show("Escribe el nombre del maestro por favor.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            else
+                ScriptSQL.NuevoMaestro(tbIDMaestro.Text,tbNombre.Text,tbObs.Text);
+                
+                tbIDMaestro.Text = "";
+                tbNombre.Text = "";
+                tbObs.Text = "";
+
         }
     }
 }
