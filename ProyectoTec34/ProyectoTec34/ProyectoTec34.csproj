@@ -38,6 +38,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Core.1.0.112.0\lib\net451\System.Data.SQLite.dll</HintPath>
@@ -117,6 +118,13 @@
     <Compile Include="Alumno\IndexAlumnos.Designer.cs">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuraciones\AdministrarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\AdministrarUsuarios.Designer.cs">
+      <DependentUpon>AdministrarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\GenerateID.cs" />
     <Compile Include="Configuraciones\IndexConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,18 +143,22 @@
     <Compile Include="Configuraciones\Materias.Designer.cs">
       <DependentUpon>Materias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuraciones\ScriptSQL.cs" />
+    <Compile Include="Database\DatabaseRepository.cs" />
     <Compile Include="Home\Index.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login\Encryp.cs" />
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login\LoginService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AcercaDe\Acercade.resx">
@@ -179,6 +191,9 @@
     <EmbeddedResource Include="Alumno\IndexAlumnos.resx">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones\AdministrarUsuarios.resx">
+      <DependentUpon>AdministrarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuraciones\IndexConfiguracion.resx">
       <DependentUpon>IndexConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,7 +206,6 @@
     <EmbeddedResource Include="Home\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="iGrid Sample VB.resx" />
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +219,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Database\DatabaseEscTec.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -219,18 +234,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Conexiones\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\xmag.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="iconos\xmag.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="iGrid Sample VB.Designer.vb" />
-    <Content Include="iGrid Sample VB.vb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.112.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net451\System.Data.SQLite.Core.targets')" />

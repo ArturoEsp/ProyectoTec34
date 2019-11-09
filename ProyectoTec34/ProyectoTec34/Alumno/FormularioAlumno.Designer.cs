@@ -29,79 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioAlumno));
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnInsertar = new System.Windows.Forms.Button();
             this.txtGrado = new System.Windows.Forms.ComboBox();
             this.txtGrupo = new System.Windows.Forms.ComboBox();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNombres = new System.Windows.Forms.TextBox();
+            this.tbApellidoPaterno = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbApellidoMaterno = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbCP = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tbEntidadFederativa = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbMunicipio = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbNacionalidad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbTipoSangre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbCURP = new System.Windows.Forms.TextBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbTelefono = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbColonia = new System.Windows.Forms.TextBox();
+            this.tbCalleNumero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(614, 594);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(91, 31);
-            this.btnGuardar.TabIndex = 25;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Visible = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(359, 598);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(91, 31);
-            this.btnLimpiar.TabIndex = 26;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Visible = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnInsertar
-            // 
-            this.btnInsertar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(195, 598);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(91, 31);
-            this.btnInsertar.TabIndex = 28;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
-            this.btnInsertar.Visible = false;
-            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // txtGrado
             // 
@@ -162,23 +124,23 @@
             this.label24.TabIndex = 35;
             this.label24.Text = "Nombre(s)";
             // 
-            // textBox1
+            // tbNombres
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(5, 50);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 26);
-            this.textBox1.TabIndex = 1;
+            this.tbNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombres.Location = new System.Drawing.Point(5, 50);
+            this.tbNombres.MaxLength = 30;
+            this.tbNombres.Name = "tbNombres";
+            this.tbNombres.Size = new System.Drawing.Size(219, 26);
+            this.tbNombres.TabIndex = 1;
             // 
-            // textBox2
+            // tbApellidoPaterno
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(230, 50);
-            this.textBox2.MaxLength = 40;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 26);
-            this.textBox2.TabIndex = 2;
+            this.tbApellidoPaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbApellidoPaterno.Location = new System.Drawing.Point(230, 50);
+            this.tbApellidoPaterno.MaxLength = 40;
+            this.tbApellidoPaterno.Name = "tbApellidoPaterno";
+            this.tbApellidoPaterno.Size = new System.Drawing.Size(210, 26);
+            this.tbApellidoPaterno.TabIndex = 2;
             // 
             // label25
             // 
@@ -191,14 +153,14 @@
             this.label25.TabIndex = 38;
             this.label25.Text = "Apellido Paterno";
             // 
-            // textBox4
+            // tbApellidoMaterno
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(446, 50);
-            this.textBox4.MaxLength = 40;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(210, 26);
-            this.textBox4.TabIndex = 3;
+            this.tbApellidoMaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbApellidoMaterno.Location = new System.Drawing.Point(446, 50);
+            this.tbApellidoMaterno.MaxLength = 40;
+            this.tbApellidoMaterno.Name = "tbApellidoMaterno";
+            this.tbApellidoMaterno.Size = new System.Drawing.Size(210, 26);
+            this.tbApellidoMaterno.TabIndex = 3;
             // 
             // label26
             // 
@@ -236,37 +198,37 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.tbCP);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.tbEntidadFederativa);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.tbMunicipio);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.tbNacionalidad);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.tbTipoSangre);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.tbCURP);
             this.groupBox1.Controls.Add(this.dateTimePicker);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.tbTelefono);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.tbColonia);
+            this.groupBox1.Controls.Add(this.tbCalleNumero);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.tbApellidoPaterno);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.txtGrado);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.txtGrupo);
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbApellidoMaterno);
+            this.groupBox1.Controls.Add(this.tbNombres);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 53);
+            this.groupBox1.Location = new System.Drawing.Point(12, 39);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(860, 294);
             this.groupBox1.TabIndex = 43;
@@ -284,13 +246,13 @@
             this.label10.TabIndex = 65;
             this.label10.Text = "Codigo Postal";
             // 
-            // textBox12
+            // tbCP
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(597, 176);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(225, 26);
-            this.textBox12.TabIndex = 64;
+            this.tbCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCP.Location = new System.Drawing.Point(597, 176);
+            this.tbCP.Name = "tbCP";
+            this.tbCP.Size = new System.Drawing.Size(225, 26);
+            this.tbCP.TabIndex = 64;
             // 
             // label9
             // 
@@ -303,13 +265,13 @@
             this.label9.TabIndex = 63;
             this.label9.Text = "Entidad federativa";
             // 
-            // textBox11
+            // tbEntidadFederativa
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(329, 176);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(262, 26);
-            this.textBox11.TabIndex = 62;
+            this.tbEntidadFederativa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEntidadFederativa.Location = new System.Drawing.Point(329, 176);
+            this.tbEntidadFederativa.Name = "tbEntidadFederativa";
+            this.tbEntidadFederativa.Size = new System.Drawing.Size(262, 26);
+            this.tbEntidadFederativa.TabIndex = 62;
             // 
             // label8
             // 
@@ -322,13 +284,13 @@
             this.label8.TabIndex = 61;
             this.label8.Text = "Municipio";
             // 
-            // textBox10
+            // tbMunicipio
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(5, 176);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(318, 26);
-            this.textBox10.TabIndex = 60;
+            this.tbMunicipio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMunicipio.Location = new System.Drawing.Point(5, 176);
+            this.tbMunicipio.Name = "tbMunicipio";
+            this.tbMunicipio.Size = new System.Drawing.Size(318, 26);
+            this.tbMunicipio.TabIndex = 60;
             // 
             // label7
             // 
@@ -341,13 +303,13 @@
             this.label7.TabIndex = 59;
             this.label7.Text = "Nacionalidad";
             // 
-            // textBox9
+            // tbNacionalidad
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(602, 240);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(220, 26);
-            this.textBox9.TabIndex = 58;
+            this.tbNacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNacionalidad.Location = new System.Drawing.Point(602, 240);
+            this.tbNacionalidad.Name = "tbNacionalidad";
+            this.tbNacionalidad.Size = new System.Drawing.Size(220, 26);
+            this.tbNacionalidad.TabIndex = 58;
             // 
             // label6
             // 
@@ -360,14 +322,14 @@
             this.label6.TabIndex = 57;
             this.label6.Text = "Tipo de sangre";
             // 
-            // textBox8
+            // tbTipoSangre
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(485, 240);
-            this.textBox8.MaxLength = 3;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(111, 26);
-            this.textBox8.TabIndex = 56;
+            this.tbTipoSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTipoSangre.Location = new System.Drawing.Point(485, 240);
+            this.tbTipoSangre.MaxLength = 3;
+            this.tbTipoSangre.Name = "tbTipoSangre";
+            this.tbTipoSangre.Size = new System.Drawing.Size(111, 26);
+            this.tbTipoSangre.TabIndex = 56;
             // 
             // label5
             // 
@@ -380,14 +342,14 @@
             this.label5.TabIndex = 55;
             this.label5.Text = "CURP";
             // 
-            // textBox7
+            // tbCURP
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(230, 240);
-            this.textBox7.MaxLength = 18;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(249, 26);
-            this.textBox7.TabIndex = 54;
+            this.tbCURP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCURP.Location = new System.Drawing.Point(230, 240);
+            this.tbCURP.MaxLength = 18;
+            this.tbCURP.Name = "tbCURP";
+            this.tbCURP.Size = new System.Drawing.Size(249, 26);
+            this.tbCURP.TabIndex = 54;
             // 
             // dateTimePicker
             // 
@@ -419,13 +381,13 @@
             this.label3.TabIndex = 48;
             this.label3.Text = "Telefono";
             // 
-            // textBox6
+            // tbTelefono
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(619, 114);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(203, 26);
-            this.textBox6.TabIndex = 8;
+            this.tbTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelefono.Location = new System.Drawing.Point(619, 114);
+            this.tbTelefono.Name = "tbTelefono";
+            this.tbTelefono.Size = new System.Drawing.Size(203, 26);
+            this.tbTelefono.TabIndex = 8;
             // 
             // label2
             // 
@@ -438,21 +400,21 @@
             this.label2.TabIndex = 46;
             this.label2.Text = "Colonia";
             // 
-            // textBox5
+            // tbColonia
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(388, 114);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 26);
-            this.textBox5.TabIndex = 7;
+            this.tbColonia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbColonia.Location = new System.Drawing.Point(388, 114);
+            this.tbColonia.Name = "tbColonia";
+            this.tbColonia.Size = new System.Drawing.Size(225, 26);
+            this.tbColonia.TabIndex = 7;
             // 
-            // textBox3
+            // tbCalleNumero
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(5, 114);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(377, 26);
-            this.textBox3.TabIndex = 6;
+            this.tbCalleNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCalleNumero.Location = new System.Drawing.Point(5, 114);
+            this.tbCalleNumero.Name = "tbCalleNumero";
+            this.tbCalleNumero.Size = new System.Drawing.Size(377, 26);
+            this.tbCalleNumero.TabIndex = 6;
             // 
             // label1
             // 
@@ -465,6 +427,22 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Calle y número";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.Location = new System.Drawing.Point(596, 590);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(125, 39);
+            this.btnCancelar.TabIndex = 44;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // FormularioAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,11 +450,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(884, 641);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSiguiente);
-            this.Controls.Add(this.btnInsertar);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnGuardar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "FormularioAlumno";
@@ -490,40 +466,38 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.ComboBox txtGrado;
         private System.Windows.Forms.ComboBox txtGrupo;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNombres;
+        private System.Windows.Forms.TextBox tbApellidoPaterno;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbApellidoMaterno;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbTelefono;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbColonia;
+        private System.Windows.Forms.TextBox tbCalleNumero;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbNacionalidad;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbTipoSangre;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbCURP;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbCP;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbEntidadFederativa;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbMunicipio;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

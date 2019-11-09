@@ -102,7 +102,7 @@ namespace ProyectoTec34.Alumno
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show(Configuraciones.GenerateID.AlumnoID(tbNombres.Text,tbApellidoPaterno.Text,tbApellidoMaterno.Text));
         }
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)

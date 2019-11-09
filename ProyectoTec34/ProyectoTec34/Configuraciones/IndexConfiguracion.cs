@@ -28,5 +28,11 @@ namespace ProyectoTec34.Configuraciones
             Maestros frm = new Maestros();
             frm.Show();
         }
+
+        private void btnAdministrarUsuarios_Click(object sender, EventArgs e)
+        {
+            AdministrarUsuarios frm = new AdministrarUsuarios();
+            frm.Show();
+        }
     }
 }
