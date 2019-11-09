@@ -42,10 +42,33 @@ namespace ProyectoTec34.Alumno
 
         private void SetConnection()
         {
-            sqlconn = new SQLiteConnection(@"Data Source = C:\Users\bmth_\source\repos\ArturoEsp\ProyectoTec34\ProyectoTec34\ProyectoTec34\bin\Debug\TecnicaDB.db");
+            sqlconn = new SQLiteConnection(@"Data Source = C:\Users\daniel\source\repos\ArturoEsp\ProyectoTec34\ProyectoTec34\ProyectoTec34\bin\Debug\DatabaseEscTec.db");
         }
 
-      
+        private void ExecuteQuery(string StudentID)
+        {
+            SetConnection();
+            sqlconn.Open();
+            sqlcmd = sqlconn.CreateCommand();
+            sqlcmd.CommandText = StudentID;
+            sqlcmd.ExecuteNonQuery();
+            sqlcmd.Dispose();
+            sqlconn.Close();
+        }
+
+        private void loadData()
+        {
+            SetConnection();
+            sqlconn.Open();
+            sqlcmd = sqlconn.CreateCommand();
+            string CommandText = "Select * From Estudiante";
+            DB = new SQLiteDataAdapter(CommandText, sqlconn);
+            DS.Reset();
+            DB.Fill(DS);
+            sqlDT = DS.Tables[0];
+            //dataGridView1.DataSource = sqlDT;
+            sqlconn.Close();
+        }
 
       
 

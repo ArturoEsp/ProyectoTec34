@@ -37,7 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnIngresarCalif = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -95,7 +95,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(582, 61);
+            this.panel2.Location = new System.Drawing.Point(582, 64);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(497, 68);
             this.panel2.TabIndex = 2;
@@ -131,7 +131,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.btnIngresarCalif);
             this.panel3.Location = new System.Drawing.Point(30, 165);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(497, 68);
@@ -148,21 +148,22 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // button2
+            // btnIngresarCalif
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(103, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(396, 68);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Ingresar calificaciones";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnIngresarCalif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnIngresarCalif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnIngresarCalif.FlatAppearance.BorderSize = 0;
+            this.btnIngresarCalif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresarCalif.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresarCalif.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarCalif.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIngresarCalif.Location = new System.Drawing.Point(103, 0);
+            this.btnIngresarCalif.Name = "btnIngresarCalif";
+            this.btnIngresarCalif.Size = new System.Drawing.Size(396, 68);
+            this.btnIngresarCalif.TabIndex = 0;
+            this.btnIngresarCalif.Text = "Ingresar calificaciones";
+            this.btnIngresarCalif.UseVisualStyleBackColor = false;
+            this.btnIngresarCalif.Click += new System.EventHandler(this.btnIngresarCalif_Click);
             // 
             // panel4
             // 
@@ -251,7 +252,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnIngresarCalif;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button3;
