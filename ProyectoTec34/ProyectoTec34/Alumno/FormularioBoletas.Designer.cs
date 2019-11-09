@@ -92,8 +92,6 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tbBuscar = new System.Windows.Forms.TextBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,7 +102,9 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnSiguiente = new System.Windows.Forms.Button();
+            this.tbBuscar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlCalificaciones.SuspendLayout();
@@ -900,28 +900,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(562, 140);
             this.dataGridView1.TabIndex = 10;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.panel2.Controls.Add(this.btnSiguiente);
-            this.panel2.Controls.Add(this.tbBuscar);
-            this.panel2.Location = new System.Drawing.Point(12, 51);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(562, 44);
-            this.panel2.TabIndex = 11;
-            // 
-            // tbBuscar
-            // 
-            this.tbBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.tbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbBuscar.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBuscar.ForeColor = System.Drawing.Color.DarkGray;
-            this.tbBuscar.Location = new System.Drawing.Point(6, 9);
-            this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(461, 26);
-            this.tbBuscar.TabIndex = 1;
-            this.tbBuscar.Text = "Buscar...";
-            // 
             // Column2
             // 
             this.Column2.HeaderText = "Nombre";
@@ -973,6 +951,16 @@
             this.Column11.HeaderText = "Artes";
             this.Column11.Name = "Column11";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.panel2.Controls.Add(this.btnSiguiente);
+            this.panel2.Controls.Add(this.tbBuscar);
+            this.panel2.Location = new System.Drawing.Point(12, 51);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(562, 44);
+            this.panel2.TabIndex = 11;
+            // 
             // btnSiguiente
             // 
             this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -988,6 +976,18 @@
             this.btnSiguiente.Text = "Buscar";
             this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // tbBuscar
+            // 
+            this.tbBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.tbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbBuscar.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBuscar.ForeColor = System.Drawing.Color.DarkGray;
+            this.tbBuscar.Location = new System.Drawing.Point(6, 9);
+            this.tbBuscar.Name = "tbBuscar";
+            this.tbBuscar.Size = new System.Drawing.Size(461, 26);
+            this.tbBuscar.TabIndex = 1;
+            this.tbBuscar.Text = "Buscar...";
             // 
             // button1
             // 

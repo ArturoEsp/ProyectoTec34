@@ -96,7 +96,7 @@
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnIngresarMaestro);
-            this.panel2.Location = new System.Drawing.Point(575, 66);
+            this.panel2.Location = new System.Drawing.Point(34, 161);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(497, 68);
             this.panel2.TabIndex = 8;
@@ -105,7 +105,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(58, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
