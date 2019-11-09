@@ -28,5 +28,11 @@ namespace ProyectoTec34.Alumno
             FormularioBoletas frm = new FormularioBoletas();
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VistaEstudio frm = new VistaEstudio();
+            frm.Show();
+        }
     }
 }

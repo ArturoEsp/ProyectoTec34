@@ -35,6 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -94,12 +103,6 @@
     <Compile Include="Alumno\CargarDatosAlumno.Designer.cs">
       <DependentUpon>CargarDatosAlumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alumno\FormularioEstudio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Alumno\FormularioEstudio.Designer.cs">
-      <DependentUpon>FormularioEstudio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Alumno\FormularioAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +120,12 @@
     </Compile>
     <Compile Include="Alumno\IndexAlumnos.Designer.cs">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\VistaEstudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\VistaEstudio.Designer.cs">
+      <DependentUpon>VistaEstudio.cs</DependentUpon>
     </Compile>
     <Compile Include="Configuraciones\AdministrarUsuarios.cs">
       <SubType>Form</SubType>
@@ -185,11 +194,11 @@
     <EmbeddedResource Include="Alumno\FormularioBoletas.resx">
       <DependentUpon>FormularioBoletas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alumno\FormularioEstudio.resx">
-      <DependentUpon>FormularioEstudio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Alumno\IndexAlumnos.resx">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\VistaEstudio.resx">
+      <DependentUpon>VistaEstudio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuraciones\AdministrarUsuarios.resx">
       <DependentUpon>AdministrarUsuarios.cs</DependentUpon>
