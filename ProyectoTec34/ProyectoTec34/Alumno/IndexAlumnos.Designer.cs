@@ -42,6 +42,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnIngresarEstudio = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -50,6 +53,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInsertarDatos
@@ -133,7 +138,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.btnIngresarCalif);
-            this.panel3.Location = new System.Drawing.Point(30, 165);
+            this.panel3.Location = new System.Drawing.Point(28, 165);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(497, 68);
             this.panel3.TabIndex = 3;
@@ -214,6 +219,44 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Seleccionar una opción:";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.btnIngresarEstudio);
+            this.panel5.Location = new System.Drawing.Point(28, 263);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(497, 68);
+            this.panel5.TabIndex = 3;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(20, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(54, 58);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btnIngresarEstudio
+            // 
+            this.btnIngresarEstudio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnIngresarEstudio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnIngresarEstudio.FlatAppearance.BorderSize = 0;
+            this.btnIngresarEstudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresarEstudio.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresarEstudio.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarEstudio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIngresarEstudio.Location = new System.Drawing.Point(103, 0);
+            this.btnIngresarEstudio.Name = "btnIngresarEstudio";
+            this.btnIngresarEstudio.Size = new System.Drawing.Size(396, 68);
+            this.btnIngresarEstudio.TabIndex = 0;
+            this.btnIngresarEstudio.Text = "Ingresar Estudio Socioeconomico";
+            this.btnIngresarEstudio.UseVisualStyleBackColor = false;
+            this.btnIngresarEstudio.Click += new System.EventHandler(this.btnIngresarEstudio_Click);
+            // 
             // IndexAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +264,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(153)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(1200, 435);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -238,6 +282,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +304,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnIngresarEstudio;
     }
 }
