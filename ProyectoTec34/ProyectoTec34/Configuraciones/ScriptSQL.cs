@@ -33,7 +33,7 @@ namespace ProyectoTec34.Configuraciones
             {
                 SQLiteDataAdapter da;
                 DataTable dt = new DataTable();
-                da = new SQLiteDataAdapter("SELECT * FROM Docentes",conn);
+                da = new SQLiteDataAdapter("SELECT ID_Docente, Nombre FROM Docentes",conn);
                 da.SelectCommand.CommandType = CommandType.Text;
                 da.Fill(dt);
                 BindingSource bSource = new BindingSource();

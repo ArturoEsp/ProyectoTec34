@@ -21,7 +21,7 @@ namespace ProyectoTec34.Database
             get
             {
                 if (instancia == null) 
-                    throw new Exception("No has iniciado el metodo init");
+                    throw new Exception("Metodo Init no iniciado correctamente.");
                 return instancia;
 
             }

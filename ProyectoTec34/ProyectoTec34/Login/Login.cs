@@ -17,8 +17,8 @@ namespace ProyectoTec34.Login
             InitializeComponent();
         }
 
-        private string Usuario = "adminkawai";
-        private string Password = "adminkawai";
+        private string Usuario = "admin";
+        private string Password = "admin";
 
         private void tbUsuario_Enter(object sender, EventArgs e)
         {
