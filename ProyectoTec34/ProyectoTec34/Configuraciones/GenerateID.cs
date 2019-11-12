@@ -18,14 +18,14 @@ namespace ProyectoTec34.Configuraciones
             return ID = sub + randomNum.ToString();
         }
 
-        public static string AlumnoID(string Nombre,string ApellidoP,string ApellidoM)
+        public static string AlumnoID()
         {
             string ID;
-            int randomNum = rnd.Next(10000);
-            string subNombre = Nombre.Substring(0,3);
-            string subAp = ApellidoP.Substring(0,1);
-            string subAm = ApellidoM.Substring(0, 1);
-            return ID = subNombre.ToUpper() + subAp + subAm + randomNum.ToString();
+            string Anio = DateTime.Now.ToString("yyyy");
+            Anio = Anio.Substring(1,3);
+            int randomNum = rnd.Next(0,1000);
+
+            return ID = Anio + "34" + randomNum;
 
         }
 

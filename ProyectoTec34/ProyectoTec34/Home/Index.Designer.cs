@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.pbHora = new System.Windows.Forms.PictureBox();
@@ -59,7 +58,6 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(132)))), ((int)(((byte)(73)))));
-            this.pnlMenu.Controls.Add(this.button1);
             this.pnlMenu.Controls.Add(this.lblHora);
             this.pnlMenu.Controls.Add(this.lblFecha);
             this.pnlMenu.Controls.Add(this.pbHora);
@@ -80,16 +78,6 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(1200, 70);
             this.pnlMenu.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(479, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // lblHora
             // 
@@ -145,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(599, 35);
             this.label3.Name = "label3";
@@ -176,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(599, 9);
             this.label2.Name = "label2";
@@ -379,6 +367,5 @@
         private System.Data.SQLite.SQLiteCommandBuilder sqLiteCommandBuilder1;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.Button button1;
     }
 }

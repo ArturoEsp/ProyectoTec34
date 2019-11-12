@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,15 +103,16 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Autores:";
             // 
-            // button1
+            // btnAceptar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(511, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 28);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(511, 286);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(91, 28);
+            this.btnAceptar.TabIndex = 6;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // label6
             // 
@@ -131,7 +132,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(614, 321);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -141,6 +142,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Acercade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acerca de...";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -156,7 +158,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label label6;
     }
 }

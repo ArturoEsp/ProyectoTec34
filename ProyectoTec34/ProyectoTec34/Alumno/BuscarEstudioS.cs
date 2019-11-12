@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTec34.AcercaDe
+namespace ProyectoTec34.Alumno
 {
-    public partial class Acercade : Form
+    public partial class BuscarEstudioS : Form
     {
-        public Acercade()
+        public BuscarEstudioS()
         {
             InitializeComponent();
-        }
-
-        private void btnAceptar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

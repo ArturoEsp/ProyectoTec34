@@ -27,6 +27,19 @@ namespace ProyectoTec34.Configuraciones
             }
         }
 
+        public static void EliminarMaestro(string ID)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "DELETE FROM Docentes WHERE ID_Docente = @ID";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", ID));              
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         public static BindingSource MostrarMaestros()
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
@@ -55,6 +68,21 @@ namespace ProyectoTec34.Configuraciones
                 cmd.Parameters.Add(new SQLiteParameter("@Mode", Mode));
                 conn.Open();
                 cmd.ExecuteNonQuery();
+            }
+        }
+
+        public static BindingSource MostrarBD()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteDataAdapter da;
+                DataTable dt = new DataTable();
+                da = new SQLiteDataAdapter("SELECT * FROM Alumno", conn);
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.Fill(dt);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dt;
+                return bSource;
             }
         }
     }

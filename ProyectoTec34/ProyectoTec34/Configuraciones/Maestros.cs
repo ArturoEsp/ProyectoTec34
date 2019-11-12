@@ -38,5 +38,17 @@ namespace ProyectoTec34.Configuraciones
                 tbObs.Text = "";
 
         }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string IDMaestro = dgvMaestros.CurrentRow.Cells[0].Value.ToString();
+            if (MessageBox.Show("¿Desea eliminar el docente "+IDMaestro+"?","Control de docentes",
+                MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                ScriptSQL.EliminarMaestro(IDMaestro);
+                MessageBox.Show("!Eliminación correcta!","Control de docentes",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                dgvMaestros.DataSource = ScriptSQL.MostrarMaestros();
+            }
+        }
     }
 }

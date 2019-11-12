@@ -36,12 +36,17 @@
             this.btnIngresarMaestro = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnAdministrarUsuarios = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnBaseDatos = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -139,6 +144,44 @@
             this.btnAdministrarUsuarios.UseVisualStyleBackColor = false;
             this.btnAdministrarUsuarios.Click += new System.EventHandler(this.btnAdministrarUsuarios_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.btnBaseDatos);
+            this.panel4.Location = new System.Drawing.Point(34, 324);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(497, 68);
+            this.panel4.TabIndex = 10;
+            // 
+            // btnBaseDatos
+            // 
+            this.btnBaseDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnBaseDatos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBaseDatos.FlatAppearance.BorderSize = 0;
+            this.btnBaseDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaseDatos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaseDatos.ForeColor = System.Drawing.Color.White;
+            this.btnBaseDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBaseDatos.Location = new System.Drawing.Point(103, 0);
+            this.btnBaseDatos.Name = "btnBaseDatos";
+            this.btnBaseDatos.Size = new System.Drawing.Size(396, 68);
+            this.btnBaseDatos.TabIndex = 0;
+            this.btnBaseDatos.Text = "Base de datos";
+            this.btnBaseDatos.UseVisualStyleBackColor = false;
+            this.btnBaseDatos.Click += new System.EventHandler(this.btnBaseDatos_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(24, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(58, 62);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -179,6 +222,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(153)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(1184, 498);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -190,6 +234,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -210,5 +256,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAdministrarUsuarios;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnBaseDatos;
     }
 }

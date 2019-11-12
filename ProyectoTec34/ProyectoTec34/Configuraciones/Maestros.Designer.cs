@@ -29,22 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maestros));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maestros));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbObs = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.tbIDMaestro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvMaestros = new System.Windows.Forms.DataGridView();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.metroContextMenu = new MetroFramework.Controls.MetroContextMenu(this.components);
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaestros)).BeginInit();
+            this.metroContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,23 +109,6 @@
             this.tbObs.Size = new System.Drawing.Size(325, 65);
             this.tbObs.TabIndex = 8;
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(334, 322);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(108, 39);
-            this.btnGuardar.TabIndex = 36;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // tbIDMaestro
             // 
             this.tbIDMaestro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,6 +145,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvMaestros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMaestros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMaestros.ContextMenuStrip = this.metroContextMenu;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,6 +170,46 @@
             this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip.ToolTipTitle = "Ayuda";
             // 
+            // metroContextMenu
+            // 
+            this.metroContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eliminarToolStripMenuItem});
+            this.metroContextMenu.Name = "metroContextMenu";
+            this.metroContextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.metroContextMenu.Size = new System.Drawing.Size(181, 48);
+            this.metroContextMenu.Style = MetroFramework.MetroColorStyle.White;
+            this.metroContextMenu.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.eliminarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarToolStripMenuItem.Image = global::ProyectoTec34.Properties.Resources.borrar;
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.eliminarToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(334, 322);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(108, 39);
+            this.btnGuardar.TabIndex = 36;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // Maestros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +232,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaestros)).EndInit();
+            this.metroContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +251,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvMaestros;
         private System.Windows.Forms.ToolTip toolTip;
+        private MetroFramework.Controls.MetroContextMenu metroContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
     }
 }

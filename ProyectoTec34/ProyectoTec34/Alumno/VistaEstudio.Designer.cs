@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaEstudio));
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
@@ -120,7 +121,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.textBox44 = new System.Windows.Forms.TextBox();
@@ -206,6 +207,7 @@
             this.label74 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label62 = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -322,7 +324,7 @@
             this.metroTabPage1.Controls.Add(this.textBox2);
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.Controls.Add(this.label1);
-            this.metroTabPage1.Controls.Add(this.textBox1);
+            this.metroTabPage1.Controls.Add(this.tbNombre);
             this.metroTabPage1.Controls.Add(this.label5);
             this.metroTabPage1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.metroTabPage1.HorizontalScrollbar = true;
@@ -363,7 +365,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(37, 1103);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(86, 18);
@@ -374,7 +376,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.Location = new System.Drawing.Point(37, 1068);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(416, 18);
@@ -397,7 +399,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.Location = new System.Drawing.Point(37, 1026);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(71, 18);
@@ -432,7 +434,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(37, 988);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(49, 18);
@@ -443,7 +445,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(37, 953);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(53, 18);
@@ -454,7 +456,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(37, 917);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(201, 18);
@@ -477,7 +479,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(37, 878);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(128, 18);
@@ -500,7 +502,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(37, 840);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(127, 18);
@@ -524,7 +526,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(421, 798);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(114, 18);
@@ -547,7 +549,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(35, 798);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(167, 18);
@@ -602,7 +604,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(35, 630);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(132, 18);
@@ -626,7 +628,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(865, 594);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(120, 18);
@@ -650,7 +652,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(701, 594);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(105, 18);
@@ -674,7 +676,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(33, 594);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(252, 18);
@@ -697,7 +699,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(538, 544);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(243, 18);
@@ -721,7 +723,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(33, 544);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(171, 18);
@@ -735,7 +737,6 @@
             this.textBox27.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox27.Location = new System.Drawing.Point(780, 493);
             this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(255, 21);
             this.textBox27.TabIndex = 130;
             this.textBox27.Text = "No";
@@ -745,7 +746,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(590, 495);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(189, 18);
@@ -759,7 +760,6 @@
             this.textBox26.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox26.Location = new System.Drawing.Point(462, 493);
             this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(125, 21);
             this.textBox26.TabIndex = 128;
             this.textBox26.Text = "No";
@@ -769,7 +769,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(292, 495);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(164, 18);
@@ -783,7 +783,6 @@
             this.textBox25.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox25.Location = new System.Drawing.Point(228, 493);
             this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
             this.textBox25.Size = new System.Drawing.Size(60, 21);
             this.textBox25.TabIndex = 126;
             this.textBox25.Text = "No";
@@ -793,7 +792,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(35, 495);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(187, 18);
@@ -807,7 +806,6 @@
             this.textBox24.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox24.Location = new System.Drawing.Point(353, 442);
             this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
             this.textBox24.Size = new System.Drawing.Size(683, 21);
             this.textBox24.TabIndex = 124;
             this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -816,7 +814,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(38, 444);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(313, 18);
@@ -830,7 +828,6 @@
             this.textBox23.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox23.Location = new System.Drawing.Point(811, 392);
             this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(225, 21);
             this.textBox23.TabIndex = 122;
             this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -839,7 +836,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(521, 394);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(290, 18);
@@ -853,7 +850,6 @@
             this.textBox22.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox22.Location = new System.Drawing.Point(268, 392);
             this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(247, 21);
             this.textBox22.TabIndex = 120;
             this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -862,7 +858,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(38, 394);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(224, 18);
@@ -876,7 +872,6 @@
             this.textBox21.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox21.Location = new System.Drawing.Point(850, 342);
             this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(187, 21);
             this.textBox21.TabIndex = 118;
             this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -885,7 +880,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(598, 344);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(250, 18);
@@ -899,7 +894,6 @@
             this.textBox20.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox20.Location = new System.Drawing.Point(297, 342);
             this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(295, 21);
             this.textBox20.TabIndex = 116;
             this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -908,7 +902,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(39, 344);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(256, 18);
@@ -922,7 +916,6 @@
             this.textBox19.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox19.Location = new System.Drawing.Point(900, 292);
             this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(137, 21);
             this.textBox19.TabIndex = 114;
             this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -931,7 +924,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(549, 294);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(345, 18);
@@ -945,7 +938,6 @@
             this.textBox18.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox18.Location = new System.Drawing.Point(240, 291);
             this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(295, 21);
             this.textBox18.TabIndex = 112;
             this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -954,7 +946,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(39, 293);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(199, 18);
@@ -968,7 +960,6 @@
             this.textBox17.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox17.Location = new System.Drawing.Point(608, 244);
             this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(429, 21);
             this.textBox17.TabIndex = 110;
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -977,7 +968,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(549, 246);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(58, 18);
@@ -991,7 +982,6 @@
             this.textBox16.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox16.Location = new System.Drawing.Point(91, 244);
             this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(444, 21);
             this.textBox16.TabIndex = 108;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1000,7 +990,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(39, 246);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(48, 18);
@@ -1014,7 +1004,6 @@
             this.textBox15.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox15.Location = new System.Drawing.Point(595, 195);
             this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(442, 21);
             this.textBox15.TabIndex = 106;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1023,7 +1012,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(541, 197);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(48, 18);
@@ -1037,7 +1026,6 @@
             this.textBox9.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(848, 145);
             this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(189, 21);
             this.textBox9.TabIndex = 104;
             this.textBox9.Text = "Benito Juarez";
@@ -1047,7 +1035,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(507, 147);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(344, 18);
@@ -1061,7 +1049,6 @@
             this.textBox11.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(460, 145);
             this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(41, 21);
             this.textBox11.TabIndex = 102;
             this.textBox11.Text = "6";
@@ -1071,7 +1058,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(224, 147);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(236, 18);
@@ -1085,7 +1072,6 @@
             this.textBox13.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.Location = new System.Drawing.Point(183, 145);
             this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(36, 21);
             this.textBox13.TabIndex = 100;
             this.textBox13.Text = "5";
@@ -1095,7 +1081,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(37, 147);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(147, 18);
@@ -1109,7 +1095,6 @@
             this.textBox14.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.Location = new System.Drawing.Point(441, 194);
             this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(94, 21);
             this.textBox14.TabIndex = 98;
             this.textBox14.Text = "$";
@@ -1119,7 +1104,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(38, 196);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(400, 18);
@@ -1133,7 +1118,6 @@
             this.textBox10.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.Location = new System.Drawing.Point(674, 101);
             this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(363, 21);
             this.textBox10.TabIndex = 96;
             this.textBox10.Text = "Solo";
@@ -1143,7 +1127,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(477, 102);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(191, 18);
@@ -1157,7 +1141,6 @@
             this.textBox12.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox12.Location = new System.Drawing.Point(298, 100);
             this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(159, 21);
             this.textBox12.TabIndex = 94;
             this.textBox12.Text = "Ingles";
@@ -1167,7 +1150,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(37, 102);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(253, 18);
@@ -1181,7 +1164,6 @@
             this.textBox6.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(988, 56);
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(49, 21);
             this.textBox6.TabIndex = 92;
             this.textBox6.Text = "21";
@@ -1191,7 +1173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(942, 58);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 18);
@@ -1205,7 +1187,6 @@
             this.textBox5.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(786, 56);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(150, 21);
             this.textBox5.TabIndex = 90;
             this.textBox5.Text = "Masculino";
@@ -1215,7 +1196,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(739, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 18);
@@ -1229,7 +1210,6 @@
             this.textBox7.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(575, 56);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(157, 21);
             this.textBox7.TabIndex = 88;
             this.textBox7.Text = "Mexicano";
@@ -1239,7 +1219,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(477, 58);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(96, 18);
@@ -1253,7 +1233,6 @@
             this.textBox8.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(182, 55);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(275, 21);
             this.textBox8.TabIndex = 86;
             this.textBox8.Text = "Guayameo Zirandaro Guerrero";
@@ -1263,7 +1242,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(37, 57);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(139, 18);
@@ -1277,7 +1256,6 @@
             this.textBox4.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(960, 14);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(77, 21);
             this.textBox4.TabIndex = 84;
             this.textBox4.Text = "1997";
@@ -1287,7 +1265,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(921, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 18);
@@ -1301,7 +1279,6 @@
             this.textBox3.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(747, 14);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(168, 21);
             this.textBox3.TabIndex = 82;
             this.textBox3.Text = "Diciembre";
@@ -1311,7 +1288,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(708, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 18);
@@ -1325,7 +1302,6 @@
             this.textBox2.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(658, 14);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(44, 21);
             this.textBox2.TabIndex = 80;
             this.textBox2.Text = "16";
@@ -1335,7 +1311,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(622, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 18);
@@ -1346,31 +1322,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(477, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 18);
             this.label1.TabIndex = 78;
             this.label1.Text = "Fecha de nacimiento:";
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(106, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(351, 21);
-            this.textBox1.TabIndex = 77;
-            this.textBox1.Text = "Andaya Tabarez Victor Daniel";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombre.Location = new System.Drawing.Point(106, 14);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(351, 21);
+            this.tbNombre.TabIndex = 77;
+            this.tbNombre.Text = "Andaya Tabarez Victor Daniel";
+            this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(37, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 18);
@@ -1424,7 +1399,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.Location = new System.Drawing.Point(36, 403);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(298, 18);
@@ -1447,7 +1422,7 @@
             // 
             this.label48.AutoSize = true;
             this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.Location = new System.Drawing.Point(36, 332);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(301, 18);
@@ -1470,7 +1445,7 @@
             // 
             this.label47.AutoSize = true;
             this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.Location = new System.Drawing.Point(36, 259);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(289, 18);
@@ -1493,7 +1468,7 @@
             // 
             this.label46.AutoSize = true;
             this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.Location = new System.Drawing.Point(36, 182);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(220, 18);
@@ -1516,7 +1491,7 @@
             // 
             this.label53.AutoSize = true;
             this.label53.BackColor = System.Drawing.Color.Transparent;
-            this.label53.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(524, 101);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(54, 18);
@@ -1539,7 +1514,7 @@
             // 
             this.label54.AutoSize = true;
             this.label54.BackColor = System.Drawing.Color.Transparent;
-            this.label54.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(36, 100);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(74, 18);
@@ -1562,7 +1537,7 @@
             // 
             this.label52.AutoSize = true;
             this.label52.BackColor = System.Drawing.Color.Transparent;
-            this.label52.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.Location = new System.Drawing.Point(524, 31);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(60, 18);
@@ -1585,7 +1560,7 @@
             // 
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(36, 30);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(162, 18);
@@ -1638,7 +1613,7 @@
             // 
             this.label61.AutoSize = true;
             this.label61.BackColor = System.Drawing.Color.Transparent;
-            this.label61.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.Location = new System.Drawing.Point(35, 282);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(47, 18);
@@ -1661,7 +1636,7 @@
             // 
             this.label50.AutoSize = true;
             this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.Location = new System.Drawing.Point(560, 214);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(78, 18);
@@ -1684,7 +1659,7 @@
             // 
             this.label51.AutoSize = true;
             this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.Location = new System.Drawing.Point(35, 213);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(77, 18);
@@ -1707,7 +1682,7 @@
             // 
             this.label59.AutoSize = true;
             this.label59.BackColor = System.Drawing.Color.Transparent;
-            this.label59.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.Location = new System.Drawing.Point(560, 144);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(78, 18);
@@ -1730,7 +1705,7 @@
             // 
             this.label60.AutoSize = true;
             this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label60.Location = new System.Drawing.Point(35, 143);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(49, 18);
@@ -1741,7 +1716,7 @@
             // 
             this.label58.AutoSize = true;
             this.label58.BackColor = System.Drawing.Color.Transparent;
-            this.label58.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.Location = new System.Drawing.Point(35, 30);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(159, 18);
@@ -1764,7 +1739,7 @@
             // 
             this.label55.AutoSize = true;
             this.label55.BackColor = System.Drawing.Color.Transparent;
-            this.label55.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(560, 81);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(78, 18);
@@ -1787,7 +1762,7 @@
             // 
             this.label57.AutoSize = true;
             this.label57.BackColor = System.Drawing.Color.Transparent;
-            this.label57.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.Location = new System.Drawing.Point(35, 80);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(53, 18);
@@ -1846,7 +1821,7 @@
             // 
             this.label73.AutoSize = true;
             this.label73.BackColor = System.Drawing.Color.Transparent;
-            this.label73.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.Location = new System.Drawing.Point(17, 292);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(67, 18);
@@ -1857,7 +1832,7 @@
             // 
             this.label72.AutoSize = true;
             this.label72.BackColor = System.Drawing.Color.Transparent;
-            this.label72.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label72.Location = new System.Drawing.Point(17, 263);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(230, 18);
@@ -1880,7 +1855,7 @@
             // 
             this.label71.AutoSize = true;
             this.label71.BackColor = System.Drawing.Color.Transparent;
-            this.label71.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label71.Location = new System.Drawing.Point(701, 199);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(38, 18);
@@ -1903,7 +1878,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label70.Location = new System.Drawing.Point(333, 199);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(48, 18);
@@ -1926,7 +1901,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.BackColor = System.Drawing.Color.Transparent;
-            this.label69.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.Location = new System.Drawing.Point(17, 199);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(62, 18);
@@ -1937,7 +1912,7 @@
             // 
             this.label68.AutoSize = true;
             this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.Location = new System.Drawing.Point(17, 170);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(182, 18);
@@ -1960,7 +1935,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.Location = new System.Drawing.Point(17, 105);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(94, 18);
@@ -1983,7 +1958,7 @@
             // 
             this.label66.AutoSize = true;
             this.label66.BackColor = System.Drawing.Color.Transparent;
-            this.label66.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.Location = new System.Drawing.Point(840, 42);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(155, 18);
@@ -2006,7 +1981,7 @@
             // 
             this.label65.AutoSize = true;
             this.label65.BackColor = System.Drawing.Color.Transparent;
-            this.label65.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label65.Location = new System.Drawing.Point(623, 42);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(160, 18);
@@ -2029,7 +2004,7 @@
             // 
             this.label64.AutoSize = true;
             this.label64.BackColor = System.Drawing.Color.Transparent;
-            this.label64.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label64.Location = new System.Drawing.Point(442, 42);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(123, 18);
@@ -2052,7 +2027,7 @@
             // 
             this.label63.AutoSize = true;
             this.label63.BackColor = System.Drawing.Color.Transparent;
-            this.label63.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label63.Location = new System.Drawing.Point(17, 42);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(99, 18);
@@ -2105,7 +2080,7 @@
             // 
             this.label88.AutoSize = true;
             this.label88.BackColor = System.Drawing.Color.Transparent;
-            this.label88.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label88.Location = new System.Drawing.Point(798, 124);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(125, 18);
@@ -2116,7 +2091,7 @@
             // 
             this.label87.AutoSize = true;
             this.label87.BackColor = System.Drawing.Color.Transparent;
-            this.label87.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.Location = new System.Drawing.Point(253, 127);
             this.label87.Name = "label87";
             this.label87.Size = new System.Drawing.Size(125, 18);
@@ -2140,7 +2115,7 @@
             // 
             this.label86.AutoSize = true;
             this.label86.BackColor = System.Drawing.Color.Transparent;
-            this.label86.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label86.Location = new System.Drawing.Point(19, 412);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(103, 18);
@@ -2164,7 +2139,7 @@
             // 
             this.label85.AutoSize = true;
             this.label85.BackColor = System.Drawing.Color.Transparent;
-            this.label85.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.Location = new System.Drawing.Point(19, 287);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(86, 18);
@@ -2223,7 +2198,7 @@
             // 
             this.label79.AutoSize = true;
             this.label79.BackColor = System.Drawing.Color.Transparent;
-            this.label79.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label79.Location = new System.Drawing.Point(554, 229);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(67, 18);
@@ -2234,7 +2209,7 @@
             // 
             this.label82.AutoSize = true;
             this.label82.BackColor = System.Drawing.Color.Transparent;
-            this.label82.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label82.Location = new System.Drawing.Point(554, 201);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(89, 18);
@@ -2245,7 +2220,7 @@
             // 
             this.label83.AutoSize = true;
             this.label83.BackColor = System.Drawing.Color.Transparent;
-            this.label83.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label83.Location = new System.Drawing.Point(554, 174);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(51, 18);
@@ -2256,7 +2231,7 @@
             // 
             this.label84.AutoSize = true;
             this.label84.BackColor = System.Drawing.Color.Transparent;
-            this.label84.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label84.Location = new System.Drawing.Point(554, 147);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(90, 18);
@@ -2315,7 +2290,7 @@
             // 
             this.label80.AutoSize = true;
             this.label80.BackColor = System.Drawing.Color.Transparent;
-            this.label80.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label80.Location = new System.Drawing.Point(18, 232);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(59, 18);
@@ -2326,7 +2301,7 @@
             // 
             this.label81.AutoSize = true;
             this.label81.BackColor = System.Drawing.Color.Transparent;
-            this.label81.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label81.Location = new System.Drawing.Point(18, 204);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(107, 18);
@@ -2337,7 +2312,7 @@
             // 
             this.label78.AutoSize = true;
             this.label78.BackColor = System.Drawing.Color.Transparent;
-            this.label78.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label78.Location = new System.Drawing.Point(18, 177);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(122, 18);
@@ -2348,7 +2323,7 @@
             // 
             this.label76.AutoSize = true;
             this.label76.BackColor = System.Drawing.Color.Transparent;
-            this.label76.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.Location = new System.Drawing.Point(18, 150);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(86, 18);
@@ -2359,7 +2334,7 @@
             // 
             this.label75.AutoSize = true;
             this.label75.BackColor = System.Drawing.Color.Transparent;
-            this.label75.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.Location = new System.Drawing.Point(19, 89);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(250, 18);
@@ -2382,7 +2357,7 @@
             // 
             this.label77.AutoSize = true;
             this.label77.BackColor = System.Drawing.Color.Transparent;
-            this.label77.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label77.Location = new System.Drawing.Point(554, 27);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(333, 18);
@@ -2405,7 +2380,7 @@
             // 
             this.label74.AutoSize = true;
             this.label74.BackColor = System.Drawing.Color.Transparent;
-            this.label74.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.Location = new System.Drawing.Point(18, 27);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(301, 18);
@@ -2415,6 +2390,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.label62);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -2432,6 +2408,18 @@
             this.label62.Size = new System.Drawing.Size(269, 25);
             this.label62.TabIndex = 0;
             this.label62.Text = "ESTUDIO SOCIOECONOMICO";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(1029, 3);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(46, 39);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // VistaEstudio
             // 
@@ -2534,7 +2522,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox40;
         private System.Windows.Forms.Label label44;
@@ -2642,5 +2630,6 @@
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

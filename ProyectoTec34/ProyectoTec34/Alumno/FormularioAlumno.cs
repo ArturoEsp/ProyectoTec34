@@ -8,70 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Collections;
 
 namespace ProyectoTec34.Alumno
 {
     public partial class FormularioAlumno : Form
     {
-        private SQLiteConnection sqlconn;
-        private SQLiteCommand sqlcmd;
-        private DataTable sqlDT = new DataTable();
-        private DataSet DS = new DataSet();
-        private SQLiteDataAdapter DB;
+     
 
         private string fecha_nacimiento;
-        public List<string> informacionPersonal;
+        private ArrayList Parametros;
         public FormularioAlumno()
-        {
-            if(informacionPersonal == null || informacionPersonal.Count == 0)
-            {
-                LimpiarCampos(this);
-            }
-            else
-            {
-
-            }
-
-            InitializeComponent();
+        {         
+           InitializeComponent();
+            Parametros = new ArrayList();
         }
 
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SetConnection()
-        {
-            sqlconn = new SQLiteConnection(@"Data Source = C:\Users\daniel\source\repos\ArturoEsp\ProyectoTec34\ProyectoTec34\ProyectoTec34\bin\Debug\DatabaseEscTec.db");
-        }
-
-        private void ExecuteQuery(string StudentID)
-        {
-            SetConnection();
-            sqlconn.Open();
-            sqlcmd = sqlconn.CreateCommand();
-            sqlcmd.CommandText = StudentID;
-            sqlcmd.ExecuteNonQuery();
-            sqlcmd.Dispose();
-            sqlconn.Close();
-        }
-
-        private void loadData()
-        {
-            SetConnection();
-            sqlconn.Open();
-            sqlcmd = sqlconn.CreateCommand();
-            string CommandText = "Select * From Estudiante";
-            DB = new SQLiteDataAdapter(CommandText, sqlconn);
-            DS.Reset();
-            DB.Fill(DS);
-            sqlDT = DS.Tables[0];
-            //dataGridView1.DataSource = sqlDT;
-            sqlconn.Close();
-        }
-
-      
-
+        
         void LimpiarCampos(Control con)
         {
             foreach(Control c in con.Controls)
@@ -93,16 +46,46 @@ namespace ProyectoTec34.Alumno
             
         }
 
-        
-
-        private void btnInsertar_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Configuraciones.GenerateID.AlumnoID(tbNombres.Text,tbApellidoPaterno.Text,tbApellidoMaterno.Text));
+            if (string.IsNullOrEmpty(tbNombres.Text) || string.IsNullOrEmpty(tbApellidoMaterno.Text) || string.IsNullOrEmpty(tbApellidoPaterno.Text)
+                || string.IsNullOrEmpty(tbCURP.Text))
+            {
+                MessageBox.Show("Información incompleta." +
+                    "\nPor favor revisa que se escribieron los datos importantes del alumno.","Nuevo alumno",
+                    MessageBoxButtons.OK,MessageBoxIcon.Stop);
+            }
+            else
+            {
+                string IDAlumno = Configuraciones.GenerateID.AlumnoID();
+                string Direccion = tbCalleNumero.Text + ", " + tbColonia.Text + ", " + tbMunicipio.Text + ", " + tbEntidadFederativa.Text + " "+tbCP.Text;
+                string FechaRegistro = DateTime.Now.ToString("yyyy/MM/dd");
+                Parametros.Add(IDAlumno);
+                Parametros.Add(txtGrado.Text);
+                Parametros.Add(txtGrupo.Text);
+                Parametros.Add(tbNombres.Text);
+                Parametros.Add(tbApellidoPaterno.Text);
+                Parametros.Add(tbApellidoMaterno.Text);
+                Parametros.Add(Direccion);
+                Parametros.Add(tbTelefono.Text);
+                Parametros.Add(fecha_nacimiento);
+                Parametros.Add(tbCURP.Text);
+                Parametros.Add(tbTipoSangre.Text);
+                Parametros.Add(tbNacionalidad.Text);
+                Parametros.Add(tbObs.Text);
+                Parametros.Add(FechaRegistro);
+                ScriptSQL.NuevoAlumno(Parametros);
+                if (MessageBox.Show("Alumno registrado correctamente.\n" +
+                    "¿Desea registrar el estudio socioeconomico ahora?","Nuevo alumno",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                }
+                
+            }
+
+            
+           
         }
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -110,9 +93,9 @@ namespace ProyectoTec34.Alumno
             fecha_nacimiento = dateTimePicker.Value.Date.ToString("yyyy/MM/dd");
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+           MessageBox.Show(Configuraciones.GenerateID.AlumnoID());
         }
     }
 }

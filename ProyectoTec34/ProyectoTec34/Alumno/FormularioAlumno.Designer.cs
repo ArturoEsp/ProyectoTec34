@@ -62,6 +62,7 @@
             this.tbCalleNumero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.tbObs = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +105,7 @@
             this.btnSiguiente.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
             this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.Location = new System.Drawing.Point(737, 590);
+            this.btnSiguiente.Location = new System.Drawing.Point(747, 376);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(125, 39);
             this.btnSiguiente.TabIndex = 34;
@@ -435,13 +436,23 @@
             this.btnCancelar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(596, 590);
+            this.btnCancelar.Location = new System.Drawing.Point(609, 376);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(125, 39);
             this.btnCancelar.TabIndex = 44;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // tbObs
+            // 
+            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbObs.Location = new System.Drawing.Point(31, 357);
+            this.tbObs.MaxLength = 18;
+            this.tbObs.Name = "tbObs";
+            this.tbObs.Size = new System.Drawing.Size(249, 26);
+            this.tbObs.TabIndex = 55;
             // 
             // FormularioAlumno
             // 
@@ -449,7 +460,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(884, 641);
+            this.ClientSize = new System.Drawing.Size(884, 427);
+            this.Controls.Add(this.tbObs);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSiguiente);
@@ -462,6 +474,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -499,5 +512,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbMunicipio;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox tbObs;
     }
 }

@@ -15,6 +15,10 @@ namespace ProyectoTec34.Alumno
         public BuscarAlumno()
         {
             InitializeComponent();
+
+            tbBuscar.AutoCompleteCustomSource = ScriptSQL.AutoCompletarBuscar();
+            tbBuscar.AutoCompleteMode = AutoCompleteMode.Suggest;
+            tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
         private void BuscarAlumno_Load(object sender, EventArgs e)

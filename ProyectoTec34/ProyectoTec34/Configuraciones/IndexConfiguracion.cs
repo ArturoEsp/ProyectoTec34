@@ -34,5 +34,11 @@ namespace ProyectoTec34.Configuraciones
             AdministrarUsuarios frm = new AdministrarUsuarios();
             frm.Show();
         }
+
+        private void btnBaseDatos_Click(object sender, EventArgs e)
+        {
+            BaseDeDatos frm = new BaseDeDatos();
+            frm.Show();
+        }
     }
 }
