@@ -112,25 +112,5 @@ namespace ProyectoTec34.Home
             
         }
 
-        private void PanelGrafico_Tick(object sender, EventArgs e)
-        {
-            PanelGrafico.Stop();
-            this.grafico1.Series["Series1"].Points.AddXY("1°A", 8);
-            this.grafico1.Series["Series1"].Points.AddXY("1°B", 9);
-            this.grafico1.Series["Series1"].Points.AddXY("2°A", 10);
-            this.grafico1.Series["Series1"].Points.AddXY("2°B", 10);
-            this.grafico1.Series["Series1"].Points.AddXY("3°A", 9.5);
-            this.grafico1.Series["Series1"].Points.AddXY("3°B", 8.5);
-        }
-
-        private void PanelGrafico2_Tick(object sender, EventArgs e)
-        {
-            PanelGrafico2.Stop();
-            this.grafico2.Series["Series1"].Points.AddXY("Matematicas",15);
-            this.grafico2.Series["Series1"].Points.AddXY("Inglés", 10);
-            this.grafico2.Series["Series1"].Points.AddXY("Historia", 15);
-            this.grafico2.Series["Series1"].Points.AddXY("Química", 12);
-            this.grafico2.Series["Series1"].Points.AddXY("Física", 13);
-        }
     }
 }
