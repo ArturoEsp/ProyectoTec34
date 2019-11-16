@@ -103,6 +103,12 @@
     <Compile Include="Alumno\BuscarAlumno.Designer.cs">
       <DependentUpon>BuscarAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\BuscarAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\BuscarAlumnos.Designer.cs">
+      <DependentUpon>BuscarAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\BuscarEstudioS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,11 +127,23 @@
     <Compile Include="Alumno\FormularioAlumno.Designer.cs">
       <DependentUpon>FormularioAlumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alumno\FormularioBoletas.cs">
+    <Compile Include="Alumno\FormularioBoleta2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alumno\FormularioBoletas.Designer.cs">
-      <DependentUpon>FormularioBoletas.cs</DependentUpon>
+    <Compile Include="Alumno\FormularioBoleta2.Designer.cs">
+      <DependentUpon>FormularioBoleta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FormularioBoleta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FormularioBoleta1.Designer.cs">
+      <DependentUpon>FormularioBoleta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FormularioBoleta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FormularioBoleta3.Designer.cs">
+      <DependentUpon>FormularioBoleta3.cs</DependentUpon>
     </Compile>
     <Compile Include="Alumno\IndexAlumnos.cs">
       <SubType>Form</SubType>
@@ -216,6 +234,9 @@
     <EmbeddedResource Include="Alumno\BuscarAlumno.resx">
       <DependentUpon>BuscarAlumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\BuscarAlumnos.resx">
+      <DependentUpon>BuscarAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alumno\BuscarEstudioS.resx">
       <DependentUpon>BuscarEstudioS.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,8 +246,14 @@
     <EmbeddedResource Include="Alumno\FormularioAlumno.resx">
       <DependentUpon>FormularioAlumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alumno\FormularioBoletas.resx">
-      <DependentUpon>FormularioBoletas.cs</DependentUpon>
+    <EmbeddedResource Include="Alumno\FormularioBoleta2.resx">
+      <DependentUpon>FormularioBoleta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FormularioBoleta1.resx">
+      <DependentUpon>FormularioBoleta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FormularioBoleta3.resx">
+      <DependentUpon>FormularioBoleta3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\IndexAlumnos.resx">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>

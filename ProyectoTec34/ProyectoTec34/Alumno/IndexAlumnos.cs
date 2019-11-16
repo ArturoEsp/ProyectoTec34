@@ -25,7 +25,7 @@ namespace ProyectoTec34.Alumno
 
         private void btnIngresarCalif_Click(object sender, EventArgs e)
         {
-            FormularioBoletas frm = new FormularioBoletas();
+            BuscarAlumnos frm = new BuscarAlumnos();
             frm.Show();
         }
 

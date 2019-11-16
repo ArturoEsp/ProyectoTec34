@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTec34.Alumno
 {
-    public partial class FormularioBoletas : Form
+    public partial class FormularioBoleta2 : Form
     {
-        public FormularioBoletas()
+        public FormularioBoleta2()
         {
             InitializeComponent();
         }
