@@ -39,15 +39,24 @@ namespace ProyectoTec34.Alumno
             }
         }
 
-        private static DataTable DatosAutoCompleteBuscar()
+        private static string IDAlumno;
+        private static void setIDAlumno(string ID)
+        {
+            IDAlumno = ID;
+        }
+
+        public static string getIDAlumno()
+        {
+            return IDAlumno;
+        }
+
+
+
+        public static DataTable DatosAutoCompleteBuscar()
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-               
-
-
-
-               string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno as FullName FROM Alumno ORDER BY Nombre";
+                string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno as FullName,ID_Alumno FROM Alumno ORDER BY Nombre";
                 SQLiteCommand com = new SQLiteCommand(query, conn);
 
                 SQLiteDataAdapter ad = new SQLiteDataAdapter(com);
@@ -67,9 +76,30 @@ namespace ProyectoTec34.Alumno
             foreach (DataRow row in dt.Rows)
             {
                 sc.Add(Convert.ToString(row["FullName"]));
-              
+                setIDAlumno(Convert.ToString(row["ID_Alumno"]));
             }
             return sc;
+        }
+
+        public static void MostrarBoletaPrimer(string ID, Form frm, TextBox CURP, TextBox Grupo, TextBox Turno)
+        {
+
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                string sql = "SELECT CURP,Grupo,Turno WHERE ID_Alumno = @ID";
+                SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@ID", ID);
+
+                SQLiteDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    CURP.Text = reader[0].ToString();
+                    Grupo.Text = reader[1].ToString();
+                    Turno.Text = reader[2].ToString();
+                }
+
+            }
         }
     }
 }

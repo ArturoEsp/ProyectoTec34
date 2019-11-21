@@ -5,6 +5,7 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoTec34.Login
 {
@@ -31,6 +32,15 @@ namespace ProyectoTec34.Login
                 else
                     return true;
             }
+        }
+
+        public static void AutoCloseLogin(int Segundos)
+        {
+            if (Segundos == 30)
+            {
+                Application.Exit();
+            }
+            
         }
 
         //public static DataTable prConsultaUsuario(string usuario, string password)
