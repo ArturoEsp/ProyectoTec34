@@ -16,5 +16,19 @@ namespace ProyectoTec34.Alumno
         {
             InitializeComponent();
         }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            BoletaTercerAño frm = new BoletaTercerAño();
+            frm.Show();
+            this.Close();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            BoletaPrimerAño frm = new BoletaPrimerAño();
+            frm.Show();
+            this.Close();
+        }
     }
 }

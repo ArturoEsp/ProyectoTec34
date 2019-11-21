@@ -15,6 +15,9 @@ namespace ProyectoTec34.Alumno
         public BuscarAlumnos()
         {
             InitializeComponent();
+            tbBuscar.AutoCompleteCustomSource = ScriptSQL.AutoCompletarBuscar();
+            tbBuscar.AutoCompleteMode = AutoCompleteMode.Suggest;
+            tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
         private void btnPrimerBoleta_Click(object sender, EventArgs e)
@@ -34,5 +37,6 @@ namespace ProyectoTec34.Alumno
             FormularioBoleta3 frm = new FormularioBoleta3();
             frm.Show();
         }
+
     }
 }

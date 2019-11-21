@@ -25,7 +25,6 @@ namespace ProyectoTec34.Alumno
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            
             BoletaSegundoAño frm = new BoletaSegundoAño();
             frm.Show();
             this.Close();
