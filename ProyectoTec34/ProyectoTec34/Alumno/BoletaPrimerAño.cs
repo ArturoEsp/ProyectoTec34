@@ -13,9 +13,10 @@ namespace ProyectoTec34.Alumno
 {
     public partial class BoletaPrimerAño : Form
     {
-        public BoletaPrimerAño()
+        public BoletaPrimerAño(string NombreAlumno)
         {
             InitializeComponent();
+            
         }
 
         private void BoletaPrimerAño_Load(object sender, EventArgs e)

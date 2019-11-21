@@ -21,25 +21,11 @@ namespace ProyectoTec34.Alumno
         public FormularioAlumno()
         {         
            InitializeComponent();
-            Parametros = new ArrayList();
+           Parametros = new ArrayList();
         }
 
         
-        void LimpiarCampos(Control con)
-        {
-            foreach(Control c in con.Controls)
-            {
-                if (c is TextBox)
-                    ((TextBox)c).Clear();
-                else
-                    LimpiarCampos(c);
-            }
-        }
-
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            LimpiarCampos(this);
-        }
+        
 
         private void FormularioAlumno_Load(object sender, EventArgs e)
         {
@@ -79,7 +65,12 @@ namespace ProyectoTec34.Alumno
                 if (MessageBox.Show("Alumno registrado correctamente.\n" +
                     "¿Desea registrar el estudio socioeconomico ahora?","Nuevo alumno",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-
+                    Configuraciones.ClearControls.LimpiarCampos(this);
+                }
+                else
+                {
+                    MessageBox.Show("Alumno registrado CORRECTAMENTE.","Alumno",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    Configuraciones.ClearControls.LimpiarCampos(this);
                 }
                 
             }
@@ -95,7 +86,10 @@ namespace ProyectoTec34.Alumno
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-           MessageBox.Show(Configuraciones.GenerateID.AlumnoID());
+            //MessageBox.Show(Configuraciones.GenerateID.AlumnoID());
+            Configuraciones.ClearControls.LimpiarCampos(this);
         }
+
+      
     }
 }

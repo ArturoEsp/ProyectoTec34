@@ -48,7 +48,8 @@ namespace ProyectoTec34.Login
             if (tbUsuario.Text == Usuario && tbPassword.Text == Password)
             {
                 this.Hide();
-                Home.Index frm = new Home.Index();
+                Home.Index frm = new Home.Index(Usuario);
+                timer.Enabled = false;
                 frm.Show();
             }
             else
@@ -94,6 +95,12 @@ namespace ProyectoTec34.Login
             ControlPaint.DrawBorder(e.Graphics, this.pnlUser.ClientRectangle, Color.Gray, ButtonBorderStyle.Solid);
         }
 
-        
+        private int Segundos;
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            Segundos += 1;
+            LoginService.AutoCloseLogin(Segundos);
+            
+        }
     }
 }

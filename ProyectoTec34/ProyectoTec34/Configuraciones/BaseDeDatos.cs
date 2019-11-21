@@ -20,8 +20,13 @@ namespace ProyectoTec34.Configuraciones
 
         private void respaldaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Respaldo frm = new Respaldo();
-            frm.ShowDialog();
+            if (MessageBox.Show("¿Desea realizar el respaldo de la BASE DE DATOS?","Respaldo",
+                MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Respaldo frm = new Respaldo();
+                frm.ShowDialog();
+            }
+            
         }
     }
 }

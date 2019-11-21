@@ -89,8 +89,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Respaldo";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Respaldo";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

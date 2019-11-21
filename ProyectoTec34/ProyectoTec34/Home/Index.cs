@@ -14,9 +14,11 @@ namespace ProyectoTec34.Home
 {
     public partial class Index : Form
     {
-        public Index()
+        public Index(string Usuario)
         {
             InitializeComponent();
+            lblUsuario.Text = Usuario;
+            //Configuraciones.BackupAutomatic.Backup();
       
         }
         TimeSpan _elapsed = new TimeSpan();
@@ -56,6 +58,8 @@ namespace ProyectoTec34.Home
         {
             Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno();
             btnBuscar.BackColor = Color.FromArgb(183, 190, 188);
+            btnAlumnos.BackColor = Color.Transparent;
+            btnConf.BackColor = Color.Transparent;
             frm.ShowDialog();
             
         }
@@ -64,6 +68,8 @@ namespace ProyectoTec34.Home
         {
             AbrirFormHijo(new Alumno.IndexAlumnos());
             btnAlumnos.BackColor = Color.FromArgb(183, 190, 188);
+            btnConf.BackColor = Color.Transparent;
+            btnBuscar.BackColor = Color.Transparent;
         }
 
 
@@ -85,27 +91,19 @@ namespace ProyectoTec34.Home
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+     
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
+     
 
         private void btnConf_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new Configuraciones.IndexConfiguracion());
             btnConf.BackColor = Color.FromArgb(183, 190, 188);
+            btnBuscar.BackColor = Color.Transparent;
+            btnAlumnos.BackColor = Color.Transparent;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-             
-        }
+    
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
