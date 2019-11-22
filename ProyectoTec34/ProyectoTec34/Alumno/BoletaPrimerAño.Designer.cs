@@ -37,8 +37,8 @@
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNombreAlumno = new System.Windows.Forms.TextBox();
+            this.tbCURP = new System.Windows.Forms.TextBox();
             this.pnlCalificaciones = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -68,8 +68,8 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbGrupo = new System.Windows.Forms.TextBox();
+            this.tbTurno = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -183,31 +183,31 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "NOMBRE COMPLETO";
             // 
-            // textBox1
+            // tbNombreAlumno
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(20, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(351, 21);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "ESPINOZA HERRERA ARTURO";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNombreAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNombreAlumno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombreAlumno.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreAlumno.Location = new System.Drawing.Point(20, 60);
+            this.tbNombreAlumno.Name = "tbNombreAlumno";
+            this.tbNombreAlumno.ReadOnly = true;
+            this.tbNombreAlumno.Size = new System.Drawing.Size(351, 21);
+            this.tbNombreAlumno.TabIndex = 6;
+            this.tbNombreAlumno.Text = "ESPINOZA HERRERA ARTURO";
+            this.tbNombreAlumno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // tbCURP
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(384, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(147, 17);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "LEGO060218HMSYLSA1";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCURP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbCURP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbCURP.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCURP.Location = new System.Drawing.Point(384, 64);
+            this.tbCURP.Name = "tbCURP";
+            this.tbCURP.ReadOnly = true;
+            this.tbCURP.Size = new System.Drawing.Size(147, 17);
+            this.tbCURP.TabIndex = 7;
+            this.tbCURP.Text = "LEGO060218HMSYLSA1";
+            this.tbCURP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pnlCalificaciones
             // 
@@ -646,31 +646,31 @@
             this.label20.TabIndex = 10;
             this.label20.Text = "TURNO";
             // 
-            // textBox3
+            // tbGrupo
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(321, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(69, 17);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "A";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbGrupo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbGrupo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbGrupo.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGrupo.Location = new System.Drawing.Point(321, 108);
+            this.tbGrupo.Name = "tbGrupo";
+            this.tbGrupo.ReadOnly = true;
+            this.tbGrupo.Size = new System.Drawing.Size(69, 17);
+            this.tbGrupo.TabIndex = 11;
+            this.tbGrupo.Text = "A";
+            this.tbGrupo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // tbTurno
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(445, 108);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(69, 17);
-            this.textBox4.TabIndex = 12;
-            this.textBox4.Text = "MATUTINO";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTurno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTurno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTurno.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTurno.Location = new System.Drawing.Point(445, 108);
+            this.tbTurno.Name = "tbTurno";
+            this.tbTurno.ReadOnly = true;
+            this.tbTurno.Size = new System.Drawing.Size(69, 17);
+            this.tbTurno.TabIndex = 12;
+            this.tbTurno.Text = "MATUTINO";
+            this.tbTurno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel8
             // 
@@ -817,13 +817,13 @@
             this.ClientSize = new System.Drawing.Size(594, 638);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.tableLayoutPanel8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbTurno);
+            this.Controls.Add(this.tbGrupo);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.pnlCalificaciones);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCURP);
+            this.Controls.Add(this.tbNombreAlumno);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -869,8 +869,8 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNombreAlumno;
+        private System.Windows.Forms.TextBox tbCURP;
         private System.Windows.Forms.TableLayoutPanel pnlCalificaciones;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label3;
@@ -893,8 +893,8 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbGrupo;
+        private System.Windows.Forms.TextBox tbTurno;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label CalifLM3;
         private System.Windows.Forms.Label CalifLM2;

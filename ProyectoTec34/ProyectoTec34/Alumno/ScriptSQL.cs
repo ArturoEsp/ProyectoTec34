@@ -39,16 +39,10 @@ namespace ProyectoTec34.Alumno
             }
         }
 
-        private static string IDAlumno;
-        private static void setIDAlumno(string ID)
-        {
-            IDAlumno = ID;
-        }
+        //public static string getIDAlumno(string NombreCompleto)
+        //{
 
-        public static string getIDAlumno()
-        {
-            return IDAlumno;
-        }
+        //}
 
 
 
@@ -75,28 +69,29 @@ namespace ProyectoTec34.Alumno
 
             foreach (DataRow row in dt.Rows)
             {
-                sc.Add(Convert.ToString(row["FullName"]));
-                setIDAlumno(Convert.ToString(row["ID_Alumno"]));
+                sc.Add(Convert.ToString(row["FullName"]));              
             }
             return sc;
         }
 
-        public static void MostrarBoletaPrimer(string ID, Form frm, TextBox CURP, TextBox Grupo, TextBox Turno)
+        public static void MostrarBoletaPrimer(string ID, TextBox Nombre, TextBox CURP, TextBox Grupo)
         {
 
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
                 conn.Open();
-                string sql = "SELECT CURP,Grupo,Turno WHERE ID_Alumno = @ID";
+                string sql = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno as FullName," +
+                    "CURP,Grupo FROM Alumno WHERE ID_Alumno = @ID";
                 SQLiteCommand cmd = new SQLiteCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@ID", ID);
 
                 SQLiteDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    CURP.Text = reader[0].ToString();
-                    Grupo.Text = reader[1].ToString();
-                    Turno.Text = reader[2].ToString();
+                    Nombre.Text = reader[0].ToString();
+                    CURP.Text = reader[1].ToString();
+                    Grupo.Text = reader[2].ToString();
+                   
                 }
 
             }

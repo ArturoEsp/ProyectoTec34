@@ -13,10 +13,10 @@ namespace ProyectoTec34.Alumno
 {
     public partial class BoletaPrimerAño : Form
     {
-        public BoletaPrimerAño(string NombreAlumno)
+        public BoletaPrimerAño(string IDAlumno)
         {
             InitializeComponent();
-            
+            ScriptSQL.MostrarBoletaPrimer(IDAlumno,tbNombreAlumno,tbCURP,tbGrupo);
         }
 
         private void BoletaPrimerAño_Load(object sender, EventArgs e)
