@@ -41,6 +41,7 @@ namespace ProyectoTec34.Alumno
 
         //public static string getIDAlumno(string NombreCompleto)
         //{
+        //    string query = "SELECT ID_Alumno FROM Alumno WHERE ";
 
         //}
 
@@ -50,7 +51,7 @@ namespace ProyectoTec34.Alumno
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-                string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno as FullName,ID_Alumno FROM Alumno ORDER BY Nombre";
+                string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno || ' ' || ID_Alumno as FullName FROM Alumno ORDER BY Nombre";
                 SQLiteCommand com = new SQLiteCommand(query, conn);
 
                 SQLiteDataAdapter ad = new SQLiteDataAdapter(com);
@@ -69,7 +70,7 @@ namespace ProyectoTec34.Alumno
 
             foreach (DataRow row in dt.Rows)
             {
-                sc.Add(Convert.ToString(row["FullName"]));              
+                sc.Add(Convert.ToString(row["FullName"]));               
             }
             return sc;
         }
