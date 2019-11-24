@@ -46,8 +46,7 @@ namespace ProyectoTec34.Alumno
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            //BoletaPrimerAño frm = new BoletaPrimerAño(ScriptSQL.getIDAlumno());
-            //frm.Show();
+            ScriptSQL.getIDAlumno(tbBuscar.Text);
 
         }
     }

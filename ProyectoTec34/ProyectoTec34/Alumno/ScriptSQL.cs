@@ -39,11 +39,21 @@ namespace ProyectoTec34.Alumno
             }
         }
 
-        //public static string getIDAlumno(string NombreCompleto)
-        //{
-        //    string query = "SELECT ID_Alumno FROM Alumno WHERE ";
-
-        //}
+        public static string getIDAlumno(string NombreCompleto)
+        {
+            string ID;
+            string query = "SELECT ID_Alumno FROM Alumno WHERE Nombre = @Nombre";
+            // string query = "SELECT ID_Alumno FROM Alumno WHERE Nombre LIKE '" + NombreCompleto + "%' AND" +
+            //    " ApellidoPaterno LIKE '" + NombreCompleto + "%'; ";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query,conn);
+                cmd.Parameters.AddWithValue("@Nombre",NombreCompleto);
+                ID = cmd.ExecuteScalar().ToString();
+            }
+            return ID;
+        }
 
 
 
@@ -51,7 +61,8 @@ namespace ProyectoTec34.Alumno
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-                string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno || ' ' || ID_Alumno as FullName FROM Alumno ORDER BY Nombre";
+                //string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno as FullName FROM Alumno ORDER BY Nombre";
+                string query = "SELECT Nombre FROM Alumno Order By Nombre";
                 SQLiteCommand com = new SQLiteCommand(query, conn);
 
                 SQLiteDataAdapter ad = new SQLiteDataAdapter(com);
@@ -70,7 +81,7 @@ namespace ProyectoTec34.Alumno
 
             foreach (DataRow row in dt.Rows)
             {
-                sc.Add(Convert.ToString(row["FullName"]));               
+                sc.Add(Convert.ToString(row["FullName"]));
             }
             return sc;
         }
@@ -92,7 +103,7 @@ namespace ProyectoTec34.Alumno
                     Nombre.Text = reader[0].ToString();
                     CURP.Text = reader[1].ToString();
                     Grupo.Text = reader[2].ToString();
-                   
+
                 }
 
             }

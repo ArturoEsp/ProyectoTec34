@@ -26,9 +26,9 @@ namespace ProyectoTec34.Alumno
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            BoletaPrimerAño frm = new BoletaPrimerAño();
-            frm.Show();
-            this.Close();
+            //BoletaPrimerAño frm = new BoletaPrimerAño();
+            //frm.Show();
+            //this.Close();
         }
     }
 }
