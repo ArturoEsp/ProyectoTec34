@@ -71,6 +71,21 @@ namespace ProyectoTec34.Configuraciones
             }
         }
 
+        public static BindingSource MostrarUsuarios()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteDataAdapter da;
+                DataTable dt = new DataTable();
+                da = new SQLiteDataAdapter("SELECT ID_Usuario as 'ID', Username as 'Usuario',Mode as 'Privilegios'  FROM Usuarios", conn);
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.Fill(dt);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dt;
+                return bSource;
+            }
+        }
+
         public static BindingSource MostrarBD()
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))

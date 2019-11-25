@@ -16,7 +16,7 @@ namespace ProyectoTec34.Alumno
         public BoletaPrimerAño(string IDAlumno)
         {
             InitializeComponent();
-            ScriptSQL.MostrarBoletaPrimer(IDAlumno,tbNombreAlumno,tbCURP,tbGrupo);
+            ScriptSQL.MostrarBoletaPrimer(IDAlumno,tbNombreAlumno,tbCURP,tbGrupo,tbTurno);
         }
 
         private void BoletaPrimerAño_Load(object sender, EventArgs e)

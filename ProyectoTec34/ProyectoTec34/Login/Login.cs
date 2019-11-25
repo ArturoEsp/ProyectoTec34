@@ -55,6 +55,7 @@ namespace ProyectoTec34.Login
                 Logs.Log.CrearLog("El usuario " + tbUsuario.Text + " inicio sesión.");
                 
             }
+            
             else
             {
                 MessageBox.Show("Usuario / Costraseña incorrecta." +

@@ -18,6 +18,14 @@ namespace ProyectoTec34.Home
         {
             InitializeComponent();
             lblUsuario.Text = Usuario;
+            if (Database.DatabaseRepository.CheckFileDatabase() == false)
+            {
+                do
+                {
+                    MessageBox.Show("La base de datos no se ha encontrado en la siguiente ruta. \n" +
+                    @"C:\Database Tec34\DatabaseEscTec.db", "Sistema Administrativo para la Gestión de Alumnos");
+                } while (Database.DatabaseRepository.CheckFileDatabase() == false);
+            }
             //Configuraciones.BackupAutomatic.Backup();
       
         }

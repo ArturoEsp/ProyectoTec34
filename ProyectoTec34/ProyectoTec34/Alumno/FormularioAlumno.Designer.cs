@@ -41,6 +41,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbTurno = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tbCP = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,6 +65,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.tbObs = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +78,7 @@
             "1",
             "2",
             "3"});
-            this.txtGrado.Location = new System.Drawing.Point(683, 50);
+            this.txtGrado.Location = new System.Drawing.Point(583, 50);
             this.txtGrado.Name = "txtGrado";
             this.txtGrado.Size = new System.Drawing.Size(61, 24);
             this.txtGrado.TabIndex = 4;
@@ -92,7 +95,7 @@
             "D",
             "E",
             "F"});
-            this.txtGrupo.Location = new System.Drawing.Point(761, 50);
+            this.txtGrupo.Location = new System.Drawing.Point(661, 50);
             this.txtGrupo.Name = "txtGrupo";
             this.txtGrupo.Size = new System.Drawing.Size(61, 24);
             this.txtGrupo.TabIndex = 5;
@@ -140,7 +143,7 @@
             this.tbApellidoPaterno.Location = new System.Drawing.Point(230, 50);
             this.tbApellidoPaterno.MaxLength = 40;
             this.tbApellidoPaterno.Name = "tbApellidoPaterno";
-            this.tbApellidoPaterno.Size = new System.Drawing.Size(210, 26);
+            this.tbApellidoPaterno.Size = new System.Drawing.Size(165, 26);
             this.tbApellidoPaterno.TabIndex = 2;
             // 
             // label25
@@ -157,10 +160,10 @@
             // tbApellidoMaterno
             // 
             this.tbApellidoMaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbApellidoMaterno.Location = new System.Drawing.Point(446, 50);
+            this.tbApellidoMaterno.Location = new System.Drawing.Point(405, 50);
             this.tbApellidoMaterno.MaxLength = 40;
             this.tbApellidoMaterno.Name = "tbApellidoMaterno";
-            this.tbApellidoMaterno.Size = new System.Drawing.Size(210, 26);
+            this.tbApellidoMaterno.Size = new System.Drawing.Size(165, 26);
             this.tbApellidoMaterno.TabIndex = 3;
             // 
             // label26
@@ -168,7 +171,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DimGray;
-            this.label26.Location = new System.Drawing.Point(443, 29);
+            this.label26.Location = new System.Drawing.Point(402, 29);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(111, 18);
             this.label26.TabIndex = 40;
@@ -179,7 +182,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(680, 29);
+            this.label22.Location = new System.Drawing.Point(580, 29);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(45, 18);
             this.label22.TabIndex = 41;
@@ -190,7 +193,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.DimGray;
-            this.label23.Location = new System.Drawing.Point(758, 29);
+            this.label23.Location = new System.Drawing.Point(658, 29);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(46, 18);
             this.label23.TabIndex = 42;
@@ -198,6 +201,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.cbTurno);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.tbCP);
             this.groupBox1.Controls.Add(this.label9);
@@ -235,6 +240,30 @@
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del alumno";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.Location = new System.Drawing.Point(732, 29);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 18);
+            this.label11.TabIndex = 67;
+            this.label11.Text = "Turno";
+            // 
+            // cbTurno
+            // 
+            this.cbTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTurno.FormattingEnabled = true;
+            this.cbTurno.Items.AddRange(new object[] {
+            "MATUTINO",
+            "VESPERTINO"});
+            this.cbTurno.Location = new System.Drawing.Point(735, 50);
+            this.cbTurno.Name = "cbTurno";
+            this.cbTurno.Size = new System.Drawing.Size(61, 24);
+            this.cbTurno.TabIndex = 66;
             // 
             // label10
             // 
@@ -311,6 +340,7 @@
             this.tbNacionalidad.Name = "tbNacionalidad";
             this.tbNacionalidad.Size = new System.Drawing.Size(220, 26);
             this.tbNacionalidad.TabIndex = 58;
+            this.tbNacionalidad.Text = "Mexicana";
             // 
             // label6
             // 
@@ -448,11 +478,22 @@
             // tbObs
             // 
             this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbObs.Location = new System.Drawing.Point(31, 357);
+            this.tbObs.Location = new System.Drawing.Point(17, 376);
             this.tbObs.MaxLength = 18;
             this.tbObs.Name = "tbObs";
-            this.tbObs.Size = new System.Drawing.Size(249, 26);
+            this.tbObs.Size = new System.Drawing.Size(474, 26);
             this.tbObs.TabIndex = 55;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(14, 355);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 18);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "Observaciones";
             // 
             // FormularioAlumno
             // 
@@ -461,6 +502,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(884, 427);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.tbObs);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
@@ -513,5 +555,8 @@
         private System.Windows.Forms.TextBox tbMunicipio;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox tbObs;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cbTurno;
+        private System.Windows.Forms.Label label12;
     }
 }

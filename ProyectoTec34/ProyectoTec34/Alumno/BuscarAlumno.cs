@@ -12,6 +12,8 @@ namespace ProyectoTec34.Alumno
 {
     public partial class BuscarAlumno : Form
     {
+        public string ID_Alumno;
+
         public BuscarAlumno()
         {
             InitializeComponent();
@@ -46,7 +48,9 @@ namespace ProyectoTec34.Alumno
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            ScriptSQL.getIDAlumno(tbBuscar.Text);
+            ID_Alumno = ScriptSQL.getIDAlumno(tbBuscar.Text);
+            BoletaPrimerAño frm = new BoletaPrimerAño(ID_Alumno);
+            frm.Show();
 
         }
     }
