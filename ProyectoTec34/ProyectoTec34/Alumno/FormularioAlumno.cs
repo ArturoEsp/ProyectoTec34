@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
 using System.Collections;
+using Logs;
 
 namespace ProyectoTec34.Alumno
 {
@@ -29,12 +22,15 @@ namespace ProyectoTec34.Alumno
 
         private void FormularioAlumno_Load(object sender, EventArgs e)
         {
-            
+            tbMunicipio.AutoCompleteCustomSource = ScriptSQL.AutoCompletarBuscarMunicipio();
+            tbMunicipio.AutoCompleteMode = AutoCompleteMode.Suggest;
+            tbMunicipio.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+            string IDAlumno = Configuraciones.GenerateID.AlumnoID();
             if (string.IsNullOrEmpty(tbNombres.Text) || string.IsNullOrEmpty(tbApellidoMaterno.Text) || string.IsNullOrEmpty(tbApellidoPaterno.Text)
                 || string.IsNullOrEmpty(tbCURP.Text))
             {
@@ -44,15 +40,15 @@ namespace ProyectoTec34.Alumno
             }
             else
             {
-                string IDAlumno = Configuraciones.GenerateID.AlumnoID();
+                
                 string Direccion = tbCalleNumero.Text + ", " + tbColonia.Text + ", " + tbMunicipio.Text + ", " + tbEntidadFederativa.Text + " "+tbCP.Text;
                 string FechaRegistro = DateTime.Now.ToString("yyyy/MM/dd");
+                string NombreCompleto = tbNombres.Text + " " + tbApellidoPaterno.Text + " " + tbApellidoMaterno.Text;
                 Parametros.Add(IDAlumno);
                 Parametros.Add(txtGrado.Text);
                 Parametros.Add(txtGrupo.Text);
-                Parametros.Add(tbNombres.Text);
-                Parametros.Add(tbApellidoPaterno.Text);
-                Parametros.Add(tbApellidoMaterno.Text);
+                Parametros.Add(cbTurno.Text);
+                Parametros.Add(NombreCompleto);               
                 Parametros.Add(Direccion);
                 Parametros.Add(tbTelefono.Text);
                 Parametros.Add(fecha_nacimiento);
@@ -66,15 +62,18 @@ namespace ProyectoTec34.Alumno
                     "¿Desea registrar el estudio socioeconomico ahora?","Nuevo alumno",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Configuraciones.ClearControls.LimpiarCampos(this);
+                    Logs.Log.CrearLog("Se registro el alumno: "+NombreCompleto);
                 }
                 else
                 {
                     MessageBox.Show("Alumno registrado CORRECTAMENTE.","Alumno",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     Configuraciones.ClearControls.LimpiarCampos(this);
+                    Logs.Log.CrearLog("Se registro el alumno: " + NombreCompleto);
                 }
                 
             }
 
+            IDAlumno = String.Empty;
             
            
         }
@@ -86,10 +85,8 @@ namespace ProyectoTec34.Alumno
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(Configuraciones.GenerateID.AlumnoID());
+            
             Configuraciones.ClearControls.LimpiarCampos(this);
         }
-
-      
     }
 }

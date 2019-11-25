@@ -12,7 +12,7 @@ namespace ProyectoTec34.Alumno
 {
     public partial class VistaEstudio : Form
     {
-        public VistaEstudio(/*string IDAlumno*/)
+        public VistaEstudio()
         {
             InitializeComponent();
         }

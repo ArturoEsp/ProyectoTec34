@@ -21,6 +21,7 @@ namespace ProyectoTec34.Configuraciones
             cbPrivilegios.Items.Add("Normal");
             Fecha = DateTime.Now;
             lblFechaRegistro.Text = Fecha.ToString("dd MMMM yyyy HH:mm");
+            dgvDatos.DataSource = ScriptSQL.MostrarUsuarios();
         }
 
         private void tbUsername_TextChanged(object sender, EventArgs e)
@@ -40,7 +41,7 @@ namespace ProyectoTec34.Configuraciones
                 string Password = tbPassword.Text;
                 string PasswordEncryp = Login.Encryp.EncodePassword(string.Concat(Username, Password));
                 ScriptSQL.NuevoUsuario(tbIDUser.Text,Username,PasswordEncryp,cbPrivilegios.Text);
-                MessageBox.Show("¡Usuario registrado con exito!","Nuevo usuario",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                MessageBox.Show("¡Usuario registrado con exito!","Nuevo usuario",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 tbIDUser.Text = "";
                 tbUsername.Text = "";
                 tbPassword.Text = "";
