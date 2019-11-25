@@ -20,21 +20,26 @@ namespace ProyectoTec34.Alumno
             tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
+        
+
         private void btnPrimerBoleta_Click(object sender, EventArgs e)
         {
-            FormularioBoleta1 frm = new FormularioBoleta1();
+            string Estudiante = tbBuscar.Text;
+            FormularioBoleta1 frm = new FormularioBoleta1(Estudiante);
             frm.Show();
         }
 
         private void btnSegBoleta_Click(object sender, EventArgs e)
         {
-            FormularioBoleta2 frm = new FormularioBoleta2();
+            string Estudiante = tbBuscar.Text;
+            FormularioBoleta2 frm = new FormularioBoleta2(Estudiante);
             frm.Show();
         }
 
         private void btnTercerBoleta_Click(object sender, EventArgs e)
         {
-            FormularioBoleta3 frm = new FormularioBoleta3();
+            string Estudiante = tbBuscar.Text;
+            FormularioBoleta3 frm = new FormularioBoleta3(Estudiante);
             frm.Show();
         }
 

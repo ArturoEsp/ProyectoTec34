@@ -51,7 +51,7 @@ namespace ProyectoTec34.Alumno
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-                string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno || ' ' || ID_Alumno as FullName FROM Alumno ORDER BY Nombre";
+                string query = "SELECT Nombre || ' ' || ApellidoPaterno || ' ' || ApellidoMaterno as FullName FROM Alumno ORDER BY Nombre";
                 SQLiteCommand com = new SQLiteCommand(query, conn);
 
                 SQLiteDataAdapter ad = new SQLiteDataAdapter(com);
