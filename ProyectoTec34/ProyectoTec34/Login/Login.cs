@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logs;
 
 namespace ProyectoTec34.Login
 {
@@ -51,6 +52,8 @@ namespace ProyectoTec34.Login
                 Home.Index frm = new Home.Index(Usuario);
                 timer.Enabled = false;
                 frm.Show();
+                Logs.Log.CrearLog("El usuario " + tbUsuario.Text + " inicio sesión.");
+                
             }
             else
             {
