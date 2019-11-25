@@ -108,9 +108,8 @@
             this.lbNombre.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.Location = new System.Drawing.Point(58, 67);
             this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(277, 26);
+            this.lbNombre.Size = new System.Drawing.Size(0, 26);
             this.lbNombre.TabIndex = 50;
-            this.lbNombre.Text = "Victor Daniel Andaya Tabarez";
             // 
             // pnlCalificaciones
             // 

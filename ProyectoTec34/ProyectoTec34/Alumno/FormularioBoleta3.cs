@@ -12,9 +12,10 @@ namespace ProyectoTec34.Alumno
 {
     public partial class FormularioBoleta3 : Form
     {
-        public FormularioBoleta3()
+        public FormularioBoleta3(string Estudiante)
         {
             InitializeComponent();
+            lbNombre.Text = Estudiante;
         }
     }
 }
