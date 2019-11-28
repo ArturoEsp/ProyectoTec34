@@ -93,7 +93,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlCalificaciones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -493,6 +493,7 @@
             this.tbArtes3.Name = "tbArtes3";
             this.tbArtes3.Size = new System.Drawing.Size(78, 23);
             this.tbArtes3.TabIndex = 26;
+            this.tbArtes3.Text = "0.0";
             this.tbArtes3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbArtes2
@@ -502,6 +503,7 @@
             this.tbArtes2.Name = "tbArtes2";
             this.tbArtes2.Size = new System.Drawing.Size(78, 23);
             this.tbArtes2.TabIndex = 25;
+            this.tbArtes2.Text = "0.0";
             this.tbArtes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbArtes1
@@ -511,6 +513,7 @@
             this.tbArtes1.Name = "tbArtes1";
             this.tbArtes1.Size = new System.Drawing.Size(78, 23);
             this.tbArtes1.TabIndex = 24;
+            this.tbArtes1.Text = "0.0";
             this.tbArtes1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEF3
@@ -520,6 +523,7 @@
             this.tbEF3.Name = "tbEF3";
             this.tbEF3.Size = new System.Drawing.Size(78, 23);
             this.tbEF3.TabIndex = 23;
+            this.tbEF3.Text = "0.0";
             this.tbEF3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEF2
@@ -529,6 +533,7 @@
             this.tbEF2.Name = "tbEF2";
             this.tbEF2.Size = new System.Drawing.Size(78, 23);
             this.tbEF2.TabIndex = 22;
+            this.tbEF2.Text = "0.0";
             this.tbEF2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEF1
@@ -538,6 +543,7 @@
             this.tbEF1.Name = "tbEF1";
             this.tbEF1.Size = new System.Drawing.Size(78, 23);
             this.tbEF1.TabIndex = 21;
+            this.tbEF1.Text = "0.0";
             this.tbEF1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbFCyE3
@@ -547,6 +553,7 @@
             this.tbFCyE3.Name = "tbFCyE3";
             this.tbFCyE3.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE3.TabIndex = 20;
+            this.tbFCyE3.Text = "0.0";
             this.tbFCyE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbFCyE2
@@ -556,6 +563,7 @@
             this.tbFCyE2.Name = "tbFCyE2";
             this.tbFCyE2.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE2.TabIndex = 19;
+            this.tbFCyE2.Text = "0.0";
             this.tbFCyE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbFCyE1
@@ -565,6 +573,7 @@
             this.tbFCyE1.Name = "tbFCyE1";
             this.tbFCyE1.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE1.TabIndex = 18;
+            this.tbFCyE1.Text = "0.0";
             this.tbFCyE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGeo3
@@ -574,6 +583,7 @@
             this.tbGeo3.Name = "tbGeo3";
             this.tbGeo3.Size = new System.Drawing.Size(78, 23);
             this.tbGeo3.TabIndex = 17;
+            this.tbGeo3.Text = "0.0";
             this.tbGeo3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGeo2
@@ -583,6 +593,7 @@
             this.tbGeo2.Name = "tbGeo2";
             this.tbGeo2.Size = new System.Drawing.Size(78, 23);
             this.tbGeo2.TabIndex = 16;
+            this.tbGeo2.Text = "0.0";
             this.tbGeo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGeo1
@@ -592,6 +603,7 @@
             this.tbGeo1.Name = "tbGeo1";
             this.tbGeo1.Size = new System.Drawing.Size(78, 23);
             this.tbGeo1.TabIndex = 15;
+            this.tbGeo1.Text = "0.0";
             this.tbGeo1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHis3
@@ -601,6 +613,7 @@
             this.tbHis3.Name = "tbHis3";
             this.tbHis3.Size = new System.Drawing.Size(78, 23);
             this.tbHis3.TabIndex = 14;
+            this.tbHis3.Text = "0.0";
             this.tbHis3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHis2
@@ -610,6 +623,7 @@
             this.tbHis2.Name = "tbHis2";
             this.tbHis2.Size = new System.Drawing.Size(78, 23);
             this.tbHis2.TabIndex = 13;
+            this.tbHis2.Text = "0.0";
             this.tbHis2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHis1
@@ -619,6 +633,7 @@
             this.tbHis1.Name = "tbHis1";
             this.tbHis1.Size = new System.Drawing.Size(78, 23);
             this.tbHis1.TabIndex = 12;
+            this.tbHis1.Text = "0.0";
             this.tbHis1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCNyT3
@@ -628,6 +643,7 @@
             this.tbCNyT3.Name = "tbCNyT3";
             this.tbCNyT3.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT3.TabIndex = 11;
+            this.tbCNyT3.Text = "0.0";
             this.tbCNyT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCNyT2
@@ -637,6 +653,7 @@
             this.tbCNyT2.Name = "tbCNyT2";
             this.tbCNyT2.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT2.TabIndex = 10;
+            this.tbCNyT2.Text = "0.0";
             this.tbCNyT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCNyT1
@@ -646,6 +663,7 @@
             this.tbCNyT1.Name = "tbCNyT1";
             this.tbCNyT1.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT1.TabIndex = 9;
+            this.tbCNyT1.Text = "0.0";
             this.tbCNyT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLE3
@@ -655,6 +673,7 @@
             this.tbLE3.Name = "tbLE3";
             this.tbLE3.Size = new System.Drawing.Size(78, 23);
             this.tbLE3.TabIndex = 8;
+            this.tbLE3.Text = "0.0";
             this.tbLE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLE2
@@ -664,6 +683,7 @@
             this.tbLE2.Name = "tbLE2";
             this.tbLE2.Size = new System.Drawing.Size(78, 23);
             this.tbLE2.TabIndex = 7;
+            this.tbLE2.Text = "0.0";
             this.tbLE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLE1
@@ -673,6 +693,7 @@
             this.tbLE1.Name = "tbLE1";
             this.tbLE1.Size = new System.Drawing.Size(78, 23);
             this.tbLE1.TabIndex = 6;
+            this.tbLE1.Text = "0.0";
             this.tbLE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbMat3
@@ -682,6 +703,7 @@
             this.tbMat3.Name = "tbMat3";
             this.tbMat3.Size = new System.Drawing.Size(78, 23);
             this.tbMat3.TabIndex = 5;
+            this.tbMat3.Text = "0.0";
             this.tbMat3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbMat2
@@ -691,6 +713,7 @@
             this.tbMat2.Name = "tbMat2";
             this.tbMat2.Size = new System.Drawing.Size(78, 23);
             this.tbMat2.TabIndex = 4;
+            this.tbMat2.Text = "0.0";
             this.tbMat2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbMat1
@@ -700,6 +723,7 @@
             this.tbMat1.Name = "tbMat1";
             this.tbMat1.Size = new System.Drawing.Size(78, 23);
             this.tbMat1.TabIndex = 3;
+            this.tbMat1.Text = "0.0";
             this.tbMat1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLM3
@@ -709,8 +733,8 @@
             this.tbLM3.Name = "tbLM3";
             this.tbLM3.Size = new System.Drawing.Size(78, 23);
             this.tbLM3.TabIndex = 2;
+            this.tbLM3.Text = "0.0";
             this.tbLM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbLM3.TextChanged += new System.EventHandler(this.tbLM3_TextChanged);
             // 
             // tbLM2
             // 
@@ -719,8 +743,8 @@
             this.tbLM2.Name = "tbLM2";
             this.tbLM2.Size = new System.Drawing.Size(78, 23);
             this.tbLM2.TabIndex = 1;
+            this.tbLM2.Text = "0.0";
             this.tbLM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbLM2.TextChanged += new System.EventHandler(this.tbLM2_TextChanged);
             // 
             // tbLM1
             // 
@@ -729,8 +753,8 @@
             this.tbLM1.Name = "tbLM1";
             this.tbLM1.Size = new System.Drawing.Size(78, 23);
             this.tbLM1.TabIndex = 0;
+            this.tbLM1.Text = "0.0";
             this.tbLM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbLM1.TextChanged += new System.EventHandler(this.tbLM1_TextChanged);
             // 
             // tableLayoutPanel6
             // 
@@ -917,28 +941,29 @@
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(468, 482);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 39);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(468, 482);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(106, 39);
+            this.btnGuardar.TabIndex = 50;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FormularioBoleta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 533);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(591, 525);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.pnlCalificaciones);
@@ -1037,6 +1062,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

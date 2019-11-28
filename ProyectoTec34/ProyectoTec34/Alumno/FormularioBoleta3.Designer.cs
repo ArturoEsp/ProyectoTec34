@@ -50,30 +50,30 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbArtes3 = new System.Windows.Forms.TextBox();
+            this.tbArtes2 = new System.Windows.Forms.TextBox();
+            this.tbArtes1 = new System.Windows.Forms.TextBox();
+            this.tbEF3 = new System.Windows.Forms.TextBox();
+            this.tbEF2 = new System.Windows.Forms.TextBox();
+            this.tbEF1 = new System.Windows.Forms.TextBox();
+            this.tbFCyE3 = new System.Windows.Forms.TextBox();
+            this.tbFCyE2 = new System.Windows.Forms.TextBox();
+            this.tbFCyE1 = new System.Windows.Forms.TextBox();
+            this.tbHis3 = new System.Windows.Forms.TextBox();
+            this.tbHis2 = new System.Windows.Forms.TextBox();
+            this.tbHis1 = new System.Windows.Forms.TextBox();
+            this.tbCien3 = new System.Windows.Forms.TextBox();
+            this.tbCien2 = new System.Windows.Forms.TextBox();
+            this.tbCien1 = new System.Windows.Forms.TextBox();
+            this.tbSL3 = new System.Windows.Forms.TextBox();
+            this.tbSL2 = new System.Windows.Forms.TextBox();
+            this.tbSL1 = new System.Windows.Forms.TextBox();
+            this.tbMat3 = new System.Windows.Forms.TextBox();
+            this.tbMat2 = new System.Windows.Forms.TextBox();
+            this.tbMat1 = new System.Windows.Forms.TextBox();
+            this.tbEsp3 = new System.Windows.Forms.TextBox();
+            this.tbEsp2 = new System.Windows.Forms.TextBox();
+            this.tbEsp1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.pnlCalificaciones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -411,30 +411,30 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.32333F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.32333F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.35335F));
-            this.tableLayoutPanel5.Controls.Add(this.textBox24, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox23, 1, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox22, 0, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox21, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.textBox20, 1, 6);
-            this.tableLayoutPanel5.Controls.Add(this.textBox19, 0, 6);
-            this.tableLayoutPanel5.Controls.Add(this.textBox18, 2, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox17, 1, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox16, 0, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox15, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox14, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox13, 0, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox12, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox11, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox10, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox9, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox8, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox7, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox6, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox4, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox3, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox2, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.tbArtes3, 2, 7);
+            this.tableLayoutPanel5.Controls.Add(this.tbArtes2, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.tbArtes1, 0, 7);
+            this.tableLayoutPanel5.Controls.Add(this.tbEF3, 2, 6);
+            this.tableLayoutPanel5.Controls.Add(this.tbEF2, 1, 6);
+            this.tableLayoutPanel5.Controls.Add(this.tbEF1, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.tbFCyE3, 2, 5);
+            this.tableLayoutPanel5.Controls.Add(this.tbFCyE2, 1, 5);
+            this.tableLayoutPanel5.Controls.Add(this.tbFCyE1, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.tbHis3, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.tbHis2, 1, 4);
+            this.tableLayoutPanel5.Controls.Add(this.tbHis1, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.tbCien3, 2, 3);
+            this.tableLayoutPanel5.Controls.Add(this.tbCien2, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.tbCien1, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.tbSL3, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.tbSL2, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.tbSL1, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.tbMat3, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.tbMat2, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.tbMat1, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.tbEsp3, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.tbEsp2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.tbEsp1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(190, 35);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -450,197 +450,245 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(259, 268);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
-            // textBox24
+            // tbArtes3
             // 
-            this.textBox24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(174, 235);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(78, 23);
-            this.textBox24.TabIndex = 23;
+            this.tbArtes3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbArtes3.Location = new System.Drawing.Point(174, 235);
+            this.tbArtes3.Name = "tbArtes3";
+            this.tbArtes3.Size = new System.Drawing.Size(78, 23);
+            this.tbArtes3.TabIndex = 23;
+            this.tbArtes3.Text = "0.0";
+            this.tbArtes3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox23
+            // tbArtes2
             // 
-            this.textBox23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(89, 235);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(78, 23);
-            this.textBox23.TabIndex = 22;
+            this.tbArtes2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbArtes2.Location = new System.Drawing.Point(89, 235);
+            this.tbArtes2.Name = "tbArtes2";
+            this.tbArtes2.Size = new System.Drawing.Size(78, 23);
+            this.tbArtes2.TabIndex = 22;
+            this.tbArtes2.Text = "0.0";
+            this.tbArtes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // tbArtes1
             // 
-            this.textBox22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(4, 235);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(78, 23);
-            this.textBox22.TabIndex = 21;
+            this.tbArtes1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbArtes1.Location = new System.Drawing.Point(4, 235);
+            this.tbArtes1.Name = "tbArtes1";
+            this.tbArtes1.Size = new System.Drawing.Size(78, 23);
+            this.tbArtes1.TabIndex = 21;
+            this.tbArtes1.Text = "0.0";
+            this.tbArtes1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // tbEF3
             // 
-            this.textBox21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(174, 202);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(78, 23);
-            this.textBox21.TabIndex = 20;
+            this.tbEF3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEF3.Location = new System.Drawing.Point(174, 202);
+            this.tbEF3.Name = "tbEF3";
+            this.tbEF3.Size = new System.Drawing.Size(78, 23);
+            this.tbEF3.TabIndex = 20;
+            this.tbEF3.Text = "0.0";
+            this.tbEF3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox20
+            // tbEF2
             // 
-            this.textBox20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(89, 202);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(78, 23);
-            this.textBox20.TabIndex = 19;
+            this.tbEF2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEF2.Location = new System.Drawing.Point(89, 202);
+            this.tbEF2.Name = "tbEF2";
+            this.tbEF2.Size = new System.Drawing.Size(78, 23);
+            this.tbEF2.TabIndex = 19;
+            this.tbEF2.Text = "0.0";
+            this.tbEF2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox19
+            // tbEF1
             // 
-            this.textBox19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(4, 202);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(78, 23);
-            this.textBox19.TabIndex = 18;
+            this.tbEF1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEF1.Location = new System.Drawing.Point(4, 202);
+            this.tbEF1.Name = "tbEF1";
+            this.tbEF1.Size = new System.Drawing.Size(78, 23);
+            this.tbEF1.TabIndex = 18;
+            this.tbEF1.Text = "0.0";
+            this.tbEF1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // tbFCyE3
             // 
-            this.textBox18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(174, 169);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(78, 23);
-            this.textBox18.TabIndex = 17;
+            this.tbFCyE3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFCyE3.Location = new System.Drawing.Point(174, 169);
+            this.tbFCyE3.Name = "tbFCyE3";
+            this.tbFCyE3.Size = new System.Drawing.Size(78, 23);
+            this.tbFCyE3.TabIndex = 17;
+            this.tbFCyE3.Text = "0.0";
+            this.tbFCyE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox17
+            // tbFCyE2
             // 
-            this.textBox17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(89, 169);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(78, 23);
-            this.textBox17.TabIndex = 16;
+            this.tbFCyE2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFCyE2.Location = new System.Drawing.Point(89, 169);
+            this.tbFCyE2.Name = "tbFCyE2";
+            this.tbFCyE2.Size = new System.Drawing.Size(78, 23);
+            this.tbFCyE2.TabIndex = 16;
+            this.tbFCyE2.Text = "0.0";
+            this.tbFCyE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox16
+            // tbFCyE1
             // 
-            this.textBox16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(4, 169);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(78, 23);
-            this.textBox16.TabIndex = 15;
+            this.tbFCyE1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFCyE1.Location = new System.Drawing.Point(4, 169);
+            this.tbFCyE1.Name = "tbFCyE1";
+            this.tbFCyE1.Size = new System.Drawing.Size(78, 23);
+            this.tbFCyE1.TabIndex = 15;
+            this.tbFCyE1.Text = "0.0";
+            this.tbFCyE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // tbHis3
             // 
-            this.textBox15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(174, 136);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(78, 23);
-            this.textBox15.TabIndex = 14;
+            this.tbHis3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbHis3.Location = new System.Drawing.Point(174, 136);
+            this.tbHis3.Name = "tbHis3";
+            this.tbHis3.Size = new System.Drawing.Size(78, 23);
+            this.tbHis3.TabIndex = 14;
+            this.tbHis3.Text = "0.0";
+            this.tbHis3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // tbHis2
             // 
-            this.textBox14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(89, 136);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(78, 23);
-            this.textBox14.TabIndex = 13;
+            this.tbHis2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbHis2.Location = new System.Drawing.Point(89, 136);
+            this.tbHis2.Name = "tbHis2";
+            this.tbHis2.Size = new System.Drawing.Size(78, 23);
+            this.tbHis2.TabIndex = 13;
+            this.tbHis2.Text = "0.0";
+            this.tbHis2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
+            // tbHis1
             // 
-            this.textBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(4, 136);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(78, 23);
-            this.textBox13.TabIndex = 12;
+            this.tbHis1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbHis1.Location = new System.Drawing.Point(4, 136);
+            this.tbHis1.Name = "tbHis1";
+            this.tbHis1.Size = new System.Drawing.Size(78, 23);
+            this.tbHis1.TabIndex = 12;
+            this.tbHis1.Text = "0.0";
+            this.tbHis1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // tbCien3
             // 
-            this.textBox12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(174, 103);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(78, 23);
-            this.textBox12.TabIndex = 11;
+            this.tbCien3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCien3.Location = new System.Drawing.Point(174, 103);
+            this.tbCien3.Name = "tbCien3";
+            this.tbCien3.Size = new System.Drawing.Size(78, 23);
+            this.tbCien3.TabIndex = 11;
+            this.tbCien3.Text = "0.0";
+            this.tbCien3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // tbCien2
             // 
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(89, 103);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(78, 23);
-            this.textBox11.TabIndex = 10;
+            this.tbCien2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCien2.Location = new System.Drawing.Point(89, 103);
+            this.tbCien2.Name = "tbCien2";
+            this.tbCien2.Size = new System.Drawing.Size(78, 23);
+            this.tbCien2.TabIndex = 10;
+            this.tbCien2.Text = "0.0";
+            this.tbCien2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // tbCien1
             // 
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(4, 103);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(78, 23);
-            this.textBox10.TabIndex = 9;
+            this.tbCien1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCien1.Location = new System.Drawing.Point(4, 103);
+            this.tbCien1.Name = "tbCien1";
+            this.tbCien1.Size = new System.Drawing.Size(78, 23);
+            this.tbCien1.TabIndex = 9;
+            this.tbCien1.Text = "0.0";
+            this.tbCien1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // tbSL3
             // 
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(174, 70);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(78, 23);
-            this.textBox9.TabIndex = 8;
+            this.tbSL3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSL3.Location = new System.Drawing.Point(174, 70);
+            this.tbSL3.Name = "tbSL3";
+            this.tbSL3.Size = new System.Drawing.Size(78, 23);
+            this.tbSL3.TabIndex = 8;
+            this.tbSL3.Text = "0.0";
+            this.tbSL3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // tbSL2
             // 
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(89, 70);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(78, 23);
-            this.textBox8.TabIndex = 7;
+            this.tbSL2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSL2.Location = new System.Drawing.Point(89, 70);
+            this.tbSL2.Name = "tbSL2";
+            this.tbSL2.Size = new System.Drawing.Size(78, 23);
+            this.tbSL2.TabIndex = 7;
+            this.tbSL2.Text = "0.0";
+            this.tbSL2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // tbSL1
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(4, 70);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(78, 23);
-            this.textBox7.TabIndex = 6;
+            this.tbSL1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSL1.Location = new System.Drawing.Point(4, 70);
+            this.tbSL1.Name = "tbSL1";
+            this.tbSL1.Size = new System.Drawing.Size(78, 23);
+            this.tbSL1.TabIndex = 6;
+            this.tbSL1.Text = "0.0";
+            this.tbSL1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // tbMat3
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(174, 37);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(78, 23);
-            this.textBox6.TabIndex = 5;
+            this.tbMat3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMat3.Location = new System.Drawing.Point(174, 37);
+            this.tbMat3.Name = "tbMat3";
+            this.tbMat3.Size = new System.Drawing.Size(78, 23);
+            this.tbMat3.TabIndex = 5;
+            this.tbMat3.Text = "0.0";
+            this.tbMat3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // tbMat2
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(89, 37);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 23);
-            this.textBox5.TabIndex = 4;
+            this.tbMat2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMat2.Location = new System.Drawing.Point(89, 37);
+            this.tbMat2.Name = "tbMat2";
+            this.tbMat2.Size = new System.Drawing.Size(78, 23);
+            this.tbMat2.TabIndex = 4;
+            this.tbMat2.Text = "0.0";
+            this.tbMat2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // tbMat1
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(4, 37);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(78, 23);
-            this.textBox4.TabIndex = 3;
+            this.tbMat1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMat1.Location = new System.Drawing.Point(4, 37);
+            this.tbMat1.Name = "tbMat1";
+            this.tbMat1.Size = new System.Drawing.Size(78, 23);
+            this.tbMat1.TabIndex = 3;
+            this.tbMat1.Text = "0.0";
+            this.tbMat1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // tbEsp3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(174, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 23);
-            this.textBox3.TabIndex = 2;
+            this.tbEsp3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEsp3.Location = new System.Drawing.Point(174, 4);
+            this.tbEsp3.Name = "tbEsp3";
+            this.tbEsp3.Size = new System.Drawing.Size(78, 23);
+            this.tbEsp3.TabIndex = 2;
+            this.tbEsp3.Text = "0.0";
+            this.tbEsp3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // tbEsp2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(89, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 23);
-            this.textBox2.TabIndex = 1;
+            this.tbEsp2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEsp2.Location = new System.Drawing.Point(89, 4);
+            this.tbEsp2.Name = "tbEsp2";
+            this.tbEsp2.Size = new System.Drawing.Size(78, 23);
+            this.tbEsp2.TabIndex = 1;
+            this.tbEsp2.Text = "0.0";
+            this.tbEsp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // tbEsp1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(78, 23);
-            this.textBox1.TabIndex = 0;
+            this.tbEsp1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEsp1.Location = new System.Drawing.Point(4, 4);
+            this.tbEsp1.Name = "tbEsp1";
+            this.tbEsp1.Size = new System.Drawing.Size(78, 23);
+            this.tbEsp1.TabIndex = 0;
+            this.tbEsp1.Text = "0.0";
+            this.tbEsp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel6
             // 
@@ -824,21 +872,22 @@
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(468, 480);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 39);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(468, 480);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(106, 39);
+            this.btnGuardar.TabIndex = 49;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FormularioBoleta3
             // 
@@ -847,7 +896,7 @@
             this.ClientSize = new System.Drawing.Size(591, 533);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbNombre);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.pnlCalificaciones);
             this.Controls.Add(this.panel1);
             this.Name = "FormularioBoleta3";
@@ -881,7 +930,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbNombre;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TableLayoutPanel pnlCalificaciones;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label7;
@@ -901,30 +950,30 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbArtes3;
+        private System.Windows.Forms.TextBox tbArtes2;
+        private System.Windows.Forms.TextBox tbArtes1;
+        private System.Windows.Forms.TextBox tbEF3;
+        private System.Windows.Forms.TextBox tbEF2;
+        private System.Windows.Forms.TextBox tbEF1;
+        private System.Windows.Forms.TextBox tbFCyE3;
+        private System.Windows.Forms.TextBox tbFCyE2;
+        private System.Windows.Forms.TextBox tbFCyE1;
+        private System.Windows.Forms.TextBox tbHis3;
+        private System.Windows.Forms.TextBox tbHis2;
+        private System.Windows.Forms.TextBox tbHis1;
+        private System.Windows.Forms.TextBox tbCien3;
+        private System.Windows.Forms.TextBox tbCien2;
+        private System.Windows.Forms.TextBox tbCien1;
+        private System.Windows.Forms.TextBox tbSL3;
+        private System.Windows.Forms.TextBox tbSL2;
+        private System.Windows.Forms.TextBox tbSL1;
+        private System.Windows.Forms.TextBox tbMat3;
+        private System.Windows.Forms.TextBox tbMat2;
+        private System.Windows.Forms.TextBox tbMat1;
+        private System.Windows.Forms.TextBox tbEsp3;
+        private System.Windows.Forms.TextBox tbEsp2;
+        private System.Windows.Forms.TextBox tbEsp1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;

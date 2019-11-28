@@ -7,33 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace ProyectoTec34.Alumno
 {
     public partial class FormularioBoleta1 : Form
     {
+        
         public FormularioBoleta1(string Estudiante)
         {
             InitializeComponent();
             lbNombre.Text = Estudiante;
         }
 
-        private void tbLM1_TextChanged(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
-            double prom = double.Parse(tbLM1.Text);
-            lbLM.Text = prom.ToString("0.#");
-        }
+            string NombreEstudiante = lbNombre.Text;
 
-        private void tbLM2_TextChanged(object sender, EventArgs e)
-        {
-            double prom = ((double.Parse(tbLM1.Text)) + (double.Parse(tbLM2.Text))) / 2;
-            lbLM.Text = prom.ToString("0.#");
-        }
+            List<String> NombreCalif = new List<String>();
 
-        private void tbLM3_TextChanged(object sender, EventArgs e)
-        {
-            double prom = ((double.Parse(tbLM1.Text)) + (double.Parse(tbLM2.Text)) + (double.Parse(tbLM3.Text))) / 3;
-            lbLM.Text = prom.ToString("0.#");
+            List<Double> CalifP1 = new List<Double>();
+            CalifP1.Add(Convert.ToDouble(tbLM1.Text));
+            CalifP1.Add(Convert.ToDouble(tbMat1.Text));
+            CalifP1.Add(Convert.ToDouble(tbLE1.Text));
+            CalifP1.Add(Convert.ToDouble(tbCNyT1.Text));
+            CalifP1.Add(Convert.ToDouble(tbHis1.Text));
+            CalifP1.Add(Convert.ToDouble(tbGeo1.Text));
+            CalifP1.Add(Convert.ToDouble(tbFCyE1.Text));
+            CalifP1.Add(Convert.ToDouble(tbEF1.Text));
+            CalifP1.Add(Convert.ToDouble(tbArtes1.Text));
+
+            List<Double> CalifP2 = new List<Double>();
+            CalifP2.Add(Convert.ToDouble(tbLM2.Text));
+            CalifP2.Add(Convert.ToDouble(tbMat2.Text));
+            CalifP2.Add(Convert.ToDouble(tbLE2.Text));
+            CalifP2.Add(Convert.ToDouble(tbCNyT2.Text));
+            CalifP2.Add(Convert.ToDouble(tbHis2.Text));
+            CalifP2.Add(Convert.ToDouble(tbGeo2.Text));
+            CalifP2.Add(Convert.ToDouble(tbFCyE2.Text));
+            CalifP2.Add(Convert.ToDouble(tbEF2.Text));
+            CalifP2.Add(Convert.ToDouble(tbArtes2.Text));
+
+            List<Double> CalifP3 = new List<Double>();
+            CalifP3.Add(Convert.ToDouble(tbLM3.Text));
+            CalifP3.Add(Convert.ToDouble(tbMat3.Text));
+            CalifP3.Add(Convert.ToDouble(tbLE3.Text));
+            CalifP3.Add(Convert.ToDouble(tbCNyT3.Text));
+            CalifP3.Add(Convert.ToDouble(tbHis3.Text));
+            CalifP3.Add(Convert.ToDouble(tbGeo3.Text));
+            CalifP3.Add(Convert.ToDouble(tbFCyE3.Text));
+            CalifP3.Add(Convert.ToDouble(tbEF3.Text));
+            CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
+
+            ScriptSQL.InsertarBoleta(CalifP1, CalifP2, CalifP3, NombreEstudiante, NombreCalif);
+
+            Configuraciones.ClearControls.LimpiarCampos(this);
         }
+        
     }
 }
