@@ -19,9 +19,6 @@ namespace ProyectoTec34.Alumno
             tbBuscar.AutoCompleteMode = AutoCompleteMode.Suggest;
             tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
-
-        
-
         private void btnPrimerBoleta_Click(object sender, EventArgs e)
         {
             string Estudiante = tbBuscar.Text;
@@ -43,5 +40,20 @@ namespace ProyectoTec34.Alumno
             frm.Show();
         }
 
+        private void tbBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tbBuscar.Text))
+            {
+                btnPrimerBoleta.Enabled = false;
+                btnSegBoleta.Enabled = false;
+                btnTercerBoleta.Enabled = false;
+            }
+            else
+            {
+                btnPrimerBoleta.Enabled = true;
+                btnSegBoleta.Enabled = true;
+                btnTercerBoleta.Enabled = true;
+            }
+        }
     }
 }

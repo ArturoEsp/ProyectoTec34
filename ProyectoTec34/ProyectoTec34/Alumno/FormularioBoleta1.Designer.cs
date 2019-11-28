@@ -41,15 +41,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbArtes = new System.Windows.Forms.Label();
+            this.lbEF = new System.Windows.Forms.Label();
+            this.lbFCE = new System.Windows.Forms.Label();
+            this.lbGeo = new System.Windows.Forms.Label();
+            this.lbHis = new System.Windows.Forms.Label();
+            this.lbCNyT = new System.Windows.Forms.Label();
+            this.lbLEI = new System.Windows.Forms.Label();
+            this.lbMat = new System.Windows.Forms.Label();
+            this.lbLME = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tbArtes3 = new System.Windows.Forms.TextBox();
@@ -88,12 +88,14 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbLM = new System.Windows.Forms.Label();
+            this.lb = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnGuardar1 = new System.Windows.Forms.Button();
+            this.btnGuardar2 = new System.Windows.Forms.Button();
+            this.btnGuardar3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlCalificaciones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -287,15 +289,15 @@
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.label17, 0, 8);
-            this.tableLayoutPanel4.Controls.Add(this.label16, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.label15, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label14, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label13, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label12, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label11, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label10, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbArtes, 0, 8);
+            this.tableLayoutPanel4.Controls.Add(this.lbEF, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.lbFCE, 0, 6);
+            this.tableLayoutPanel4.Controls.Add(this.lbGeo, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.lbHis, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.lbCNyT, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.lbLEI, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lbMat, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lbLME, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 35);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -313,113 +315,113 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(179, 268);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
-            // label17
+            // lbArtes
             // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(4, 233);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(171, 34);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "ARTES\r\nARTES VISUALES";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtes.AutoSize = true;
+            this.lbArtes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbArtes.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbArtes.Location = new System.Drawing.Point(4, 233);
+            this.lbArtes.Name = "lbArtes";
+            this.lbArtes.Size = new System.Drawing.Size(171, 34);
+            this.lbArtes.TabIndex = 8;
+            this.lbArtes.Text = "ARTES\r\nArtes Visuales";
+            this.lbArtes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
+            // lbEF
             // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(4, 204);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(171, 28);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "EDUACIÓN FISÍCA";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbEF.AutoSize = true;
+            this.lbEF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEF.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEF.Location = new System.Drawing.Point(4, 204);
+            this.lbEF.Name = "lbEF";
+            this.lbEF.Size = new System.Drawing.Size(171, 28);
+            this.lbEF.TabIndex = 7;
+            this.lbEF.Text = "EDUCACIÓN FÍSICA";
+            this.lbEF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label15
+            // lbFCE
             // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(4, 175);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(171, 28);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "FORMACIÓN CÍVICA Y ÉTICA";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbFCE.AutoSize = true;
+            this.lbFCE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbFCE.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFCE.Location = new System.Drawing.Point(4, 175);
+            this.lbFCE.Name = "lbFCE";
+            this.lbFCE.Size = new System.Drawing.Size(171, 28);
+            this.lbFCE.TabIndex = 6;
+            this.lbFCE.Text = "FORMACIÓN CÍVICA Y ÉTICA";
+            this.lbFCE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
+            // lbGeo
             // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(4, 146);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(171, 28);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "GEOGRAFÍA";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbGeo.AutoSize = true;
+            this.lbGeo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbGeo.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGeo.Location = new System.Drawing.Point(4, 146);
+            this.lbGeo.Name = "lbGeo";
+            this.lbGeo.Size = new System.Drawing.Size(171, 28);
+            this.lbGeo.TabIndex = 5;
+            this.lbGeo.Text = "GEOGRAFÍA";
+            this.lbGeo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
+            // lbHis
             // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(4, 117);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(171, 28);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "HISTORIA";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbHis.AutoSize = true;
+            this.lbHis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbHis.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHis.Location = new System.Drawing.Point(4, 117);
+            this.lbHis.Name = "lbHis";
+            this.lbHis.Size = new System.Drawing.Size(171, 28);
+            this.lbHis.TabIndex = 4;
+            this.lbHis.Text = "HISTORIA";
+            this.lbHis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // lbCNyT
             // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(4, 88);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(171, 28);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "CIENCIAS NATURALES Y\r\nTECNOLOGIA (BIOLOGÍA)";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCNyT.AutoSize = true;
+            this.lbCNyT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCNyT.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCNyT.Location = new System.Drawing.Point(4, 88);
+            this.lbCNyT.Name = "lbCNyT";
+            this.lbCNyT.Size = new System.Drawing.Size(171, 28);
+            this.lbCNyT.TabIndex = 3;
+            this.lbCNyT.Text = "CIENCIAS NATURALES Y\r\nTECNOLOGÍA (BIOLOGÍA)";
+            this.lbCNyT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label11
+            // lbLEI
             // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(4, 59);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 28);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "LENGUAJE EXTRANJERA (INGLES)";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbLEI.AutoSize = true;
+            this.lbLEI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLEI.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLEI.Location = new System.Drawing.Point(4, 59);
+            this.lbLEI.Name = "lbLEI";
+            this.lbLEI.Size = new System.Drawing.Size(171, 28);
+            this.lbLEI.TabIndex = 2;
+            this.lbLEI.Text = "LENGUA EXTRANJERA (INGLÉS)";
+            this.lbLEI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // lbMat
             // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(4, 30);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(171, 28);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "MATEMATICAS";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbMat.AutoSize = true;
+            this.lbMat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMat.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMat.Location = new System.Drawing.Point(4, 30);
+            this.lbMat.Name = "lbMat";
+            this.lbMat.Size = new System.Drawing.Size(171, 28);
+            this.lbMat.TabIndex = 1;
+            this.lbMat.Text = "MATEMÁTICAS";
+            this.lbMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // lbLME
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(4, 1);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(171, 28);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "LENGUA MATERNA (ESPAÑOL)";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbLME.AutoSize = true;
+            this.lbLME.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLME.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLME.Location = new System.Drawing.Point(4, 1);
+            this.lbLME.Name = "lbLME";
+            this.lbLME.Size = new System.Drawing.Size(171, 28);
+            this.lbLME.TabIndex = 0;
+            this.lbLME.Text = "LENGUA MATERNA (ESPAÑOL)";
+            this.lbLME.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
@@ -493,7 +495,6 @@
             this.tbArtes3.Name = "tbArtes3";
             this.tbArtes3.Size = new System.Drawing.Size(78, 23);
             this.tbArtes3.TabIndex = 26;
-            this.tbArtes3.Text = "0.0";
             this.tbArtes3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbArtes2
@@ -503,7 +504,6 @@
             this.tbArtes2.Name = "tbArtes2";
             this.tbArtes2.Size = new System.Drawing.Size(78, 23);
             this.tbArtes2.TabIndex = 25;
-            this.tbArtes2.Text = "0.0";
             this.tbArtes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbArtes1
@@ -513,8 +513,8 @@
             this.tbArtes1.Name = "tbArtes1";
             this.tbArtes1.Size = new System.Drawing.Size(78, 23);
             this.tbArtes1.TabIndex = 24;
-            this.tbArtes1.Text = "0.0";
             this.tbArtes1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArtes1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbArtes1_KeyPress);
             // 
             // tbEF3
             // 
@@ -523,7 +523,6 @@
             this.tbEF3.Name = "tbEF3";
             this.tbEF3.Size = new System.Drawing.Size(78, 23);
             this.tbEF3.TabIndex = 23;
-            this.tbEF3.Text = "0.0";
             this.tbEF3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEF2
@@ -533,7 +532,6 @@
             this.tbEF2.Name = "tbEF2";
             this.tbEF2.Size = new System.Drawing.Size(78, 23);
             this.tbEF2.TabIndex = 22;
-            this.tbEF2.Text = "0.0";
             this.tbEF2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEF1
@@ -543,7 +541,6 @@
             this.tbEF1.Name = "tbEF1";
             this.tbEF1.Size = new System.Drawing.Size(78, 23);
             this.tbEF1.TabIndex = 21;
-            this.tbEF1.Text = "0.0";
             this.tbEF1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbFCyE3
@@ -553,7 +550,6 @@
             this.tbFCyE3.Name = "tbFCyE3";
             this.tbFCyE3.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE3.TabIndex = 20;
-            this.tbFCyE3.Text = "0.0";
             this.tbFCyE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbFCyE2
@@ -563,7 +559,6 @@
             this.tbFCyE2.Name = "tbFCyE2";
             this.tbFCyE2.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE2.TabIndex = 19;
-            this.tbFCyE2.Text = "0.0";
             this.tbFCyE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbFCyE1
@@ -573,7 +568,6 @@
             this.tbFCyE1.Name = "tbFCyE1";
             this.tbFCyE1.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE1.TabIndex = 18;
-            this.tbFCyE1.Text = "0.0";
             this.tbFCyE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGeo3
@@ -583,7 +577,6 @@
             this.tbGeo3.Name = "tbGeo3";
             this.tbGeo3.Size = new System.Drawing.Size(78, 23);
             this.tbGeo3.TabIndex = 17;
-            this.tbGeo3.Text = "0.0";
             this.tbGeo3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGeo2
@@ -593,7 +586,6 @@
             this.tbGeo2.Name = "tbGeo2";
             this.tbGeo2.Size = new System.Drawing.Size(78, 23);
             this.tbGeo2.TabIndex = 16;
-            this.tbGeo2.Text = "0.0";
             this.tbGeo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbGeo1
@@ -603,7 +595,6 @@
             this.tbGeo1.Name = "tbGeo1";
             this.tbGeo1.Size = new System.Drawing.Size(78, 23);
             this.tbGeo1.TabIndex = 15;
-            this.tbGeo1.Text = "0.0";
             this.tbGeo1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHis3
@@ -613,7 +604,6 @@
             this.tbHis3.Name = "tbHis3";
             this.tbHis3.Size = new System.Drawing.Size(78, 23);
             this.tbHis3.TabIndex = 14;
-            this.tbHis3.Text = "0.0";
             this.tbHis3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHis2
@@ -623,7 +613,6 @@
             this.tbHis2.Name = "tbHis2";
             this.tbHis2.Size = new System.Drawing.Size(78, 23);
             this.tbHis2.TabIndex = 13;
-            this.tbHis2.Text = "0.0";
             this.tbHis2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHis1
@@ -633,7 +622,6 @@
             this.tbHis1.Name = "tbHis1";
             this.tbHis1.Size = new System.Drawing.Size(78, 23);
             this.tbHis1.TabIndex = 12;
-            this.tbHis1.Text = "0.0";
             this.tbHis1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCNyT3
@@ -643,7 +631,6 @@
             this.tbCNyT3.Name = "tbCNyT3";
             this.tbCNyT3.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT3.TabIndex = 11;
-            this.tbCNyT3.Text = "0.0";
             this.tbCNyT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCNyT2
@@ -653,7 +640,6 @@
             this.tbCNyT2.Name = "tbCNyT2";
             this.tbCNyT2.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT2.TabIndex = 10;
-            this.tbCNyT2.Text = "0.0";
             this.tbCNyT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCNyT1
@@ -663,7 +649,6 @@
             this.tbCNyT1.Name = "tbCNyT1";
             this.tbCNyT1.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT1.TabIndex = 9;
-            this.tbCNyT1.Text = "0.0";
             this.tbCNyT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLE3
@@ -673,7 +658,6 @@
             this.tbLE3.Name = "tbLE3";
             this.tbLE3.Size = new System.Drawing.Size(78, 23);
             this.tbLE3.TabIndex = 8;
-            this.tbLE3.Text = "0.0";
             this.tbLE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLE2
@@ -683,7 +667,6 @@
             this.tbLE2.Name = "tbLE2";
             this.tbLE2.Size = new System.Drawing.Size(78, 23);
             this.tbLE2.TabIndex = 7;
-            this.tbLE2.Text = "0.0";
             this.tbLE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLE1
@@ -693,7 +676,6 @@
             this.tbLE1.Name = "tbLE1";
             this.tbLE1.Size = new System.Drawing.Size(78, 23);
             this.tbLE1.TabIndex = 6;
-            this.tbLE1.Text = "0.0";
             this.tbLE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbMat3
@@ -703,7 +685,6 @@
             this.tbMat3.Name = "tbMat3";
             this.tbMat3.Size = new System.Drawing.Size(78, 23);
             this.tbMat3.TabIndex = 5;
-            this.tbMat3.Text = "0.0";
             this.tbMat3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbMat2
@@ -713,7 +694,6 @@
             this.tbMat2.Name = "tbMat2";
             this.tbMat2.Size = new System.Drawing.Size(78, 23);
             this.tbMat2.TabIndex = 4;
-            this.tbMat2.Text = "0.0";
             this.tbMat2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbMat1
@@ -723,7 +703,6 @@
             this.tbMat1.Name = "tbMat1";
             this.tbMat1.Size = new System.Drawing.Size(78, 23);
             this.tbMat1.TabIndex = 3;
-            this.tbMat1.Text = "0.0";
             this.tbMat1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLM3
@@ -733,7 +712,6 @@
             this.tbLM3.Name = "tbLM3";
             this.tbLM3.Size = new System.Drawing.Size(78, 23);
             this.tbLM3.TabIndex = 2;
-            this.tbLM3.Text = "0.0";
             this.tbLM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLM2
@@ -743,7 +721,6 @@
             this.tbLM2.Name = "tbLM2";
             this.tbLM2.Size = new System.Drawing.Size(78, 23);
             this.tbLM2.TabIndex = 1;
-            this.tbLM2.Text = "0.0";
             this.tbLM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbLM1
@@ -753,7 +730,6 @@
             this.tbLM1.Name = "tbLM1";
             this.tbLM1.Size = new System.Drawing.Size(78, 23);
             this.tbLM1.TabIndex = 0;
-            this.tbLM1.Text = "0.0";
             this.tbLM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel6
@@ -769,7 +745,7 @@
             this.tableLayoutPanel6.Controls.Add(this.label19, 0, 3);
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel6.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lbLM, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lb, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(456, 35);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -883,17 +859,17 @@
             this.label2.Text = "0.0";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbLM
+            // lb
             // 
-            this.lbLM.AutoSize = true;
-            this.lbLM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbLM.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLM.Location = new System.Drawing.Point(4, 1);
-            this.lbLM.Name = "lbLM";
-            this.lbLM.Size = new System.Drawing.Size(94, 28);
-            this.lbLM.TabIndex = 1;
-            this.lbLM.Text = "0.0";
-            this.lbLM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb.AutoSize = true;
+            this.lb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb.Location = new System.Drawing.Point(4, 1);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(94, 28);
+            this.lb.TabIndex = 1;
+            this.lb.Text = "0.0";
+            this.lb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
             // 
@@ -941,29 +917,67 @@
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
-            // btnGuardar
+            // btnGuardar1
             // 
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(468, 482);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(106, 39);
-            this.btnGuardar.TabIndex = 50;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnGuardar1.Enabled = false;
+            this.btnGuardar1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar1.FlatAppearance.BorderSize = 0;
+            this.btnGuardar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar1.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar1.Location = new System.Drawing.Point(202, 463);
+            this.btnGuardar1.Name = "btnGuardar1";
+            this.btnGuardar1.Size = new System.Drawing.Size(83, 32);
+            this.btnGuardar1.TabIndex = 54;
+            this.btnGuardar1.Text = "Guardar 1°";
+            this.btnGuardar1.UseVisualStyleBackColor = false;
+            this.btnGuardar1.Click += new System.EventHandler(this.btnGuardar1_Click_1);
+            // 
+            // btnGuardar2
+            // 
+            this.btnGuardar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnGuardar2.Enabled = false;
+            this.btnGuardar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar2.FlatAppearance.BorderSize = 0;
+            this.btnGuardar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar2.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar2.Location = new System.Drawing.Point(289, 463);
+            this.btnGuardar2.Name = "btnGuardar2";
+            this.btnGuardar2.Size = new System.Drawing.Size(83, 32);
+            this.btnGuardar2.TabIndex = 55;
+            this.btnGuardar2.Text = "Guardar 2°";
+            this.btnGuardar2.UseVisualStyleBackColor = false;
+            this.btnGuardar2.Click += new System.EventHandler(this.btnGuardar2_Click_1);
+            this.btnGuardar2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnGuardar2_KeyPress);
+            // 
+            // btnGuardar3
+            // 
+            this.btnGuardar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnGuardar3.Enabled = false;
+            this.btnGuardar3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar3.FlatAppearance.BorderSize = 0;
+            this.btnGuardar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar3.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar3.Location = new System.Drawing.Point(376, 463);
+            this.btnGuardar3.Name = "btnGuardar3";
+            this.btnGuardar3.Size = new System.Drawing.Size(83, 32);
+            this.btnGuardar3.TabIndex = 56;
+            this.btnGuardar3.Text = "Guardar 3°";
+            this.btnGuardar3.UseVisualStyleBackColor = false;
+            this.btnGuardar3.Click += new System.EventHandler(this.btnGuardar3_Click_1);
+            this.btnGuardar3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnGuardar3_KeyPress);
             // 
             // FormularioBoleta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 525);
-            this.Controls.Add(this.btnGuardar);
+            this.ClientSize = new System.Drawing.Size(591, 505);
+            this.Controls.Add(this.btnGuardar3);
+            this.Controls.Add(this.btnGuardar2);
+            this.Controls.Add(this.btnGuardar1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.pnlCalificaciones);
@@ -1010,19 +1024,19 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbArtes;
+        private System.Windows.Forms.Label lbEF;
+        private System.Windows.Forms.Label lbFCE;
+        private System.Windows.Forms.Label lbGeo;
+        private System.Windows.Forms.Label lbHis;
+        private System.Windows.Forms.Label lbCNyT;
+        private System.Windows.Forms.Label lbLEI;
+        private System.Windows.Forms.Label lbMat;
+        private System.Windows.Forms.Label lbLME;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label lbLM;
+        private System.Windows.Forms.Label lb;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TextBox tbLM3;
         private System.Windows.Forms.TextBox tbLM2;
@@ -1062,6 +1076,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnGuardar1;
+        private System.Windows.Forms.Button btnGuardar2;
+        private System.Windows.Forms.Button btnGuardar3;
     }
 }

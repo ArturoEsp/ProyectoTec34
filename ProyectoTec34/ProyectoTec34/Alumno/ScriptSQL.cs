@@ -198,7 +198,7 @@ namespace ProyectoTec34.Alumno
 
         public static string getIDMateria(string NombreMateria)
         {
-            string ID;
+            string ID = "";
             string query = "SELECT ID_Materia FROM Materias WHERE Nombre = @Nombre";
             // string query = "SELECT ID_Alumno FROM Alumno WHERE Nombre LIKE '" + NombreCompleto + "%' AND" +
             //    " ApellidoPaterno LIKE '" + NombreCompleto + "%'; ";
@@ -212,7 +212,7 @@ namespace ProyectoTec34.Alumno
             return ID;
         }
 
-        public static void InsertarBoleta(List<Double> CalifP1, List<Double> CalifP2, List<Double> CalifP3, string NombreEstudiante, List<String> NombreCalif)
+        public static void InsertarBoleta(List<Double> CalifP1,/* List<Double> CalifP2, List<Double> CalifP3,*/ string NombreEstudiante, List<String> NombreCalif)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
@@ -221,33 +221,68 @@ namespace ProyectoTec34.Alumno
                 cmd = conn.CreateCommand();
                 for (int i = 0; i < CalifP1.Count; i++)
                 {
-                    cmd.CommandText = "INSERT INTO Parcial1 (ID_Alumno, Calificacion) VALUES(@ID_Alumno, @Calificacion)";
+                    cmd.CommandText = "INSERT INTO Parcial1 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
                     cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
                     cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
                     cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP1[i]));
                     cmd.ExecuteNonQuery();
                 }
+                //for (int i = 0; i < CalifP2.Count; i++)
+                //{
+                //    cmd.CommandText = "INSERT INTO Parcial2 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
+                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
+                //    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP2[i]));
+                //    cmd.ExecuteNonQuery();
+                //}
+                //for (int i = 0; i < CalifP3.Count; i++)
+                //{
+                //    cmd.CommandText = "INSERT INTO Parcial3 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
+                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
+                //    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP3[i]));
+                //    cmd.ExecuteNonQuery();
+                //}
+
+            }
+        }
+        public static void InsertarBoletaP2(List<Double> CalifP2, string NombreEstudiante, List<String> NombreCalif)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
                 for (int i = 0; i < CalifP2.Count; i++)
                 {
-                    cmd.CommandText = "INSERT INTO Parcial2 (ID_Alumno, Calificacion) VALUES(@ID_Alumno, @Calificacion)";
+                    cmd.CommandText = "INSERT INTO Parcial2 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
                     cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
                     cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP2[i]));
                     cmd.ExecuteNonQuery();
                 }
+            }
+        }
+        public static void InsertarBoletaP3(List<Double> CalifP3, string NombreEstudiante, List<String> NombreCalif)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
                 for (int i = 0; i < CalifP3.Count; i++)
                 {
-                    cmd.CommandText = "INSERT INTO Parcial3 (ID_Alumno, Calificacion) VALUES(@ID_Alumno, @Calificacion)";
+                    cmd.CommandText = "INSERT INTO Parcial2 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
                     cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
                     cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP3[i]));
                     cmd.ExecuteNonQuery();
                 }
-
             }
         }
 
         public static void MostrarBoletaPrimer(string ID, TextBox Nombre, TextBox CURP, TextBox Grupo, TextBox Turno)
         {
-
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
                 conn.Open();

@@ -19,8 +19,18 @@ namespace ProyectoTec34.Alumno
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
-        {
+        {/*
             string NombreEstudiante = lbNombre.Text;
+
+            List<String> NombreCalif = new List<String>();
+            NombreCalif.Add("Español II");
+            NombreCalif.Add("Matemáticas II");
+            NombreCalif.Add("Segunda Lengua: Inglés II");
+            NombreCalif.Add("Ciencias II (Énfasis en Física)");
+            NombreCalif.Add("Historia I");
+            NombreCalif.Add("Formación Cívica y Ética I");
+            NombreCalif.Add("Educación Fisíca");
+            NombreCalif.Add("Artes");
 
             List<Double> CalifP1 = new List<Double>();
             CalifP1.Add(Convert.ToDouble(tbEsp1.Text));
@@ -52,9 +62,8 @@ namespace ProyectoTec34.Alumno
             CalifP3.Add(Convert.ToDouble(tbEF3.Text));
             CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
 
-            ScriptSQL.InsertarBoleta(CalifP1, CalifP2, CalifP3, NombreEstudiante);
-
-            Configuraciones.ClearControls.LimpiarCampos(this);
+            ScriptSQL.InsertarBoleta(CalifP1, CalifP2, CalifP3, NombreEstudiante, NombreCalif);
+            */
         }
     }
 }

@@ -78,10 +78,12 @@
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(461, 26);
             this.tbBuscar.TabIndex = 1;
+            this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
             // 
             // btnPrimerBoleta
             // 
             this.btnPrimerBoleta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnPrimerBoleta.Enabled = false;
             this.btnPrimerBoleta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnPrimerBoleta.FlatAppearance.BorderSize = 0;
             this.btnPrimerBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -98,6 +100,7 @@
             // btnSegBoleta
             // 
             this.btnSegBoleta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSegBoleta.Enabled = false;
             this.btnSegBoleta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSegBoleta.FlatAppearance.BorderSize = 0;
             this.btnSegBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -114,6 +117,7 @@
             // btnTercerBoleta
             // 
             this.btnTercerBoleta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnTercerBoleta.Enabled = false;
             this.btnTercerBoleta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTercerBoleta.FlatAppearance.BorderSize = 0;
             this.btnTercerBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
