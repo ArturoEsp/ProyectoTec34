@@ -15,7 +15,7 @@ namespace ProyectoTec34.Login
         public static bool Autenticar(string usuario, string password)
         {
             string sql = @"SELECT COUNT(*)
-                       FROM Usuario
+                       FROM Usuarios
                        WHERE Username = @usuario AND Password = @password";
 
 
@@ -33,6 +33,8 @@ namespace ProyectoTec34.Login
                     return true;
             }
         }
+
+       
 
         public static void AutoCloseLogin(int Segundos)
         {

@@ -14,13 +14,25 @@ namespace ProyectoTec34.Alumno
     {
         public string ID_Alumno;
 
-        public BuscarAlumno()
+        public BuscarAlumno(char Option)
         {
             InitializeComponent();
 
             tbBuscar.AutoCompleteCustomSource = ScriptSQL.AutoCompletarBuscar();
             tbBuscar.AutoCompleteMode = AutoCompleteMode.Suggest;
             tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            switch (Option)
+            {
+                case 'B':
+                    rbtnBoletas.Checked = true;
+                    break;
+                case 'E':
+                    rbtnEstudioE.Checked = true;
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void BuscarAlumno_Load(object sender, EventArgs e)
@@ -49,8 +61,19 @@ namespace ProyectoTec34.Alumno
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             ID_Alumno = ScriptSQL.getIDAlumno(tbBuscar.Text);
-            BoletaPrimerAño frm = new BoletaPrimerAño(ID_Alumno);
-            frm.Show();
+            if (rbtnBoletas.Checked == true)
+            {
+                BoletaPrimerAño frm = new BoletaPrimerAño(ID_Alumno);
+                frm.Show();
+            }
+
+            if (rbtnEstudioE.Checked == true)
+            {
+                VistaEstudio frm = new VistaEstudio(ID_Alumno,tbBuscar.Text);
+                frm.Show();
+            }
+
+
 
         }
     }

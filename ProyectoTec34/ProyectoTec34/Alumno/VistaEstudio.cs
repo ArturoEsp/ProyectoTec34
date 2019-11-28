@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace ProyectoTec34.Alumno
 {
     public partial class VistaEstudio : Form
     {
-        public VistaEstudio()
+        public VistaEstudio(string IDAlumno,string Nombre)
         {
             InitializeComponent();
+            tbNombre.Text = Nombre;
+           dgvSomaticos.DataSource = ScriptSQL.ConsultaSomaticos(IDAlumno);
+            
         }
 
     }

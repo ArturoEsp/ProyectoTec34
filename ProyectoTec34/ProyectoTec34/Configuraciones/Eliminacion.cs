@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoTec34.Alumno
+namespace ProyectoTec34.Configuraciones
 {
-    public partial class BuscarEstudioS : Form
+    public partial class Eliminacion : Form
     {
-        public BuscarEstudioS()
+        public Eliminacion()
         {
             InitializeComponent();
         }

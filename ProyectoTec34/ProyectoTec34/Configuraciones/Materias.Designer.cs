@@ -33,19 +33,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNombreMateria = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dgvMaterias = new System.Windows.Forms.DataGridView();
+            this.cbMaestro = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnSiguiente = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.tbID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterias)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,13 +76,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre:";
             // 
-            // textBox1
+            // tbNombreMateria
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(86, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 26);
-            this.textBox1.TabIndex = 4;
+            this.tbNombreMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreMateria.Location = new System.Drawing.Point(86, 101);
+            this.tbNombreMateria.Name = "tbNombreMateria";
+            this.tbNombreMateria.Size = new System.Drawing.Size(371, 26);
+            this.tbNombreMateria.TabIndex = 4;
+            this.tbNombreMateria.TextChanged += new System.EventHandler(this.tbNombreMateria_TextChanged);
             // 
             // label3
             // 
@@ -97,12 +95,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Maestro:";
             // 
-            // dataGridView1
+            // dgvMaterias
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMaterias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMaterias.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvMaterias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvMaterias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(179)))), ((int)(((byte)(157)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,44 +108,27 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.DimGray;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(445, 128);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvMaterias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMaterias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMaterias.EnableHeadersVisualStyles = false;
+            this.dgvMaterias.GridColor = System.Drawing.Color.DimGray;
+            this.dgvMaterias.Location = new System.Drawing.Point(12, 186);
+            this.dgvMaterias.Name = "dgvMaterias";
+            this.dgvMaterias.RowHeadersVisible = false;
+            this.dgvMaterias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMaterias.Size = new System.Drawing.Size(445, 128);
+            this.dgvMaterias.TabIndex = 6;
             // 
-            // Column1
+            // cbMaestro
             // 
-            this.Column1.HeaderText = "ID_Materia";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "ID_Docente";
-            this.Column3.Name = "Column3";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(86, 147);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 28);
-            this.comboBox1.TabIndex = 9;
+            this.cbMaestro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMaestro.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbMaestro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMaestro.FormattingEnabled = true;
+            this.cbMaestro.Location = new System.Drawing.Point(86, 147);
+            this.cbMaestro.Name = "cbMaestro";
+            this.cbMaestro.Size = new System.Drawing.Size(265, 28);
+            this.cbMaestro.TabIndex = 9;
             // 
             // btnAgregar
             // 
@@ -166,29 +147,32 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnSiguiente
+            // btnGuardar
             // 
-            this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSiguiente.FlatAppearance.BorderSize = 0;
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.Location = new System.Drawing.Point(349, 320);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(108, 39);
-            this.btnSiguiente.TabIndex = 35;
-            this.btnSiguiente.Text = "Guardar";
-            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.Location = new System.Drawing.Point(349, 320);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(108, 39);
+            this.btnGuardar.TabIndex = 35;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // textBox2
+            // tbID
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(86, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 26);
-            this.textBox2.TabIndex = 38;
+            this.tbID.Enabled = false;
+            this.tbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbID.Location = new System.Drawing.Point(86, 60);
+            this.tbID.Name = "tbID";
+            this.tbID.ReadOnly = true;
+            this.tbID.Size = new System.Drawing.Size(371, 26);
+            this.tbID.TabIndex = 38;
             // 
             // label4
             // 
@@ -205,14 +189,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(468, 363);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnSiguiente);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.cbMaestro);
+            this.Controls.Add(this.dgvMaterias);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNombreMateria);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -222,7 +206,7 @@
             this.Text = "Materias";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,16 +217,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNombreMateria;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.DataGridView dgvMaterias;
+        private System.Windows.Forms.ComboBox cbMaestro;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

@@ -28,5 +28,11 @@ namespace ProyectoTec34.Configuraciones
             }
             
         }
+
+        private void eliminarAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Eliminacion frm = new Eliminacion();
+            frm.Show();
+        }
     }
 }

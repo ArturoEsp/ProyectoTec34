@@ -64,10 +64,10 @@ namespace ProyectoTec34.Home
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno();
-            btnBuscar.BackColor = Color.FromArgb(183, 190, 188);
-            btnAlumnos.BackColor = Color.Transparent;
-            btnConf.BackColor = Color.Transparent;
+            Alumno.BuscarAlumno frm = new Alumno.BuscarAlumno('B');
+            //btnBuscar.BackColor = Color.FromArgb(183, 190, 188);
+            //btnAlumnos.BackColor = Color.Transparent;
+            //btnConf.BackColor = Color.Transparent;
             frm.ShowDialog();
             
         }

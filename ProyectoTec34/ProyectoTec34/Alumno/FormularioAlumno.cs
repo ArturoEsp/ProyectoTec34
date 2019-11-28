@@ -11,6 +11,7 @@ namespace ProyectoTec34.Alumno
 
         private string fecha_nacimiento;
         private ArrayList Parametros;
+        private string IDAlumno;
         public FormularioAlumno()
         {         
            InitializeComponent();
@@ -30,7 +31,7 @@ namespace ProyectoTec34.Alumno
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            string IDAlumno = Configuraciones.GenerateID.AlumnoID();
+            IDAlumno = Configuraciones.GenerateID.AlumnoID();
             if (string.IsNullOrEmpty(tbNombres.Text) || string.IsNullOrEmpty(tbApellidoMaterno.Text) || string.IsNullOrEmpty(tbApellidoPaterno.Text)
                 || string.IsNullOrEmpty(tbCURP.Text))
             {
@@ -73,7 +74,10 @@ namespace ProyectoTec34.Alumno
                 
             }
 
+            Parametros = new ArrayList();
             IDAlumno = String.Empty;
+            tbNacionalidad.Text = "MEXICANA";
+            tbEntidadFederativa.Text = "MORELOS";
             
            
         }
@@ -85,8 +89,13 @@ namespace ProyectoTec34.Alumno
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+            Parametros = null;
             Configuraciones.ClearControls.LimpiarCampos(this);
+        }
+
+        private void tbCP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Configuraciones.OnlyNumbers.Validate(e);
         }
     }
 }

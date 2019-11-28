@@ -15,7 +15,15 @@ namespace ProyectoTec34.Configuraciones
             string ID;
             int randomNum = rnd.Next(1000);
             string sub = NombreMaestro.Substring(0, 3);
-            return ID = sub + randomNum.ToString();
+            return ID = sub.ToUpper() + randomNum.ToString();
+        }
+
+        public static string MateriaID(string NombreMateria)
+        {
+            string ID;
+            int randomNum = rnd.Next(1000,2000);
+            string sub = NombreMateria.Substring(0, 3);
+            return ID = sub.ToUpper() + randomNum.ToString();
         }
 
         public static string AlumnoID()
