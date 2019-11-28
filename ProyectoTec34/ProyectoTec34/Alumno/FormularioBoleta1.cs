@@ -20,6 +20,7 @@ namespace ProyectoTec34.Alumno
 
         private void tbLM1_TextChanged(object sender, EventArgs e)
         {
+
             double prom = double.Parse(tbLM1.Text);
             lbLM.Text = prom.ToString("0.#");
         }

@@ -45,6 +45,7 @@ namespace ProyectoTec34.Configuraciones
                 tbIDUser.Text = "";
                 tbUsername.Text = "";
                 tbPassword.Text = "";
+                dgvDatos.DataSource = ScriptSQL.MostrarUsuarios();
             }
         }
     }

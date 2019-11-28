@@ -36,12 +36,87 @@ namespace ProyectoTec34.Alumno
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
+
+            AltaEstudioSocioE(Parametros[0].ToString());
+            AltaSomaticos(Parametros[0].ToString());
         }
 
-        public static void AltaEstudioSocioE(string IDAlumno)
+        #region Estudio SocioEconomico
+
+        private static void AltaEstudioSocioE(string IDAlumno)
         {
+            for (int i = 1; i < 5; i++)
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+                {
 
+                    SQLiteCommand cmd;
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "INSERT INTO EstudioSocio" + i + "(ID_Alumno) VALUES(@ID)";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID", IDAlumno));
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
+
+        private static void AltaSomaticos(string IDAlumno)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "INSERT INTO Somaticos(ID_Alumno) VALUES(@ID)";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", IDAlumno));
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public static ArrayList ConsultaEstudioS()
+        {
+            ArrayList Datos = new ArrayList();
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteCommand cmd = new SQLiteCommand();
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM EstudioSocio1";
+                conn.Open();
+
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Datos.Add(reader[0].ToString());
+                    }
+                }
+            }
+            return Datos;
+        }
+
+        public static DataTable ConsultaSomaticos(string IDAlumno)
+        {
+            DataTable dt = new DataTable();
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();             
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT Grado AS 'GRADO',Edad AS 'EDAD',Peso AS 'PESO (KG)'," +
+                    "Estatura AS 'ESTATURA',Ciclos_Escolares AS 'CICLOS ESCOLARES' FROM Somaticos WHERE ID_Alumno = @ID";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", IDAlumno));
+                using (SQLiteDataAdapter a = new SQLiteDataAdapter(cmd))
+                {
+                    a.Fill(dt);
+                }
+
+            }
+            return dt;
+        }
+
+        #endregion
+
 
 
         public static string getIDAlumno(string NombreCompleto)
@@ -122,7 +197,7 @@ namespace ProyectoTec34.Alumno
         }
 
 
-        public static void MostrarBoletaPrimer(string ID, TextBox Nombre, TextBox CURP, TextBox Grupo,TextBox Turno)
+        public static void MostrarBoletaPrimer(string ID, TextBox Nombre, TextBox CURP, TextBox Grupo, TextBox Turno)
         {
 
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))

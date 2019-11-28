@@ -283,6 +283,7 @@
             this.tbCP.Name = "tbCP";
             this.tbCP.Size = new System.Drawing.Size(225, 26);
             this.tbCP.TabIndex = 64;
+            this.tbCP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCP_KeyPress);
             // 
             // label9
             // 
@@ -302,6 +303,7 @@
             this.tbEntidadFederativa.Name = "tbEntidadFederativa";
             this.tbEntidadFederativa.Size = new System.Drawing.Size(262, 26);
             this.tbEntidadFederativa.TabIndex = 62;
+            this.tbEntidadFederativa.Text = "MORELOS";
             // 
             // label8
             // 
@@ -340,7 +342,7 @@
             this.tbNacionalidad.Name = "tbNacionalidad";
             this.tbNacionalidad.Size = new System.Drawing.Size(220, 26);
             this.tbNacionalidad.TabIndex = 58;
-            this.tbNacionalidad.Text = "Mexicana";
+            this.tbNacionalidad.Text = "MEXICANA";
             // 
             // label6
             // 

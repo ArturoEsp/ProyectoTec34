@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseDeDatos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseDeDatos));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.respaldoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.eliminaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.respaldoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.respaldaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +50,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportarToolStripMenuItem,
             this.seleccionToolStripMenuItem,
-            this.respaldoToolStripMenuItem});
+            this.respaldoToolStripMenuItem,
+            this.eliminaciónToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1364, 24);
@@ -64,25 +67,19 @@
             this.exportarToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.exportarToolStripMenuItem.Text = "Exportar";
             // 
-            // excelToolStripMenuItem
-            // 
-            this.excelToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("excelToolStripMenuItem.Image")));
-            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
-            this.excelToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
-            this.excelToolStripMenuItem.Text = "Excel";
-            // 
-            // pDFToolStripMenuItem
-            // 
-            this.pDFToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pDFToolStripMenuItem.Image")));
-            this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
-            this.pDFToolStripMenuItem.Text = "PDF";
-            // 
             // seleccionToolStripMenuItem
             // 
             this.seleccionToolStripMenuItem.Name = "seleccionToolStripMenuItem";
             this.seleccionToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.seleccionToolStripMenuItem.Text = "Seleccion";
+            // 
+            // respaldoToolStripMenuItem
+            // 
+            this.respaldoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.respaldaBaseDeDatosToolStripMenuItem});
+            this.respaldoToolStripMenuItem.Name = "respaldoToolStripMenuItem";
+            this.respaldoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.respaldoToolStripMenuItem.Text = "Respaldo";
             // 
             // dgvDatos
             // 
@@ -96,7 +93,7 @@
             this.dgvDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(153)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -122,20 +119,43 @@
             this.dgvDatos.Size = new System.Drawing.Size(1364, 637);
             this.dgvDatos.TabIndex = 2;
             // 
-            // respaldoToolStripMenuItem
+            // eliminaciónToolStripMenuItem
             // 
-            this.respaldoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.respaldaBaseDeDatosToolStripMenuItem});
-            this.respaldoToolStripMenuItem.Name = "respaldoToolStripMenuItem";
-            this.respaldoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.respaldoToolStripMenuItem.Text = "Respaldo";
+            this.eliminaciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eliminarAlumnoToolStripMenuItem});
+            this.eliminaciónToolStripMenuItem.Name = "eliminaciónToolStripMenuItem";
+            this.eliminaciónToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.eliminaciónToolStripMenuItem.Text = "Eliminación";
+            // 
+            // excelToolStripMenuItem
+            // 
+            this.excelToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("excelToolStripMenuItem.Image")));
+            this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
+            this.excelToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.excelToolStripMenuItem.Text = "Excel";
+            // 
+            // pDFToolStripMenuItem
+            // 
+            this.pDFToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pDFToolStripMenuItem.Image")));
+            this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.pDFToolStripMenuItem.Text = "PDF";
             // 
             // respaldaBaseDeDatosToolStripMenuItem
             // 
+            this.respaldaBaseDeDatosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("respaldaBaseDeDatosToolStripMenuItem.Image")));
             this.respaldaBaseDeDatosToolStripMenuItem.Name = "respaldaBaseDeDatosToolStripMenuItem";
             this.respaldaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.respaldaBaseDeDatosToolStripMenuItem.Text = "Respalda Base de datos";
             this.respaldaBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.respaldaBaseDeDatosToolStripMenuItem_Click);
+            // 
+            // eliminarAlumnoToolStripMenuItem
+            // 
+            this.eliminarAlumnoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarAlumnoToolStripMenuItem.Image")));
+            this.eliminarAlumnoToolStripMenuItem.Name = "eliminarAlumnoToolStripMenuItem";
+            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarAlumnoToolStripMenuItem.Text = "Eliminar alumno";
+            this.eliminarAlumnoToolStripMenuItem.Click += new System.EventHandler(this.eliminarAlumnoToolStripMenuItem_Click);
             // 
             // BaseDeDatos
             // 
@@ -169,5 +189,7 @@
         private System.Windows.Forms.ToolStripMenuItem seleccionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem respaldoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem respaldaBaseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminaciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarAlumnoToolStripMenuItem;
     }
 }

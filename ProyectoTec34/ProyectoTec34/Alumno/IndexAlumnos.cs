@@ -36,7 +36,7 @@ namespace ProyectoTec34.Alumno
 
         private void btnIngresarEstudio_Click(object sender, EventArgs e)
         {
-            VistaEstudio frm = new VistaEstudio();
+            BuscarAlumno frm = new BuscarAlumno('E');
             frm.Show();
         }
     }

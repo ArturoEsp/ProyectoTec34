@@ -361,7 +361,7 @@
         private System.Windows.Forms.PictureBox pbFecha;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.Button button1;
+        
         public System.Windows.Forms.Label lblUsuario;
     }
 }

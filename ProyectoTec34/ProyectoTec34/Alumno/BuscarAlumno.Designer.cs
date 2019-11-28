@@ -34,8 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbtnBoletas = new System.Windows.Forms.RadioButton();
+            this.rbtnEstudioE = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,30 +95,30 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // radioButton1
+            // rbtnBoletas
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(12, 97);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 22);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Boletas";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnBoletas.AutoSize = true;
+            this.rbtnBoletas.Checked = true;
+            this.rbtnBoletas.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnBoletas.Location = new System.Drawing.Point(12, 97);
+            this.rbtnBoletas.Name = "rbtnBoletas";
+            this.rbtnBoletas.Size = new System.Drawing.Size(70, 22);
+            this.rbtnBoletas.TabIndex = 4;
+            this.rbtnBoletas.TabStop = true;
+            this.rbtnBoletas.Text = "Boletas";
+            this.rbtnBoletas.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtnEstudioE
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(102, 97);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(154, 22);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Información personal";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnEstudioE.AutoSize = true;
+            this.rbtnEstudioE.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnEstudioE.Location = new System.Drawing.Point(102, 97);
+            this.rbtnEstudioE.Name = "rbtnEstudioE";
+            this.rbtnEstudioE.Size = new System.Drawing.Size(172, 22);
+            this.rbtnEstudioE.TabIndex = 5;
+            this.rbtnEstudioE.TabStop = true;
+            this.rbtnEstudioE.Text = "Estudio SocioEconomico";
+            this.rbtnEstudioE.UseVisualStyleBackColor = true;
             // 
             // BuscarAlumno
             // 
@@ -127,8 +127,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(613, 135);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbtnEstudioE);
+            this.Controls.Add(this.rbtnBoletas);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -152,7 +152,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbtnBoletas;
+        private System.Windows.Forms.RadioButton rbtnEstudioE;
     }
 }
