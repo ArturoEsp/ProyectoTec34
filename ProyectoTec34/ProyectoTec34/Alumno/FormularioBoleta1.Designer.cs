@@ -496,6 +496,8 @@
             this.tbArtes3.Size = new System.Drawing.Size(78, 23);
             this.tbArtes3.TabIndex = 26;
             this.tbArtes3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArtes3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
+            this.tbArtes3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes3_KeyUp);
             // 
             // tbArtes2
             // 
@@ -505,6 +507,8 @@
             this.tbArtes2.Size = new System.Drawing.Size(78, 23);
             this.tbArtes2.TabIndex = 25;
             this.tbArtes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArtes2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
+            this.tbArtes2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes2_KeyUp);
             // 
             // tbArtes1
             // 
@@ -514,7 +518,8 @@
             this.tbArtes1.Size = new System.Drawing.Size(78, 23);
             this.tbArtes1.TabIndex = 24;
             this.tbArtes1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbArtes1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbArtes1_KeyPress);
+            this.tbArtes1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
+            this.tbArtes1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes1_KeyUp);
             // 
             // tbEF3
             // 
@@ -524,6 +529,7 @@
             this.tbEF3.Size = new System.Drawing.Size(78, 23);
             this.tbEF3.TabIndex = 23;
             this.tbEF3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEF3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbEF2
             // 
@@ -533,6 +539,7 @@
             this.tbEF2.Size = new System.Drawing.Size(78, 23);
             this.tbEF2.TabIndex = 22;
             this.tbEF2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEF2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbEF1
             // 
@@ -542,6 +549,7 @@
             this.tbEF1.Size = new System.Drawing.Size(78, 23);
             this.tbEF1.TabIndex = 21;
             this.tbEF1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEF1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbFCyE3
             // 
@@ -551,6 +559,7 @@
             this.tbFCyE3.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE3.TabIndex = 20;
             this.tbFCyE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbFCyE3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbFCyE2
             // 
@@ -560,6 +569,7 @@
             this.tbFCyE2.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE2.TabIndex = 19;
             this.tbFCyE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbFCyE2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbFCyE1
             // 
@@ -569,6 +579,7 @@
             this.tbFCyE1.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE1.TabIndex = 18;
             this.tbFCyE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbFCyE1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbGeo3
             // 
@@ -578,6 +589,7 @@
             this.tbGeo3.Size = new System.Drawing.Size(78, 23);
             this.tbGeo3.TabIndex = 17;
             this.tbGeo3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbGeo3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbGeo2
             // 
@@ -587,6 +599,7 @@
             this.tbGeo2.Size = new System.Drawing.Size(78, 23);
             this.tbGeo2.TabIndex = 16;
             this.tbGeo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbGeo2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbGeo1
             // 
@@ -596,6 +609,7 @@
             this.tbGeo1.Size = new System.Drawing.Size(78, 23);
             this.tbGeo1.TabIndex = 15;
             this.tbGeo1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbGeo1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbHis3
             // 
@@ -605,6 +619,7 @@
             this.tbHis3.Size = new System.Drawing.Size(78, 23);
             this.tbHis3.TabIndex = 14;
             this.tbHis3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHis3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbHis2
             // 
@@ -614,6 +629,7 @@
             this.tbHis2.Size = new System.Drawing.Size(78, 23);
             this.tbHis2.TabIndex = 13;
             this.tbHis2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHis2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbHis1
             // 
@@ -623,6 +639,7 @@
             this.tbHis1.Size = new System.Drawing.Size(78, 23);
             this.tbHis1.TabIndex = 12;
             this.tbHis1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHis1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbCNyT3
             // 
@@ -632,6 +649,7 @@
             this.tbCNyT3.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT3.TabIndex = 11;
             this.tbCNyT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCNyT3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbCNyT2
             // 
@@ -641,6 +659,7 @@
             this.tbCNyT2.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT2.TabIndex = 10;
             this.tbCNyT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCNyT2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbCNyT1
             // 
@@ -650,6 +669,7 @@
             this.tbCNyT1.Size = new System.Drawing.Size(78, 23);
             this.tbCNyT1.TabIndex = 9;
             this.tbCNyT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCNyT1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbLE3
             // 
@@ -659,6 +679,7 @@
             this.tbLE3.Size = new System.Drawing.Size(78, 23);
             this.tbLE3.TabIndex = 8;
             this.tbLE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLE3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbLE2
             // 
@@ -668,6 +689,7 @@
             this.tbLE2.Size = new System.Drawing.Size(78, 23);
             this.tbLE2.TabIndex = 7;
             this.tbLE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLE2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbLE1
             // 
@@ -677,6 +699,7 @@
             this.tbLE1.Size = new System.Drawing.Size(78, 23);
             this.tbLE1.TabIndex = 6;
             this.tbLE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLE1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbMat3
             // 
@@ -686,6 +709,7 @@
             this.tbMat3.Size = new System.Drawing.Size(78, 23);
             this.tbMat3.TabIndex = 5;
             this.tbMat3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMat3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbMat2
             // 
@@ -695,6 +719,7 @@
             this.tbMat2.Size = new System.Drawing.Size(78, 23);
             this.tbMat2.TabIndex = 4;
             this.tbMat2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMat2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbMat1
             // 
@@ -704,6 +729,7 @@
             this.tbMat1.Size = new System.Drawing.Size(78, 23);
             this.tbMat1.TabIndex = 3;
             this.tbMat1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMat1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbLM3
             // 
@@ -713,6 +739,7 @@
             this.tbLM3.Size = new System.Drawing.Size(78, 23);
             this.tbLM3.TabIndex = 2;
             this.tbLM3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLM3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbLM2
             // 
@@ -722,6 +749,7 @@
             this.tbLM2.Size = new System.Drawing.Size(78, 23);
             this.tbLM2.TabIndex = 1;
             this.tbLM2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLM2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tbLM1
             // 
@@ -731,6 +759,7 @@
             this.tbLM1.Size = new System.Drawing.Size(78, 23);
             this.tbLM1.TabIndex = 0;
             this.tbLM1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLM1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLM1_KeyPress_1);
             // 
             // tableLayoutPanel6
             // 
@@ -950,7 +979,6 @@
             this.btnGuardar2.Text = "Guardar 2°";
             this.btnGuardar2.UseVisualStyleBackColor = false;
             this.btnGuardar2.Click += new System.EventHandler(this.btnGuardar2_Click_1);
-            this.btnGuardar2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnGuardar2_KeyPress);
             // 
             // btnGuardar3
             // 
@@ -968,7 +996,6 @@
             this.btnGuardar3.Text = "Guardar 3°";
             this.btnGuardar3.UseVisualStyleBackColor = false;
             this.btnGuardar3.Click += new System.EventHandler(this.btnGuardar3_Click_1);
-            this.btnGuardar3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnGuardar3_KeyPress);
             // 
             // FormularioBoleta1
             // 

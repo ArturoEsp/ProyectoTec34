@@ -148,6 +148,7 @@
     <Compile Include="Alumno\IndexAlumnos.Designer.cs">
       <DependentUpon>IndexAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\OnlyDoubles.cs" />
     <Compile Include="Alumno\ScriptSQL.cs" />
     <Compile Include="Alumno\SearchStudent.cs" />
     <Compile Include="Alumno\VistaEstudio.cs">

@@ -18,8 +18,8 @@ namespace ProyectoTec34.Alumno
             lbNombre.Text = Estudiante;
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {/*
+        private void btnGuardar1_Click(object sender, EventArgs e)
+        {
             string NombreEstudiante = lbNombre.Text;
 
             List<String> NombreCalif = new List<String>();
@@ -29,8 +29,8 @@ namespace ProyectoTec34.Alumno
             NombreCalif.Add("Ciencias II (Énfasis en Física)");
             NombreCalif.Add("Historia I");
             NombreCalif.Add("Formación Cívica y Ética I");
-            NombreCalif.Add("Educación Fisíca");
-            NombreCalif.Add("Artes");
+            NombreCalif.Add("Educación Fisíca II");
+            NombreCalif.Add("Artes II");
 
             List<Double> CalifP1 = new List<Double>();
             CalifP1.Add(Convert.ToDouble(tbEsp1.Text));
@@ -42,6 +42,25 @@ namespace ProyectoTec34.Alumno
             CalifP1.Add(Convert.ToDouble(tbEF1.Text));
             CalifP1.Add(Convert.ToDouble(tbArtes1.Text));
 
+            ScriptSQL.InsertarBoleta(CalifP1, NombreEstudiante, NombreCalif);
+            MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnGuardar1.Enabled = false;
+        }
+
+        private void btnGuardar2_Click(object sender, EventArgs e)
+        {
+            string NombreEstudiante = lbNombre.Text;
+
+            List<String> NombreCalif = new List<String>();
+            NombreCalif.Add("Español II");
+            NombreCalif.Add("Matemáticas II");
+            NombreCalif.Add("Segunda Lengua: Inglés II");
+            NombreCalif.Add("Ciencias II (Énfasis en Física)");
+            NombreCalif.Add("Historia I");
+            NombreCalif.Add("Formación Cívica y Ética I");
+            NombreCalif.Add("Educación Fisíca II");
+            NombreCalif.Add("Artes II");
+
             List<Double> CalifP2 = new List<Double>();
             CalifP2.Add(Convert.ToDouble(tbEsp2.Text));
             CalifP2.Add(Convert.ToDouble(tbMat2.Text));
@@ -51,6 +70,25 @@ namespace ProyectoTec34.Alumno
             CalifP2.Add(Convert.ToDouble(tbFCyE2.Text));
             CalifP2.Add(Convert.ToDouble(tbEF2.Text));
             CalifP2.Add(Convert.ToDouble(tbArtes2.Text));
+
+            ScriptSQL.InsertarBoletaP2(CalifP2, NombreEstudiante, NombreCalif);
+            MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnGuardar2.Enabled = false;
+        }
+
+        private void btnGuardar3_Click(object sender, EventArgs e)
+        {
+            string NombreEstudiante = lbNombre.Text;
+
+            List<String> NombreCalif = new List<String>();
+            NombreCalif.Add("Español II");
+            NombreCalif.Add("Matemáticas II");
+            NombreCalif.Add("Segunda Lengua: Inglés II");
+            NombreCalif.Add("Ciencias II (Énfasis en Física)");
+            NombreCalif.Add("Historia I");
+            NombreCalif.Add("Formación Cívica y Ética I");
+            NombreCalif.Add("Educación Fisíca II");
+            NombreCalif.Add("Artes II");
 
             List<Double> CalifP3 = new List<Double>();
             CalifP3.Add(Convert.ToDouble(tbEsp3.Text));
@@ -62,8 +100,38 @@ namespace ProyectoTec34.Alumno
             CalifP3.Add(Convert.ToDouble(tbEF3.Text));
             CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
 
-            ScriptSQL.InsertarBoleta(CalifP1, CalifP2, CalifP3, NombreEstudiante, NombreCalif);
-            */
+            ScriptSQL.InsertarBoletaP3(CalifP3, NombreEstudiante, NombreCalif);
+            MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnGuardar3.Enabled = false;
+        }
+
+        private void tbHis3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            OnlyDoubles.validarNumeros(sender, e, '.');
+        }
+
+        private void tbArtes1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tbArtes1.Text))
+                btnGuardar1.Enabled = true;
+            else
+                btnGuardar1.Enabled = false;
+        }
+
+        private void tbArtes2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tbArtes2.Text))
+                btnGuardar2.Enabled = true;
+            else
+                btnGuardar2.Enabled = false;
+        }
+
+        private void tbArtes3_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tbArtes3.Text))
+                btnGuardar3.Enabled = true;
+            else
+                btnGuardar3.Enabled = false;
         }
     }
 }

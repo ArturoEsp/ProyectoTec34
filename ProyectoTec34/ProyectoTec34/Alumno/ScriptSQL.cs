@@ -100,7 +100,7 @@ namespace ProyectoTec34.Alumno
             DataTable dt = new DataTable();
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-                conn.Open();             
+                conn.Open();
                 SQLiteCommand cmd;
                 cmd = conn.CreateCommand();
                 cmd.CommandText = "SELECT Grado AS 'GRADO',Edad AS 'EDAD',Peso AS 'PESO (KG)'," +
@@ -227,23 +227,6 @@ namespace ProyectoTec34.Alumno
                     cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP1[i]));
                     cmd.ExecuteNonQuery();
                 }
-                //for (int i = 0; i < CalifP2.Count; i++)
-                //{
-                //    cmd.CommandText = "INSERT INTO Parcial2 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
-                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
-                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
-                //    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP2[i]));
-                //    cmd.ExecuteNonQuery();
-                //}
-                //for (int i = 0; i < CalifP3.Count; i++)
-                //{
-                //    cmd.CommandText = "INSERT INTO Parcial3 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
-                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
-                //    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
-                //    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP3[i]));
-                //    cmd.ExecuteNonQuery();
-                //}
-
             }
         }
         public static void InsertarBoletaP2(List<Double> CalifP2, string NombreEstudiante, List<String> NombreCalif)
@@ -272,7 +255,7 @@ namespace ProyectoTec34.Alumno
                 cmd = conn.CreateCommand();
                 for (int i = 0; i < CalifP3.Count; i++)
                 {
-                    cmd.CommandText = "INSERT INTO Parcial2 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
+                    cmd.CommandText = "INSERT INTO Parcial3 (ID_Alumno, ID_Materia, Calificacion) VALUES(@ID_Alumno, @ID_Materia, @Calificacion)";
                     cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
                     cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
                     cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP3[i]));
@@ -300,6 +283,252 @@ namespace ProyectoTec34.Alumno
 
                 }
 
+            }
+        }
+        public static void MostrarBoleta1(string ID_Alumno, List<String> NombreCalif, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbGeo, Label lbFC, Label lbEF, Label lbArt)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial1 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif.Count; i++)
+                    {
+                        calif.Add("0.0");
+                    }
+                }
+
+                lbLM.Text = calif[0].ToString();
+                lbMat.Text = calif[1].ToString();
+                lbLE.Text = calif[2].ToString();
+                lbCN.Text = calif[3].ToString();
+                lbHis.Text = calif[4].ToString();
+                lbGeo.Text = calif[5].ToString();
+                lbFC.Text = calif[6].ToString();
+                lbEF.Text = calif[7].ToString();
+                lbArt.Text = calif[8].ToString();
+            }
+        }
+        public static void MostrarBoleta2(string ID_Alumno, List<String> NombreCalif2, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbGeo, Label lbFC, Label lbEF, Label lbArt)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif2.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial2 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif2[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif2.Count; i++)
+                    {
+                        calif.Add("0.0");
+                    }
+                }
+
+                lbLM.Text = calif[0].ToString();
+                lbMat.Text = calif[1].ToString();
+                lbLE.Text = calif[2].ToString();
+                lbCN.Text = calif[3].ToString();
+                lbHis.Text = calif[4].ToString();
+                lbGeo.Text = calif[5].ToString();
+                lbFC.Text = calif[6].ToString();
+                lbEF.Text = calif[7].ToString();
+                lbArt.Text = calif[8].ToString();
+            }
+        }
+        public static void MostrarBoleta3(string ID_Alumno, List<String> NombreCalif3, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbGeo, Label lbFC, Label lbEF, Label lbArt)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif3.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial3 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif3[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif3.Count; i++)
+                    {
+                        calif.Add("0.0");
+                    }
+                }
+
+                lbLM.Text = calif[0].ToString();
+                lbMat.Text = calif[1].ToString();
+                lbLE.Text = calif[2].ToString();
+                lbCN.Text = calif[3].ToString();
+                lbHis.Text = calif[4].ToString();
+                lbGeo.Text = calif[5].ToString();
+                lbFC.Text = calif[6].ToString();
+                lbEF.Text = calif[7].ToString();
+                lbArt.Text = calif[8].ToString();
+            }
+        }
+        
+        public static void MostrarBoletaP1(string ID_Alumno, List<String> NombreCalif, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbFC, Label lbEF, Label lbArt)
+        {
+            //lbEsp1, lbMat1, lbSL1, lbCie1, lbHis1, lbFCyE1, lbEF1, lbArtes1
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial1 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif.Count; i++)
+                    {
+                        calif.Add("0.0");
+                    }
+                }
+
+                lbLM.Text = calif[0].ToString();
+                lbMat.Text = calif[1].ToString();
+                lbLE.Text = calif[2].ToString();
+                lbCN.Text = calif[3].ToString();
+                lbHis.Text = calif[4].ToString();
+                lbFC.Text = calif[5].ToString();
+                lbEF.Text = calif[6].ToString();
+                lbArt.Text = calif[7].ToString();
+            }
+        }
+        
+        public static void MostrarBoletaP2(string ID_Alumno, List<String> NombreCalif2, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbFC, Label lbEF, Label lbArt)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif2.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial2 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif2[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif2.Count; i++)
+                    {
+                        calif.Add("0.0");
+                    }
+                }
+
+                lbLM.Text = calif[0].ToString();
+                lbMat.Text = calif[1].ToString();
+                lbLE.Text = calif[2].ToString();
+                lbCN.Text = calif[3].ToString();
+                lbHis.Text = calif[4].ToString();
+                lbFC.Text = calif[5].ToString();
+                lbEF.Text = calif[6].ToString();
+                lbArt.Text = calif[7].ToString();
+            }
+        }
+        public static void MostrarBoletaP3(string ID_Alumno, List<String> NombreCalif3, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbFC, Label lbEF, Label lbArt)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif3.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial3 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif3[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif3.Count; i++)
+                    {
+                        calif.Add("0.0");
+                    }
+                }
+
+                lbLM.Text = calif[0].ToString();
+                lbMat.Text = calif[1].ToString();
+                lbLE.Text = calif[2].ToString();
+                lbCN.Text = calif[3].ToString();
+                lbHis.Text = calif[4].ToString();
+                lbFC.Text = calif[5].ToString();
+                lbEF.Text = calif[6].ToString();
+                lbArt.Text = calif[7].ToString();
             }
         }
     }

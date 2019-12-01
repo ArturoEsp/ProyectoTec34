@@ -88,7 +88,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnGuardar3 = new System.Windows.Forms.Button();
+            this.btnGuardar2 = new System.Windows.Forms.Button();
+            this.btnGuardar1 = new System.Windows.Forms.Button();
             this.pnlCalificaciones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -458,8 +460,9 @@
             this.tbArtes3.Name = "tbArtes3";
             this.tbArtes3.Size = new System.Drawing.Size(78, 23);
             this.tbArtes3.TabIndex = 23;
-            this.tbArtes3.Text = "0.0";
             this.tbArtes3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArtes3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
+            this.tbArtes3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes3_KeyUp);
             // 
             // tbArtes2
             // 
@@ -468,8 +471,9 @@
             this.tbArtes2.Name = "tbArtes2";
             this.tbArtes2.Size = new System.Drawing.Size(78, 23);
             this.tbArtes2.TabIndex = 22;
-            this.tbArtes2.Text = "0.0";
             this.tbArtes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArtes2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
+            this.tbArtes2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes2_KeyUp);
             // 
             // tbArtes1
             // 
@@ -478,8 +482,9 @@
             this.tbArtes1.Name = "tbArtes1";
             this.tbArtes1.Size = new System.Drawing.Size(78, 23);
             this.tbArtes1.TabIndex = 21;
-            this.tbArtes1.Text = "0.0";
             this.tbArtes1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArtes1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
+            this.tbArtes1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes1_KeyUp);
             // 
             // tbEF3
             // 
@@ -488,8 +493,8 @@
             this.tbEF3.Name = "tbEF3";
             this.tbEF3.Size = new System.Drawing.Size(78, 23);
             this.tbEF3.TabIndex = 20;
-            this.tbEF3.Text = "0.0";
             this.tbEF3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEF3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbEF2
             // 
@@ -498,8 +503,8 @@
             this.tbEF2.Name = "tbEF2";
             this.tbEF2.Size = new System.Drawing.Size(78, 23);
             this.tbEF2.TabIndex = 19;
-            this.tbEF2.Text = "0.0";
             this.tbEF2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEF2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbEF1
             // 
@@ -508,8 +513,8 @@
             this.tbEF1.Name = "tbEF1";
             this.tbEF1.Size = new System.Drawing.Size(78, 23);
             this.tbEF1.TabIndex = 18;
-            this.tbEF1.Text = "0.0";
             this.tbEF1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEF1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbFCyE3
             // 
@@ -518,8 +523,8 @@
             this.tbFCyE3.Name = "tbFCyE3";
             this.tbFCyE3.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE3.TabIndex = 17;
-            this.tbFCyE3.Text = "0.0";
             this.tbFCyE3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbFCyE3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbFCyE2
             // 
@@ -528,8 +533,8 @@
             this.tbFCyE2.Name = "tbFCyE2";
             this.tbFCyE2.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE2.TabIndex = 16;
-            this.tbFCyE2.Text = "0.0";
             this.tbFCyE2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbFCyE2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbFCyE1
             // 
@@ -538,8 +543,8 @@
             this.tbFCyE1.Name = "tbFCyE1";
             this.tbFCyE1.Size = new System.Drawing.Size(78, 23);
             this.tbFCyE1.TabIndex = 15;
-            this.tbFCyE1.Text = "0.0";
             this.tbFCyE1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbFCyE1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbHis3
             // 
@@ -548,8 +553,8 @@
             this.tbHis3.Name = "tbHis3";
             this.tbHis3.Size = new System.Drawing.Size(78, 23);
             this.tbHis3.TabIndex = 14;
-            this.tbHis3.Text = "0.0";
             this.tbHis3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHis3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbHis2
             // 
@@ -558,8 +563,8 @@
             this.tbHis2.Name = "tbHis2";
             this.tbHis2.Size = new System.Drawing.Size(78, 23);
             this.tbHis2.TabIndex = 13;
-            this.tbHis2.Text = "0.0";
             this.tbHis2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHis2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbHis1
             // 
@@ -568,8 +573,8 @@
             this.tbHis1.Name = "tbHis1";
             this.tbHis1.Size = new System.Drawing.Size(78, 23);
             this.tbHis1.TabIndex = 12;
-            this.tbHis1.Text = "0.0";
             this.tbHis1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHis1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbCien3
             // 
@@ -578,8 +583,8 @@
             this.tbCien3.Name = "tbCien3";
             this.tbCien3.Size = new System.Drawing.Size(78, 23);
             this.tbCien3.TabIndex = 11;
-            this.tbCien3.Text = "0.0";
             this.tbCien3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCien3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbCien2
             // 
@@ -588,8 +593,8 @@
             this.tbCien2.Name = "tbCien2";
             this.tbCien2.Size = new System.Drawing.Size(78, 23);
             this.tbCien2.TabIndex = 10;
-            this.tbCien2.Text = "0.0";
             this.tbCien2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCien2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbCien1
             // 
@@ -598,8 +603,8 @@
             this.tbCien1.Name = "tbCien1";
             this.tbCien1.Size = new System.Drawing.Size(78, 23);
             this.tbCien1.TabIndex = 9;
-            this.tbCien1.Text = "0.0";
             this.tbCien1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCien1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbSLI3
             // 
@@ -608,8 +613,8 @@
             this.tbSLI3.Name = "tbSLI3";
             this.tbSLI3.Size = new System.Drawing.Size(78, 23);
             this.tbSLI3.TabIndex = 8;
-            this.tbSLI3.Text = "0.0";
             this.tbSLI3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbSLI3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbSLI2
             // 
@@ -618,8 +623,8 @@
             this.tbSLI2.Name = "tbSLI2";
             this.tbSLI2.Size = new System.Drawing.Size(78, 23);
             this.tbSLI2.TabIndex = 7;
-            this.tbSLI2.Text = "0.0";
             this.tbSLI2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbSLI2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbSLI1
             // 
@@ -628,8 +633,8 @@
             this.tbSLI1.Name = "tbSLI1";
             this.tbSLI1.Size = new System.Drawing.Size(78, 23);
             this.tbSLI1.TabIndex = 6;
-            this.tbSLI1.Text = "0.0";
             this.tbSLI1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbSLI1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbMat3
             // 
@@ -638,8 +643,8 @@
             this.tbMat3.Name = "tbMat3";
             this.tbMat3.Size = new System.Drawing.Size(78, 23);
             this.tbMat3.TabIndex = 5;
-            this.tbMat3.Text = "0.0";
             this.tbMat3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMat3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbMat2
             // 
@@ -648,8 +653,8 @@
             this.tbMat2.Name = "tbMat2";
             this.tbMat2.Size = new System.Drawing.Size(78, 23);
             this.tbMat2.TabIndex = 4;
-            this.tbMat2.Text = "0.0";
             this.tbMat2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMat2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbMat1
             // 
@@ -658,8 +663,8 @@
             this.tbMat1.Name = "tbMat1";
             this.tbMat1.Size = new System.Drawing.Size(78, 23);
             this.tbMat1.TabIndex = 3;
-            this.tbMat1.Text = "0.0";
             this.tbMat1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMat1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbEsp3
             // 
@@ -668,8 +673,8 @@
             this.tbEsp3.Name = "tbEsp3";
             this.tbEsp3.Size = new System.Drawing.Size(78, 23);
             this.tbEsp3.TabIndex = 2;
-            this.tbEsp3.Text = "0.0";
             this.tbEsp3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEsp3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbEsp2
             // 
@@ -678,8 +683,8 @@
             this.tbEsp2.Name = "tbEsp2";
             this.tbEsp2.Size = new System.Drawing.Size(78, 23);
             this.tbEsp2.TabIndex = 1;
-            this.tbEsp2.Text = "0.0";
             this.tbEsp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEsp2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tbEsp1
             // 
@@ -688,8 +693,8 @@
             this.tbEsp1.Name = "tbEsp1";
             this.tbEsp1.Size = new System.Drawing.Size(78, 23);
             this.tbEsp1.TabIndex = 0;
-            this.tbEsp1.Text = "0.0";
             this.tbEsp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEsp1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
             // 
             // tableLayoutPanel6
             // 
@@ -873,29 +878,65 @@
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
-            // btnGuardar
+            // btnGuardar3
             // 
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(468, 482);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(106, 39);
-            this.btnGuardar.TabIndex = 50;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnGuardar3.Enabled = false;
+            this.btnGuardar3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar3.FlatAppearance.BorderSize = 0;
+            this.btnGuardar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar3.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar3.Location = new System.Drawing.Point(378, 463);
+            this.btnGuardar3.Name = "btnGuardar3";
+            this.btnGuardar3.Size = new System.Drawing.Size(83, 32);
+            this.btnGuardar3.TabIndex = 59;
+            this.btnGuardar3.Text = "Guardar 3°";
+            this.btnGuardar3.UseVisualStyleBackColor = false;
+            this.btnGuardar3.Click += new System.EventHandler(this.btnGuardar3_Click);
+            // 
+            // btnGuardar2
+            // 
+            this.btnGuardar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnGuardar2.Enabled = false;
+            this.btnGuardar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar2.FlatAppearance.BorderSize = 0;
+            this.btnGuardar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar2.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar2.Location = new System.Drawing.Point(291, 463);
+            this.btnGuardar2.Name = "btnGuardar2";
+            this.btnGuardar2.Size = new System.Drawing.Size(83, 32);
+            this.btnGuardar2.TabIndex = 58;
+            this.btnGuardar2.Text = "Guardar 2°";
+            this.btnGuardar2.UseVisualStyleBackColor = false;
+            this.btnGuardar2.Click += new System.EventHandler(this.btnGuardar2_Click);
+            // 
+            // btnGuardar1
+            // 
+            this.btnGuardar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnGuardar1.Enabled = false;
+            this.btnGuardar1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar1.FlatAppearance.BorderSize = 0;
+            this.btnGuardar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar1.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardar1.Location = new System.Drawing.Point(204, 463);
+            this.btnGuardar1.Name = "btnGuardar1";
+            this.btnGuardar1.Size = new System.Drawing.Size(83, 32);
+            this.btnGuardar1.TabIndex = 57;
+            this.btnGuardar1.Text = "Guardar 1°";
+            this.btnGuardar1.UseVisualStyleBackColor = false;
+            this.btnGuardar1.Click += new System.EventHandler(this.btnGuardar1_Click);
             // 
             // FormularioBoleta2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 533);
-            this.Controls.Add(this.btnGuardar);
+            this.ClientSize = new System.Drawing.Size(591, 507);
+            this.Controls.Add(this.btnGuardar3);
+            this.Controls.Add(this.btnGuardar2);
+            this.Controls.Add(this.btnGuardar1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.pnlCalificaciones);
@@ -988,6 +1029,8 @@
         private System.Windows.Forms.TextBox tbSLI3;
         private System.Windows.Forms.TextBox tbMat3;
         private System.Windows.Forms.TextBox tbEsp3;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnGuardar3;
+        private System.Windows.Forms.Button btnGuardar2;
+        private System.Windows.Forms.Button btnGuardar1;
     }
 }

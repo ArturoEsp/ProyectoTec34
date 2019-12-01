@@ -61,11 +61,43 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.CalifLM3 = new System.Windows.Forms.Label();
-            this.CalifLM2 = new System.Windows.Forms.Label();
-            this.CalifLE1 = new System.Windows.Forms.Label();
+            this.lbArtes1 = new System.Windows.Forms.Label();
+            this.lbArtes2 = new System.Windows.Forms.Label();
+            this.lbArtes3 = new System.Windows.Forms.Label();
+            this.lbEF1 = new System.Windows.Forms.Label();
+            this.lbEF2 = new System.Windows.Forms.Label();
+            this.lbEF3 = new System.Windows.Forms.Label();
+            this.lbFCyE1 = new System.Windows.Forms.Label();
+            this.lbFCyE2 = new System.Windows.Forms.Label();
+            this.lbFCyE3 = new System.Windows.Forms.Label();
+            this.lbGeo1 = new System.Windows.Forms.Label();
+            this.lbGeo2 = new System.Windows.Forms.Label();
+            this.lbGeo3 = new System.Windows.Forms.Label();
+            this.lbHis3 = new System.Windows.Forms.Label();
+            this.lbHis2 = new System.Windows.Forms.Label();
+            this.lbHis1 = new System.Windows.Forms.Label();
+            this.lbCNyT1 = new System.Windows.Forms.Label();
+            this.lbCNyT2 = new System.Windows.Forms.Label();
+            this.lbCNyT3 = new System.Windows.Forms.Label();
+            this.lbLE1 = new System.Windows.Forms.Label();
+            this.lbLE2 = new System.Windows.Forms.Label();
+            this.lbLE3 = new System.Windows.Forms.Label();
+            this.lbMat1 = new System.Windows.Forms.Label();
+            this.lbMat2 = new System.Windows.Forms.Label();
+            this.lbMat3 = new System.Windows.Forms.Label();
+            this.lbLM3 = new System.Windows.Forms.Label();
+            this.lbLM2 = new System.Windows.Forms.Label();
+            this.lbLM1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.CalifLMProm = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.lbMatPro = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.lbLMProm = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -523,9 +555,33 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.32333F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.32333F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.35335F));
-            this.tableLayoutPanel5.Controls.Add(this.CalifLM3, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.CalifLM2, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.CalifLE1, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbArtes1, 0, 8);
+            this.tableLayoutPanel5.Controls.Add(this.lbArtes2, 0, 8);
+            this.tableLayoutPanel5.Controls.Add(this.lbArtes3, 0, 8);
+            this.tableLayoutPanel5.Controls.Add(this.lbEF1, 0, 7);
+            this.tableLayoutPanel5.Controls.Add(this.lbEF2, 0, 7);
+            this.tableLayoutPanel5.Controls.Add(this.lbEF3, 0, 7);
+            this.tableLayoutPanel5.Controls.Add(this.lbFCyE1, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.lbFCyE2, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.lbFCyE3, 0, 6);
+            this.tableLayoutPanel5.Controls.Add(this.lbGeo1, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.lbGeo2, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.lbGeo3, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.lbHis3, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.lbHis2, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.lbHis1, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.lbCNyT1, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lbCNyT2, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lbCNyT3, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lbLE1, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.lbLE2, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.lbLE3, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.lbMat1, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lbMat2, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lbMat3, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lbLM3, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbLM2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbLM1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(190, 35);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -539,80 +595,485 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(259, 268);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
-            // CalifLM3
+            // lbArtes1
             // 
-            this.CalifLM3.AutoSize = true;
-            this.CalifLM3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalifLM3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalifLM3.Location = new System.Drawing.Point(174, 1);
-            this.CalifLM3.Name = "CalifLM3";
-            this.CalifLM3.Size = new System.Drawing.Size(81, 28);
-            this.CalifLM3.TabIndex = 2;
-            this.CalifLM3.Text = "5";
-            this.CalifLM3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtes1.AutoSize = true;
+            this.lbArtes1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbArtes1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbArtes1.Location = new System.Drawing.Point(4, 233);
+            this.lbArtes1.Name = "lbArtes1";
+            this.lbArtes1.Size = new System.Drawing.Size(78, 34);
+            this.lbArtes1.TabIndex = 30;
+            this.lbArtes1.Text = "0";
+            this.lbArtes1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CalifLM2
+            // lbArtes2
             // 
-            this.CalifLM2.AutoSize = true;
-            this.CalifLM2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalifLM2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalifLM2.Location = new System.Drawing.Point(89, 1);
-            this.CalifLM2.Name = "CalifLM2";
-            this.CalifLM2.Size = new System.Drawing.Size(78, 28);
-            this.CalifLM2.TabIndex = 1;
-            this.CalifLM2.Text = "6";
-            this.CalifLM2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtes2.AutoSize = true;
+            this.lbArtes2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbArtes2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbArtes2.Location = new System.Drawing.Point(89, 233);
+            this.lbArtes2.Name = "lbArtes2";
+            this.lbArtes2.Size = new System.Drawing.Size(78, 34);
+            this.lbArtes2.TabIndex = 29;
+            this.lbArtes2.Text = "0";
+            this.lbArtes2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CalifLE1
+            // lbArtes3
             // 
-            this.CalifLE1.AutoSize = true;
-            this.CalifLE1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalifLE1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalifLE1.Location = new System.Drawing.Point(4, 1);
-            this.CalifLE1.Name = "CalifLE1";
-            this.CalifLE1.Size = new System.Drawing.Size(78, 28);
-            this.CalifLE1.TabIndex = 0;
-            this.CalifLE1.Text = "7";
-            this.CalifLE1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtes3.AutoSize = true;
+            this.lbArtes3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbArtes3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbArtes3.Location = new System.Drawing.Point(174, 233);
+            this.lbArtes3.Name = "lbArtes3";
+            this.lbArtes3.Size = new System.Drawing.Size(81, 34);
+            this.lbArtes3.TabIndex = 28;
+            this.lbArtes3.Text = "0";
+            this.lbArtes3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbEF1
+            // 
+            this.lbEF1.AutoSize = true;
+            this.lbEF1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEF1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEF1.Location = new System.Drawing.Point(4, 204);
+            this.lbEF1.Name = "lbEF1";
+            this.lbEF1.Size = new System.Drawing.Size(78, 28);
+            this.lbEF1.TabIndex = 27;
+            this.lbEF1.Text = "0";
+            this.lbEF1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbEF2
+            // 
+            this.lbEF2.AutoSize = true;
+            this.lbEF2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEF2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEF2.Location = new System.Drawing.Point(89, 204);
+            this.lbEF2.Name = "lbEF2";
+            this.lbEF2.Size = new System.Drawing.Size(78, 28);
+            this.lbEF2.TabIndex = 26;
+            this.lbEF2.Text = "0";
+            this.lbEF2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbEF3
+            // 
+            this.lbEF3.AutoSize = true;
+            this.lbEF3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEF3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEF3.Location = new System.Drawing.Point(174, 204);
+            this.lbEF3.Name = "lbEF3";
+            this.lbEF3.Size = new System.Drawing.Size(81, 28);
+            this.lbEF3.TabIndex = 25;
+            this.lbEF3.Text = "0";
+            this.lbEF3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbFCyE1
+            // 
+            this.lbFCyE1.AutoSize = true;
+            this.lbFCyE1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbFCyE1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFCyE1.Location = new System.Drawing.Point(4, 175);
+            this.lbFCyE1.Name = "lbFCyE1";
+            this.lbFCyE1.Size = new System.Drawing.Size(78, 28);
+            this.lbFCyE1.TabIndex = 24;
+            this.lbFCyE1.Text = "0";
+            this.lbFCyE1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbFCyE2
+            // 
+            this.lbFCyE2.AutoSize = true;
+            this.lbFCyE2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbFCyE2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFCyE2.Location = new System.Drawing.Point(89, 175);
+            this.lbFCyE2.Name = "lbFCyE2";
+            this.lbFCyE2.Size = new System.Drawing.Size(78, 28);
+            this.lbFCyE2.TabIndex = 23;
+            this.lbFCyE2.Text = "0";
+            this.lbFCyE2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbFCyE3
+            // 
+            this.lbFCyE3.AutoSize = true;
+            this.lbFCyE3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbFCyE3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFCyE3.Location = new System.Drawing.Point(174, 175);
+            this.lbFCyE3.Name = "lbFCyE3";
+            this.lbFCyE3.Size = new System.Drawing.Size(81, 28);
+            this.lbFCyE3.TabIndex = 22;
+            this.lbFCyE3.Text = "0";
+            this.lbFCyE3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbGeo1
+            // 
+            this.lbGeo1.AutoSize = true;
+            this.lbGeo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbGeo1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGeo1.Location = new System.Drawing.Point(4, 146);
+            this.lbGeo1.Name = "lbGeo1";
+            this.lbGeo1.Size = new System.Drawing.Size(78, 28);
+            this.lbGeo1.TabIndex = 21;
+            this.lbGeo1.Text = "0";
+            this.lbGeo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbGeo2
+            // 
+            this.lbGeo2.AutoSize = true;
+            this.lbGeo2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbGeo2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGeo2.Location = new System.Drawing.Point(89, 146);
+            this.lbGeo2.Name = "lbGeo2";
+            this.lbGeo2.Size = new System.Drawing.Size(78, 28);
+            this.lbGeo2.TabIndex = 20;
+            this.lbGeo2.Text = "0";
+            this.lbGeo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbGeo3
+            // 
+            this.lbGeo3.AutoSize = true;
+            this.lbGeo3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbGeo3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGeo3.Location = new System.Drawing.Point(174, 146);
+            this.lbGeo3.Name = "lbGeo3";
+            this.lbGeo3.Size = new System.Drawing.Size(81, 28);
+            this.lbGeo3.TabIndex = 19;
+            this.lbGeo3.Text = "0";
+            this.lbGeo3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbHis3
+            // 
+            this.lbHis3.AutoSize = true;
+            this.lbHis3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbHis3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHis3.Location = new System.Drawing.Point(174, 117);
+            this.lbHis3.Name = "lbHis3";
+            this.lbHis3.Size = new System.Drawing.Size(81, 28);
+            this.lbHis3.TabIndex = 18;
+            this.lbHis3.Text = "0";
+            this.lbHis3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbHis2
+            // 
+            this.lbHis2.AutoSize = true;
+            this.lbHis2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbHis2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHis2.Location = new System.Drawing.Point(89, 117);
+            this.lbHis2.Name = "lbHis2";
+            this.lbHis2.Size = new System.Drawing.Size(78, 28);
+            this.lbHis2.TabIndex = 17;
+            this.lbHis2.Text = "0";
+            this.lbHis2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbHis1
+            // 
+            this.lbHis1.AutoSize = true;
+            this.lbHis1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbHis1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHis1.Location = new System.Drawing.Point(4, 117);
+            this.lbHis1.Name = "lbHis1";
+            this.lbHis1.Size = new System.Drawing.Size(78, 28);
+            this.lbHis1.TabIndex = 16;
+            this.lbHis1.Text = "0";
+            this.lbHis1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbCNyT1
+            // 
+            this.lbCNyT1.AutoSize = true;
+            this.lbCNyT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCNyT1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCNyT1.Location = new System.Drawing.Point(4, 88);
+            this.lbCNyT1.Name = "lbCNyT1";
+            this.lbCNyT1.Size = new System.Drawing.Size(78, 28);
+            this.lbCNyT1.TabIndex = 15;
+            this.lbCNyT1.Text = "0";
+            this.lbCNyT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbCNyT2
+            // 
+            this.lbCNyT2.AutoSize = true;
+            this.lbCNyT2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCNyT2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCNyT2.Location = new System.Drawing.Point(89, 88);
+            this.lbCNyT2.Name = "lbCNyT2";
+            this.lbCNyT2.Size = new System.Drawing.Size(78, 28);
+            this.lbCNyT2.TabIndex = 14;
+            this.lbCNyT2.Text = "0";
+            this.lbCNyT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbCNyT3
+            // 
+            this.lbCNyT3.AutoSize = true;
+            this.lbCNyT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCNyT3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCNyT3.Location = new System.Drawing.Point(174, 88);
+            this.lbCNyT3.Name = "lbCNyT3";
+            this.lbCNyT3.Size = new System.Drawing.Size(81, 28);
+            this.lbCNyT3.TabIndex = 13;
+            this.lbCNyT3.Text = "0";
+            this.lbCNyT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLE1
+            // 
+            this.lbLE1.AutoSize = true;
+            this.lbLE1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLE1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLE1.Location = new System.Drawing.Point(4, 59);
+            this.lbLE1.Name = "lbLE1";
+            this.lbLE1.Size = new System.Drawing.Size(78, 28);
+            this.lbLE1.TabIndex = 12;
+            this.lbLE1.Text = "0";
+            this.lbLE1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLE2
+            // 
+            this.lbLE2.AutoSize = true;
+            this.lbLE2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLE2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLE2.Location = new System.Drawing.Point(89, 59);
+            this.lbLE2.Name = "lbLE2";
+            this.lbLE2.Size = new System.Drawing.Size(78, 28);
+            this.lbLE2.TabIndex = 11;
+            this.lbLE2.Text = "0";
+            this.lbLE2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLE3
+            // 
+            this.lbLE3.AutoSize = true;
+            this.lbLE3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLE3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLE3.Location = new System.Drawing.Point(174, 59);
+            this.lbLE3.Name = "lbLE3";
+            this.lbLE3.Size = new System.Drawing.Size(81, 28);
+            this.lbLE3.TabIndex = 10;
+            this.lbLE3.Text = "0";
+            this.lbLE3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbMat1
+            // 
+            this.lbMat1.AutoSize = true;
+            this.lbMat1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMat1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMat1.Location = new System.Drawing.Point(4, 30);
+            this.lbMat1.Name = "lbMat1";
+            this.lbMat1.Size = new System.Drawing.Size(78, 28);
+            this.lbMat1.TabIndex = 9;
+            this.lbMat1.Text = "0";
+            this.lbMat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbMat2
+            // 
+            this.lbMat2.AutoSize = true;
+            this.lbMat2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMat2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMat2.Location = new System.Drawing.Point(89, 30);
+            this.lbMat2.Name = "lbMat2";
+            this.lbMat2.Size = new System.Drawing.Size(78, 28);
+            this.lbMat2.TabIndex = 8;
+            this.lbMat2.Text = "0";
+            this.lbMat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbMat3
+            // 
+            this.lbMat3.AutoSize = true;
+            this.lbMat3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMat3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMat3.Location = new System.Drawing.Point(174, 30);
+            this.lbMat3.Name = "lbMat3";
+            this.lbMat3.Size = new System.Drawing.Size(81, 28);
+            this.lbMat3.TabIndex = 7;
+            this.lbMat3.Text = "0";
+            this.lbMat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLM3
+            // 
+            this.lbLM3.AutoSize = true;
+            this.lbLM3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLM3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLM3.Location = new System.Drawing.Point(174, 1);
+            this.lbLM3.Name = "lbLM3";
+            this.lbLM3.Size = new System.Drawing.Size(81, 28);
+            this.lbLM3.TabIndex = 2;
+            this.lbLM3.Text = "0";
+            this.lbLM3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLM2
+            // 
+            this.lbLM2.AutoSize = true;
+            this.lbLM2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLM2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLM2.Location = new System.Drawing.Point(89, 1);
+            this.lbLM2.Name = "lbLM2";
+            this.lbLM2.Size = new System.Drawing.Size(78, 28);
+            this.lbLM2.TabIndex = 1;
+            this.lbLM2.Text = "0";
+            this.lbLM2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLM1
+            // 
+            this.lbLM1.AutoSize = true;
+            this.lbLM1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLM1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLM1.Location = new System.Drawing.Point(4, 1);
+            this.lbLM1.Name = "lbLM1";
+            this.lbLM1.Size = new System.Drawing.Size(78, 28);
+            this.lbLM1.TabIndex = 0;
+            this.lbLM1.Text = "0";
+            this.lbLM1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Controls.Add(this.CalifLMProm, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label41, 0, 7);
+            this.tableLayoutPanel6.Controls.Add(this.label40, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.label37, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.label34, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label31, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.label30, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.lbMatPro, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label28, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lbLMProm, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(456, 35);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 9;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel6.RowCount = 8;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11197F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11086F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(102, 268);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
-            // CalifLMProm
+            // label41
             // 
-            this.CalifLMProm.AutoSize = true;
-            this.CalifLMProm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalifLMProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalifLMProm.Location = new System.Drawing.Point(4, 1);
-            this.CalifLMProm.Name = "CalifLMProm";
-            this.CalifLMProm.Size = new System.Drawing.Size(94, 28);
-            this.CalifLMProm.TabIndex = 1;
-            this.CalifLMProm.Text = "6.0";
-            this.CalifLMProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label41.AutoSize = true;
+            this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label41.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(4, 233);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(94, 34);
+            this.label41.TabIndex = 9;
+            this.label41.Text = "0";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label40.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(4, 204);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(94, 28);
+            this.label40.TabIndex = 8;
+            this.label40.Text = "0";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label37.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(4, 175);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(94, 28);
+            this.label37.TabIndex = 7;
+            this.label37.Text = "0";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(4, 146);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(94, 28);
+            this.label34.TabIndex = 6;
+            this.label34.Text = "0";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label31.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(4, 117);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(94, 28);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "0";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label30.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(4, 88);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(94, 28);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "0";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbMatPro
+            // 
+            this.lbMatPro.AutoSize = true;
+            this.lbMatPro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMatPro.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMatPro.Location = new System.Drawing.Point(4, 30);
+            this.lbMatPro.Name = "lbMatPro";
+            this.lbMatPro.Size = new System.Drawing.Size(94, 28);
+            this.lbMatPro.TabIndex = 3;
+            this.lbMatPro.Text = "0";
+            this.lbMatPro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label28.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(4, 59);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(94, 28);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "0";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbLMProm
+            // 
+            this.lbLMProm.AutoSize = true;
+            this.lbLMProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLMProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLMProm.Location = new System.Drawing.Point(4, 1);
+            this.lbLMProm.Name = "lbLMProm";
+            this.lbLMProm.Size = new System.Drawing.Size(94, 28);
+            this.lbLMProm.TabIndex = 1;
+            this.lbLMProm.Text = "0";
+            this.lbLMProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
             // 
@@ -903,11 +1364,11 @@
         private System.Windows.Forms.TextBox tbGrupo;
         private System.Windows.Forms.TextBox tbTurno;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label CalifLM3;
-        private System.Windows.Forms.Label CalifLM2;
-        private System.Windows.Forms.Label CalifLE1;
+        private System.Windows.Forms.Label lbLM3;
+        private System.Windows.Forms.Label lbLM2;
+        private System.Windows.Forms.Label lbLM1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label CalifLMProm;
+        private System.Windows.Forms.Label lbLMProm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
@@ -919,5 +1380,37 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Label lbArtes1;
+        private System.Windows.Forms.Label lbArtes2;
+        private System.Windows.Forms.Label lbArtes3;
+        private System.Windows.Forms.Label lbEF1;
+        private System.Windows.Forms.Label lbEF2;
+        private System.Windows.Forms.Label lbEF3;
+        private System.Windows.Forms.Label lbFCyE1;
+        private System.Windows.Forms.Label lbFCyE2;
+        private System.Windows.Forms.Label lbFCyE3;
+        private System.Windows.Forms.Label lbGeo1;
+        private System.Windows.Forms.Label lbGeo2;
+        private System.Windows.Forms.Label lbGeo3;
+        private System.Windows.Forms.Label lbHis3;
+        private System.Windows.Forms.Label lbHis2;
+        private System.Windows.Forms.Label lbHis1;
+        private System.Windows.Forms.Label lbCNyT1;
+        private System.Windows.Forms.Label lbCNyT2;
+        private System.Windows.Forms.Label lbCNyT3;
+        private System.Windows.Forms.Label lbLE1;
+        private System.Windows.Forms.Label lbLE2;
+        private System.Windows.Forms.Label lbLE3;
+        private System.Windows.Forms.Label lbMat1;
+        private System.Windows.Forms.Label lbMat2;
+        private System.Windows.Forms.Label lbMat3;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label lbMatPro;
+        private System.Windows.Forms.Label label28;
     }
 }

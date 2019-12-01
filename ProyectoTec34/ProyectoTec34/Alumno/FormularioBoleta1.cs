@@ -20,32 +20,6 @@ namespace ProyectoTec34.Alumno
             lbNombre.Text = Estudiante;
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            
-
-            
-
-           
-
-            
-
-            //List<Double> CalifP3 = new List<Double>();
-            //CalifP3.Add(Convert.ToDouble(tbLM3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbMat3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbLE3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbCNyT3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbHis3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbGeo3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbFCyE3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbEF3.Text));
-            //CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
-
-            //ScriptSQL.InsertarBoleta(CalifP3, NombreEstudiante, NombreCalif);
-            //ScriptSQL.InsertarBoleta(CalifP1, CalifP2, CalifP3, NombreEstudiante, NombreCalif);
-            
-        }
-
         private void btnGuardar1_Click_1(object sender, EventArgs e)
         {
             string NombreEstudiante = lbNombre.Text;
@@ -58,8 +32,8 @@ namespace ProyectoTec34.Alumno
             NombreCalif.Add("Historia");
             NombreCalif.Add("Geografía");
             NombreCalif.Add("Formación Cívica y Ética");
-            NombreCalif.Add("Educación Fisíca");
-            NombreCalif.Add("Artes");
+            NombreCalif.Add("Educación Fisíca I");
+            NombreCalif.Add("Artes I");
 
             List<Double> CalifP1 = new List<Double>();
             CalifP1.Add(Convert.ToDouble(tbLM1.Text));
@@ -72,9 +46,9 @@ namespace ProyectoTec34.Alumno
             CalifP1.Add(Convert.ToDouble(tbEF1.Text));
             CalifP1.Add(Convert.ToDouble(tbArtes1.Text));
 
-            ScriptSQL.InsertarBoletaP2(CalifP1, NombreEstudiante, NombreCalif);
+            ScriptSQL.InsertarBoleta(CalifP1, NombreEstudiante, NombreCalif);
             MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Configuraciones.ClearControls.LimpiarCampos(this);
+            btnGuardar1.Enabled = false;
         }
 
         private void btnGuardar2_Click_1(object sender, EventArgs e)
@@ -89,8 +63,8 @@ namespace ProyectoTec34.Alumno
             NombreCalif.Add("Historia");
             NombreCalif.Add("Geografía");
             NombreCalif.Add("Formación Cívica y Ética");
-            NombreCalif.Add("Educación Fisíca");
-            NombreCalif.Add("Artes");
+            NombreCalif.Add("Educación Fisíca I");
+            NombreCalif.Add("Artes I");
 
             List<Double> CalifP2 = new List<Double>();
             CalifP2.Add(Convert.ToDouble(tbLM2.Text));
@@ -105,7 +79,7 @@ namespace ProyectoTec34.Alumno
 
             ScriptSQL.InsertarBoletaP2(CalifP2, NombreEstudiante, NombreCalif);
             MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Configuraciones.ClearControls.LimpiarCampos(this);
+            btnGuardar2.Enabled = false;
         }
 
         private void btnGuardar3_Click_1(object sender, EventArgs e)
@@ -120,8 +94,8 @@ namespace ProyectoTec34.Alumno
             NombreCalif.Add("Historia");
             NombreCalif.Add("Geografía");
             NombreCalif.Add("Formación Cívica y Ética");
-            NombreCalif.Add("Educación Fisíca");
-            NombreCalif.Add("Artes");
+            NombreCalif.Add("Educación Fisíca I");
+            NombreCalif.Add("Artes I");
 
             List<Double> CalifP3 = new List<Double>();
             CalifP3.Add(Convert.ToDouble(tbLM3.Text));
@@ -134,34 +108,40 @@ namespace ProyectoTec34.Alumno
             CalifP3.Add(Convert.ToDouble(tbEF3.Text));
             CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
 
-            ScriptSQL.InsertarBoletaP2(CalifP3, NombreEstudiante, NombreCalif);
+            ScriptSQL.InsertarBoletaP3(CalifP3, NombreEstudiante, NombreCalif);
             MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Configuraciones.ClearControls.LimpiarCampos(this);
+            btnGuardar3.Enabled = false;
         }
 
-        private void tbArtes1_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void tbLM1_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            OnlyDoubles.validarNumeros(sender, e, '.');
+        }
+
+        private void tbArtes1_KeyUp(object sender, KeyEventArgs e)
         {
             if (!string.IsNullOrEmpty(tbArtes1.Text))
-                btnGuardar1.Enabled = false;
-            else
                 btnGuardar1.Enabled = true;
+            else
+                btnGuardar1.Enabled = false;
         }
 
-        private void btnGuardar2_KeyPress(object sender, KeyPressEventArgs e)
+        private void tbArtes2_KeyUp(object sender, KeyEventArgs e)
         {
             if (!string.IsNullOrEmpty(tbArtes2.Text))
-                btnGuardar2.Enabled = false;
-            else
                 btnGuardar2.Enabled = true;
+            else
+                btnGuardar2.Enabled = false;
         }
 
-        private void btnGuardar3_KeyPress(object sender, KeyPressEventArgs e)
+        private void tbArtes3_KeyUp(object sender, KeyEventArgs e)
         {
             if (!string.IsNullOrEmpty(tbArtes3.Text))
-                btnGuardar3.Enabled = false;
-            else
                 btnGuardar3.Enabled = true;
+            else
+                btnGuardar3.Enabled = false;
         }
     }
-    
 }
+
