@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Eliminacion));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAceptarE = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbNombreAlumno = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAceptarE = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,26 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eliminar alumno";
+            // 
+            // btnAceptarE
+            // 
+            this.btnAceptarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarE.Location = new System.Drawing.Point(484, 52);
+            this.btnAceptarE.Name = "btnAceptarE";
+            this.btnAceptarE.Size = new System.Drawing.Size(92, 27);
+            this.btnAceptarE.TabIndex = 2;
+            this.btnAceptarE.Text = "Aceptar";
+            this.btnAceptarE.UseVisualStyleBackColor = true;
+            this.btnAceptarE.Click += new System.EventHandler(this.btnAceptarE_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nombre del alumno:";
             // 
             // tbNombreAlumno
             // 
@@ -66,25 +86,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminación grupal";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nombre del alumno:";
-            // 
-            // btnAceptarE
-            // 
-            this.btnAceptarE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarE.Location = new System.Drawing.Point(484, 51);
-            this.btnAceptarE.Name = "btnAceptarE";
-            this.btnAceptarE.Size = new System.Drawing.Size(92, 27);
-            this.btnAceptarE.TabIndex = 2;
-            this.btnAceptarE.Text = "Aceptar";
-            this.btnAceptarE.UseVisualStyleBackColor = true;
             // 
             // Eliminacion
             // 

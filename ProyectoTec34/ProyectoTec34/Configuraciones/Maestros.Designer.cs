@@ -41,9 +41,9 @@
             this.tbIDMaestro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvMaestros = new System.Windows.Forms.DataGridView();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.metroContextMenu = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaestros)).BeginInit();
@@ -65,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(166, 9);
+            this.label1.Location = new System.Drawing.Point(177, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 0;
@@ -164,19 +164,13 @@
             this.dgvMaestros.Size = new System.Drawing.Size(427, 107);
             this.dgvMaestros.TabIndex = 39;
             // 
-            // toolTip
-            // 
-            this.toolTip.IsBalloon = true;
-            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip.ToolTipTitle = "Ayuda";
-            // 
             // metroContextMenu
             // 
             this.metroContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eliminarToolStripMenuItem});
             this.metroContextMenu.Name = "metroContextMenu";
             this.metroContextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.metroContextMenu.Size = new System.Drawing.Size(181, 48);
+            this.metroContextMenu.Size = new System.Drawing.Size(122, 26);
             this.metroContextMenu.Style = MetroFramework.MetroColorStyle.White;
             this.metroContextMenu.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
@@ -187,11 +181,17 @@
             this.eliminarToolStripMenuItem.Image = global::ProyectoTec34.Properties.Resources.borrar;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.eliminarToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
+            // toolTip
+            // 
+            this.toolTip.IsBalloon = true;
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip.ToolTipTitle = "Ayuda";
             // 
             // btnGuardar
             // 
