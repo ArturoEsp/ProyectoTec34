@@ -150,7 +150,6 @@
     </Compile>
     <Compile Include="Alumno\OnlyDoubles.cs" />
     <Compile Include="Alumno\ScriptSQL.cs" />
-    <Compile Include="Alumno\SearchStudent.cs" />
     <Compile Include="Alumno\VistaEstudio.cs">
       <SubType>Form</SubType>
     </Compile>
