@@ -89,7 +89,14 @@
             this.lbEsp2 = new System.Windows.Forms.Label();
             this.lbEsp1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.CalifLMProm = new System.Windows.Forms.Label();
+            this.lbArtProm = new System.Windows.Forms.Label();
+            this.lbEFProm = new System.Windows.Forms.Label();
+            this.lbFCyEProm = new System.Windows.Forms.Label();
+            this.lbHisProm = new System.Windows.Forms.Label();
+            this.lbCienProm = new System.Windows.Forms.Label();
+            this.lbMatProm = new System.Windows.Forms.Label();
+            this.lbSLProm = new System.Windows.Forms.Label();
+            this.lbEspProm = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
@@ -101,13 +108,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.lbPromF = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlCalificaciones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -116,6 +117,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.SuspendLayout();
@@ -920,14 +922,14 @@
             this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.label33, 0, 6);
-            this.tableLayoutPanel6.Controls.Add(this.label32, 0, 5);
-            this.tableLayoutPanel6.Controls.Add(this.label31, 0, 4);
-            this.tableLayoutPanel6.Controls.Add(this.label30, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.label29, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.label28, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.label17, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.CalifLMProm, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lbArtProm, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.lbEFProm, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.lbFCyEProm, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.lbHisProm, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.lbCienProm, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.lbMatProm, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lbSLProm, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lbEspProm, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(456, 35);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -949,23 +951,108 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(102, 268);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
-            // CalifLMProm
+            // lbArtProm
             // 
-            this.CalifLMProm.AutoSize = true;
-            this.CalifLMProm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalifLMProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalifLMProm.Location = new System.Drawing.Point(4, 1);
-            this.CalifLMProm.Name = "CalifLMProm";
-            this.CalifLMProm.Size = new System.Drawing.Size(94, 32);
-            this.CalifLMProm.TabIndex = 1;
-            this.CalifLMProm.Text = "0";
-            this.CalifLMProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbArtProm.AutoSize = true;
+            this.lbArtProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbArtProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbArtProm.Location = new System.Drawing.Point(4, 232);
+            this.lbArtProm.Name = "lbArtProm";
+            this.lbArtProm.Size = new System.Drawing.Size(94, 35);
+            this.lbArtProm.TabIndex = 8;
+            this.lbArtProm.Text = "0";
+            this.lbArtProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbEFProm
+            // 
+            this.lbEFProm.AutoSize = true;
+            this.lbEFProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEFProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEFProm.Location = new System.Drawing.Point(4, 199);
+            this.lbEFProm.Name = "lbEFProm";
+            this.lbEFProm.Size = new System.Drawing.Size(94, 32);
+            this.lbEFProm.TabIndex = 7;
+            this.lbEFProm.Text = "0";
+            this.lbEFProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbFCyEProm
+            // 
+            this.lbFCyEProm.AutoSize = true;
+            this.lbFCyEProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbFCyEProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFCyEProm.Location = new System.Drawing.Point(4, 166);
+            this.lbFCyEProm.Name = "lbFCyEProm";
+            this.lbFCyEProm.Size = new System.Drawing.Size(94, 32);
+            this.lbFCyEProm.TabIndex = 6;
+            this.lbFCyEProm.Text = "0";
+            this.lbFCyEProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbHisProm
+            // 
+            this.lbHisProm.AutoSize = true;
+            this.lbHisProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbHisProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHisProm.Location = new System.Drawing.Point(4, 133);
+            this.lbHisProm.Name = "lbHisProm";
+            this.lbHisProm.Size = new System.Drawing.Size(94, 32);
+            this.lbHisProm.TabIndex = 5;
+            this.lbHisProm.Text = "0";
+            this.lbHisProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbCienProm
+            // 
+            this.lbCienProm.AutoSize = true;
+            this.lbCienProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCienProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCienProm.Location = new System.Drawing.Point(4, 100);
+            this.lbCienProm.Name = "lbCienProm";
+            this.lbCienProm.Size = new System.Drawing.Size(94, 32);
+            this.lbCienProm.TabIndex = 4;
+            this.lbCienProm.Text = "0";
+            this.lbCienProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbMatProm
+            // 
+            this.lbMatProm.AutoSize = true;
+            this.lbMatProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMatProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMatProm.Location = new System.Drawing.Point(4, 34);
+            this.lbMatProm.Name = "lbMatProm";
+            this.lbMatProm.Size = new System.Drawing.Size(94, 32);
+            this.lbMatProm.TabIndex = 3;
+            this.lbMatProm.Text = "0";
+            this.lbMatProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbSLProm
+            // 
+            this.lbSLProm.AutoSize = true;
+            this.lbSLProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbSLProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSLProm.Location = new System.Drawing.Point(4, 67);
+            this.lbSLProm.Name = "lbSLProm";
+            this.lbSLProm.Size = new System.Drawing.Size(94, 32);
+            this.lbSLProm.TabIndex = 2;
+            this.lbSLProm.Text = "0";
+            this.lbSLProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbEspProm
+            // 
+            this.lbEspProm.AutoSize = true;
+            this.lbEspProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEspProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEspProm.Location = new System.Drawing.Point(4, 1);
+            this.lbEspProm.Name = "lbEspProm";
+            this.lbEspProm.Size = new System.Drawing.Size(94, 32);
+            this.lbEspProm.TabIndex = 1;
+            this.lbEspProm.Text = "0";
+            this.lbEspProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.Controls.Add(this.lbPromF, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(456, 310);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
@@ -1115,89 +1202,17 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // label17
+            // lbPromF
             // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(4, 67);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(94, 32);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "0";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(4, 34);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(94, 32);
-            this.label28.TabIndex = 3;
-            this.label28.Text = "0";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(4, 100);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(94, 32);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "0";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(4, 133);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(94, 32);
-            this.label30.TabIndex = 5;
-            this.label30.Text = "0";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label31.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(4, 166);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(94, 32);
-            this.label31.TabIndex = 6;
-            this.label31.Text = "0";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(4, 199);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(94, 32);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "0";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(4, 232);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(94, 35);
-            this.label33.TabIndex = 8;
-            this.label33.Text = "0";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbPromF.AutoSize = true;
+            this.lbPromF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbPromF.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPromF.Location = new System.Drawing.Point(3, 0);
+            this.lbPromF.Name = "lbPromF";
+            this.lbPromF.Size = new System.Drawing.Size(96, 24);
+            this.lbPromF.TabIndex = 9;
+            this.lbPromF.Text = "0";
+            this.lbPromF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BoletaTercerAño
             // 
@@ -1238,6 +1253,8 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
@@ -1288,7 +1305,7 @@
         private System.Windows.Forms.Label lbEsp2;
         private System.Windows.Forms.Label lbEsp1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label CalifLMProm;
+        private System.Windows.Forms.Label lbEspProm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label label25;
@@ -1321,12 +1338,13 @@
         private System.Windows.Forms.Label lbMat1;
         private System.Windows.Forms.Label lbSL1;
         private System.Windows.Forms.Label lbMat3;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbArtProm;
+        private System.Windows.Forms.Label lbEFProm;
+        private System.Windows.Forms.Label lbFCyEProm;
+        private System.Windows.Forms.Label lbHisProm;
+        private System.Windows.Forms.Label lbCienProm;
+        private System.Windows.Forms.Label lbMatProm;
+        private System.Windows.Forms.Label lbSLProm;
+        private System.Windows.Forms.Label lbPromF;
     }
 }
