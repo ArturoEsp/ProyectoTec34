@@ -121,6 +121,48 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gradoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7pAAAO6QEOM0IcAAAAB3RJ
+        TUUH4wwDERwL5wDM8QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAElSURBVEhL
+        7dQxS0JRGMbx0xI5tURriC0NLc1uhVtjY+Biq32DmkQUQSchh6KlxUXqIzQ1WZNYm0vNCQVS+X/S4lhv
+        eq9ckMAHfnA4nPc953LPvW6ef5f1ociTxCXe8YFr7GIBU2cRe7iBmlpucYAYAmcZWXRgNbU84hgr+DMJ
+        VNCF1SSIV5xjA9/ZQgNvsIqmoV7qqd7uCdaiKKi3O8LLcCJqVXxmFdooiqdRD73wM6QxkiVk0INVPI5q
+        VKseShG/NviKbpKcQFf2EHkUUEIOmlfDGp6h9X4mbuCfro0rnEKPrhuiOX9NqA2a8IuDaMFPHXoXZlII
+        c7O0dgd+7nAxGNqJQ1/2A6yPUHP3KGMNP7OP7cFwcvQz24ROKRqH+sHNM6s41wc7a9D7DTF1hQAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="estudioSocioEconomicoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAKYAAACmAd19/zgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABqklEQVRIS7WWMUvDQBTHVfwgfpA2JlZbJaE62EWQZGurxYggCCrYNkkjxaEVRMTBxUmog4ODLTrq
+        V/ADqJvipCA+7wUuvdi7eBFa+EEvvP/73bvAkREACJnO6tuTmvaRTqdBlsys0VNVdZztwxJZYPOD60c4
+        fniTYqV+BIqqQSan34okkQXuiNdIBArmzHXILprfIklkwQrof3oU9DlLILA2oFA7F0qEAhl2z25Ay+mB
+        BCcJjou8E7anUEB3TmEbh9y/BhKchIK1bE+hAF82G5RlqbJ1R45p4k/BKikuFovQarcTgRlFUfa4ArRT
+        QYUIMPD0/JIIzHAFOBYK6KgFqxwUd7u9cHcisIaCa64AH5qmCRTLssIw24yHtKBarQGl7jjccByJBI7j
+        hqHhCNy+gG0SRyKB63qRkAzJBN6QBZ7XiIRkSCRoNPxISIZkAn/IAt/fD4p510EcQkEqlTJKpfIXFdi2
+        DZ3OJbdJHK2WQEB+Y3p+4V03DDAIeLM2m81wfFmM/PwnyeoDAmTZ3rnaPLwYuOOTsOadnJLNjnIF//ls
+        +c3UTM7v94SRH6Q2/gnsYXdJAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="alumnosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7pAAAO6QEOM0IcAAAAB3RJ
+        TUUH4wwDESwAr5QjigAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHASURBVEhL
+        xdU9SBxRFIbhifgbBbGxtBCRFLExio0WIoEE0cIYFaxsBJPKKpYWFv50Ygq1CLFOmmiTIoRIUARBFEkq
+        QdTCIoWFGELU+H7rjBzunl1dg3jggd1v7pxhZu69E91XFaLg8ueN6sbjq7CEP7HFOMtUOY0vwjb+BX6i
+        BGEVI5fxUQ/CwYluhPUS3ljxxkdv4A2W16iAThzEIzzDb3jj1Sut2uEN/ogWHJrsDKPoNZn1HGmVh28I
+        Bz/GXpAlnmItyL5CvdwqxRR+YAcTaIZtYM1gALvQOZN4iLR6gBfQ41g3PqEVXnOZg96PPUc9uqCeqdKP
+        9/AanKIWv0xmqdGXIEu8Q+oiQ3GQySw6cGwymUcbzk0W0oyLNk0QOsIYyqFZtgA9tmFUohPeYktsILXE
+        vYP7eALdwUmchb6jCR9MZqm3e0C3rdmzYrJM9OgaoC3CO+6GegyvgiybZfQHWcINR/A5yLLRHdcHWSIa
+        xyr+xoH0IdvL99RB0zr5fwAtvKsqQyO0oVVjC7bBdXQBTUtN6RpcW7e5QE515xfQp08z4y20YLTobEOt
+        De0909B2frX3/E/lQx8e95N4DxVFF2evPdunyKUHAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="excelToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA

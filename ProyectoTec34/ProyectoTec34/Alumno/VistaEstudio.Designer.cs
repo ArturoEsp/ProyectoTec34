@@ -28,94 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaEstudio));
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.label45 = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.tbTelNombre = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.tbTelHermanos = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.tbTelPadre = new System.Windows.Forms.TextBox();
+            this.tbTelMadre = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.tbTelTrabajo = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.tbTelDom = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.tbNoHijos = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.tbEstadoCivil = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.dgvSomaticos = new System.Windows.Forms.DataGridView();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.tbEdadMadre = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.tbEdadPadre = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.tbProfesionPadres = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.tbParentesco = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.tbPadreTutor = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.tbIndMedicamento = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.tbMedicamentoPres = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.tbMedicamento = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.tbCaracEnfermdad = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.tbAccidentes = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.tbAlergia = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.tbEnfermedad = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.tbDiscapacidad = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.tbPractDisciplina = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.tbTiempoLibre = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.tbHorarioTrabajo = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tbLugarTrabajo = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tbNombreTrabajo = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbApoyoGob = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tbNoIntegrantFam = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbNoHermanos = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbPagoxTrabajo = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbConQuienVive = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbDominaIdioma = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbEdad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbSexo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbNacionalidad = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbLugarNaci = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbAnio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbMes = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbDia = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
@@ -205,6 +203,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label62 = new System.Windows.Forms.Label();
+            this.tbNumEdadEsc = new System.Windows.Forms.TextBox();
+            this.label89 = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSomaticos)).BeginInit();
@@ -237,88 +237,90 @@
             // 
             this.metroTabPage1.AutoScroll = true;
             this.metroTabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.metroTabPage1.Controls.Add(this.tbNumEdadEsc);
+            this.metroTabPage1.Controls.Add(this.label89);
             this.metroTabPage1.Controls.Add(this.label45);
-            this.metroTabPage1.Controls.Add(this.textBox40);
+            this.metroTabPage1.Controls.Add(this.tbTelNombre);
             this.metroTabPage1.Controls.Add(this.label44);
             this.metroTabPage1.Controls.Add(this.label43);
-            this.metroTabPage1.Controls.Add(this.textBox39);
+            this.metroTabPage1.Controls.Add(this.tbTelHermanos);
             this.metroTabPage1.Controls.Add(this.label42);
-            this.metroTabPage1.Controls.Add(this.textBox38);
-            this.metroTabPage1.Controls.Add(this.textBox37);
+            this.metroTabPage1.Controls.Add(this.tbTelPadre);
+            this.metroTabPage1.Controls.Add(this.tbTelMadre);
             this.metroTabPage1.Controls.Add(this.label41);
             this.metroTabPage1.Controls.Add(this.label40);
             this.metroTabPage1.Controls.Add(this.label39);
-            this.metroTabPage1.Controls.Add(this.textBox36);
+            this.metroTabPage1.Controls.Add(this.tbTelTrabajo);
             this.metroTabPage1.Controls.Add(this.label38);
-            this.metroTabPage1.Controls.Add(this.textBox35);
+            this.metroTabPage1.Controls.Add(this.tbTelDom);
             this.metroTabPage1.Controls.Add(this.label37);
-            this.metroTabPage1.Controls.Add(this.textBox34);
+            this.metroTabPage1.Controls.Add(this.tbNoHijos);
             this.metroTabPage1.Controls.Add(this.label36);
-            this.metroTabPage1.Controls.Add(this.textBox33);
+            this.metroTabPage1.Controls.Add(this.tbEstadoCivil);
             this.metroTabPage1.Controls.Add(this.label35);
             this.metroTabPage1.Controls.Add(this.dgvSomaticos);
             this.metroTabPage1.Controls.Add(this.label34);
-            this.metroTabPage1.Controls.Add(this.textBox32);
+            this.metroTabPage1.Controls.Add(this.tbEdadMadre);
             this.metroTabPage1.Controls.Add(this.label33);
-            this.metroTabPage1.Controls.Add(this.textBox31);
+            this.metroTabPage1.Controls.Add(this.tbEdadPadre);
             this.metroTabPage1.Controls.Add(this.label32);
-            this.metroTabPage1.Controls.Add(this.textBox30);
+            this.metroTabPage1.Controls.Add(this.tbProfesionPadres);
             this.metroTabPage1.Controls.Add(this.label31);
-            this.metroTabPage1.Controls.Add(this.textBox29);
+            this.metroTabPage1.Controls.Add(this.tbParentesco);
             this.metroTabPage1.Controls.Add(this.label30);
-            this.metroTabPage1.Controls.Add(this.textBox28);
+            this.metroTabPage1.Controls.Add(this.tbPadreTutor);
             this.metroTabPage1.Controls.Add(this.label29);
-            this.metroTabPage1.Controls.Add(this.textBox27);
+            this.metroTabPage1.Controls.Add(this.tbIndMedicamento);
             this.metroTabPage1.Controls.Add(this.label28);
-            this.metroTabPage1.Controls.Add(this.textBox26);
+            this.metroTabPage1.Controls.Add(this.tbMedicamentoPres);
             this.metroTabPage1.Controls.Add(this.label27);
-            this.metroTabPage1.Controls.Add(this.textBox25);
+            this.metroTabPage1.Controls.Add(this.tbMedicamento);
             this.metroTabPage1.Controls.Add(this.label26);
-            this.metroTabPage1.Controls.Add(this.textBox24);
+            this.metroTabPage1.Controls.Add(this.tbCaracEnfermdad);
             this.metroTabPage1.Controls.Add(this.label25);
-            this.metroTabPage1.Controls.Add(this.textBox23);
+            this.metroTabPage1.Controls.Add(this.tbAccidentes);
             this.metroTabPage1.Controls.Add(this.label24);
-            this.metroTabPage1.Controls.Add(this.textBox22);
+            this.metroTabPage1.Controls.Add(this.tbAlergia);
             this.metroTabPage1.Controls.Add(this.label23);
-            this.metroTabPage1.Controls.Add(this.textBox21);
+            this.metroTabPage1.Controls.Add(this.tbEnfermedad);
             this.metroTabPage1.Controls.Add(this.label22);
-            this.metroTabPage1.Controls.Add(this.textBox20);
+            this.metroTabPage1.Controls.Add(this.tbDiscapacidad);
             this.metroTabPage1.Controls.Add(this.label21);
-            this.metroTabPage1.Controls.Add(this.textBox19);
+            this.metroTabPage1.Controls.Add(this.tbPractDisciplina);
             this.metroTabPage1.Controls.Add(this.label20);
-            this.metroTabPage1.Controls.Add(this.textBox18);
+            this.metroTabPage1.Controls.Add(this.tbTiempoLibre);
             this.metroTabPage1.Controls.Add(this.label19);
-            this.metroTabPage1.Controls.Add(this.textBox17);
+            this.metroTabPage1.Controls.Add(this.tbHorarioTrabajo);
             this.metroTabPage1.Controls.Add(this.label18);
-            this.metroTabPage1.Controls.Add(this.textBox16);
+            this.metroTabPage1.Controls.Add(this.tbLugarTrabajo);
             this.metroTabPage1.Controls.Add(this.label17);
-            this.metroTabPage1.Controls.Add(this.textBox15);
+            this.metroTabPage1.Controls.Add(this.tbNombreTrabajo);
             this.metroTabPage1.Controls.Add(this.label16);
-            this.metroTabPage1.Controls.Add(this.textBox9);
+            this.metroTabPage1.Controls.Add(this.tbApoyoGob);
             this.metroTabPage1.Controls.Add(this.label9);
-            this.metroTabPage1.Controls.Add(this.textBox11);
+            this.metroTabPage1.Controls.Add(this.tbNoIntegrantFam);
             this.metroTabPage1.Controls.Add(this.label11);
-            this.metroTabPage1.Controls.Add(this.textBox13);
+            this.metroTabPage1.Controls.Add(this.tbNoHermanos);
             this.metroTabPage1.Controls.Add(this.label14);
-            this.metroTabPage1.Controls.Add(this.textBox14);
+            this.metroTabPage1.Controls.Add(this.tbPagoxTrabajo);
             this.metroTabPage1.Controls.Add(this.label15);
-            this.metroTabPage1.Controls.Add(this.textBox10);
+            this.metroTabPage1.Controls.Add(this.tbConQuienVive);
             this.metroTabPage1.Controls.Add(this.label12);
-            this.metroTabPage1.Controls.Add(this.textBox12);
+            this.metroTabPage1.Controls.Add(this.tbDominaIdioma);
             this.metroTabPage1.Controls.Add(this.label13);
-            this.metroTabPage1.Controls.Add(this.textBox6);
+            this.metroTabPage1.Controls.Add(this.tbEdad);
             this.metroTabPage1.Controls.Add(this.label7);
-            this.metroTabPage1.Controls.Add(this.textBox5);
+            this.metroTabPage1.Controls.Add(this.tbSexo);
             this.metroTabPage1.Controls.Add(this.label6);
-            this.metroTabPage1.Controls.Add(this.textBox7);
+            this.metroTabPage1.Controls.Add(this.tbNacionalidad);
             this.metroTabPage1.Controls.Add(this.label8);
-            this.metroTabPage1.Controls.Add(this.textBox8);
+            this.metroTabPage1.Controls.Add(this.tbLugarNaci);
             this.metroTabPage1.Controls.Add(this.label10);
-            this.metroTabPage1.Controls.Add(this.textBox4);
+            this.metroTabPage1.Controls.Add(this.tbAnio);
             this.metroTabPage1.Controls.Add(this.label4);
-            this.metroTabPage1.Controls.Add(this.textBox3);
+            this.metroTabPage1.Controls.Add(this.tbMes);
             this.metroTabPage1.Controls.Add(this.label3);
-            this.metroTabPage1.Controls.Add(this.textBox2);
+            this.metroTabPage1.Controls.Add(this.tbDia);
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.Controls.Add(this.label1);
             this.metroTabPage1.Controls.Add(this.tbNombre);
@@ -346,17 +348,17 @@
             this.label45.Size = new System.Drawing.Size(0, 13);
             this.label45.TabIndex = 162;
             // 
-            // textBox40
+            // tbTelNombre
             // 
-            this.textBox40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox40.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox40.Location = new System.Drawing.Point(129, 1101);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.ReadOnly = true;
-            this.textBox40.Size = new System.Drawing.Size(888, 21);
-            this.textBox40.TabIndex = 161;
-            this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTelNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTelNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelNombre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelNombre.Location = new System.Drawing.Point(129, 1101);
+            this.tbTelNombre.Name = "tbTelNombre";
+            this.tbTelNombre.ReadOnly = true;
+            this.tbTelNombre.Size = new System.Drawing.Size(888, 21);
+            this.tbTelNombre.TabIndex = 161;
+            this.tbTelNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label44
             // 
@@ -380,17 +382,17 @@
             this.label43.TabIndex = 159;
             this.label43.Text = "Teléfonos y nombres de personas inmediatas en caso de ausencia:";
             // 
-            // textBox39
+            // tbTelHermanos
             // 
-            this.textBox39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox39.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox39.Location = new System.Drawing.Point(114, 1026);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.ReadOnly = true;
-            this.textBox39.Size = new System.Drawing.Size(903, 21);
-            this.textBox39.TabIndex = 158;
-            this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTelHermanos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTelHermanos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelHermanos.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelHermanos.Location = new System.Drawing.Point(114, 1026);
+            this.tbTelHermanos.Name = "tbTelHermanos";
+            this.tbTelHermanos.ReadOnly = true;
+            this.tbTelHermanos.Size = new System.Drawing.Size(903, 21);
+            this.tbTelHermanos.TabIndex = 158;
+            this.tbTelHermanos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label42
             // 
@@ -403,29 +405,29 @@
             this.label42.TabIndex = 157;
             this.label42.Text = "Hermano:";
             // 
-            // textBox38
+            // tbTelPadre
             // 
-            this.textBox38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox38.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox38.Location = new System.Drawing.Point(96, 988);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.ReadOnly = true;
-            this.textBox38.Size = new System.Drawing.Size(925, 21);
-            this.textBox38.TabIndex = 156;
-            this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTelPadre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTelPadre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelPadre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelPadre.Location = new System.Drawing.Point(96, 988);
+            this.tbTelPadre.Name = "tbTelPadre";
+            this.tbTelPadre.ReadOnly = true;
+            this.tbTelPadre.Size = new System.Drawing.Size(925, 21);
+            this.tbTelPadre.TabIndex = 156;
+            this.tbTelPadre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox37
+            // tbTelMadre
             // 
-            this.textBox37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox37.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox37.Location = new System.Drawing.Point(96, 951);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.ReadOnly = true;
-            this.textBox37.Size = new System.Drawing.Size(925, 21);
-            this.textBox37.TabIndex = 155;
-            this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTelMadre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTelMadre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelMadre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelMadre.Location = new System.Drawing.Point(96, 951);
+            this.tbTelMadre.Name = "tbTelMadre";
+            this.tbTelMadre.ReadOnly = true;
+            this.tbTelMadre.Size = new System.Drawing.Size(925, 21);
+            this.tbTelMadre.TabIndex = 155;
+            this.tbTelMadre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label41
             // 
@@ -460,17 +462,17 @@
             this.label39.TabIndex = 152;
             this.label39.Text = "Nombres y Teléfonos celulares:";
             // 
-            // textBox36
+            // tbTelTrabajo
             // 
-            this.textBox36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox36.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox36.Location = new System.Drawing.Point(170, 876);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.ReadOnly = true;
-            this.textBox36.Size = new System.Drawing.Size(851, 21);
-            this.textBox36.TabIndex = 151;
-            this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTelTrabajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTelTrabajo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelTrabajo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelTrabajo.Location = new System.Drawing.Point(170, 876);
+            this.tbTelTrabajo.Name = "tbTelTrabajo";
+            this.tbTelTrabajo.ReadOnly = true;
+            this.tbTelTrabajo.Size = new System.Drawing.Size(851, 21);
+            this.tbTelTrabajo.TabIndex = 151;
+            this.tbTelTrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label38
             // 
@@ -483,17 +485,17 @@
             this.label38.TabIndex = 150;
             this.label38.Text = "Teléfono(s) Trabajo";
             // 
-            // textBox35
+            // tbTelDom
             // 
-            this.textBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox35.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox35.Location = new System.Drawing.Point(170, 838);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.ReadOnly = true;
-            this.textBox35.Size = new System.Drawing.Size(851, 21);
-            this.textBox35.TabIndex = 149;
-            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTelDom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTelDom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelDom.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelDom.Location = new System.Drawing.Point(170, 838);
+            this.tbTelDom.Name = "tbTelDom";
+            this.tbTelDom.ReadOnly = true;
+            this.tbTelDom.Size = new System.Drawing.Size(851, 21);
+            this.tbTelDom.TabIndex = 149;
+            this.tbTelDom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label37
             // 
@@ -506,17 +508,17 @@
             this.label37.TabIndex = 148;
             this.label37.Text = "Teléfono/Domicilio";
             // 
-            // textBox34
+            // tbNoHijos
             // 
-            this.textBox34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox34.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox34.Location = new System.Drawing.Point(540, 796);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.ReadOnly = true;
-            this.textBox34.Size = new System.Drawing.Size(51, 21);
-            this.textBox34.TabIndex = 147;
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNoHijos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNoHijos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNoHijos.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNoHijos.Location = new System.Drawing.Point(540, 796);
+            this.tbNoHijos.Name = "tbNoHijos";
+            this.tbNoHijos.ReadOnly = true;
+            this.tbNoHijos.Size = new System.Drawing.Size(51, 21);
+            this.tbNoHijos.TabIndex = 147;
+            this.tbNoHijos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label36
             // 
@@ -529,17 +531,17 @@
             this.label36.TabIndex = 146;
             this.label36.Text = "Número de hijos:";
             // 
-            // textBox33
+            // tbEstadoCivil
             // 
-            this.textBox33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox33.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox33.Location = new System.Drawing.Point(208, 796);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.ReadOnly = true;
-            this.textBox33.Size = new System.Drawing.Size(204, 21);
-            this.textBox33.TabIndex = 145;
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEstadoCivil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEstadoCivil.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEstadoCivil.Location = new System.Drawing.Point(208, 796);
+            this.tbEstadoCivil.Name = "tbEstadoCivil";
+            this.tbEstadoCivil.ReadOnly = true;
+            this.tbEstadoCivil.Size = new System.Drawing.Size(204, 21);
+            this.tbEstadoCivil.TabIndex = 145;
+            this.tbEstadoCivil.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label35
             // 
@@ -556,23 +558,7 @@
             // 
             this.dgvSomaticos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSomaticos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSomaticos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSomaticos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSomaticos.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSomaticos.Location = new System.Drawing.Point(38, 660);
             this.dgvSomaticos.Name = "dgvSomaticos";
             this.dgvSomaticos.RowHeadersVisible = false;
@@ -592,17 +578,17 @@
             this.label34.TabIndex = 142;
             this.label34.Text = "DATOS SOMATICOS:";
             // 
-            // textBox32
+            // tbEdadMadre
             // 
-            this.textBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox32.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox32.Location = new System.Drawing.Point(991, 592);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.ReadOnly = true;
-            this.textBox32.Size = new System.Drawing.Size(42, 21);
-            this.textBox32.TabIndex = 140;
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEdadMadre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbEdadMadre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEdadMadre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEdadMadre.Location = new System.Drawing.Point(991, 592);
+            this.tbEdadMadre.Name = "tbEdadMadre";
+            this.tbEdadMadre.ReadOnly = true;
+            this.tbEdadMadre.Size = new System.Drawing.Size(42, 21);
+            this.tbEdadMadre.TabIndex = 140;
+            this.tbEdadMadre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label33
             // 
@@ -615,17 +601,17 @@
             this.label33.TabIndex = 139;
             this.label33.Text = "Edad de la madre:";
             // 
-            // textBox31
+            // tbEdadPadre
             // 
-            this.textBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox31.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox31.Location = new System.Drawing.Point(809, 592);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.ReadOnly = true;
-            this.textBox31.Size = new System.Drawing.Size(50, 21);
-            this.textBox31.TabIndex = 138;
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEdadPadre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbEdadPadre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEdadPadre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEdadPadre.Location = new System.Drawing.Point(809, 592);
+            this.tbEdadPadre.Name = "tbEdadPadre";
+            this.tbEdadPadre.ReadOnly = true;
+            this.tbEdadPadre.Size = new System.Drawing.Size(50, 21);
+            this.tbEdadPadre.TabIndex = 138;
+            this.tbEdadPadre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label32
             // 
@@ -638,17 +624,17 @@
             this.label32.TabIndex = 137;
             this.label32.Text = "Edad del padre:";
             // 
-            // textBox30
+            // tbProfesionPadres
             // 
-            this.textBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox30.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox30.Location = new System.Drawing.Point(283, 592);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(415, 21);
-            this.textBox30.TabIndex = 136;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbProfesionPadres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbProfesionPadres.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbProfesionPadres.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProfesionPadres.Location = new System.Drawing.Point(283, 592);
+            this.tbProfesionPadres.Name = "tbProfesionPadres";
+            this.tbProfesionPadres.ReadOnly = true;
+            this.tbProfesionPadres.Size = new System.Drawing.Size(415, 21);
+            this.tbProfesionPadres.TabIndex = 136;
+            this.tbProfesionPadres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label31
             // 
@@ -661,17 +647,17 @@
             this.label31.TabIndex = 135;
             this.label31.Text = "Preparación profesional de los padres: ";
             // 
-            // textBox29
+            // tbParentesco
             // 
-            this.textBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox29.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.Location = new System.Drawing.Point(790, 542);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(246, 21);
-            this.textBox29.TabIndex = 134;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbParentesco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbParentesco.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbParentesco.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbParentesco.Location = new System.Drawing.Point(790, 542);
+            this.tbParentesco.Name = "tbParentesco";
+            this.tbParentesco.ReadOnly = true;
+            this.tbParentesco.Size = new System.Drawing.Size(246, 21);
+            this.tbParentesco.TabIndex = 134;
+            this.tbParentesco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label30
             // 
@@ -684,17 +670,17 @@
             this.label30.TabIndex = 133;
             this.label30.Text = "Parentesco en caso de no ser el padre:";
             // 
-            // textBox28
+            // tbPadreTutor
             // 
-            this.textBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox28.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox28.Location = new System.Drawing.Point(208, 542);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(323, 21);
-            this.textBox28.TabIndex = 132;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPadreTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbPadreTutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPadreTutor.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPadreTutor.Location = new System.Drawing.Point(208, 542);
+            this.tbPadreTutor.Name = "tbPadreTutor";
+            this.tbPadreTutor.ReadOnly = true;
+            this.tbPadreTutor.Size = new System.Drawing.Size(323, 21);
+            this.tbPadreTutor.TabIndex = 132;
+            this.tbPadreTutor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label29
             // 
@@ -707,16 +693,16 @@
             this.label29.TabIndex = 131;
             this.label29.Text = "Nombre del padre o tutor:";
             // 
-            // textBox27
+            // tbIndMedicamento
             // 
-            this.textBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox27.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox27.Location = new System.Drawing.Point(780, 493);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(255, 21);
-            this.textBox27.TabIndex = 130;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbIndMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbIndMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbIndMedicamento.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIndMedicamento.Location = new System.Drawing.Point(780, 493);
+            this.tbIndMedicamento.Name = "tbIndMedicamento";
+            this.tbIndMedicamento.Size = new System.Drawing.Size(255, 21);
+            this.tbIndMedicamento.TabIndex = 130;
+            this.tbIndMedicamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label28
             // 
@@ -729,16 +715,16 @@
             this.label28.TabIndex = 129;
             this.label28.Text = "Indicación del medicamento: ";
             // 
-            // textBox26
+            // tbMedicamentoPres
             // 
-            this.textBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.Location = new System.Drawing.Point(462, 493);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(125, 21);
-            this.textBox26.TabIndex = 128;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMedicamentoPres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbMedicamentoPres.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbMedicamentoPres.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMedicamentoPres.Location = new System.Drawing.Point(462, 493);
+            this.tbMedicamentoPres.Name = "tbMedicamentoPres";
+            this.tbMedicamentoPres.Size = new System.Drawing.Size(125, 21);
+            this.tbMedicamentoPres.TabIndex = 128;
+            this.tbMedicamentoPres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
@@ -751,16 +737,16 @@
             this.label27.TabIndex = 127;
             this.label27.Text = "¿Medicamento prescrito?";
             // 
-            // textBox25
+            // tbMedicamento
             // 
-            this.textBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.Location = new System.Drawing.Point(228, 493);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(60, 21);
-            this.textBox25.TabIndex = 126;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbMedicamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbMedicamento.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMedicamento.Location = new System.Drawing.Point(228, 493);
+            this.tbMedicamento.Name = "tbMedicamento";
+            this.tbMedicamento.Size = new System.Drawing.Size(60, 21);
+            this.tbMedicamento.TabIndex = 126;
+            this.tbMedicamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
@@ -773,16 +759,16 @@
             this.label26.TabIndex = 125;
             this.label26.Text = "¿Tomas algún medicamento?";
             // 
-            // textBox24
+            // tbCaracEnfermdad
             // 
-            this.textBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(353, 442);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(683, 21);
-            this.textBox24.TabIndex = 124;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCaracEnfermdad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbCaracEnfermdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbCaracEnfermdad.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCaracEnfermdad.Location = new System.Drawing.Point(353, 442);
+            this.tbCaracEnfermdad.Name = "tbCaracEnfermdad";
+            this.tbCaracEnfermdad.Size = new System.Drawing.Size(683, 21);
+            this.tbCaracEnfermdad.TabIndex = 124;
+            this.tbCaracEnfermdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -795,16 +781,16 @@
             this.label25.TabIndex = 123;
             this.label25.Text = "Caracteristicas de la enfermedad (padecimiento):";
             // 
-            // textBox23
+            // tbAccidentes
             // 
-            this.textBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(811, 392);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(225, 21);
-            this.textBox23.TabIndex = 122;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbAccidentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbAccidentes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbAccidentes.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAccidentes.Location = new System.Drawing.Point(811, 392);
+            this.tbAccidentes.Name = "tbAccidentes";
+            this.tbAccidentes.Size = new System.Drawing.Size(225, 21);
+            this.tbAccidentes.TabIndex = 122;
+            this.tbAccidentes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
@@ -817,16 +803,16 @@
             this.label24.TabIndex = 121;
             this.label24.Text = "Enfermedades o accidentes graves padecidas:";
             // 
-            // textBox22
+            // tbAlergia
             // 
-            this.textBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(268, 392);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(247, 21);
-            this.textBox22.TabIndex = 120;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbAlergia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbAlergia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbAlergia.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAlergia.Location = new System.Drawing.Point(268, 392);
+            this.tbAlergia.Name = "tbAlergia";
+            this.tbAlergia.Size = new System.Drawing.Size(247, 21);
+            this.tbAlergia.TabIndex = 120;
+            this.tbAlergia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
@@ -839,16 +825,16 @@
             this.label23.TabIndex = 119;
             this.label23.Text = "¿Padece alguna alergia? ¿Cuál? (es)";
             // 
-            // textBox21
+            // tbEnfermedad
             // 
-            this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(850, 342);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(187, 21);
-            this.textBox21.TabIndex = 118;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEnfermedad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbEnfermedad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEnfermedad.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEnfermedad.Location = new System.Drawing.Point(850, 342);
+            this.tbEnfermedad.Name = "tbEnfermedad";
+            this.tbEnfermedad.Size = new System.Drawing.Size(187, 21);
+            this.tbEnfermedad.TabIndex = 118;
+            this.tbEnfermedad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
             // 
@@ -861,16 +847,16 @@
             this.label22.TabIndex = 117;
             this.label22.Text = "¿Padece de alguna enfermedad? ¿Cuál?";
             // 
-            // textBox20
+            // tbDiscapacidad
             // 
-            this.textBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(297, 342);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(295, 21);
-            this.textBox20.TabIndex = 116;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbDiscapacidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbDiscapacidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbDiscapacidad.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDiscapacidad.Location = new System.Drawing.Point(297, 342);
+            this.tbDiscapacidad.Name = "tbDiscapacidad";
+            this.tbDiscapacidad.Size = new System.Drawing.Size(295, 21);
+            this.tbDiscapacidad.TabIndex = 116;
+            this.tbDiscapacidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -883,16 +869,16 @@
             this.label21.TabIndex = 115;
             this.label21.Text = "¿Padece de alguna discapacidad? ¿Cuál?";
             // 
-            // textBox19
+            // tbPractDisciplina
             // 
-            this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(900, 292);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(137, 21);
-            this.textBox19.TabIndex = 114;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPractDisciplina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbPractDisciplina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPractDisciplina.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPractDisciplina.Location = new System.Drawing.Point(900, 292);
+            this.tbPractDisciplina.Name = "tbPractDisciplina";
+            this.tbPractDisciplina.Size = new System.Drawing.Size(137, 21);
+            this.tbPractDisciplina.TabIndex = 114;
+            this.tbPractDisciplina.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
@@ -905,16 +891,16 @@
             this.label20.TabIndex = 113;
             this.label20.Text = "¿Practicas o dominas alguna disciplina u oficio? ¿Cuál?";
             // 
-            // textBox18
+            // tbTiempoLibre
             // 
-            this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(240, 291);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(295, 21);
-            this.textBox18.TabIndex = 112;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbTiempoLibre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbTiempoLibre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTiempoLibre.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTiempoLibre.Location = new System.Drawing.Point(240, 291);
+            this.tbTiempoLibre.Name = "tbTiempoLibre";
+            this.tbTiempoLibre.Size = new System.Drawing.Size(295, 21);
+            this.tbTiempoLibre.TabIndex = 112;
+            this.tbTiempoLibre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
@@ -927,16 +913,16 @@
             this.label19.TabIndex = 111;
             this.label19.Text = "¿En que utiliza su tiempo libre?";
             // 
-            // textBox17
+            // tbHorarioTrabajo
             // 
-            this.textBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(608, 244);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(429, 21);
-            this.textBox17.TabIndex = 110;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbHorarioTrabajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbHorarioTrabajo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbHorarioTrabajo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbHorarioTrabajo.Location = new System.Drawing.Point(608, 244);
+            this.tbHorarioTrabajo.Name = "tbHorarioTrabajo";
+            this.tbHorarioTrabajo.Size = new System.Drawing.Size(429, 21);
+            this.tbHorarioTrabajo.TabIndex = 110;
+            this.tbHorarioTrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label18
             // 
@@ -949,16 +935,16 @@
             this.label18.TabIndex = 109;
             this.label18.Text = "Horario";
             // 
-            // textBox16
+            // tbLugarTrabajo
             // 
-            this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(91, 244);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(444, 21);
-            this.textBox16.TabIndex = 108;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLugarTrabajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbLugarTrabajo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbLugarTrabajo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLugarTrabajo.Location = new System.Drawing.Point(91, 244);
+            this.tbLugarTrabajo.Name = "tbLugarTrabajo";
+            this.tbLugarTrabajo.Size = new System.Drawing.Size(444, 21);
+            this.tbLugarTrabajo.TabIndex = 108;
+            this.tbLugarTrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
@@ -971,16 +957,16 @@
             this.label17.TabIndex = 107;
             this.label17.Text = "Lugar:";
             // 
-            // textBox15
+            // tbNombreTrabajo
             // 
-            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(595, 195);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(442, 21);
-            this.textBox15.TabIndex = 106;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNombreTrabajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNombreTrabajo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombreTrabajo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombreTrabajo.Location = new System.Drawing.Point(595, 195);
+            this.tbNombreTrabajo.Name = "tbNombreTrabajo";
+            this.tbNombreTrabajo.Size = new System.Drawing.Size(442, 21);
+            this.tbNombreTrabajo.TabIndex = 106;
+            this.tbNombreTrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
             // 
@@ -993,16 +979,16 @@
             this.label16.TabIndex = 105;
             this.label16.Text = "¿Cual?";
             // 
-            // textBox9
+            // tbApoyoGob
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(848, 145);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(189, 21);
-            this.textBox9.TabIndex = 104;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbApoyoGob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbApoyoGob.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbApoyoGob.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbApoyoGob.Location = new System.Drawing.Point(848, 145);
+            this.tbApoyoGob.Name = "tbApoyoGob";
+            this.tbApoyoGob.Size = new System.Drawing.Size(189, 21);
+            this.tbApoyoGob.TabIndex = 104;
+            this.tbApoyoGob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -1015,16 +1001,16 @@
             this.label9.TabIndex = 103;
             this.label9.Text = "¿Recibe algún apoyo de programa de gobierno? ¿Cuál?";
             // 
-            // textBox11
+            // tbNoIntegrantFam
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(460, 145);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(41, 21);
-            this.textBox11.TabIndex = 102;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNoIntegrantFam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNoIntegrantFam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNoIntegrantFam.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNoIntegrantFam.Location = new System.Drawing.Point(460, 145);
+            this.tbNoIntegrantFam.Name = "tbNoIntegrantFam";
+            this.tbNoIntegrantFam.Size = new System.Drawing.Size(41, 21);
+            this.tbNoIntegrantFam.TabIndex = 102;
+            this.tbNoIntegrantFam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -1037,16 +1023,16 @@
             this.label11.TabIndex = 101;
             this.label11.Text = "Número de integrantes en la familia:";
             // 
-            // textBox13
+            // tbNoHermanos
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(183, 145);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(36, 21);
-            this.textBox13.TabIndex = 100;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNoHermanos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNoHermanos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNoHermanos.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNoHermanos.Location = new System.Drawing.Point(183, 145);
+            this.tbNoHermanos.Name = "tbNoHermanos";
+            this.tbNoHermanos.Size = new System.Drawing.Size(36, 21);
+            this.tbNoHermanos.TabIndex = 100;
+            this.tbNoHermanos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -1059,16 +1045,16 @@
             this.label14.TabIndex = 99;
             this.label14.Text = "Número de hermanos:";
             // 
-            // textBox14
+            // tbPagoxTrabajo
             // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(441, 194);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(94, 21);
-            this.textBox14.TabIndex = 98;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPagoxTrabajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbPagoxTrabajo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPagoxTrabajo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPagoxTrabajo.Location = new System.Drawing.Point(441, 194);
+            this.tbPagoxTrabajo.Name = "tbPagoxTrabajo";
+            this.tbPagoxTrabajo.Size = new System.Drawing.Size(94, 21);
+            this.tbPagoxTrabajo.TabIndex = 98;
+            this.tbPagoxTrabajo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label15
             // 
@@ -1081,16 +1067,16 @@
             this.label15.TabIndex = 97;
             this.label15.Text = "¿Desarrolla un trabajo por el que recibe un ingreso economico?";
             // 
-            // textBox10
+            // tbConQuienVive
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(674, 101);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(363, 21);
-            this.textBox10.TabIndex = 96;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbConQuienVive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbConQuienVive.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbConQuienVive.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbConQuienVive.Location = new System.Drawing.Point(674, 101);
+            this.tbConQuienVive.Name = "tbConQuienVive";
+            this.tbConQuienVive.Size = new System.Drawing.Size(363, 21);
+            this.tbConQuienVive.TabIndex = 96;
+            this.tbConQuienVive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label12
             // 
@@ -1103,16 +1089,16 @@
             this.label12.TabIndex = 95;
             this.label12.Text = "¿Con quien vive actualmente?";
             // 
-            // textBox12
+            // tbDominaIdioma
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(298, 100);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(159, 21);
-            this.textBox12.TabIndex = 94;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbDominaIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbDominaIdioma.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbDominaIdioma.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDominaIdioma.Location = new System.Drawing.Point(298, 100);
+            this.tbDominaIdioma.Name = "tbDominaIdioma";
+            this.tbDominaIdioma.Size = new System.Drawing.Size(159, 21);
+            this.tbDominaIdioma.TabIndex = 94;
+            this.tbDominaIdioma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -1125,16 +1111,16 @@
             this.label13.TabIndex = 93;
             this.label13.Text = "¿Domina algún idioma/dialecto? ¿Cual?";
             // 
-            // textBox6
+            // tbEdad
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(988, 56);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(49, 21);
-            this.textBox6.TabIndex = 92;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEdad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbEdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEdad.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEdad.Location = new System.Drawing.Point(988, 56);
+            this.tbEdad.Name = "tbEdad";
+            this.tbEdad.Size = new System.Drawing.Size(49, 21);
+            this.tbEdad.TabIndex = 92;
+            this.tbEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -1147,16 +1133,16 @@
             this.label7.TabIndex = 91;
             this.label7.Text = "Edad:";
             // 
-            // textBox5
+            // tbSexo
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(786, 56);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 21);
-            this.textBox5.TabIndex = 90;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbSexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSexo.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSexo.Location = new System.Drawing.Point(786, 56);
+            this.tbSexo.Name = "tbSexo";
+            this.tbSexo.Size = new System.Drawing.Size(150, 21);
+            this.tbSexo.TabIndex = 90;
+            this.tbSexo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -1169,16 +1155,16 @@
             this.label6.TabIndex = 89;
             this.label6.Text = "Sexo:";
             // 
-            // textBox7
+            // tbNacionalidad
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(575, 56);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(157, 21);
-            this.textBox7.TabIndex = 88;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbNacionalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNacionalidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNacionalidad.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNacionalidad.Location = new System.Drawing.Point(575, 56);
+            this.tbNacionalidad.Name = "tbNacionalidad";
+            this.tbNacionalidad.Size = new System.Drawing.Size(157, 21);
+            this.tbNacionalidad.TabIndex = 88;
+            this.tbNacionalidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -1191,16 +1177,16 @@
             this.label8.TabIndex = 87;
             this.label8.Text = "Nacionalidad:";
             // 
-            // textBox8
+            // tbLugarNaci
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(182, 55);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(275, 21);
-            this.textBox8.TabIndex = 86;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLugarNaci.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbLugarNaci.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbLugarNaci.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLugarNaci.Location = new System.Drawing.Point(182, 55);
+            this.tbLugarNaci.Name = "tbLugarNaci";
+            this.tbLugarNaci.Size = new System.Drawing.Size(275, 21);
+            this.tbLugarNaci.TabIndex = 86;
+            this.tbLugarNaci.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
@@ -1213,16 +1199,16 @@
             this.label10.TabIndex = 85;
             this.label10.Text = "Lugar de nacimiento:";
             // 
-            // textBox4
+            // tbAnio
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(960, 14);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(77, 21);
-            this.textBox4.TabIndex = 84;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbAnio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbAnio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbAnio.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAnio.Location = new System.Drawing.Point(960, 14);
+            this.tbAnio.Name = "tbAnio";
+            this.tbAnio.Size = new System.Drawing.Size(77, 21);
+            this.tbAnio.TabIndex = 84;
+            this.tbAnio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -1235,16 +1221,16 @@
             this.label4.TabIndex = 83;
             this.label4.Text = "Año";
             // 
-            // textBox3
+            // tbMes
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(747, 14);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 21);
-            this.textBox3.TabIndex = 82;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbMes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbMes.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMes.Location = new System.Drawing.Point(747, 14);
+            this.tbMes.Name = "tbMes";
+            this.tbMes.Size = new System.Drawing.Size(168, 21);
+            this.tbMes.TabIndex = 82;
+            this.tbMes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -1257,16 +1243,16 @@
             this.label3.TabIndex = 81;
             this.label3.Text = "Mes";
             // 
-            // textBox2
+            // tbDia
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(658, 14);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(44, 21);
-            this.textBox2.TabIndex = 80;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbDia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbDia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbDia.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDia.Location = new System.Drawing.Point(658, 14);
+            this.tbDia.Name = "tbDia";
+            this.tbDia.Size = new System.Drawing.Size(44, 21);
+            this.tbDia.TabIndex = 80;
+            this.tbDia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -2370,6 +2356,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(46, 39);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label62
             // 
@@ -2381,6 +2368,29 @@
             this.label62.Size = new System.Drawing.Size(269, 25);
             this.label62.TabIndex = 0;
             this.label62.Text = "ESTUDIO SOCIOECONOMICO";
+            // 
+            // tbNumEdadEsc
+            // 
+            this.tbNumEdadEsc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.tbNumEdadEsc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNumEdadEsc.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNumEdadEsc.Location = new System.Drawing.Point(835, 796);
+            this.tbNumEdadEsc.Name = "tbNumEdadEsc";
+            this.tbNumEdadEsc.ReadOnly = true;
+            this.tbNumEdadEsc.Size = new System.Drawing.Size(51, 21);
+            this.tbNumEdadEsc.TabIndex = 164;
+            this.tbNumEdadEsc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.BackColor = System.Drawing.Color.Transparent;
+            this.label89.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.Location = new System.Drawing.Point(615, 798);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(214, 18);
+            this.label89.TabIndex = 163;
+            this.label89.Text = "Número de hijos en edad escolar:";
             // 
             // VistaEstudio
             // 
@@ -2424,88 +2434,88 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
         private MetroFramework.Controls.MetroTabPage metroTabPage5;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox tbEdadMadre;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox tbEdadPadre;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox tbProfesionPadres;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox tbParentesco;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox tbPadreTutor;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox tbIndMedicamento;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox tbMedicamentoPres;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox tbMedicamento;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox tbCaracEnfermdad;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox tbAccidentes;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox tbAlergia;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox tbEnfermedad;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox tbDiscapacidad;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox tbPractDisciplina;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox tbTiempoLibre;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox tbHorarioTrabajo;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tbLugarTrabajo;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tbNombreTrabajo;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbApoyoGob;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbNoIntegrantFam;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tbNoHermanos;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox tbPagoxTrabajo;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbConQuienVive;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbDominaIdioma;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbEdad;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbSexo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbNacionalidad;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbLugarNaci;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbAnio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbMes;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbDia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox tbTelNombre;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox tbTelHermanos;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox tbTelPadre;
+        private System.Windows.Forms.TextBox tbTelMadre;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox tbTelTrabajo;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox tbTelDom;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox tbNoHijos;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox tbEstadoCivil;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.DataGridView dgvSomaticos;
         private System.Windows.Forms.Label label34;
@@ -2591,5 +2601,7 @@
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox tbNumEdadEsc;
+        private System.Windows.Forms.Label label89;
     }
 }

@@ -34,5 +34,35 @@ namespace ProyectoTec34.Configuraciones
             Eliminacion frm = new Eliminacion();
             frm.Show();
         }
+
+        private void aToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseGrado("1","A");
+        }
+
+        private void bToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseGrado("1", "B");
+        }
+
+        private void aToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseGrado("2", "A");
+        }
+
+        private void bToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseGrado("2", "B");
+        }
+
+        private void estudioSocioEconomicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseEstudioE();
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.MostrarBD();
+        }
     }
 }

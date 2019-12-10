@@ -90,11 +90,7 @@
             this.txtGrupo.FormattingEnabled = true;
             this.txtGrupo.Items.AddRange(new object[] {
             "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F"});
+            "B"});
             this.txtGrupo.Location = new System.Drawing.Point(661, 50);
             this.txtGrupo.Name = "txtGrupo";
             this.txtGrupo.Size = new System.Drawing.Size(61, 24);

@@ -27,6 +27,73 @@ namespace ProyectoTec34.Configuraciones
             }
         }
 
+        public static void EliminarAlumno(string ID)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteCommand cmd;
+                conn.Open();
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "DELETE FROM Alumno WHERE ID_Alumno = @ID";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
+                cmd.ExecuteNonQuery();
+            }
+            EliminarAlumnoEstudioS(ID);
+            EliminarAlumnoParciales(ID);
+            EliminarAlumnoSomaticos(ID);
+        }
+
+        private static void EliminarAlumnoEstudioS(string ID)
+        {
+
+            for (int i = 1; i < 6; i++)
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+                {
+                    SQLiteCommand cmd;
+                    conn.Open();
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "DELETE FROM EstudioSocio" + i + " WHERE ID_Alumno = @ID";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+        }
+
+        private static void EliminarAlumnoParciales(string ID)
+        {
+
+            for (int i = 1; i < 4; i++)
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+                {
+                    SQLiteCommand cmd;
+                    conn.Open();
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "DELETE FROM Parcial" + i + " WHERE ID_Alumno = @ID";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+        }
+
+        private static void EliminarAlumnoSomaticos(string ID)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteCommand cmd;
+                conn.Open();
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "DELETE FROM Somaticos WHERE ID_Alumno = @ID";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
+                cmd.ExecuteNonQuery();
+            }
+
+
+        }
+
         public static void EliminarMaestro(string ID)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
@@ -101,6 +168,39 @@ namespace ProyectoTec34.Configuraciones
             }
         }
 
+        public static BindingSource SeleccionDataBaseEstudioE()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteDataAdapter da;
+                DataTable dt = new DataTable();
+                da = new SQLiteDataAdapter("SELECT * FROM EstudioSocio1", conn);
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.Fill(dt);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dt;
+                return bSource;
+            }
+        }
+
+
+        public static BindingSource SeleccionDataBaseGrado(string Grado,string Grupo)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteDataAdapter da;
+                DataTable dt = new DataTable();
+                da = new SQLiteDataAdapter();
+                da.SelectCommand = new SQLiteCommand("SELECT * FROM Alumno WHERE Grado = @Grado AND Grupo = @Grupo", conn);
+                da.SelectCommand.Parameters.AddWithValue("@Grado",Grado);
+                da.SelectCommand.Parameters.AddWithValue("@Grupo", Grupo);
+                da.Fill(dt);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dt;
+                return bSource;
+            }
+        }
+
 
         public static void NuevaMateria(string ID, string Nombre, string IDDoncente)
         {
@@ -123,7 +223,7 @@ namespace ProyectoTec34.Configuraciones
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
                 string Query = "SELECT ID_Materia as 'ID', Nombre as 'NOMBRE', ID_Docente as 'ID Docente' FROM Materias Order By Nombre";
-                SQLiteDataAdapter da = new SQLiteDataAdapter(Query,conn);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(Query, conn);
                 da.Fill(dt);
             }
             return dt;

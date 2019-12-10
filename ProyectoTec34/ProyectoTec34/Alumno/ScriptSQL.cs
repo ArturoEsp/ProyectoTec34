@@ -45,7 +45,7 @@ namespace ProyectoTec34.Alumno
 
         private static void AltaEstudioSocioE(string IDAlumno)
         {
-            for (int i = 1; i < 5; i++)
+            for (int i = 1; i < 6; i++)
             {
                 using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
                 {
@@ -59,6 +59,8 @@ namespace ProyectoTec34.Alumno
                 }
             }
         }
+
+     
 
         private static void AltaSomaticos(string IDAlumno)
         {
@@ -113,6 +115,51 @@ namespace ProyectoTec34.Alumno
 
             }
             return dt;
+        }
+
+
+        public static void ActualizarEstudioSocioE(string IDAlumno, List<string> Parametros)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE EstudioSocio1 SET LugarNacimiento = @0, Sexo = @1, Edad = @2," +
+                    "Idioma = @3, ConQuienVive = @4, NumHermanos = @5, NumIntegrantesFam = @6," +
+                    "ApoyoGob = @7, PagoxTrabajo = @8, NombreTrabajo = @9, LugarTrabajo = @10," +
+                    "HorarioTrabajo = @11, TiempoLibre = @12, PracDisciplina = @13, Discapacidad = @14," +
+                    "Enfermedad = @15, Alergia = @16, Accidentes = @17, CaracEnfermedad = @18, Medicamento = @19," +
+                    "MedPrescrito = @20, MedIndicacion = @21, NomTutor = @22, Parentesco = @23, PreparacionPadres = @24," +
+                    "EdadPadre = @25, EdadMadre = @26, EstadoCivilPadres = @27, NumHijos = @28, NumEdadEsc = @29," +
+                    "TelDom = @30, TelTrabajo = @31, NomTelMadre = @32, NomTelPadre = @33, NomTelHerm = @34," +
+                    "NomTel = @35 WHERE ID_Alumno = @ID";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", IDAlumno));
+                for (int i = 0; i < Parametros.Count; i++)
+                {
+                    cmd.Parameters.Add(new SQLiteParameter("@"+i.ToString(), Parametros[i]));
+                }
+                cmd.ExecuteNonQuery();
+                
+            }
+        }
+
+        public static void MostrarEstudioS1(string IDAlumno, List<string> Parametros)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "";
+                cmd.Parameters.Add(new SQLiteParameter("@ID", IDAlumno));
+                for (int i = 0; i < Parametros.Count; i++)
+                {
+                    cmd.Parameters.Add(new SQLiteParameter("@" + i.ToString(), Parametros[i]));
+                }
+                cmd.ExecuteNonQuery();
+
+            }
         }
 
         #endregion
@@ -408,7 +455,7 @@ namespace ProyectoTec34.Alumno
                 lbArt.Text = calif[8].ToString();
             }
         }
-        
+
         public static void MostrarBoletaP1(string ID_Alumno, List<String> NombreCalif, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbFC, Label lbEF, Label lbArt)
         {
             //lbEsp1, lbMat1, lbSL1, lbCie1, lbHis1, lbFCyE1, lbEF1, lbArtes1
@@ -450,7 +497,7 @@ namespace ProyectoTec34.Alumno
                 lbArt.Text = calif[7].ToString();
             }
         }
-        
+
         public static void MostrarBoletaP2(string ID_Alumno, List<String> NombreCalif2, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbFC, Label lbEF, Label lbArt)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))

@@ -59,18 +59,18 @@ namespace ProyectoTec34.Alumno
                 Parametros.Add(tbObs.Text);
                 Parametros.Add(FechaRegistro);
                 ScriptSQL.NuevoAlumno(Parametros);
-                if (MessageBox.Show("Alumno registrado correctamente.\n" +
-                    "¿Desea registrar el estudio socioeconomico ahora?","Nuevo alumno",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    Configuraciones.ClearControls.LimpiarCampos(this);
-                    Logs.Log.CrearLog("Se registro el alumno: "+NombreCompleto);
-                }
-                else
-                {
+                //if (MessageBox.Show("Alumno registrado correctamente.\n" +
+                //    "¿Desea registrar el estudio socioeconomico ahora?","Nuevo alumno",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                //{
+                //    Configuraciones.ClearControls.LimpiarCampos(this);
+                //    Logs.Log.CrearLog("Se registro el alumno: "+NombreCompleto);
+                //}
+                //else
+                //{
                     MessageBox.Show("Alumno registrado CORRECTAMENTE.","Alumno",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     Configuraciones.ClearControls.LimpiarCampos(this);
-                    Logs.Log.CrearLog("Se registro el alumno: " + NombreCompleto);
-                }
+                //    Logs.Log.CrearLog("Se registro el alumno: " + NombreCompleto);
+                //}
                 
             }
 
@@ -89,8 +89,7 @@ namespace ProyectoTec34.Alumno
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Parametros = null;
-            Configuraciones.ClearControls.LimpiarCampos(this);
+            this.Close();
         }
 
         private void tbCP_KeyPress(object sender, KeyPressEventArgs e)
