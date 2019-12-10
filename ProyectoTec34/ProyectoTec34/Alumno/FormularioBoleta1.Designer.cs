@@ -87,8 +87,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb = new System.Windows.Forms.Label();
+            this.lbMatProm = new System.Windows.Forms.Label();
+            this.lbLMProm = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
@@ -773,8 +773,8 @@
             this.tableLayoutPanel6.Controls.Add(this.label20, 0, 4);
             this.tableLayoutPanel6.Controls.Add(this.label19, 0, 3);
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lb, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lbMatProm, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lbLMProm, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(456, 35);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -876,29 +876,29 @@
             this.label5.Text = "0.0";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbMatProm
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 28);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "0.0";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbMatProm.AutoSize = true;
+            this.lbMatProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMatProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMatProm.Location = new System.Drawing.Point(4, 30);
+            this.lbMatProm.Name = "lbMatProm";
+            this.lbMatProm.Size = new System.Drawing.Size(94, 28);
+            this.lbMatProm.TabIndex = 2;
+            this.lbMatProm.Text = "0.0";
+            this.lbMatProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lb
+            // lbLMProm
             // 
-            this.lb.AutoSize = true;
-            this.lb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb.Location = new System.Drawing.Point(4, 1);
-            this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(94, 28);
-            this.lb.TabIndex = 1;
-            this.lb.Text = "0.0";
-            this.lb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbLMProm.AutoSize = true;
+            this.lbLMProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbLMProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLMProm.Location = new System.Drawing.Point(4, 1);
+            this.lbLMProm.Name = "lbLMProm";
+            this.lbLMProm.Size = new System.Drawing.Size(94, 28);
+            this.lbLMProm.TabIndex = 1;
+            this.lbLMProm.Text = "0.0";
+            this.lbLMProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
             // 
@@ -1013,6 +1013,7 @@
             this.Name = "FormularioBoleta1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boleta 1°";
+            this.Load += new System.EventHandler(this.FormularioBoleta1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlCalificaciones.ResumeLayout(false);
@@ -1063,7 +1064,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label lb;
+        private System.Windows.Forms.Label lbLMProm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TextBox tbLM3;
         private System.Windows.Forms.TextBox tbLM2;
@@ -1099,7 +1100,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbMatProm;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.PictureBox pictureBox1;

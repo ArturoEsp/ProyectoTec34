@@ -42,9 +42,23 @@ namespace ProyectoTec34.Alumno
             CalifP1.Add(Convert.ToDouble(tbEF1.Text));
             CalifP1.Add(Convert.ToDouble(tbArtes1.Text));
 
-            ScriptSQL.InsertarBoleta(CalifP1, NombreEstudiante, NombreCalif);
-            MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            btnGuardar1.Enabled = false;
+            if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
+            {
+                if (MessageBox.Show("Este Alumno ya tiene calificaciones del primer parcial ¿Desea actualizar calificaciones?", "Advertencia", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                {
+                    ScriptSQL.ActualizaBoleta(CalifP1, NombreEstudiante, NombreCalif);
+                    MessageBox.Show("Calificaciones actualizadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGuardar1.Enabled = false;
+                }
+            }
+            else
+            {
+                ScriptSQL.InsertarBoleta(CalifP1, NombreEstudiante, NombreCalif);
+                MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnGuardar1.Enabled = false;
+            }
+            
         }
 
         private void btnGuardar2_Click(object sender, EventArgs e)
@@ -71,9 +85,22 @@ namespace ProyectoTec34.Alumno
             CalifP2.Add(Convert.ToDouble(tbEF2.Text));
             CalifP2.Add(Convert.ToDouble(tbArtes2.Text));
 
-            ScriptSQL.InsertarBoletaP2(CalifP2, NombreEstudiante, NombreCalif);
-            MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            btnGuardar2.Enabled = false;
+            if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
+            {
+                if (MessageBox.Show("Este Alumno ya tiene calificaciones del primer parcial ¿Desea actualizar calificaciones?", "Advertencia", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                {
+                    ScriptSQL.ActualizaBoleta2(CalifP2, NombreEstudiante, NombreCalif);
+                    MessageBox.Show("Calificaciones actualizadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGuardar2.Enabled = false;
+                }
+            }
+            else
+            {
+                ScriptSQL.InsertarBoletaP2(CalifP2, NombreEstudiante, NombreCalif);
+                MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnGuardar2.Enabled = false;
+            }
         }
 
         private void btnGuardar3_Click(object sender, EventArgs e)
@@ -100,9 +127,22 @@ namespace ProyectoTec34.Alumno
             CalifP3.Add(Convert.ToDouble(tbEF3.Text));
             CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
 
-            ScriptSQL.InsertarBoletaP3(CalifP3, NombreEstudiante, NombreCalif);
-            MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            btnGuardar3.Enabled = false;
+            if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
+            {
+                if (MessageBox.Show("Este Alumno ya tiene calificaciones del primer parcial ¿Desea actualizar calificaciones?", "Advertencia", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                {
+                    ScriptSQL.ActualizaBoleta2(CalifP3, NombreEstudiante, NombreCalif);
+                    MessageBox.Show("Calificaciones actualizadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGuardar3.Enabled = false;
+                }
+            }
+            else
+            {
+                ScriptSQL.InsertarBoletaP3(CalifP3, NombreEstudiante, NombreCalif);
+                MessageBox.Show("Calificaciones agregadas correctamente!", "Calificaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnGuardar3.Enabled = false;
+            }
         }
 
         private void tbHis3_KeyPress(object sender, KeyPressEventArgs e)

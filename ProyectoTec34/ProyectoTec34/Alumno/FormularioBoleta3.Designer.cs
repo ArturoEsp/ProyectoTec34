@@ -82,7 +82,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.CalifLMProm = new System.Windows.Forms.Label();
+            this.lbEspProm = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -707,7 +707,7 @@
             this.tableLayoutPanel6.Controls.Add(this.label19, 0, 3);
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel6.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.CalifLMProm, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lbEspProm, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(456, 35);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -808,17 +808,17 @@
             this.label2.Text = "0.0";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CalifLMProm
+            // lbEspProm
             // 
-            this.CalifLMProm.AutoSize = true;
-            this.CalifLMProm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalifLMProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalifLMProm.Location = new System.Drawing.Point(4, 1);
-            this.CalifLMProm.Name = "CalifLMProm";
-            this.CalifLMProm.Size = new System.Drawing.Size(94, 32);
-            this.CalifLMProm.TabIndex = 1;
-            this.CalifLMProm.Text = "0.0";
-            this.CalifLMProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbEspProm.AutoSize = true;
+            this.lbEspProm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEspProm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEspProm.Location = new System.Drawing.Point(4, 1);
+            this.lbEspProm.Name = "lbEspProm";
+            this.lbEspProm.Size = new System.Drawing.Size(94, 32);
+            this.lbEspProm.TabIndex = 1;
+            this.lbEspProm.Text = "0.0";
+            this.lbEspProm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel7
             // 
@@ -1022,7 +1022,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label CalifLMProm;
+        private System.Windows.Forms.Label lbEspProm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel1;

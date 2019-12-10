@@ -259,7 +259,77 @@ namespace ProyectoTec34.Alumno
             return ID;
         }
 
-        public static void InsertarBoleta(List<Double> CalifP1,/* List<Double> CalifP2, List<Double> CalifP3,*/ string NombreEstudiante, List<String> NombreCalif)
+        public static string Validacion(string NombreEstudiante, List<String> NombreCalif)
+        {
+            string Califi = "";
+            string query = "SELECT Calificacion FROM Parcial1 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(NombreEstudiante));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+                    Califi = (Convert.ToString(cmd.ExecuteScalar()));
+                }
+                
+            }
+            return Califi;
+        }
+        public static void ActualizaBoleta(List<Double> CalifP1, string NombreEstudiante, List<String> NombreCalif)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                for (int i = 0; i < CalifP1.Count; i++)
+                {
+                    cmd.CommandText = "UPDATE Parcial1 SET Calificacion = @Calificacion WHERE ID_Alumno = @ID_Alumno AND ID_Materia = @ID_Materia";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
+                    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP1[i]));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public static void ActualizaBoleta2(List<Double> CalifP2, string NombreEstudiante, List<String> NombreCalif)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                for (int i = 0; i < CalifP2.Count; i++)
+                {
+                    cmd.CommandText = "UPDATE Parcial2 SET Calificacion = @Calificacion WHERE ID_Alumno = @ID_Alumno AND ID_Materia = @ID_Materia";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
+                    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP2[i]));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public static void ActualizaBoleta3(List<Double> CalifP3, string NombreEstudiante, List<String> NombreCalif)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                for (int i = 0; i < CalifP3.Count; i++)
+                {
+                    cmd.CommandText = "UPDATE Parcial3 SET Calificacion = @Calificacion WHERE ID_Alumno = @ID_Alumno AND ID_Materia = @ID_Materia";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", getIDAlumno(NombreEstudiante)));
+                    cmd.Parameters.Add(new SQLiteParameter("@ID_Materia", getIDMateria(NombreCalif[i])));
+                    cmd.Parameters.Add(new SQLiteParameter("@Calificacion", CalifP3[i]));
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static void InsertarBoleta(List<Double> CalifP1, string NombreEstudiante, List<String> NombreCalif)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
