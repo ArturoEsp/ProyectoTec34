@@ -61,19 +61,23 @@
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(0, 40);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(884, 427);
+            this.pnlContenedor.Size = new System.Drawing.Size(884, 449);
             this.pnlContenedor.TabIndex = 2;
             // 
             // CargarDatosAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(884, 467);
+            this.ClientSize = new System.Drawing.Size(884, 489);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CargarDatosAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo alumno";
             this.pnlButton.ResumeLayout(false);
             this.pnlButton.PerformLayout();

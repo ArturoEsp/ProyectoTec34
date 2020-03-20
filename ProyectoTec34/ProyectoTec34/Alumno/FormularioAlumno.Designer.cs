@@ -41,6 +41,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbObs = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.cbTurno = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -64,8 +66,6 @@
             this.tbCalleNumero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.tbObs = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +81,7 @@
             this.txtGrado.Location = new System.Drawing.Point(583, 50);
             this.txtGrado.Name = "txtGrado";
             this.txtGrado.Size = new System.Drawing.Size(61, 24);
-            this.txtGrado.TabIndex = 4;
+            this.txtGrado.TabIndex = 3;
             // 
             // txtGrupo
             // 
@@ -94,7 +94,7 @@
             this.txtGrupo.Location = new System.Drawing.Point(661, 50);
             this.txtGrupo.Name = "txtGrupo";
             this.txtGrupo.Size = new System.Drawing.Size(61, 24);
-            this.txtGrupo.TabIndex = 5;
+            this.txtGrupo.TabIndex = 4;
             // 
             // btnSiguiente
             // 
@@ -104,10 +104,10 @@
             this.btnSiguiente.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
             this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.Location = new System.Drawing.Point(747, 376);
+            this.btnSiguiente.Location = new System.Drawing.Point(747, 400);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(125, 39);
-            this.btnSiguiente.TabIndex = 34;
+            this.btnSiguiente.TabIndex = 17;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSiguiente.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@
             this.tbNombres.MaxLength = 30;
             this.tbNombres.Name = "tbNombres";
             this.tbNombres.Size = new System.Drawing.Size(219, 26);
-            this.tbNombres.TabIndex = 1;
+            this.tbNombres.TabIndex = 0;
             // 
             // tbApellidoPaterno
             // 
@@ -140,7 +140,7 @@
             this.tbApellidoPaterno.MaxLength = 40;
             this.tbApellidoPaterno.Name = "tbApellidoPaterno";
             this.tbApellidoPaterno.Size = new System.Drawing.Size(165, 26);
-            this.tbApellidoPaterno.TabIndex = 2;
+            this.tbApellidoPaterno.TabIndex = 1;
             // 
             // label25
             // 
@@ -160,7 +160,7 @@
             this.tbApellidoMaterno.MaxLength = 40;
             this.tbApellidoMaterno.Name = "tbApellidoMaterno";
             this.tbApellidoMaterno.Size = new System.Drawing.Size(165, 26);
-            this.tbApellidoMaterno.TabIndex = 3;
+            this.tbApellidoMaterno.TabIndex = 2;
             // 
             // label26
             // 
@@ -197,6 +197,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.tbObs);
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.cbTurno);
             this.groupBox1.Controls.Add(this.label10);
@@ -230,12 +232,32 @@
             this.groupBox1.Controls.Add(this.tbNombres);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 39);
+            this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(860, 294);
+            this.groupBox1.Size = new System.Drawing.Size(860, 366);
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del alumno";
+            // 
+            // tbObs
+            // 
+            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbObs.Location = new System.Drawing.Point(124, 312);
+            this.tbObs.MaxLength = 18;
+            this.tbObs.Name = "tbObs";
+            this.tbObs.Size = new System.Drawing.Size(698, 26);
+            this.tbObs.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(121, 291);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 18);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "Observaciones";
             // 
             // label11
             // 
@@ -258,8 +280,8 @@
             "VESPERTINO"});
             this.cbTurno.Location = new System.Drawing.Point(735, 50);
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(61, 24);
-            this.cbTurno.TabIndex = 66;
+            this.cbTurno.Size = new System.Drawing.Size(87, 24);
+            this.cbTurno.TabIndex = 5;
             // 
             // label10
             // 
@@ -278,7 +300,7 @@
             this.tbCP.Location = new System.Drawing.Point(597, 176);
             this.tbCP.Name = "tbCP";
             this.tbCP.Size = new System.Drawing.Size(225, 26);
-            this.tbCP.TabIndex = 64;
+            this.tbCP.TabIndex = 11;
             this.tbCP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCP_KeyPress);
             // 
             // label9
@@ -298,7 +320,7 @@
             this.tbEntidadFederativa.Location = new System.Drawing.Point(329, 176);
             this.tbEntidadFederativa.Name = "tbEntidadFederativa";
             this.tbEntidadFederativa.Size = new System.Drawing.Size(262, 26);
-            this.tbEntidadFederativa.TabIndex = 62;
+            this.tbEntidadFederativa.TabIndex = 10;
             this.tbEntidadFederativa.Text = "MORELOS";
             // 
             // label8
@@ -318,14 +340,14 @@
             this.tbMunicipio.Location = new System.Drawing.Point(5, 176);
             this.tbMunicipio.Name = "tbMunicipio";
             this.tbMunicipio.Size = new System.Drawing.Size(318, 26);
-            this.tbMunicipio.TabIndex = 60;
+            this.tbMunicipio.TabIndex = 9;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(599, 219);
+            this.label7.Location = new System.Drawing.Point(573, 219);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 18);
             this.label7.TabIndex = 59;
@@ -334,10 +356,10 @@
             // tbNacionalidad
             // 
             this.tbNacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNacionalidad.Location = new System.Drawing.Point(602, 240);
+            this.tbNacionalidad.Location = new System.Drawing.Point(574, 240);
             this.tbNacionalidad.Name = "tbNacionalidad";
-            this.tbNacionalidad.Size = new System.Drawing.Size(220, 26);
-            this.tbNacionalidad.TabIndex = 58;
+            this.tbNacionalidad.Size = new System.Drawing.Size(248, 26);
+            this.tbNacionalidad.TabIndex = 14;
             this.tbNacionalidad.Text = "MEXICANA";
             // 
             // label6
@@ -345,7 +367,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(482, 221);
+            this.label6.Location = new System.Drawing.Point(5, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 18);
             this.label6.TabIndex = 57;
@@ -354,18 +376,18 @@
             // tbTipoSangre
             // 
             this.tbTipoSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTipoSangre.Location = new System.Drawing.Point(485, 240);
+            this.tbTipoSangre.Location = new System.Drawing.Point(7, 312);
             this.tbTipoSangre.MaxLength = 3;
             this.tbTipoSangre.Name = "tbTipoSangre";
             this.tbTipoSangre.Size = new System.Drawing.Size(111, 26);
-            this.tbTipoSangre.TabIndex = 56;
+            this.tbTipoSangre.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(227, 221);
+            this.label5.Location = new System.Drawing.Point(316, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 18);
             this.label5.TabIndex = 55;
@@ -374,18 +396,18 @@
             // tbCURP
             // 
             this.tbCURP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCURP.Location = new System.Drawing.Point(230, 240);
+            this.tbCURP.Location = new System.Drawing.Point(319, 240);
             this.tbCURP.MaxLength = 18;
             this.tbCURP.Name = "tbCURP";
             this.tbCURP.Size = new System.Drawing.Size(249, 26);
-            this.tbCURP.TabIndex = 54;
+            this.tbCURP.TabIndex = 13;
             // 
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(5, 242);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 24);
-            this.dateTimePicker.TabIndex = 53;
+            this.dateTimePicker.Size = new System.Drawing.Size(308, 24);
+            this.dateTimePicker.TabIndex = 12;
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // label4
@@ -464,34 +486,14 @@
             this.btnCancelar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(609, 376);
+            this.btnCancelar.Location = new System.Drawing.Point(609, 400);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(125, 39);
-            this.btnCancelar.TabIndex = 44;
+            this.btnCancelar.TabIndex = 25;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // tbObs
-            // 
-            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbObs.Location = new System.Drawing.Point(17, 376);
-            this.tbObs.MaxLength = 18;
-            this.tbObs.Name = "tbObs";
-            this.tbObs.Size = new System.Drawing.Size(474, 26);
-            this.tbObs.TabIndex = 55;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(14, 355);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 18);
-            this.label12.TabIndex = 58;
-            this.label12.Text = "Observaciones";
             // 
             // FormularioAlumno
             // 
@@ -499,9 +501,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(884, 427);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.tbObs);
+            this.ClientSize = new System.Drawing.Size(884, 453);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSiguiente);
@@ -514,7 +514,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

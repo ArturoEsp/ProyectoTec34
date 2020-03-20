@@ -277,6 +277,43 @@ namespace ProyectoTec34.Alumno
             }
             return Califi;
         }
+        public static string Validacion2(string NombreEstudiante, List<String> NombreCalif)
+        {
+            string Califi = "";
+            string query = "SELECT Calificacion FROM Parcial2 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(NombreEstudiante));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+                    Califi = (Convert.ToString(cmd.ExecuteScalar()));
+                }
+
+            }
+            return Califi;
+        }
+        public static string Validacion3(string NombreEstudiante, List<String> NombreCalif)
+        {
+            string Califi = "";
+            string query = "SELECT Calificacion FROM Parcial3 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(NombreEstudiante));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+                    Califi = (Convert.ToString(cmd.ExecuteScalar()));
+                }
+
+            }
+            return Califi;
+        }
+
         public static void ActualizaBoleta(List<Double> CalifP1, string NombreEstudiante, List<String> NombreCalif)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
@@ -294,6 +331,7 @@ namespace ProyectoTec34.Alumno
                 }
             }
         }
+
         public static void ActualizaBoleta2(List<Double> CalifP2, string NombreEstudiante, List<String> NombreCalif)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
@@ -311,6 +349,7 @@ namespace ProyectoTec34.Alumno
                 }
             }
         }
+
         public static void ActualizaBoleta3(List<Double> CalifP3, string NombreEstudiante, List<String> NombreCalif)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
