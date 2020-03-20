@@ -35,11 +35,9 @@
             this.btnPrimerBoleta = new System.Windows.Forms.Button();
             this.btnSegBoleta = new System.Windows.Forms.Button();
             this.btnTercerBoleta = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -47,7 +45,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.panel2.Controls.Add(this.btnSiguiente);
             this.panel2.Controls.Add(this.tbBuscar);
-            this.panel2.Location = new System.Drawing.Point(16, 60);
+            this.panel2.Location = new System.Drawing.Point(16, 47);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(579, 44);
             this.panel2.TabIndex = 3;
@@ -89,7 +87,7 @@
             this.btnPrimerBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrimerBoleta.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrimerBoleta.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPrimerBoleta.Location = new System.Drawing.Point(16, 154);
+            this.btnPrimerBoleta.Location = new System.Drawing.Point(16, 141);
             this.btnPrimerBoleta.Name = "btnPrimerBoleta";
             this.btnPrimerBoleta.Size = new System.Drawing.Size(161, 65);
             this.btnPrimerBoleta.TabIndex = 5;
@@ -106,7 +104,7 @@
             this.btnSegBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSegBoleta.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSegBoleta.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSegBoleta.Location = new System.Drawing.Point(226, 154);
+            this.btnSegBoleta.Location = new System.Drawing.Point(226, 141);
             this.btnSegBoleta.Name = "btnSegBoleta";
             this.btnSegBoleta.Size = new System.Drawing.Size(161, 65);
             this.btnSegBoleta.TabIndex = 6;
@@ -123,7 +121,7 @@
             this.btnTercerBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTercerBoleta.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTercerBoleta.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTercerBoleta.Location = new System.Drawing.Point(434, 154);
+            this.btnTercerBoleta.Location = new System.Drawing.Point(434, 141);
             this.btnTercerBoleta.Name = "btnTercerBoleta";
             this.btnTercerBoleta.Size = new System.Drawing.Size(161, 65);
             this.btnTercerBoleta.TabIndex = 7;
@@ -131,44 +129,33 @@
             this.btnTercerBoleta.UseVisualStyleBackColor = false;
             this.btnTercerBoleta.Click += new System.EventHandler(this.btnTercerBoleta_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(613, 45);
-            this.panel1.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(231, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Buscar Alumno:";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 117);
+            this.label1.Location = new System.Drawing.Point(12, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 22);
             this.label1.TabIndex = 9;
             this.label1.Text = "Selecciona la boleta a llenar:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 21);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Buscar alumno: ";
+            // 
             // BuscarAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 232);
+            this.ClientSize = new System.Drawing.Size(613, 219);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnTercerBoleta);
             this.Controls.Add(this.btnSegBoleta);
             this.Controls.Add(this.btnPrimerBoleta);
@@ -178,8 +165,6 @@
             this.Text = "BuscarAlumnos";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,8 +177,7 @@
         private System.Windows.Forms.Button btnPrimerBoleta;
         private System.Windows.Forms.Button btnSegBoleta;
         private System.Windows.Forms.Button btnTercerBoleta;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

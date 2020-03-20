@@ -85,19 +85,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(125, 192);
+            this.label4.Location = new System.Drawing.Point(124, 214);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(376, 72);
+            this.label4.Size = new System.Drawing.Size(355, 18);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Espinoza Herrera Arturo     Andaya Tabarez Victor D.\r\nVillagran Trujillo Luis E. " +
-    "      Valladares Peralta Luis Angel\r\nReyes Silva Axel Omar       Díaz Eguiluz In" +
-    "grid Verónica\r\n         ";
+            this.label4.Text = "Espinoza Herrera Arturo     Andaya Tabarez Victor D.\r\n";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(262, 168);
+            this.label5.Location = new System.Drawing.Point(246, 174);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 24);
             this.label5.TabIndex = 5;
