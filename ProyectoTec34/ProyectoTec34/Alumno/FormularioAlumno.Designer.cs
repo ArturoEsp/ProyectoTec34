@@ -41,6 +41,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbObs = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.cbTurno = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -64,8 +66,6 @@
             this.tbCalleNumero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.tbObs = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -239,6 +239,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del alumno";
             // 
+            // tbObs
+            // 
+            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbObs.Location = new System.Drawing.Point(124, 312);
+            this.tbObs.MaxLength = 18;
+            this.tbObs.Name = "tbObs";
+            this.tbObs.Size = new System.Drawing.Size(698, 26);
+            this.tbObs.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(121, 291);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 18);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "Observaciones";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -260,7 +280,7 @@
             "VESPERTINO"});
             this.cbTurno.Location = new System.Drawing.Point(735, 50);
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(61, 24);
+            this.cbTurno.Size = new System.Drawing.Size(87, 24);
             this.cbTurno.TabIndex = 5;
             // 
             // label10
@@ -327,7 +347,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(599, 219);
+            this.label7.Location = new System.Drawing.Point(573, 219);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 18);
             this.label7.TabIndex = 59;
@@ -336,10 +356,10 @@
             // tbNacionalidad
             // 
             this.tbNacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNacionalidad.Location = new System.Drawing.Point(602, 240);
+            this.tbNacionalidad.Location = new System.Drawing.Point(574, 240);
             this.tbNacionalidad.Name = "tbNacionalidad";
-            this.tbNacionalidad.Size = new System.Drawing.Size(220, 26);
-            this.tbNacionalidad.TabIndex = 15;
+            this.tbNacionalidad.Size = new System.Drawing.Size(248, 26);
+            this.tbNacionalidad.TabIndex = 14;
             this.tbNacionalidad.Text = "MEXICANA";
             // 
             // label6
@@ -347,7 +367,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(482, 221);
+            this.label6.Location = new System.Drawing.Point(5, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 18);
             this.label6.TabIndex = 57;
@@ -356,18 +376,18 @@
             // tbTipoSangre
             // 
             this.tbTipoSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTipoSangre.Location = new System.Drawing.Point(485, 240);
+            this.tbTipoSangre.Location = new System.Drawing.Point(7, 312);
             this.tbTipoSangre.MaxLength = 3;
             this.tbTipoSangre.Name = "tbTipoSangre";
             this.tbTipoSangre.Size = new System.Drawing.Size(111, 26);
-            this.tbTipoSangre.TabIndex = 14;
+            this.tbTipoSangre.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(227, 221);
+            this.label5.Location = new System.Drawing.Point(316, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 18);
             this.label5.TabIndex = 55;
@@ -376,7 +396,7 @@
             // tbCURP
             // 
             this.tbCURP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCURP.Location = new System.Drawing.Point(230, 240);
+            this.tbCURP.Location = new System.Drawing.Point(319, 240);
             this.tbCURP.MaxLength = 18;
             this.tbCURP.Name = "tbCURP";
             this.tbCURP.Size = new System.Drawing.Size(249, 26);
@@ -386,7 +406,7 @@
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(5, 242);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 24);
+            this.dateTimePicker.Size = new System.Drawing.Size(308, 24);
             this.dateTimePicker.TabIndex = 12;
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
@@ -469,31 +489,11 @@
             this.btnCancelar.Location = new System.Drawing.Point(609, 400);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(125, 39);
-            this.btnCancelar.TabIndex = 19;
+            this.btnCancelar.TabIndex = 25;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // tbObs
-            // 
-            this.tbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbObs.Location = new System.Drawing.Point(5, 320);
-            this.tbObs.MaxLength = 18;
-            this.tbObs.Name = "tbObs";
-            this.tbObs.Size = new System.Drawing.Size(474, 26);
-            this.tbObs.TabIndex = 16;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(6, 282);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 18);
-            this.label12.TabIndex = 58;
-            this.label12.Text = "Observaciones";
             // 
             // FormularioAlumno
             // 

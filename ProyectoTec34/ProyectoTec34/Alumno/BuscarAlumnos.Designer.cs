@@ -89,7 +89,7 @@
             this.btnPrimerBoleta.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnPrimerBoleta.Location = new System.Drawing.Point(16, 141);
             this.btnPrimerBoleta.Name = "btnPrimerBoleta";
-            this.btnPrimerBoleta.Size = new System.Drawing.Size(161, 65);
+            this.btnPrimerBoleta.Size = new System.Drawing.Size(161, 41);
             this.btnPrimerBoleta.TabIndex = 5;
             this.btnPrimerBoleta.Text = "1°";
             this.btnPrimerBoleta.UseVisualStyleBackColor = false;
@@ -106,7 +106,7 @@
             this.btnSegBoleta.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSegBoleta.Location = new System.Drawing.Point(226, 141);
             this.btnSegBoleta.Name = "btnSegBoleta";
-            this.btnSegBoleta.Size = new System.Drawing.Size(161, 65);
+            this.btnSegBoleta.Size = new System.Drawing.Size(161, 41);
             this.btnSegBoleta.TabIndex = 6;
             this.btnSegBoleta.Text = "2°";
             this.btnSegBoleta.UseVisualStyleBackColor = false;
@@ -123,7 +123,7 @@
             this.btnTercerBoleta.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnTercerBoleta.Location = new System.Drawing.Point(434, 141);
             this.btnTercerBoleta.Name = "btnTercerBoleta";
-            this.btnTercerBoleta.Size = new System.Drawing.Size(161, 65);
+            this.btnTercerBoleta.Size = new System.Drawing.Size(161, 41);
             this.btnTercerBoleta.TabIndex = 7;
             this.btnTercerBoleta.Text = "3°";
             this.btnTercerBoleta.UseVisualStyleBackColor = false;
@@ -153,13 +153,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 219);
+            this.ClientSize = new System.Drawing.Size(613, 196);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTercerBoleta);
             this.Controls.Add(this.btnSegBoleta);
             this.Controls.Add(this.btnPrimerBoleta);
             this.Controls.Add(this.panel2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BuscarAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarAlumnos";
