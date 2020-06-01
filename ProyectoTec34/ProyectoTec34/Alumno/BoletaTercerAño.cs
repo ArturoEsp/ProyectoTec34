@@ -72,18 +72,41 @@ namespace ProyectoTec34.Alumno
             labels.Add(Convert.ToDouble(lbArtes2.Text));
             labels.Add(Convert.ToDouble(lbArtes3.Text));
 
-            lbEspProm.Text = ((labels[0] + labels[1] + labels[2]) / 3).ToString("#.0");
-            lbMatProm.Text = ((labels[3] + labels[4] + labels[5]) / 3).ToString("#.0");
-            lbSLProm.Text = ((labels[6] + labels[7] + labels[8]) / 3).ToString("#.0");
-            lbCienProm.Text = ((labels[9] + labels[10] + labels[11]) / 3).ToString("#.0");
-            lbHisProm.Text = ((labels[12] + labels[13] + labels[14]) / 3).ToString("#.0");
-            lbFCyEProm.Text = ((labels[15] + labels[16] + labels[17]) / 3).ToString("#.0");
-            lbEFProm.Text = ((labels[18] + labels[19] + labels[20]) / 3).ToString("#.0");
-            lbArtProm.Text = ((labels[21] + labels[22] + labels[23]) / 3).ToString("#.0");
+            if (labels[0] != 0.0) lbEspProm.Text = labels[0].ToString();
+            if (labels[1] != 0.0) lbEspProm.Text = ((labels[0] + labels[1]) / 2).ToString();
+            if (labels[2] != 0.0) lbEspProm.Text = ((labels[0] + labels[1] + labels[2]) / 3).ToString();
+
+            if (labels[3] != 0.0) lbMatProm.Text = labels[3].ToString();
+            if (labels[4] != 0.0) lbMatProm.Text = ((labels[3] + labels[4]) / 2).ToString();
+            if (labels[5] != 0.0) lbMatProm.Text = ((labels[3] + labels[4] + labels[5]) / 3).ToString();
+
+            if (labels[6] != 0.0) lbSLProm.Text = labels[6].ToString();
+            if (labels[7] != 0.0) lbSLProm.Text = ((labels[6] + labels[7]) / 2).ToString();
+            if (labels[8] != 0.0) lbSLProm.Text = ((labels[6] + labels[7] + labels[8]) / 3).ToString();
+
+            if (labels[9] != 0.0) lbCienProm.Text = labels[9].ToString();
+            if (labels[10] != 0.0) lbCienProm.Text = ((labels[9] + labels[10]) / 2).ToString();
+            if (labels[11] != 0.0) lbCienProm.Text = ((labels[9] + labels[10] + labels[11]) / 3).ToString();
+
+            if (labels[12] != 0.0) lbHisProm.Text = labels[12].ToString();
+            if (labels[13] != 0.0) lbHisProm.Text = ((labels[12] + labels[13]) / 2).ToString();
+            if (labels[14] != 0.0) lbHisProm.Text = ((labels[12] + labels[13] + labels[14]) / 3).ToString();
+
+            if (labels[15] != 0.0) lbFCyEProm.Text = labels[15].ToString();
+            if (labels[16] != 0.0) lbFCyEProm.Text = ((labels[15] + labels[16]) / 2).ToString();
+            if (labels[17] != 0.0) lbFCyEProm.Text = ((labels[15] + labels[16] + labels[17]) / 3).ToString();
+
+            if (labels[18] != 0.0) lbEFProm.Text = labels[18].ToString();
+            if (labels[19] != 0.0) lbEFProm.Text = ((labels[18] + labels[19]) / 2).ToString();
+            if (labels[20] != 0.0) lbEFProm.Text = ((labels[18] + labels[19] + labels[20]) / 3).ToString();
+
+            if (labels[21] != 0.0) lbArtProm.Text = labels[21].ToString();
+            if (labels[22] != 0.0) lbArtProm.Text = ((labels[21] + labels[22]) / 2).ToString();
+            if (labels[23] != 0.0) lbArtProm.Text = ((labels[21] + labels[22] + labels[23]) / 3).ToString();
 
             double prom = labels.Sum();
 
-            lbPromF.Text = (prom / 24).ToString("#.0");
+            lbPromF.Text = (prom / 24).ToString("N1");
         }
     }
 }
