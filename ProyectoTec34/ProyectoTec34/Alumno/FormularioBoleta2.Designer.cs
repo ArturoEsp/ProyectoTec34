@@ -944,6 +944,7 @@
             this.Name = "FormularioBoleta2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boleta 2°";
+            this.Load += new System.EventHandler(this.FormularioBoleta2_Load);
             this.pnlCalificaciones.ResumeLayout(false);
             this.pnlCalificaciones.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

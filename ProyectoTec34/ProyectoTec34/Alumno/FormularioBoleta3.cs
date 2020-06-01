@@ -187,5 +187,24 @@ namespace ProyectoTec34.Alumno
 
             lbEspProm.Text = (prom+prom2).ToString("N2");
         }
+
+        private void FormularioBoleta3_Load(object sender, EventArgs e)
+        {
+            string Nombre = lbNombre.Text;
+
+            List<String> NombreCalif = new List<String>();
+            NombreCalif.Add("Español III");
+            NombreCalif.Add("Matemáticas III");
+            NombreCalif.Add("Segunda Lengua: Inglés III");
+            NombreCalif.Add("Ciencias III (Énfasis en Química)");
+            NombreCalif.Add("Historia II");
+            NombreCalif.Add("Formación Cívica y Ética II");
+            NombreCalif.Add("Educación Fisíca III");
+            NombreCalif.Add("Artes III");
+
+            ScriptSQL.SelectBoleta1(Nombre, NombreCalif, tbEsp1, tbMat1, tbSL1, tbCien1, tbHis1, tbFCyE1, tbEF1, tbArtes1);
+            ScriptSQL.SelectBoleta1(Nombre, NombreCalif, tbEsp2, tbMat2, tbSL2, tbCien2, tbHis2, tbFCyE2, tbEF2, tbArtes2);
+            ScriptSQL.SelectBoleta1(Nombre, NombreCalif, tbEsp3, tbMat3, tbSL3, tbCien3, tbHis3, tbFCyE3, tbEF3, tbArtes3);
+        }
     }
 }

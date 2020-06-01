@@ -943,6 +943,7 @@
             this.Name = "FormularioBoleta3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boleta 3°";
+            this.Load += new System.EventHandler(this.FormularioBoleta3_Load);
             this.pnlCalificaciones.ResumeLayout(false);
             this.pnlCalificaciones.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
