@@ -33,7 +33,7 @@ namespace ProyectoTec34.Alumno
         {
             IDAlumno = Configuraciones.GenerateID.AlumnoID();
             if (string.IsNullOrEmpty(tbNombres.Text) || string.IsNullOrEmpty(tbApellidoMaterno.Text) || string.IsNullOrEmpty(tbApellidoPaterno.Text)
-                || string.IsNullOrEmpty(tbCURP.Text))
+                || string.IsNullOrEmpty(txtGrado.Text) || string.IsNullOrEmpty(txtGrupo.Text))
             {
                 MessageBox.Show("Información incompleta." +
                     "\nPor favor revisa que se escribieron los datos importantes del alumno.","Nuevo alumno",
