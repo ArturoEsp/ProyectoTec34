@@ -42,13 +42,7 @@ namespace ProyectoTec34.Alumno
 
         private void tbBuscar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!string.IsNullOrEmpty(tbBuscar.Text))
-            {
-                btnPrimerBoleta.Enabled = false;
-                btnSegBoleta.Enabled = false;
-                btnTercerBoleta.Enabled = false;
-            }
-            else
+            if (string.IsNullOrEmpty(tbBuscar.Text))
             {
                 btnPrimerBoleta.Enabled = true;
                 btnSegBoleta.Enabled = true;

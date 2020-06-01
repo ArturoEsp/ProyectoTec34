@@ -19,7 +19,7 @@ namespace ProyectoTec34.Alumno
             InitializeComponent();
             lbNombre.Text = Estudiante;
         }
-
+        
         private void btnGuardar1_Click_1(object sender, EventArgs e)
         {
             string NombreEstudiante = lbNombre.Text;
@@ -45,6 +45,9 @@ namespace ProyectoTec34.Alumno
             CalifP1.Add(Convert.ToDouble(tbFCyE1.Text));
             CalifP1.Add(Convert.ToDouble(tbEF1.Text));
             CalifP1.Add(Convert.ToDouble(tbArtes1.Text));
+            
+
+            
 
             if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
             {
@@ -185,7 +188,22 @@ namespace ProyectoTec34.Alumno
 
         private void FormularioBoleta1_Load(object sender, EventArgs e)
         {
+            string Nombre = lbNombre.Text;
 
+            List<String> NombreCalif = new List<String>();
+            NombreCalif.Add("Lengua Materna (Español)");
+            NombreCalif.Add("Matemáticas");
+            NombreCalif.Add("Lengua Extranjera (Inglés)");
+            NombreCalif.Add("Ciencias Naturales y Tecnología (Biología)");
+            NombreCalif.Add("Historia");
+            NombreCalif.Add("Geografía");
+            NombreCalif.Add("Formación Cívica y Ética");
+            NombreCalif.Add("Educación Fisíca I");
+            NombreCalif.Add("Artes I");
+
+            ScriptSQL.SelectBoleta1(Nombre, NombreCalif, tbLM1, tbMat1, tbLE1, tbCNyT1, tbHis1, tbGeo1, tbFCyE1, tbEF1, tbArtes1);
+            ScriptSQL.SelectBoleta2(Nombre, NombreCalif, tbLM2, tbMat2, tbLE2, tbCNyT2, tbHis2, tbGeo2, tbFCyE2, tbEF2, tbArtes2);
+            ScriptSQL.SelectBoleta3(Nombre, NombreCalif, tbLM3, tbMat3, tbLE3, tbCNyT3, tbHis3, tbGeo3, tbFCyE3, tbEF3, tbArtes3);
         }
     }
 }

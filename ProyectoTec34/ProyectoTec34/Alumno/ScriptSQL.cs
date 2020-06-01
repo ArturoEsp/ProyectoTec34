@@ -385,6 +385,133 @@ namespace ProyectoTec34.Alumno
                 }
             }
         }
+        public static void SelectBoleta1(string ID_Alumno, List<String> NombreCalif, TextBox tb1, TextBox tb2, TextBox tb3, TextBox tb4, TextBox tb5, TextBox tb6, TextBox tb7, TextBox tb8, TextBox tb9)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial1 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif.Count; i++)
+                    {
+                        calif.Add("");
+                    }
+                }
+
+                tb1.Text = calif[0];
+                tb2.Text = calif[1];
+                tb3.Text = calif[2];
+                tb4.Text = calif[3];
+                tb5.Text = calif[4];
+                tb6.Text = calif[5];
+                tb7.Text = calif[6];
+                tb8.Text = calif[7];
+                tb9.Text = calif[8];
+            }
+        }
+        public static void SelectBoleta2(string ID_Alumno, List<String> NombreCalif, TextBox tb1, TextBox tb2, TextBox tb3, TextBox tb4, TextBox tb5, TextBox tb6, TextBox tb7, TextBox tb8, TextBox tb9)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial2 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif.Count; i++)
+                    {
+                        calif.Add("");
+                    }
+                }
+
+                tb1.Text = calif[0];
+                tb2.Text = calif[1];
+                tb3.Text = calif[2];
+                tb4.Text = calif[3];
+                tb5.Text = calif[4];
+                tb6.Text = calif[5];
+                tb7.Text = calif[6];
+                tb8.Text = calif[7];
+                tb9.Text = calif[8];
+            }
+        }
+        public static void SelectBoleta3(string ID_Alumno, List<String> NombreCalif, TextBox tb1, TextBox tb2, TextBox tb3, TextBox tb4, TextBox tb5, TextBox tb6, TextBox tb7, TextBox tb8, TextBox tb9)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                for (int i = 0; i < NombreCalif.Count; i++)
+                {
+                    string sql = "SELECT Calificacion FROM Parcial3 WHERE ID_Alumno = @ID_Alumno and ID_Materia = @ID_Materia";
+                    SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+                    cmd.Parameters.AddWithValue("@ID_Alumno", getIDAlumno(ID_Alumno));
+                    cmd.Parameters.AddWithValue("@ID_Materia", getIDMateria(NombreCalif[i]));
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        calif.Add((reader[0]).ToString());
+
+                    }
+                }
+                if (calif == null || calif.Count == 0)
+                {
+                    for (int i = 0; i < NombreCalif.Count; i++)
+                    {
+                        calif.Add("");
+                    }
+                }
+
+                tb1.Text = calif[0];
+                tb2.Text = calif[1];
+                tb3.Text = calif[2];
+                tb4.Text = calif[3];
+                tb5.Text = calif[4];
+                tb6.Text = calif[5];
+                tb7.Text = calif[6];
+                tb8.Text = calif[7];
+                tb9.Text = calif[8];
+            }
+        }
+
+
+
+
         public static void InsertarBoletaP2(List<Double> CalifP2, string NombreEstudiante, List<String> NombreCalif)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
@@ -441,6 +568,7 @@ namespace ProyectoTec34.Alumno
 
             }
         }
+
         public static void MostrarBoleta1(string ID_Alumno, List<String> NombreCalif, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbGeo, Label lbFC, Label lbEF, Label lbArt)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
@@ -564,7 +692,7 @@ namespace ProyectoTec34.Alumno
                 lbArt.Text = calif[8].ToString();
             }
         }
-
+        
         public static void MostrarBoletaP1(string ID_Alumno, List<String> NombreCalif, Label lbLM, Label lbMat, Label lbLE, Label lbCN, Label lbHis, Label lbFC, Label lbEF, Label lbArt)
         {
             //lbEsp1, lbMat1, lbSL1, lbCie1, lbHis1, lbFCyE1, lbEF1, lbArtes1
