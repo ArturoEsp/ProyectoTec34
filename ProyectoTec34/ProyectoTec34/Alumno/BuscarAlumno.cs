@@ -49,15 +49,6 @@ namespace ProyectoTec34.Alumno
             }
         }
 
-        private void tbBuscar_Leave(object sender, EventArgs e)
-        {
-            if(tbBuscar.Text == "")
-            {
-                tbBuscar.Text = "Buscar...";
-                tbBuscar.ForeColor = Color.DarkGray;
-            }
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (!ScriptSQL.Existe(tbBuscar.Text))
@@ -79,6 +70,10 @@ namespace ProyectoTec34.Alumno
             {
                 MessageBox.Show("El Alumno " + tbBuscar.Text + " no esta registrado", "Buscar Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnBuscarAlumno_Click(object sender, EventArgs e)
+        {
         }
     }
 }

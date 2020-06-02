@@ -15,6 +15,11 @@ namespace ProyectoTec34.Home
         public IndexGraficas()
         {
             InitializeComponent();
+
+            lblTotalAlumnos.Text = Convert.ToString(Alumno.ScriptSQL.ConteoAlumnos());
+            lblTotalAlumnos1.Text = Convert.ToString(Alumno.ScriptSQL.ConteoAlumnosPorGrado(1));
+            lblTotalAlumnos2.Text = Convert.ToString(Alumno.ScriptSQL.ConteoAlumnosPorGrado(2));
+            lblTotalAlumnos3.Text = Convert.ToString(Alumno.ScriptSQL.ConteoAlumnosPorGrado(3));
         }
     }
 }

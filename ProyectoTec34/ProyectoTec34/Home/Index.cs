@@ -27,7 +27,7 @@ namespace ProyectoTec34.Home
                 } while (Database.DatabaseRepository.CheckFileDatabase() == false);
             }
             //Configuraciones.BackupAutomatic.Backup();
-      
+            
         }
         TimeSpan _elapsed = new TimeSpan();
         public Boolean AbrirFormHijo(object formhijo)
@@ -49,7 +49,8 @@ namespace ProyectoTec34.Home
 
         private void Index_Load(object sender, EventArgs e)
         {
-
+            AbrirFormHijo(new IndexGraficas());
+            btnInicio.BackColor = Color.FromArgb(183, 190, 188);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -78,6 +79,7 @@ namespace ProyectoTec34.Home
             btnAlumnos.BackColor = Color.FromArgb(183, 190, 188);
             btnConf.BackColor = Color.Transparent;
             btnBuscar.BackColor = Color.Transparent;
+            btnInicio.BackColor = Color.Transparent;
         }
 
 
@@ -109,13 +111,18 @@ namespace ProyectoTec34.Home
             btnConf.BackColor = Color.FromArgb(183, 190, 188);
             btnBuscar.BackColor = Color.Transparent;
             btnAlumnos.BackColor = Color.Transparent;
+            btnInicio.BackColor = Color.Transparent;
         }
 
     
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormHijo(new IndexGraficas());
+            btnInicio.BackColor = Color.FromArgb(183, 190, 188);
+            btnConf.BackColor = Color.Transparent;
+            btnBuscar.BackColor = Color.Transparent;
+            btnAlumnos.BackColor = Color.Transparent;
         }
 
     }

@@ -118,6 +118,7 @@
     <Compile Include="Alumno\BuscarAlumnos.Designer.cs">
       <DependentUpon>BuscarAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\CambioDeAño.cs" />
     <Compile Include="Alumno\CargarDatosAlumno.cs">
       <SubType>Form</SubType>
     </Compile>

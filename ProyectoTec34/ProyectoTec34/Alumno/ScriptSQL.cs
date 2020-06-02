@@ -193,6 +193,33 @@ namespace ProyectoTec34.Alumno
             }
         }
 
+        public static int ConteoAlumnos()
+        {
+            string query = "SELECT COUNT(*) FROM Alumno";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                int cont = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cont;
+            }
+        }
+        public static int ConteoAlumnosPorGrado(int Grado)
+        {
+            string query = "SELECT COUNT(*) FROM Alumno WHERE Grado = @Grado";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Grado", Grado);
+                int cont = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cont;
+            }
+        }
+
+
         public static string getIDAlumno(string NombreCompleto)
         {
             string ID;
