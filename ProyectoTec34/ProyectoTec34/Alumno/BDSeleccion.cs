@@ -26,13 +26,16 @@ namespace ProyectoTec34.Alumno
 
         private void tbBuscar_KeyUp(object sender, KeyEventArgs e)
         {
+            dgvDatos.DataSource = ScriptSQL.MostrarBD(tbBuscar.Text);
         }
-
+        public string _Persona;
         private void btnSelec_Click(object sender, EventArgs e)
         {
-            //string _Persona = dgvDatos.CurrentRow.Cells[0].Value.ToString();
-            //BuscarAlumnos oBuscar = new BuscarAlumnos(_Persona);
-            //this.Close();
+            _Persona = dgvDatos.CurrentRow.Cells[0].Value.ToString();
+            BuscarAlumnos oBuscar = new BuscarAlumnos();
+            oBuscar.tbBuscar.Text = _Persona;
+            this.Close();
+            oBuscar.Show();
         }
     }
 }

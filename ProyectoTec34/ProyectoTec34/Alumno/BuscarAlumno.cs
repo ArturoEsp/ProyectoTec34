@@ -60,21 +60,25 @@ namespace ProyectoTec34.Alumno
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            ID_Alumno = ScriptSQL.getIDAlumno(tbBuscar.Text);
-            if (rbtnBoletas.Checked == true)
+            if (!ScriptSQL.Existe(tbBuscar.Text))
             {
-                BoletaPrimerAño frm = new BoletaPrimerAño(ID_Alumno);
-                frm.Show();
-            }
+                ID_Alumno = ScriptSQL.getIDAlumno(tbBuscar.Text);
+                if (rbtnBoletas.Checked == true)
+                {
+                    BoletaPrimerAño frm = new BoletaPrimerAño(ID_Alumno);
+                    frm.Show();
+                }
 
-            if (rbtnEstudioE.Checked == true)
+                if (rbtnEstudioE.Checked == true)
+                {
+                    VistaEstudio frm = new VistaEstudio(ID_Alumno, tbBuscar.Text);
+                    frm.Show();
+                }
+            }
+            else
             {
-                VistaEstudio frm = new VistaEstudio(ID_Alumno,tbBuscar.Text);
-                frm.Show();
+                MessageBox.Show("El Alumno " + tbBuscar.Text + " no esta registrado", "Buscar Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
-
         }
     }
 }

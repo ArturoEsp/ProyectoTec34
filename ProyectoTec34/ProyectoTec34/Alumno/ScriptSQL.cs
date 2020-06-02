@@ -179,6 +179,20 @@ namespace ProyectoTec34.Alumno
             }
         }
 
+        public static bool Existe(string NombreCompleto)
+        {
+            string query = "SELECT COUNT(*) FROM Alumno WHERE Nombre = @Nombre";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Nombre", NombreCompleto);
+                int cont = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cont == 0;
+            }
+        }
+
         public static string getIDAlumno(string NombreCompleto)
         {
             string ID;

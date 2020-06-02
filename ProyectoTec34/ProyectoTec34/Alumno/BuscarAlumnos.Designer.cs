@@ -176,12 +176,12 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.Button btnBuscarAlumno;
         private System.Windows.Forms.Button btnPrimerBoleta;
         private System.Windows.Forms.Button btnSegBoleta;
         private System.Windows.Forms.Button btnTercerBoleta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox tbBuscar;
     }
 }
