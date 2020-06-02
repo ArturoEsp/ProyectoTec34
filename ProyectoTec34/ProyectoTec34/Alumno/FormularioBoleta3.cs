@@ -113,7 +113,7 @@ namespace ProyectoTec34.Alumno
             CalifP2.Add(Convert.ToDouble(tbEF2.Text));
             CalifP2.Add(Convert.ToDouble(tbArtes2.Text));
 
-            if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
+            if (ScriptSQL.Validacion2(NombreEstudiante, NombreCalif) != "")
             {
                 if (MessageBox.Show("Este Alumno ya tiene calificaciones del primer parcial ¿Desea actualizar calificaciones?", "Advertencia", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Exclamation) == DialogResult.Yes)
@@ -155,7 +155,7 @@ namespace ProyectoTec34.Alumno
             CalifP3.Add(Convert.ToDouble(tbEF3.Text));
             CalifP3.Add(Convert.ToDouble(tbArtes3.Text));
 
-            if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
+            if (ScriptSQL.Validacion3(NombreEstudiante, NombreCalif) != "")
             {
                 if (MessageBox.Show("Este Alumno ya tiene calificaciones del primer parcial ¿Desea actualizar calificaciones?", "Advertencia", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Exclamation) == DialogResult.Yes)

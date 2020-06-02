@@ -82,6 +82,12 @@
     <Compile Include="AcercaDe\Acercade.Designer.cs">
       <DependentUpon>Acercade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\BDSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\BDSeleccion.Designer.cs">
+      <DependentUpon>BDSeleccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\BoletaPrimerAño.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AcercaDe\Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\BDSeleccion.resx">
+      <DependentUpon>BDSeleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\BoletaPrimerAño.resx">
       <DependentUpon>BoletaPrimerAño.cs</DependentUpon>

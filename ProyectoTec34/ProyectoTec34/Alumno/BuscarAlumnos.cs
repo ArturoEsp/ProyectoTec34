@@ -18,6 +18,7 @@ namespace ProyectoTec34.Alumno
             tbBuscar.AutoCompleteCustomSource = ScriptSQL.AutoCompletarBuscar();
             tbBuscar.AutoCompleteMode = AutoCompleteMode.Suggest;
             tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            //_Persona = tbBuscar.Text;
         }
         private void btnPrimerBoleta_Click(object sender, EventArgs e)
         {
@@ -47,6 +48,20 @@ namespace ProyectoTec34.Alumno
                 btnPrimerBoleta.Enabled = true;
                 btnSegBoleta.Enabled = true;
                 btnTercerBoleta.Enabled = true;
+            }
+        }
+
+        private void btnBuscarAlumno_Click(object sender, EventArgs e)
+        {
+            BDSeleccion objBD = new BDSeleccion();
+            objBD.Show();
+        }
+
+        private void tbBuscar_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MouseButtons == MouseButtons.None)
+            {
+                this.tbBuscar.SelectAll();
             }
         }
     }

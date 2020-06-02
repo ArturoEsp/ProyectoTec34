@@ -47,8 +47,6 @@ namespace ProyectoTec34.Alumno
             CalifP1.Add(Convert.ToDouble(tbArtes1.Text));
             
 
-            
-
             if (ScriptSQL.Validacion(NombreEstudiante, NombreCalif) != "")
             {
                 if (MessageBox.Show("Este Alumno ya tiene calificaciones del primer parcial ¿Desea actualizar calificaciones?", "Advertencia", MessageBoxButtons.YesNo,

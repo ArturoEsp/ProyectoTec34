@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscarAlumnos));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnBuscarAlumno = new System.Windows.Forms.Button();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.btnPrimerBoleta = new System.Windows.Forms.Button();
             this.btnSegBoleta = new System.Windows.Forms.Button();
@@ -43,28 +43,29 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.panel2.Controls.Add(this.btnSiguiente);
+            this.panel2.Controls.Add(this.btnBuscarAlumno);
             this.panel2.Controls.Add(this.tbBuscar);
             this.panel2.Location = new System.Drawing.Point(16, 47);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(579, 44);
             this.panel2.TabIndex = 3;
             // 
-            // btnSiguiente
+            // btnBuscarAlumno
             // 
-            this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSiguiente.FlatAppearance.BorderSize = 0;
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.Location = new System.Drawing.Point(486, 2);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(90, 39);
-            this.btnSiguiente.TabIndex = 37;
-            this.btnSiguiente.Text = "Buscar";
-            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnBuscarAlumno.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBuscarAlumno.FlatAppearance.BorderSize = 0;
+            this.btnBuscarAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarAlumno.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarAlumno.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarAlumno.Image")));
+            this.btnBuscarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarAlumno.Location = new System.Drawing.Point(486, 2);
+            this.btnBuscarAlumno.Name = "btnBuscarAlumno";
+            this.btnBuscarAlumno.Size = new System.Drawing.Size(90, 39);
+            this.btnBuscarAlumno.TabIndex = 37;
+            this.btnBuscarAlumno.Text = "Buscar";
+            this.btnBuscarAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarAlumno.UseVisualStyleBackColor = true;
+            this.btnBuscarAlumno.Click += new System.EventHandler(this.btnBuscarAlumno_Click);
             // 
             // tbBuscar
             // 
@@ -76,6 +77,7 @@
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(461, 26);
             this.tbBuscar.TabIndex = 1;
+            this.tbBuscar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbBuscar_MouseClick);
             this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
             // 
             // btnPrimerBoleta
@@ -175,7 +177,7 @@
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox tbBuscar;
-        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnBuscarAlumno;
         private System.Windows.Forms.Button btnPrimerBoleta;
         private System.Windows.Forms.Button btnSegBoleta;
         private System.Windows.Forms.Button btnTercerBoleta;
