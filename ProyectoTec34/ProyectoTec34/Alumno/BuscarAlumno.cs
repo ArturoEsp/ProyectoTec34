@@ -30,6 +30,9 @@ namespace ProyectoTec34.Alumno
                 case 'E':
                     rbtnEstudioE.Checked = true;
                     break;
+                case 'A':
+                    rbtnEditarInfo.Checked = true;
+                    break;
                 default:
                     break;
             }
@@ -63,6 +66,12 @@ namespace ProyectoTec34.Alumno
                 if (rbtnEstudioE.Checked == true)
                 {
                     VistaEstudio frm = new VistaEstudio(ID_Alumno, tbBuscar.Text);
+                    frm.Show();
+                }
+
+                if (rbtnEditarInfo.Checked == true)
+                {
+                    CargarDatosAlumno frm = new CargarDatosAlumno();
                     frm.Show();
                 }
             }

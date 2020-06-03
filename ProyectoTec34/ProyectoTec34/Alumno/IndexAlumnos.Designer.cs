@@ -37,12 +37,12 @@
             this.btnIngresarCalif = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBoleta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnIngresarEstudio = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEditarInfo = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -137,7 +137,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.btnBoleta);
             this.panel4.Location = new System.Drawing.Point(28, 321);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(497, 68);
@@ -154,21 +154,22 @@
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
-            // button3
+            // btnBoleta
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(103, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(396, 68);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Boletas";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBoleta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnBoleta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBoleta.FlatAppearance.BorderSize = 0;
+            this.btnBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBoleta.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoleta.ForeColor = System.Drawing.Color.White;
+            this.btnBoleta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBoleta.Location = new System.Drawing.Point(103, 0);
+            this.btnBoleta.Name = "btnBoleta";
+            this.btnBoleta.Size = new System.Drawing.Size(396, 68);
+            this.btnBoleta.TabIndex = 0;
+            this.btnBoleta.Text = "Boletas";
+            this.btnBoleta.UseVisualStyleBackColor = false;
+            this.btnBoleta.Click += new System.EventHandler(this.btnBoleta_Click);
             // 
             // label1
             // 
@@ -219,22 +220,22 @@
             this.btnIngresarEstudio.UseVisualStyleBackColor = false;
             this.btnIngresarEstudio.Click += new System.EventHandler(this.btnIngresarEstudio_Click);
             // 
-            // button1
+            // btnEditarInfo
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(103, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(396, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Actualizar información personal";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEditarInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnEditarInfo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEditarInfo.FlatAppearance.BorderSize = 0;
+            this.btnEditarInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarInfo.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarInfo.ForeColor = System.Drawing.Color.White;
+            this.btnEditarInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditarInfo.Location = new System.Drawing.Point(103, 0);
+            this.btnEditarInfo.Name = "btnEditarInfo";
+            this.btnEditarInfo.Size = new System.Drawing.Size(396, 68);
+            this.btnEditarInfo.TabIndex = 0;
+            this.btnEditarInfo.Text = "Actualizar información personal";
+            this.btnEditarInfo.UseVisualStyleBackColor = false;
+            this.btnEditarInfo.Click += new System.EventHandler(this.btnEditarInfo_Click);
             // 
             // pictureBox2
             // 
@@ -251,7 +252,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnEditarInfo);
             this.panel2.Location = new System.Drawing.Point(28, 407);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(497, 68);
@@ -299,12 +300,12 @@
         private System.Windows.Forms.Button btnIngresarCalif;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBoleta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnIngresarEstudio;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEditarInfo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
     }

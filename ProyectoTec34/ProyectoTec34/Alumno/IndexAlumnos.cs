@@ -29,14 +29,21 @@ namespace ProyectoTec34.Alumno
             frm.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btnIngresarEstudio_Click(object sender, EventArgs e)
         {
             BuscarAlumno frm = new BuscarAlumno('E');
+            frm.Show();
+        }
+
+        private void btnEditarInfo_Click(object sender, EventArgs e)
+        {
+            BuscarAlumno frm = new BuscarAlumno('A');
+            frm.Show();
+        }
+
+        private void btnBoleta_Click(object sender, EventArgs e)
+        {
+            BuscarAlumno frm = new BuscarAlumno('B');
             frm.Show();
         }
     }

@@ -31,11 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscarAlumno));
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBuscarAlumno = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.rbtnBoletas = new System.Windows.Forms.RadioButton();
             this.rbtnEstudioE = new System.Windows.Forms.RadioButton();
-            this.btnBuscarAlumno = new System.Windows.Forms.Button();
+            this.rbtnEditarInfo = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,23 @@
             this.panel2.Size = new System.Drawing.Size(579, 44);
             this.panel2.TabIndex = 1;
             // 
+            // btnBuscarAlumno
+            // 
+            this.btnBuscarAlumno.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBuscarAlumno.FlatAppearance.BorderSize = 0;
+            this.btnBuscarAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarAlumno.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarAlumno.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarAlumno.Image")));
+            this.btnBuscarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarAlumno.Location = new System.Drawing.Point(482, 3);
+            this.btnBuscarAlumno.Name = "btnBuscarAlumno";
+            this.btnBuscarAlumno.Size = new System.Drawing.Size(90, 39);
+            this.btnBuscarAlumno.TabIndex = 38;
+            this.btnBuscarAlumno.Text = "Buscar";
+            this.btnBuscarAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarAlumno.UseVisualStyleBackColor = true;
+            this.btnBuscarAlumno.Click += new System.EventHandler(this.btnBuscarAlumno_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -74,7 +92,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(499, 92);
+            this.btnBuscar.Location = new System.Drawing.Point(502, 97);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(89, 27);
             this.btnBuscar.TabIndex = 3;
@@ -99,7 +117,7 @@
             // 
             this.rbtnEstudioE.AutoSize = true;
             this.rbtnEstudioE.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnEstudioE.Location = new System.Drawing.Point(102, 97);
+            this.rbtnEstudioE.Location = new System.Drawing.Point(100, 97);
             this.rbtnEstudioE.Name = "rbtnEstudioE";
             this.rbtnEstudioE.Size = new System.Drawing.Size(172, 22);
             this.rbtnEstudioE.TabIndex = 5;
@@ -107,22 +125,17 @@
             this.rbtnEstudioE.Text = "Estudio SocioEconomico";
             this.rbtnEstudioE.UseVisualStyleBackColor = true;
             // 
-            // btnBuscarAlumno
+            // rbtnEditarInfo
             // 
-            this.btnBuscarAlumno.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnBuscarAlumno.FlatAppearance.BorderSize = 0;
-            this.btnBuscarAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarAlumno.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarAlumno.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarAlumno.Image")));
-            this.btnBuscarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarAlumno.Location = new System.Drawing.Point(482, 3);
-            this.btnBuscarAlumno.Name = "btnBuscarAlumno";
-            this.btnBuscarAlumno.Size = new System.Drawing.Size(90, 39);
-            this.btnBuscarAlumno.TabIndex = 38;
-            this.btnBuscarAlumno.Text = "Buscar";
-            this.btnBuscarAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarAlumno.UseVisualStyleBackColor = true;
-            this.btnBuscarAlumno.Click += new System.EventHandler(this.btnBuscarAlumno_Click);
+            this.rbtnEditarInfo.AutoSize = true;
+            this.rbtnEditarInfo.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnEditarInfo.Location = new System.Drawing.Point(287, 97);
+            this.rbtnEditarInfo.Name = "rbtnEditarInfo";
+            this.rbtnEditarInfo.Size = new System.Drawing.Size(137, 22);
+            this.rbtnEditarInfo.TabIndex = 6;
+            this.rbtnEditarInfo.TabStop = true;
+            this.rbtnEditarInfo.Text = "Editar Información";
+            this.rbtnEditarInfo.UseVisualStyleBackColor = true;
             // 
             // BuscarAlumno
             // 
@@ -130,7 +143,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(613, 135);
+            this.ClientSize = new System.Drawing.Size(613, 134);
+            this.Controls.Add(this.rbtnEditarInfo);
             this.Controls.Add(this.rbtnEstudioE);
             this.Controls.Add(this.rbtnBoletas);
             this.Controls.Add(this.btnBuscar);
@@ -158,5 +172,6 @@
         private System.Windows.Forms.RadioButton rbtnBoletas;
         private System.Windows.Forms.RadioButton rbtnEstudioE;
         private System.Windows.Forms.Button btnBuscarAlumno;
+        private System.Windows.Forms.RadioButton rbtnEditarInfo;
     }
 }
