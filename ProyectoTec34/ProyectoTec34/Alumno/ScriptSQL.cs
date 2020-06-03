@@ -170,7 +170,7 @@ namespace ProyectoTec34.Alumno
             {
                 SQLiteDataAdapter da;
                 DataTable dt = new DataTable();
-                da = new SQLiteDataAdapter("SELECT Nombre FROM Alumno WHERE Nombre like ('"+tbBuscar+"%')", conn);
+                da = new SQLiteDataAdapter("SELECT Nombre,Grado,Grupo FROM Alumno WHERE Nombre like ('" + tbBuscar+"%')", conn);
                 da.SelectCommand.CommandType = CommandType.Text;
                 da.Fill(dt);
                 BindingSource bSource = new BindingSource();

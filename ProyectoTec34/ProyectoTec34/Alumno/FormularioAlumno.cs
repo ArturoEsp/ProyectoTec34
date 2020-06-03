@@ -14,8 +14,9 @@ namespace ProyectoTec34.Alumno
         private string IDAlumno;
         public FormularioAlumno()
         {         
-           InitializeComponent();
-           Parametros = new ArrayList();
+            InitializeComponent();
+            Parametros = new ArrayList();
+            cbTurno.Text = "MATUTINO";
         }
 
         
@@ -89,7 +90,6 @@ namespace ProyectoTec34.Alumno
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
         }
 
         private void tbCP_KeyPress(object sender, KeyPressEventArgs e)
