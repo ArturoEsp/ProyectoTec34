@@ -7,20 +7,16 @@ namespace ProyectoTec34.Alumno
 {
     public partial class FormularioAlumno : Form
     {
-     
-
         private string fecha_nacimiento;
         private ArrayList Parametros;
         private string IDAlumno;
+
         public FormularioAlumno()
         {         
             InitializeComponent();
             Parametros = new ArrayList();
             cbTurno.Text = "MATUTINO";
         }
-
-        
-        
 
         private void FormularioAlumno_Load(object sender, EventArgs e)
         {

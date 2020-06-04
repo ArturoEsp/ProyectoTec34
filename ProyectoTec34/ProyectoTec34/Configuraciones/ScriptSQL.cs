@@ -159,7 +159,21 @@ namespace ProyectoTec34.Configuraciones
             {
                 SQLiteDataAdapter da;
                 DataTable dt = new DataTable();
-                da = new SQLiteDataAdapter("SELECT * FROM Alumno", conn);
+                da = new SQLiteDataAdapter("SELECT * FROM Alumno ORDER BY random() LIMIT 50", conn);
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.Fill(dt);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dt;
+                return bSource;
+            }
+        }
+        public static BindingSource MostrarBD(string tbBuscar)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteDataAdapter da;
+                DataTable dt = new DataTable();
+                da = new SQLiteDataAdapter("SELECT * FROM Alumno WHERE Nombre like ('" + tbBuscar + "%')", conn);
                 da.SelectCommand.CommandType = CommandType.Text;
                 da.Fill(dt);
                 BindingSource bSource = new BindingSource();

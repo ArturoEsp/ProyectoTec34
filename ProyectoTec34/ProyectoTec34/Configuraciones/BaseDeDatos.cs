@@ -64,5 +64,20 @@ namespace ProyectoTec34.Configuraciones
         {
             dgvDatos.DataSource = ScriptSQL.MostrarBD();
         }
+
+        private void aToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseGrado("3", "A");
+        }
+
+        private void bToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.SeleccionDataBaseGrado("3", "B");
+        }
+
+        private void tbBuscar_KeyUp(object sender, KeyEventArgs e)
+        {
+            dgvDatos.DataSource = ScriptSQL.MostrarBD(tbBuscar.Text);
+        }
     }
 }
