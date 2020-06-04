@@ -7,6 +7,7 @@ using System.Data.SQLite;
 using System.Collections;
 using System.Data;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ProyectoTec34.Alumno
 {
@@ -178,6 +179,22 @@ namespace ProyectoTec34.Alumno
                 return bSource;
             }
         }
+        /**/
+        
+        public static BindingSource MostrarNombre()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteDataAdapter da;
+                DataTable dt = new DataTable();
+                da = new SQLiteDataAdapter("SELECT Nombre FROM Alumno", conn);
+                da.SelectCommand.CommandType = CommandType.Text;
+                da.Fill(dt);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = dt;
+                return bSource;
+            }
+        }
 
         public static bool Existe(string NombreCompleto)
         {
@@ -196,6 +213,18 @@ namespace ProyectoTec34.Alumno
         public static int ConteoAlumnos()
         {
             string query = "SELECT COUNT(*) FROM Alumno";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                int cont = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cont;
+            }
+        }
+        public static int ConteoDocentes()
+        {
+            string query = "SELECT COUNT(*) FROM Docentes";
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
                 conn.Open();

@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbNombreMateria = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvMaterias = new System.Windows.Forms.DataGridView();
             this.cbMaestro = new System.Windows.Forms.ComboBox();
@@ -41,6 +40,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.tbID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.cbMateria = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaterias)).BeginInit();
             this.SuspendLayout();
@@ -76,15 +76,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre:";
             // 
-            // tbNombreMateria
-            // 
-            this.tbNombreMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNombreMateria.Location = new System.Drawing.Point(86, 101);
-            this.tbNombreMateria.Name = "tbNombreMateria";
-            this.tbNombreMateria.Size = new System.Drawing.Size(371, 26);
-            this.tbNombreMateria.TabIndex = 4;
-            this.tbNombreMateria.TextChanged += new System.EventHandler(this.tbNombreMateria_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -97,6 +88,7 @@
             // 
             // dgvMaterias
             // 
+            this.dgvMaterias.AllowUserToOrderColumns = true;
             this.dgvMaterias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMaterias.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvMaterias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -184,11 +176,24 @@
             this.label4.TabIndex = 37;
             this.label4.Text = "ID Materia:";
             // 
+            // cbMateria
+            // 
+            this.cbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMateria.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMateria.FormattingEnabled = true;
+            this.cbMateria.Location = new System.Drawing.Point(86, 101);
+            this.cbMateria.Name = "cbMateria";
+            this.cbMateria.Size = new System.Drawing.Size(371, 28);
+            this.cbMateria.TabIndex = 39;
+            this.cbMateria.SelectedIndexChanged += new System.EventHandler(this.cbMateria_SelectedIndexChanged);
+            // 
             // Materias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 363);
+            this.ClientSize = new System.Drawing.Size(468, 372);
+            this.Controls.Add(this.cbMateria);
             this.Controls.Add(this.tbID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnAgregar);
@@ -196,7 +201,6 @@
             this.Controls.Add(this.cbMaestro);
             this.Controls.Add(this.dgvMaterias);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbNombreMateria);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -217,7 +221,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbNombreMateria;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvMaterias;
         private System.Windows.Forms.ComboBox cbMaestro;
@@ -225,5 +228,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbMateria;
     }
 }

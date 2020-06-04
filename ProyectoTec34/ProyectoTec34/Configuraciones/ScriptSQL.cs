@@ -249,7 +249,6 @@ namespace ProyectoTec34.Configuraciones
             DataTable dt;
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-
                 dt = new DataTable();
                 conn.Open();
                 string Query = "SELECT Nombre FROM Docentes";
@@ -259,7 +258,19 @@ namespace ProyectoTec34.Configuraciones
 
             return dt;
         }
+        public static DataTable GetMaterias()
+        {
+            DataTable dt;
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                dt = new DataTable();
+                conn.Open();
+                string Query = "SELECT Nombre FROM Materias";
+                SQLiteDataAdapter da = new SQLiteDataAdapter(Query, conn);
+                da.Fill(dt);
+            }
 
-
+            return dt;
+        }
     }
 }
