@@ -26,12 +26,14 @@ namespace ProyectoTec34.Configuraciones
         private string IDAlumno;
         private void btnAceptarE_Click(object sender, EventArgs e)
         {
+            List<String> AlumnoE = new List<String>();
             IDAlumno = Alumno.ScriptSQL.getIDAlumno(tbNombreAlumno.Text);
+            AlumnoE.Add(IDAlumno);
             if (MessageBox.Show("El alumno " + tbNombreAlumno.Text + " sera eliminado completamente.\n" +
                 "¿Desea continuar?", "Eliminacion de alumnos", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                 == DialogResult.Yes)
             {
-                ScriptSQL.EliminarAlumno(IDAlumno);
+                ScriptSQL.EliminarAlumno(AlumnoE);
                 MessageBox.Show("Alumno eliminado correctamente.", "Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbNombreAlumno.Text = IDAlumno = String.Empty;
 
@@ -54,7 +56,9 @@ namespace ProyectoTec34.Configuraciones
 
         private void btnEliminacionGrupal_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(cboxGrado.Text) || string.IsNullOrEmpty(cboxGrupo.Text))
+            List<String> AlumnoE = new List<String>();
+
+            if (string.IsNullOrEmpty(cboxGrado.Text) || string.IsNullOrEmpty(cboxGrupo.Text))
             {
                 MessageBox.Show("Seleccione el Grado y Grupo.", "Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -65,6 +69,7 @@ namespace ProyectoTec34.Configuraciones
                 == DialogResult.Yes)
                 {
                     MessageBox.Show("Grupo eliminado correctamente.", "Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ScriptSQL.SelectAlumAEliminar(Convert.ToInt32(cboxGrado.Text),cboxGrupo.Text);
                 }
             }
             

@@ -27,7 +27,7 @@ namespace ProyectoTec34.Configuraciones
             }
         }
 
-        public static void EliminarAlumno(string ID)
+        public static void EliminarAlumno(List<string> ID)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
@@ -43,52 +43,58 @@ namespace ProyectoTec34.Configuraciones
             EliminarAlumnoSomaticos(ID);
         }
 
-        private static void EliminarAlumnoEstudioS(string ID)
+        private static void EliminarAlumnoEstudioS(List<string> ID)
         {
-
             for (int i = 1; i < 6; i++)
             {
                 using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
                 {
-                    SQLiteCommand cmd;
                     conn.Open();
-                    cmd = conn.CreateCommand();
-                    cmd.CommandText = "DELETE FROM EstudioSocio" + i + " WHERE ID_Alumno = @ID";
-                    cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
-                    cmd.ExecuteNonQuery();
+                    for (int j = 0; j < ID.Count; j++)
+                    {
+                        SQLiteCommand cmd;
+                        cmd = conn.CreateCommand();
+                        cmd.CommandText = "DELETE FROM EstudioSocio" + i + " WHERE ID_Alumno = @ID";
+                        cmd.Parameters.Add(new SQLiteParameter("@ID", ID[j]));
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
-
         }
 
-        private static void EliminarAlumnoParciales(string ID)
+        private static void EliminarAlumnoParciales(List<string> ID)
         {
-
             for (int i = 1; i < 4; i++)
             {
                 using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
                 {
-                    SQLiteCommand cmd;
                     conn.Open();
-                    cmd = conn.CreateCommand();
-                    cmd.CommandText = "DELETE FROM Parcial" + i + " WHERE ID_Alumno = @ID";
-                    cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
-                    cmd.ExecuteNonQuery();
+                    for (int j = 0; j < ID.Count; j++)
+                    {
+                        SQLiteCommand cmd;
+                        cmd = conn.CreateCommand();
+                        cmd.CommandText = "DELETE FROM Parcial" + i + " WHERE ID_Alumno = @ID";
+                        cmd.Parameters.Add(new SQLiteParameter("@ID", ID[j]));
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
-
         }
 
-        private static void EliminarAlumnoSomaticos(string ID)
+        private static void EliminarAlumnoSomaticos(List<string> ID)
         {
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
-                SQLiteCommand cmd;
                 conn.Open();
-                cmd = conn.CreateCommand();
-                cmd.CommandText = "DELETE FROM Somaticos WHERE ID_Alumno = @ID";
-                cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
-                cmd.ExecuteNonQuery();
+                for (int j = 0; j < ID.Count; j++)
+                {
+                    SQLiteCommand cmd;
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "DELETE FROM Somaticos WHERE ID_Alumno = @ID";
+                    cmd.Parameters.Add(new SQLiteParameter("@ID", ID[j]));
+                    cmd.ExecuteNonQuery();
+                }
+               
             }
 
 
@@ -100,6 +106,7 @@ namespace ProyectoTec34.Configuraciones
             {
                 SQLiteCommand cmd;
                 cmd = conn.CreateCommand();
+
                 cmd.CommandText = "DELETE FROM Docentes WHERE ID_Docente = @ID";
                 cmd.Parameters.Add(new SQLiteParameter("@ID", ID));
                 conn.Open();
@@ -336,8 +343,11 @@ namespace ProyectoTec34.Configuraciones
 
             }
         }
-        public static void EliminarGrupo(int Grado,string Grupo,string ID)
+        public static void EliminarGrupo(int Grado,string Grupo, List<string> ID)
         {
+            EliminarAlumnoEstudioS(ID);
+            EliminarAlumnoParciales(ID);
+            EliminarAlumnoSomaticos(ID);
             using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
             {
                 SQLiteCommand cmd;
@@ -348,9 +358,26 @@ namespace ProyectoTec34.Configuraciones
                 cmd.Parameters.Add(new SQLiteParameter("@Grupo", Grupo));
                 cmd.ExecuteNonQuery();
             }
-            EliminarAlumnoEstudioS(ID);
-            EliminarAlumnoParciales(ID);
-            EliminarAlumnoSomaticos(ID);
+        }
+        public static void SelectAlumAEliminar(int Grado, string Grupo)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<String> AlumnoE = new List<String>();
+                SQLiteCommand cmd;
+                conn.Open();
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM Alumno WHERE Grado = @Grado AND Grupo = @Grupo";
+                cmd.Parameters.Add(new SQLiteParameter("@Grado", Grado));
+                cmd.Parameters.Add(new SQLiteParameter("@Grupo", Grupo));
+                SQLiteDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    AlumnoE.Add((reader[0]).ToString());
+                }
+                EliminarGrupo(Grado,Grupo,AlumnoE);
+            }
         }
     }
 }
