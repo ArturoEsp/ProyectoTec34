@@ -72,15 +72,15 @@
             this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.cbGrupo = new MetroFramework.Controls.MetroComboBox();
+            this.cbGrado = new MetroFramework.Controls.MetroComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblConsultaInd = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.shapeContainer6 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cbGrado = new MetroFramework.Controls.MetroComboBox();
-            this.cbGrupo = new MetroFramework.Controls.MetroComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -114,7 +114,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1184, 524);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1216, 544);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -585,6 +585,47 @@
             this.panel12.Size = new System.Drawing.Size(257, 133);
             this.panel12.TabIndex = 0;
             // 
+            // cbGrupo
+            // 
+            this.cbGrupo.FormattingEnabled = true;
+            this.cbGrupo.ItemHeight = 23;
+            this.cbGrupo.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.cbGrupo.Location = new System.Drawing.Point(187, 96);
+            this.cbGrupo.Name = "cbGrupo";
+            this.cbGrupo.Size = new System.Drawing.Size(53, 29);
+            this.cbGrupo.TabIndex = 7;
+            this.cbGrupo.UseSelectable = true;
+            this.cbGrupo.SelectedIndexChanged += new System.EventHandler(this.cbGrupo_SelectedIndexChanged);
+            // 
+            // cbGrado
+            // 
+            this.cbGrado.FormattingEnabled = true;
+            this.cbGrado.ItemHeight = 23;
+            this.cbGrado.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cbGrado.Location = new System.Drawing.Point(61, 96);
+            this.cbGrado.Name = "cbGrado";
+            this.cbGrado.Size = new System.Drawing.Size(53, 29);
+            this.cbGrado.TabIndex = 6;
+            this.cbGrado.UseSelectable = true;
+            this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(129, 98);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 21);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Grupo:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -603,7 +644,7 @@
             this.lblConsultaInd.BackColor = System.Drawing.Color.Transparent;
             this.lblConsultaInd.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConsultaInd.ForeColor = System.Drawing.Color.White;
-            this.lblConsultaInd.Location = new System.Drawing.Point(187, 36);
+            this.lblConsultaInd.Location = new System.Drawing.Point(181, 36);
             this.lblConsultaInd.Name = "lblConsultaInd";
             this.lblConsultaInd.Size = new System.Drawing.Size(34, 40);
             this.lblConsultaInd.TabIndex = 2;
@@ -652,54 +693,13 @@
             this.lineShape6.Y1 = 86;
             this.lineShape6.Y2 = 86;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(129, 98);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 21);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Grupo:";
-            // 
-            // cbGrado
-            // 
-            this.cbGrado.FormattingEnabled = true;
-            this.cbGrado.ItemHeight = 23;
-            this.cbGrado.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.cbGrado.Location = new System.Drawing.Point(61, 96);
-            this.cbGrado.Name = "cbGrado";
-            this.cbGrado.Size = new System.Drawing.Size(53, 29);
-            this.cbGrado.TabIndex = 6;
-            this.cbGrado.UseSelectable = true;
-            this.cbGrado.SelectedIndexChanged += new System.EventHandler(this.cbGrado_SelectedIndexChanged);
-            // 
-            // cbGrupo
-            // 
-            this.cbGrupo.FormattingEnabled = true;
-            this.cbGrupo.ItemHeight = 23;
-            this.cbGrupo.Items.AddRange(new object[] {
-            "A",
-            "B"});
-            this.cbGrupo.Location = new System.Drawing.Point(187, 96);
-            this.cbGrupo.Name = "cbGrupo";
-            this.cbGrupo.Size = new System.Drawing.Size(53, 29);
-            this.cbGrupo.TabIndex = 7;
-            this.cbGrupo.UseSelectable = true;
-            this.cbGrupo.SelectedIndexChanged += new System.EventHandler(this.cbGrupo_SelectedIndexChanged);
-            // 
             // IndexGraficas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1184, 524);
+            this.ClientSize = new System.Drawing.Size(1216, 544);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IndexGraficas";
