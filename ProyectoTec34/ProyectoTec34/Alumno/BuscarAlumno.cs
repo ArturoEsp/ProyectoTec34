@@ -71,7 +71,7 @@ namespace ProyectoTec34.Alumno
 
                 if (rbtnEditarInfo.Checked == true)
                 {
-                    CargarDatosAlumno frm = new CargarDatosAlumno();
+                    EditarInfoAlumno frm = new EditarInfoAlumno(ID_Alumno);
                     frm.Show();
                 }
             }

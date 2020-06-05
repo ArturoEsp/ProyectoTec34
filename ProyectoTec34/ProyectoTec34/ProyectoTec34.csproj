@@ -131,6 +131,12 @@
     <Compile Include="Alumno\CargarDatosAlumno.Designer.cs">
       <DependentUpon>CargarDatosAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno\EditarInfoAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\EditarInfoAlumno.Designer.cs">
+      <DependentUpon>EditarInfoAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumno\FormularioAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\CargarDatosAlumno.resx">
       <DependentUpon>CargarDatosAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\EditarInfoAlumno.resx">
+      <DependentUpon>EditarInfoAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Alumno\FormularioAlumno.resx">
       <DependentUpon>FormularioAlumno.cs</DependentUpon>

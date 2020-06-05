@@ -298,8 +298,43 @@ namespace ProyectoTec34.Configuraciones
                 SQLiteDataAdapter da = new SQLiteDataAdapter(Query, conn);
                 da.Fill(dt);
             }
-
             return dt;
+        }
+        public static void CambiarGrado1a2()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE Alumno SET Grado = 2 WHERE Grado = 1;";
+                cmd.ExecuteNonQuery();
+
+            }
+        }
+        public static void CambiarGrado2a3()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE Alumno SET Grado = 3 WHERE Grado = 2;";
+                cmd.ExecuteNonQuery();
+                
+            }
+        }
+        public static void CambiarGrado3a4()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE Alumno SET Grado = 4 WHERE Grado = 3;";
+                cmd.ExecuteNonQuery();
+
+            }
         }
     }
 }

@@ -1019,5 +1019,60 @@ namespace ProyectoTec34.Alumno
                 lbArt.Text = calif[7].ToString();
             }
         }
+        public static void SelectDatosAlumno(string ID_Alumno, ComboBox tb1, ComboBox tb2, ComboBox tb3, TextBox tb4, TextBox tb5, TextBox tb6, DateTimePicker tb7, TextBox tb8, TextBox tb9, TextBox tb10, TextBox tb11)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                List<string> calif = new List<string>();
+                conn.Open();
+                string sql = "SELECT Grado,Grupo,Turno,Nombre,Direccion,Telefono,FechaNacimiento,CURP,TipoSangre,Nacionalidad,Observaciones FROM Alumno WHERE ID_Alumno = @ID_Alumno";
+                SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+
+               cmd.Parameters.AddWithValue("@ID_Alumno",ID_Alumno);
+
+                SQLiteDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    tb1.Text = reader[0].ToString();
+                    tb2.Text = reader[1].ToString();
+                    tb3.Text = reader[2].ToString();
+                    tb4.Text = reader[3].ToString();
+                    tb5.Text = reader[4].ToString();
+                    tb6.Text = reader[5].ToString();
+                    tb7.Text = reader[6].ToString();
+                    tb8.Text = reader[7].ToString();
+                    tb9.Text = reader[8].ToString();
+                    tb10.Text = reader[9].ToString();
+                    tb11.Text = reader[10].ToString();
+                }
+            }
+        }
+        public static void ActualizaDatosAlumno(string ID_Alumno, int tb1, string tb2, string tb3, string tb4, string tb5, string tb6, string tb7, string tb8, string tb9, string tb10, string tb11)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd;
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE Alumno SET Grado = @Grado, Grupo = @Grupo,Turno = @Turno, " +
+                    "Nombre = @Nombre,Direccion = @Direccion,Telefono = @Telefono,FechaNacimiento = @FechaNacimiento," +
+                    "CURP = @CURP,TipoSangre = @TipoSangre,Nacionalidad = @Nacionalidad,Observaciones = @Observaciones " +
+                    "WHERE ID_Alumno = @ID_Alumno";
+                cmd.Parameters.Add(new SQLiteParameter("@ID_Alumno", ID_Alumno));
+                cmd.Parameters.Add(new SQLiteParameter("@Grado", tb1));
+                cmd.Parameters.Add(new SQLiteParameter("@Grupo", tb2));
+                cmd.Parameters.Add(new SQLiteParameter("@Turno", tb3));
+                cmd.Parameters.Add(new SQLiteParameter("@Nombre", tb4));
+                cmd.Parameters.Add(new SQLiteParameter("@Direccion", tb5));
+                cmd.Parameters.Add(new SQLiteParameter("@Telefono", tb6));
+                cmd.Parameters.Add(new SQLiteParameter("@FechaNacimiento", tb7));
+                cmd.Parameters.Add(new SQLiteParameter("@CURP", tb8));
+                cmd.Parameters.Add(new SQLiteParameter("@TipoSangre", tb9));
+                cmd.Parameters.Add(new SQLiteParameter("@Nacionalidad", tb10));
+                cmd.Parameters.Add(new SQLiteParameter("@Observaciones", tb11));
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }
