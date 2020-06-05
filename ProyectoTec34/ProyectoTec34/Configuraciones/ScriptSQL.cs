@@ -159,7 +159,7 @@ namespace ProyectoTec34.Configuraciones
             {
                 SQLiteDataAdapter da;
                 DataTable dt = new DataTable();
-                da = new SQLiteDataAdapter("SELECT * FROM Alumno ORDER BY random() LIMIT 50", conn);
+                da = new SQLiteDataAdapter("SELECT * FROM Alumno ORDER BY random() LIMIT 25", conn);
                 da.SelectCommand.CommandType = CommandType.Text;
                 da.Fill(dt);
                 BindingSource bSource = new BindingSource();
@@ -212,6 +212,21 @@ namespace ProyectoTec34.Configuraciones
                 BindingSource bSource = new BindingSource();
                 bSource.DataSource = dt;
                 return bSource;
+            }
+        }
+
+        public static int ConteoIndividual(string Grado, string Grupo)
+        {
+            string query = "SELECT COUNT(*) FROM Alumno WHERE Grado = @Grado AND Grupo = @Grupo";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Grado", Grado);
+                cmd.Parameters.AddWithValue("@Grupo", Grupo);
+                int cont = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cont;
             }
         }
 

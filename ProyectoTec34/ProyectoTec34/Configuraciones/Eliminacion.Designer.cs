@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Eliminacion));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAceptarE = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.tbNombreAlumno = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbGrupo = new System.Windows.Forms.CheckBox();
-            this.cbGrado = new System.Windows.Forms.CheckBox();
+            this.btnEliminacionGrupal = new System.Windows.Forms.Button();
+            this.cboxGrupo = new System.Windows.Forms.ComboBox();
             this.cboxGrado = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cbGrado = new System.Windows.Forms.CheckBox();
+            this.cbGrupo = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,14 @@
             this.btnAceptarE.UseVisualStyleBackColor = true;
             this.btnAceptarE.Click += new System.EventHandler(this.btnAceptarE_Click);
             // 
+            // tbNombreAlumno
+            // 
+            this.tbNombreAlumno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbNombreAlumno.Location = new System.Drawing.Point(18, 54);
+            this.tbNombreAlumno.Name = "tbNombreAlumno";
+            this.tbNombreAlumno.Size = new System.Drawing.Size(460, 25);
+            this.tbNombreAlumno.TabIndex = 0;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -80,18 +88,10 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre del alumno:";
             // 
-            // tbNombreAlumno
-            // 
-            this.tbNombreAlumno.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tbNombreAlumno.Location = new System.Drawing.Point(18, 54);
-            this.tbNombreAlumno.Name = "tbNombreAlumno";
-            this.tbNombreAlumno.Size = new System.Drawing.Size(460, 25);
-            this.tbNombreAlumno.TabIndex = 0;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.btnEliminacionGrupal);
+            this.groupBox2.Controls.Add(this.cboxGrupo);
             this.groupBox2.Controls.Add(this.cboxGrado);
             this.groupBox2.Controls.Add(this.cbGrado);
             this.groupBox2.Controls.Add(this.cbGrupo);
@@ -105,39 +105,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminación grupal";
             // 
-            // label2
+            // btnEliminacionGrupal
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(6, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(577, 36);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "La eliminación grupal eliminara de forma permanente el grupo dealumno seleccionad" +
-    "os a partir \r\nde los siguientes parámetros.";
+            this.btnEliminacionGrupal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminacionGrupal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminacionGrupal.Location = new System.Drawing.Point(484, 143);
+            this.btnEliminacionGrupal.Name = "btnEliminacionGrupal";
+            this.btnEliminacionGrupal.Size = new System.Drawing.Size(92, 27);
+            this.btnEliminacionGrupal.TabIndex = 7;
+            this.btnEliminacionGrupal.Text = "Aceptar";
+            this.btnEliminacionGrupal.UseVisualStyleBackColor = true;
+            this.btnEliminacionGrupal.Click += new System.EventHandler(this.btnEliminacionGrupal_Click);
             // 
-            // cbGrupo
+            // cboxGrupo
             // 
-            this.cbGrupo.AutoSize = true;
-            this.cbGrupo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cbGrupo.Location = new System.Drawing.Point(21, 133);
-            this.cbGrupo.Name = "cbGrupo";
-            this.cbGrupo.Size = new System.Drawing.Size(87, 22);
-            this.cbGrupo.TabIndex = 3;
-            this.cbGrupo.Text = "Por grupo";
-            this.cbGrupo.UseVisualStyleBackColor = true;
-            // 
-            // cbGrado
-            // 
-            this.cbGrado.AutoSize = true;
-            this.cbGrado.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cbGrado.Location = new System.Drawing.Point(21, 94);
-            this.cbGrado.Name = "cbGrado";
-            this.cbGrado.Size = new System.Drawing.Size(86, 22);
-            this.cbGrado.TabIndex = 4;
-            this.cbGrado.Text = "Por grado";
-            this.cbGrado.UseVisualStyleBackColor = true;
-            this.cbGrado.CheckedChanged += new System.EventHandler(this.cbGrado_CheckedChanged);
+            this.cboxGrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxGrupo.FormattingEnabled = true;
+            this.cboxGrupo.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.cboxGrupo.Location = new System.Drawing.Point(114, 131);
+            this.cboxGrupo.Name = "cboxGrupo";
+            this.cboxGrupo.Size = new System.Drawing.Size(121, 26);
+            this.cboxGrupo.TabIndex = 6;
             // 
             // cboxGrado
             // 
@@ -152,28 +142,40 @@
             this.cboxGrado.Size = new System.Drawing.Size(121, 26);
             this.cboxGrado.TabIndex = 5;
             // 
-            // comboBox1
+            // cbGrado
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "A",
-            "B"});
-            this.comboBox1.Location = new System.Drawing.Point(114, 131);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 6;
+            this.cbGrado.AutoSize = true;
+            this.cbGrado.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cbGrado.Location = new System.Drawing.Point(21, 94);
+            this.cbGrado.Name = "cbGrado";
+            this.cbGrado.Size = new System.Drawing.Size(86, 22);
+            this.cbGrado.TabIndex = 4;
+            this.cbGrado.Text = "Por grado";
+            this.cbGrado.UseVisualStyleBackColor = true;
+            this.cbGrado.CheckedChanged += new System.EventHandler(this.cbGrado_CheckedChanged);
             // 
-            // button1
+            // cbGrupo
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(484, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 27);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cbGrupo.AutoSize = true;
+            this.cbGrupo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cbGrupo.Location = new System.Drawing.Point(21, 133);
+            this.cbGrupo.Name = "cbGrupo";
+            this.cbGrupo.Size = new System.Drawing.Size(87, 22);
+            this.cbGrupo.TabIndex = 3;
+            this.cbGrupo.Text = "Por grupo";
+            this.cbGrupo.UseVisualStyleBackColor = true;
+            this.cbGrupo.CheckedChanged += new System.EventHandler(this.cbGrupo_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(6, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(577, 36);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "La eliminación grupal eliminara de forma permanente el grupo dealumno seleccionad" +
+    "os a partir \r\nde los siguientes parámetros.";
             // 
             // Eliminacion
             // 
@@ -205,7 +207,7 @@
         private System.Windows.Forms.CheckBox cbGrado;
         private System.Windows.Forms.CheckBox cbGrupo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnEliminacionGrupal;
+        private System.Windows.Forms.ComboBox cboxGrupo;
     }
 }

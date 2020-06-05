@@ -24,31 +24,21 @@ namespace ProyectoTec34.Home
             lblTotalAlumnos3.Text = Convert.ToString(Alumno.ScriptSQL.ConteoAlumnosPorGrado(3));
             lblDocentes.Text = Convert.ToString(Alumno.ScriptSQL.ConteoDocentes());
         }
-        /*
-         * using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+
+        private void cbGrado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cbGrupo.Text) && !string.IsNullOrEmpty(cbGrado.Text))
             {
-                SQLiteDataAdapter da;
-                DataTable dt = new DataTable();
-                da = new SQLiteDataAdapter("SELECT P.ID_Alumno, A.Nombre,SUM(P.Calificacion) FROM Parcial1 P INNER JOIN Alumno A ON A.ID_Alumno = P.ID_Alumno GROUP BY A.Nombre ", conn);
-                da.SelectCommand.CommandType = CommandType.Text;
-                da.Fill(dt);
-                DataRow dr;
-                if (dt.Rows.Count > 0)
-                {
-                    for (int i = 0; i < dt.Rows.Count; i++)
-                    {
-                        dr = dt.Rows[i];
-                        Series series = this.chart1.Series.Add(dr.ItemArray[1].ToString());
-                        series.Points.Add(Convert.ToDouble(dr.ItemArray[2]));
-                    }
+                lblConsultaInd.Text = (Configuraciones.ScriptSQL.ConteoIndividual(cbGrado.Text, cbGrupo.Text)).ToString();
+            }
+        }
 
-
-                }
-                /*
-                 *  SELECT P.ID_Alumno, A.Nombre,SUM(P.Calificacion) 
-                    FROM Parcial1 P 
-                    INNER JOIN Alumno A ON A.ID_Alumno = P.ID_Alumno
-                    GROUP BY A.Nombre 
-                 */
+        private void cbGrupo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cbGrupo.Text) && !string.IsNullOrEmpty(cbGrado.Text))
+            {
+                lblConsultaInd.Text = (Configuraciones.ScriptSQL.ConteoIndividual(cbGrado.Text, cbGrupo.Text)).ToString();
+            }
+        }
     }
 }

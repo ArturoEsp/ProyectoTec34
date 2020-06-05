@@ -462,7 +462,6 @@
             this.tbArtes3.TabIndex = 23;
             this.tbArtes3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbArtes3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
-            this.tbArtes3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes3_KeyUp);
             // 
             // tbArtes2
             // 
@@ -473,7 +472,6 @@
             this.tbArtes2.TabIndex = 22;
             this.tbArtes2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbArtes2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
-            this.tbArtes2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes2_KeyUp);
             // 
             // tbArtes1
             // 
@@ -484,7 +482,6 @@
             this.tbArtes1.TabIndex = 21;
             this.tbArtes1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbArtes1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbHis3_KeyPress);
-            this.tbArtes1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbArtes1_KeyUp);
             // 
             // tbEF3
             // 
@@ -881,7 +878,6 @@
             // btnGuardar3
             // 
             this.btnGuardar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnGuardar3.Enabled = false;
             this.btnGuardar3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnGuardar3.FlatAppearance.BorderSize = 0;
             this.btnGuardar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -898,7 +894,6 @@
             // btnGuardar2
             // 
             this.btnGuardar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnGuardar2.Enabled = false;
             this.btnGuardar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnGuardar2.FlatAppearance.BorderSize = 0;
             this.btnGuardar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -915,7 +910,6 @@
             // btnGuardar1
             // 
             this.btnGuardar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnGuardar1.Enabled = false;
             this.btnGuardar1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnGuardar1.FlatAppearance.BorderSize = 0;
             this.btnGuardar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
