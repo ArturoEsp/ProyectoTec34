@@ -46,7 +46,7 @@ namespace ProyectoTec34.Login
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if (LoginService.Autenticar(tbUsuario.Text,tbPassword.Text) == true)
+            if (LoginService.Autenticar(tbUsuario.Text,tbPassword.Text))
             {
                 this.Hide();
                 Home.Index frm = new Home.Index(tbUsuario.Text);
@@ -63,15 +63,11 @@ namespace ProyectoTec34.Login
                 Logs.Log.CrearLog("El usuario " + tbUsuario.Text + " inicio sesión.");
                 
             }
-
             else
             {
                 MessageBox.Show("Usuario / Costraseña incorrecta." +
                     "\nIntentalo de nuevo.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
-
-
-
         }
 
         private void tbPassword_Enter(object sender, EventArgs e)

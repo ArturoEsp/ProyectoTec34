@@ -48,12 +48,12 @@ namespace ProyectoTec34.Configuraciones
                 MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 if (MessageBox.Show("Le recordamos que está accion solo debe realizarla una vez al año", "Advertencia", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning) == DialogResult.Yes)
+                MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                  /*ScriptSQL.CambiarGrado3a4();
+                    ScriptSQL.CambiarGrado3a4();
                     ScriptSQL.CambiarGrado2a3();
-                    ScriptSQL.CambiarGrado1a2();*/
-                    MessageBox.Show("Cambio de ciclo escolar");
+                    ScriptSQL.CambiarGrado1a2();
+                    MessageBox.Show("Cambio de ciclo escolar", "Ciclo Escolar", MessageBoxButtons.OK,MessageBoxIcon.None);
                 }
             }
             

@@ -587,6 +587,8 @@
             // 
             // cbGrupo
             // 
+            this.cbGrupo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbGrupo.FontWeight = MetroFramework.MetroComboBoxWeight.Bold;
             this.cbGrupo.FormattingEnabled = true;
             this.cbGrupo.ItemHeight = 23;
             this.cbGrupo.Items.AddRange(new object[] {
@@ -601,6 +603,8 @@
             // 
             // cbGrado
             // 
+            this.cbGrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbGrado.FontWeight = MetroFramework.MetroComboBoxWeight.Bold;
             this.cbGrado.FormattingEnabled = true;
             this.cbGrado.ItemHeight = 23;
             this.cbGrado.Items.AddRange(new object[] {

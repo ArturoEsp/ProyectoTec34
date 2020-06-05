@@ -225,7 +225,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.btnCambioCiclo);
-            this.panel5.Location = new System.Drawing.Point(34, 407);
+            this.panel5.Location = new System.Drawing.Point(608, 66);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(497, 68);
             this.panel5.TabIndex = 11;

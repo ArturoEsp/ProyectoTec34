@@ -17,6 +17,7 @@ namespace ProyectoTec34.Alumno
         {
             InitializeComponent();
             dgvDatos.DataSource = ScriptSQL.MostrarBD(tbBuscar.Text);
+            btnSelec.Enabled = false;
         }
 
         private void btnBuscarAlumno_Click(object sender, EventArgs e)
@@ -29,13 +30,22 @@ namespace ProyectoTec34.Alumno
             dgvDatos.DataSource = ScriptSQL.MostrarBD(tbBuscar.Text);
         }
         public string _Persona;
-        private void btnSelec_Click(object sender, EventArgs e)
+
+        private void btnSelec_Click_1(object sender, EventArgs e)
         {
             _Persona = dgvDatos.CurrentRow.Cells[0].Value.ToString();
-            BuscarAlumnos oBuscar = new BuscarAlumnos();
-            oBuscar.tbBuscar.Text = _Persona;
-            this.Close();
-            oBuscar.Show();
+            if (!string.IsNullOrEmpty(_Persona))
+            {
+                BuscarAlumnos oBuscar = new BuscarAlumnos();
+                oBuscar.tbBuscar.Text = _Persona;
+                this.Close();
+                oBuscar.Show();
+            }
+        }
+
+        private void dgvDatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnSelec.Enabled = true;
         }
     }
 }

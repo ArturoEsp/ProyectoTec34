@@ -32,39 +32,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnSelec = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnBuscarAlumno = new System.Windows.Forms.Button();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.btnSelec = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSelec
-            // 
-            this.btnSelec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.btnSelec.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSelec.FlatAppearance.BorderSize = 0;
-            this.btnSelec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelec.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelec.Image = ((System.Drawing.Image)(resources.GetObject("btnSelec.Image")));
-            this.btnSelec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSelec.Location = new System.Drawing.Point(487, 7);
-            this.btnSelec.Name = "btnSelec";
-            this.btnSelec.Size = new System.Drawing.Size(115, 44);
-            this.btnSelec.TabIndex = 40;
-            this.btnSelec.Text = "Seleccionar";
-            this.btnSelec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSelec.UseVisualStyleBackColor = false;
-            this.btnSelec.Click += new System.EventHandler(this.btnSelec_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.panel2.Controls.Add(this.btnBuscarAlumno);
             this.panel2.Controls.Add(this.tbBuscar);
-            this.panel2.Location = new System.Drawing.Point(7, 7);
+            this.panel2.Location = new System.Drawing.Point(138, 7);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(471, 44);
             this.panel2.TabIndex = 41;
@@ -101,6 +83,7 @@
             // 
             // dgvDatos
             // 
+            this.dgvDatos.AllowUserToAddRows = false;
             this.dgvDatos.AllowUserToDeleteRows = false;
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDatos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
@@ -132,8 +115,27 @@
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDatos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatos.Size = new System.Drawing.Size(614, 347);
+            this.dgvDatos.Size = new System.Drawing.Size(614, 359);
             this.dgvDatos.TabIndex = 42;
+            this.dgvDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellClick);
+            // 
+            // btnSelec
+            // 
+            this.btnSelec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.btnSelec.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSelec.FlatAppearance.BorderSize = 0;
+            this.btnSelec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelec.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelec.Image = ((System.Drawing.Image)(resources.GetObject("btnSelec.Image")));
+            this.btnSelec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSelec.Location = new System.Drawing.Point(14, 7);
+            this.btnSelec.Name = "btnSelec";
+            this.btnSelec.Size = new System.Drawing.Size(115, 44);
+            this.btnSelec.TabIndex = 43;
+            this.btnSelec.Text = "Seleccionar";
+            this.btnSelec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSelec.UseVisualStyleBackColor = false;
+            this.btnSelec.Click += new System.EventHandler(this.btnSelec_Click_1);
             // 
             // BDSeleccion
             // 
@@ -141,9 +143,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(614, 416);
+            this.Controls.Add(this.btnSelec);
             this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnSelec);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BDSeleccion";
@@ -157,10 +159,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSelec;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnBuscarAlumno;
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.Button btnSelec;
     }
 }
