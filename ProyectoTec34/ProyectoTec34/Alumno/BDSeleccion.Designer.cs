@@ -102,7 +102,6 @@
             // dgvDatos
             // 
             this.dgvDatos.AllowUserToDeleteRows = false;
-            this.dgvDatos.AllowUserToOrderColumns = true;
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDatos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;

@@ -29,5 +29,22 @@ namespace ProyectoTec34.Configuraciones
                 e.Handled = true;
             }
         }
+        public static void Validatetb(KeyPressEventArgs e)
+        {
+
+            if (Char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
+
     }
 }

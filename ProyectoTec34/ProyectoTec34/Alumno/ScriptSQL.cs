@@ -1074,5 +1074,17 @@ namespace ProyectoTec34.Alumno
                 cmd.ExecuteNonQuery();
             }
         }
+        public static int ValidaGrado(string nombre)
+        {
+            string query = "SELECT Grado FROM Alumno WHERE ID_Alumno = @ID_Alumno";
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                conn.Open();
+                SQLiteCommand cmd = new SQLiteCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ID_Alumno", ScriptSQL.getIDAlumno(nombre));
+                int grado = Convert.ToInt32(cmd.ExecuteScalar());
+                return grado;
+            }
+        }
     }
 }

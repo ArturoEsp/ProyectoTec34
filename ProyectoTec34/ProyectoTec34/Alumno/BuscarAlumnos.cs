@@ -20,13 +20,7 @@ namespace ProyectoTec34.Alumno
             tbBuscar.AutoCompleteCustomSource = ScriptSQL.AutoCompletarBuscar();
             tbBuscar.AutoCompleteMode = AutoCompleteMode.Suggest;
             tbBuscar.AutoCompleteSource = AutoCompleteSource.CustomSource;
-
-            if (string.IsNullOrEmpty(tbBuscar.Text))
-            {
-                btnPrimerBoleta.Enabled = true;
-                btnSegBoleta.Enabled = true;
-                btnTercerBoleta.Enabled = true;
-            }
+            
         }
         private void btnPrimerBoleta_Click(object sender, EventArgs e)
         {
@@ -74,11 +68,6 @@ namespace ProyectoTec34.Alumno
             
         }
 
-        private void tbBuscar_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
-
         private void btnBuscarAlumno_Click(object sender, EventArgs e)
         {
             BDSeleccion objBD = new BDSeleccion();
@@ -91,6 +80,25 @@ namespace ProyectoTec34.Alumno
             if (MouseButtons == MouseButtons.None)
             {
                 this.tbBuscar.SelectAll();
+            }
+        }
+
+        private void tbBuscar_TextChanged(object sender, EventArgs e)
+        {
+            if (ScriptSQL.ValidaGrado(tbBuscar.Text) == 1)
+            {
+                btnPrimerBoleta.Enabled = true;
+            }
+            else if (ScriptSQL.ValidaGrado(tbBuscar.Text) == 2)
+            {
+                btnPrimerBoleta.Enabled = true;
+                btnSegBoleta.Enabled = true;
+            }
+            else if (ScriptSQL.ValidaGrado(tbBuscar.Text) == 3)
+            {
+                btnPrimerBoleta.Enabled = true;
+                btnSegBoleta.Enabled = true;
+                btnTercerBoleta.Enabled = true;
             }
         }
     }

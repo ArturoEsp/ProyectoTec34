@@ -336,5 +336,21 @@ namespace ProyectoTec34.Configuraciones
 
             }
         }
+        public static void EliminarGrupo(int Grado,string Grupo,string ID)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(Database.DatabaseRepository.Init()))
+            {
+                SQLiteCommand cmd;
+                conn.Open();
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "DELETE FROM Alumno WHERE Grado = @Grado AND Grupo = @Grupo";
+                cmd.Parameters.Add(new SQLiteParameter("@Grado", Grado));
+                cmd.Parameters.Add(new SQLiteParameter("@Grupo", Grupo));
+                cmd.ExecuteNonQuery();
+            }
+            EliminarAlumnoEstudioS(ID);
+            EliminarAlumnoParciales(ID);
+            EliminarAlumnoSomaticos(ID);
+        }
     }
 }

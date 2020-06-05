@@ -70,7 +70,6 @@
             this.tbColonia = new System.Windows.Forms.TextBox();
             this.tbCalleNumero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -544,23 +543,6 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Calle y número";
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(609, 400);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(125, 39);
-            this.btnCancelar.TabIndex = 25;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -580,7 +562,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(884, 453);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSiguiente);
             this.ForeColor = System.Drawing.Color.Black;
@@ -630,7 +611,6 @@
         private System.Windows.Forms.TextBox tbEntidadFederativa;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbMunicipio;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox tbObs;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cbTurno;

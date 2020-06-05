@@ -71,6 +71,7 @@
             // 
             this.tbBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.tbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbBuscar.Enabled = false;
             this.tbBuscar.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBuscar.ForeColor = System.Drawing.Color.Black;
             this.tbBuscar.Location = new System.Drawing.Point(6, 9);
@@ -78,7 +79,7 @@
             this.tbBuscar.Size = new System.Drawing.Size(461, 26);
             this.tbBuscar.TabIndex = 1;
             this.tbBuscar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbBuscar_MouseClick);
-            this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
+            this.tbBuscar.TextChanged += new System.EventHandler(this.tbBuscar_TextChanged);
             // 
             // btnPrimerBoleta
             // 
