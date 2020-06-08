@@ -17,7 +17,6 @@ namespace ProyectoTec34.Alumno
         {
             InitializeComponent();
             dgvDatos.DataSource = ScriptSQL.MostrarBD(tbBuscar.Text);
-            btnSelec.Enabled = false;
         }
 
         private void btnBuscarAlumno_Click(object sender, EventArgs e)
