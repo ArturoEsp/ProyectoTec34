@@ -83,6 +83,9 @@ namespace ProyectoTec34.Alumno
 
         private void btnBuscarAlumno_Click(object sender, EventArgs e)
         {
+            BDSeleccion objBD = new BDSeleccion();
+            objBD.Show();
+            this.Close();
         }
     }
 }

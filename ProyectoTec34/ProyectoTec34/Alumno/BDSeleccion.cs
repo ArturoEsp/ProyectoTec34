@@ -29,7 +29,7 @@ namespace ProyectoTec34.Alumno
             dgvDatos.DataSource = ScriptSQL.MostrarBD(tbBuscar.Text);
         }
         public string _Persona;
-
+        
         private void btnSelec_Click_1(object sender, EventArgs e)
         {
             _Persona = dgvDatos.CurrentRow.Cells[0].Value.ToString();

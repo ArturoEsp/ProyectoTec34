@@ -84,10 +84,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(124, 214);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(96, 213);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(355, 18);
+            this.label4.Size = new System.Drawing.Size(407, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Espinoza Herrera Arturo     Andaya Tabarez Victor D.\r\n";
             // 
@@ -118,9 +118,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 293);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(322, 16);
+            this.label6.Size = new System.Drawing.Size(252, 16);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Todos los derechos reservados. ©  Noviembre 2019.";
+            this.label6.Text = "Todos los derechos reservados. ©  2020.";
             // 
             // Acercade
             // 
